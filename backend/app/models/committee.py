@@ -51,8 +51,8 @@ class Committee(Base):
     last_scraped_at = Column(DateTime(timezone=True))
     
     # Relationships
-    parent_committee = relationship("Committee", remote_side=[id])
-    subcommittees = relationship("Committee", backref="parent")
+    parent_committee = relationship("Committee", remote_side=[id], back_populates="subcommittees")
+    subcommittees = relationship("Committee", back_populates="parent_committee")
     
     chair = relationship("Member", foreign_keys=[chair_member_id])
     ranking_member = relationship("Member", foreign_keys=[ranking_member_id])

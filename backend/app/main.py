@@ -106,11 +106,9 @@ async def global_exception_handler(request, exc):
     )
 
 
-# Include API routers (will be added as we build them)
-# from .api.v1 import members, committees, hearings
-# app.include_router(members.router, prefix=settings.api_v1_prefix)
-# app.include_router(committees.router, prefix=settings.api_v1_prefix)
-# app.include_router(hearings.router, prefix=settings.api_v1_prefix)
+# Include API routers
+from .api.v1 import data_updates
+app.include_router(data_updates.router, prefix=settings.api_v1_prefix, tags=["data-updates"])
 
 
 if __name__ == "__main__":
