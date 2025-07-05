@@ -1,0 +1,211 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  GCP_PROJECT_ID: congressional-db-service
+  GCP_REGION: us-central1
+  SERVICE_NAME: congress-api
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: test_congress_data
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+      
+      redis:
+        image: redis:7-alpine
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('backend/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        cd backend
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      env:
+        DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_congress_data
+        CONGRESS_API_KEY: test_key
+        SECRET_KEY: test_secret_key
+        REDIS_URL: redis://localhost:6379
+      run: |
+        cd backend
+        python -m pytest tests/ -v --cov=app --cov-report=xml
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./backend/coverage.xml
+        flags: backend
+        name: codecov-umbrella
+
+    - name: Lint with flake8
+      run: |
+        cd backend
+        flake8 app/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 app/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Format check with black
+      run: |
+        cd backend
+        black --check app/
+
+  build-and-push:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        project_id: ${{ env.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+
+    - name: Configure Docker to use gcloud as a credential helper
+      run: |
+        gcloud auth configure-docker
+
+    - name: Build Docker image
+      run: |
+        cd backend
+        docker build -t gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:${{ github.sha }} .
+        docker tag gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:${{ github.sha }} gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:latest
+
+    - name: Push Docker image
+      run: |
+        docker push gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:${{ github.sha }}
+        docker push gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        project_id: ${{ env.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy ${{ env.SERVICE_NAME }} \
+          --image gcr.io/${{ env.GCP_PROJECT_ID }}/${{ env.SERVICE_NAME }}:${{ github.sha }} \
+          --platform managed \
+          --region ${{ env.GCP_REGION }} \
+          --allow-unauthenticated \
+          --memory 2Gi \
+          --cpu 2 \
+          --min-instances 1 \
+          --max-instances 10 \
+          --timeout 300 \
+          --set-env-vars="DEBUG=false,GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}" \
+          --set-secrets="CONGRESS_API_KEY=congress-api-key:latest,DATABASE_URL=database-url:latest,SECRET_KEY=secret-key:latest"
+
+    - name: Update scheduled jobs
+      run: |
+        # Update Cloud Scheduler jobs with new service URL
+        SERVICE_URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} --region ${{ env.GCP_REGION }} --format 'value(status.url)')
+        
+        # Update or create scheduler jobs
+        gcloud scheduler jobs update http members-update \
+          --uri="$SERVICE_URL/api/v1/update/members" \
+          --schedule="0 2 1 * *" \
+          --http-method=POST \
+          --timezone="America/New_York" || \
+        gcloud scheduler jobs create http members-update \
+          --uri="$SERVICE_URL/api/v1/update/members" \
+          --schedule="0 2 1 * *" \
+          --http-method=POST \
+          --timezone="America/New_York" \
+          --description="Update congressional members monthly"
+
+        gcloud scheduler jobs update http committees-update \
+          --uri="$SERVICE_URL/api/v1/update/committees" \
+          --schedule="0 2 * * 1" \
+          --http-method=POST \
+          --timezone="America/New_York" || \
+        gcloud scheduler jobs create http committees-update \
+          --uri="$SERVICE_URL/api/v1/update/committees" \
+          --schedule="0 2 * * 1" \
+          --http-method=POST \
+          --timezone="America/New_York" \
+          --description="Update committees weekly"
+
+        gcloud scheduler jobs update http hearings-update \
+          --uri="$SERVICE_URL/api/v1/update/hearings" \
+          --schedule="0 */6 * * *" \
+          --http-method=POST \
+          --timezone="America/New_York" || \
+        gcloud scheduler jobs create http hearings-update \
+          --uri="$SERVICE_URL/api/v1/update/hearings" \
+          --schedule="0 */6 * * *" \
+          --http-method=POST \
+          --timezone="America/New_York" \
+          --description="Update hearings every 6 hours"
+
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: './backend'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: 'trivy-results.sarif'
