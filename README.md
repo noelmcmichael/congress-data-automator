@@ -327,6 +327,7 @@ congress_data_automator/
   - **Last execution**: Members job ran successfully at 2025-07-05T18:04:51
 - **DEPLOYED**: Frontend admin UI live ✅
   - **Frontend URL**: https://storage.googleapis.com/congressional-data-frontend/index.html
+  - **Status**: Fixed deployment with relative paths, assets now load correctly
   - **Features**: Dashboard, member/committee/hearing browsing, API testing, real-time stats
   - **Technology**: React 18, Material-UI 5, TypeScript, deployed on Google Cloud Storage
   - **API Integration**: Connected to production backend service
