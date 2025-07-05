@@ -46,7 +46,16 @@ class DataProcessor:
             house_members = await self.congress_api.get_members(chamber="house")
             senate_members = await self.congress_api.get_members(chamber="senate")
             
-            all_members = house_members + senate_members
+            # Combine and deduplicate by bioguide_id
+            all_members_raw = house_members + senate_members
+            members_dict = {}
+            for member in all_members_raw:
+                bioguide_id = member.get("bioguideId")
+                if bioguide_id and bioguide_id not in members_dict:
+                    members_dict[bioguide_id] = member
+            
+            all_members = list(members_dict.values())
+            logger.info("Members data collected", total_raw=len(all_members_raw), deduplicated=len(all_members))
             
             updated_count = 0
             created_count = 0
