@@ -31,8 +31,8 @@ class Hearing(Base):
     end_time = Column(DateTime(timezone=True))
     
     # Location
-    location = Column(String(255))
-    room = Column(String(100))
+    location = Column(String(1000))  # Increased from 255 to accommodate longer descriptions
+    room = Column(String(500))  # Increased from 100 to accommodate longer room descriptions
     
     # Status
     hearing_type = Column(String(50))  # Hearing, Markup, Business Meeting, etc.

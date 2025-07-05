@@ -141,55 +141,66 @@ congress_data_automator/
 
 ## Step-by-Step Plan for Congressional Data Service
 
-### Phase 1: Resolve Data Collection Issues ✅
+### Phase 1: Complete Data Collection & Fix Issues ✅🔄
 1. **Database state verification** ✅
    - Check current database contents
    - Verify table schemas are correct
    - Test database connectivity
 
-2. **Data collection testing and fixes** 🔄
-   - Test member data collection in production
-   - Resolve any duplicate key constraint issues
-   - Verify data parsing accuracy
-   - Test committee and hearing data collection
+2. **Member & Committee data collection** ✅
+   - Test member data collection in production ✅
+   - Resolve duplicate key constraint issues ✅
+   - Verify data parsing accuracy ✅
+   - Test committee data collection ✅
 
-3. **Production data validation** 📋
+3. **Fix hearing data collection** 🔄
+   - Debug production hearing collection failure
+   - Resolve committee_id constraint issues
+   - Test hearing data pipeline end-to-end
+   - Validate hearing metadata and video URLs
+
+4. **Production data validation** 📋
    - Run full data collection cycle
    - Validate data quality and completeness
    - Monitor performance and error rates
 
-### Phase 2: Add Automation & Scheduling 📋
-4. **Cloud Scheduler setup**
-   - Create scheduled jobs for data updates
-   - Configure update frequencies (members: monthly, committees: weekly, hearings: daily)
-   - Add error handling and notifications
+### Phase 2: Complete Automation & Monitoring ✅🔄
+5. **Cloud Scheduler setup** ✅
+   - Create scheduled jobs for data updates ✅
+   - Configure update frequencies (members: monthly, committees: weekly, hearings: daily) ✅
+   - Add error handling and notifications ✅
 
-5. **Background job processing**
-   - Set up Redis for job queuing
-   - Implement async task processing
-   - Add job status tracking
+6. **Monitoring and alerting setup** 🔄
+   - Set up Cloud Run uptime monitoring
+   - Create log-based metrics and alerts
+   - Configure email notifications for failures
+   - Add performance monitoring dashboard
 
 ### Phase 3: Frontend Development 📋
-6. **React admin UI development**
+7. **React admin UI development**
    - Create project structure and setup
    - Build data viewing and management interfaces
    - Add search, filter, and sort functionality
+   - Connect to backend API endpoints
 
-7. **API enhancements**
+8. **API enhancements**
    - Add pagination and filtering to endpoints
    - Implement search functionality
    - Add data export capabilities
+   - Create public API documentation
 
 ### Phase 4: Production Optimization 📋
-8. **Monitoring and logging**
-   - Set up structured logging
-   - Add performance monitoring
-   - Create alerting for failures
-
 9. **Performance optimization**
    - Database indexing and query optimization
    - Caching strategy implementation
    - Load testing and scaling
+   - API rate limiting and throttling
+
+10. **Security and compliance**
+    - Add authentication and authorization
+    - Implement security headers
+    - Add input validation and sanitization
+    - Configure CORS policies
 
 ## Progress Log
 

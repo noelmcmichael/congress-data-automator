@@ -1,0 +1,23 @@
+# Cloud Scheduler configuration for automated data updates
+# This file defines the scheduled jobs for congressional data collection
+
+# Daily hearings updates - 6 AM EST
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scheduler-config
+data:
+  # Hearings: Update daily at 6:00 AM EST (11:00 UTC)
+  hearings-schedule: "0 11 * * *"
+  hearings-timezone: "America/New_York"
+  
+  # Committees: Update weekly on Mondays at 7:00 AM EST (12:00 UTC)
+  committees-schedule: "0 12 * * 1"
+  committees-timezone: "America/New_York"
+  
+  # Members: Update monthly on 1st at 8:00 AM EST (13:00 UTC)
+  members-schedule: "0 13 1 * *"
+  members-timezone: "America/New_York"
+  
+  # Service endpoint
+  service-url: "https://congressional-data-api-1066017671167.us-central1.run.app"
