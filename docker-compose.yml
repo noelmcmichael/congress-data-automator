@@ -1,4 +1,4 @@
-version: '3.8'
+# Docker Compose configuration for local development
 
 services:
   db:
@@ -32,18 +32,19 @@ services:
     environment:
       - DATABASE_URL=postgresql://congress_user:password@db:5432/congress_data
       - CONGRESS_API_KEY=oM8IsuU5VfUiVsrMbUBNgYLpz2F2lUZEkTygiZik
-      - SECRET_KEY=h6HkF&2xJv8tPw@Q$$NuR9cV#mB5zKdLf!A@pXs4Y*nG7oE&hWq
+      - SECRET_KEY=h6HkF2xJv8tPwQNuR9cVmB5zKdLfApXs4YnG7oEhWq
       - DEBUG=true
       - REDIS_URL=redis://redis:6379
       - ALLOWED_ORIGINS=["http://localhost:3000","http://localhost:8080"]
       - LOG_LEVEL=INFO
+      - GCP_PROJECT_ID=congressional-db-service
     depends_on:
       db:
         condition: service_healthy
       redis:
         condition: service_healthy
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
       - ./backend:/app
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

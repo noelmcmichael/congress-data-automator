@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 import structlog
 from ..core.database import SessionLocal
 from ..models import Member, Committee, CommitteeMembership, Hearing, Witness, HearingDocument
+from ..core.utils import get_state_abbreviation, get_chamber_name
 from .congress_api import CongressApiClient
 import sys
 import os
@@ -89,6 +90,49 @@ class DataProcessor:
         finally:
             db.close()
     
+    def _parse_member_name(self, full_name: str) -> Dict[str, str]:
+        """
+        Parse full name into components.
+        
+        Args:
+            full_name: Full name like "Ramirez, Delia C."
+            
+        Returns:
+            Dictionary with name components
+        """
+        result = {
+            "first_name": "",
+            "last_name": "",
+            "middle_name": None,
+            "suffix": None,
+            "nickname": None
+        }
+        
+        if not full_name:
+            return result
+        
+        # Handle format like "Ramirez, Delia C."
+        if ", " in full_name:
+            parts = full_name.split(", ")
+            result["last_name"] = parts[0].strip()
+            if len(parts) > 1:
+                first_parts = parts[1].strip().split()
+                if first_parts:
+                    result["first_name"] = first_parts[0]
+                    if len(first_parts) > 1:
+                        result["middle_name"] = " ".join(first_parts[1:])
+        else:
+            # Handle other formats
+            parts = full_name.split()
+            if parts:
+                result["first_name"] = parts[0]
+                if len(parts) > 1:
+                    result["last_name"] = parts[-1]
+                    if len(parts) > 2:
+                        result["middle_name"] = " ".join(parts[1:-1])
+        
+        return result
+    
     def _create_member_from_api(self, member_data: Dict[str, Any]) -> Member:
         """
         Create Member object from API data.
@@ -99,20 +143,38 @@ class DataProcessor:
         Returns:
             Member object
         """
+        # Parse name from full name field
+        full_name = member_data.get("name", "")
+        name_parts = self._parse_member_name(full_name)
+        
+        # Get chamber from terms
+        chamber = ""
+        terms = member_data.get("terms", {})
+        if isinstance(terms, dict) and "item" in terms:
+            term_items = terms["item"]
+            if term_items and len(term_items) > 0:
+                chamber = term_items[0].get("chamber", "")
+        
+        # Get image URL from depiction
+        image_url = None
+        depiction = member_data.get("depiction", {})
+        if isinstance(depiction, dict):
+            image_url = depiction.get("imageUrl")
+        
         return Member(
             bioguide_id=member_data.get("bioguideId"),
             congress_gov_id=member_data.get("url", "").split("/")[-1],
-            first_name=member_data.get("firstName", ""),
-            last_name=member_data.get("lastName", ""),
-            middle_name=member_data.get("middleName"),
-            suffix=member_data.get("suffix"),
-            nickname=member_data.get("nickName"),
+            first_name=name_parts["first_name"],
+            last_name=name_parts["last_name"],
+            middle_name=name_parts["middle_name"],
+            suffix=name_parts["suffix"],
+            nickname=name_parts["nickname"],
             party=member_data.get("partyName", ""),
-            chamber=member_data.get("chamber", "").title(),
-            state=member_data.get("state", ""),
+            chamber=get_chamber_name(chamber),
+            state=get_state_abbreviation(member_data.get("state", "")) or "XX",
             district=member_data.get("district"),
             is_current=True,
-            official_photo_url=member_data.get("imageUrl"),
+            official_photo_url=image_url,
             last_scraped_at=datetime.now(),
         )
     
@@ -125,8 +187,8 @@ class DataProcessor:
             member_data: Member data from API
         """
         member.party = member_data.get("partyName", member.party)
-        member.chamber = member_data.get("chamber", member.chamber).title()
-        member.state = member_data.get("state", member.state)
+        member.chamber = get_chamber_name(member_data.get("chamber", member.chamber))
+        member.state = get_state_abbreviation(member_data.get("state", member.state)) or member.state
         member.district = member_data.get("district", member.district)
         member.official_photo_url = member_data.get("imageUrl", member.official_photo_url)
         member.last_scraped_at = datetime.now()

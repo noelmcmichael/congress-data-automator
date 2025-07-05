@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 30
     
     # Google Cloud Platform
-    gcp_project_id: str = Field(..., env="GCP_PROJECT_ID")
+    gcp_project_id: Optional[str] = Field(default=None, env="GCP_PROJECT_ID")
     gcp_location: str = Field(default="us-central1", env="GCP_LOCATION")
     
     # Redis (for caching and background jobs)

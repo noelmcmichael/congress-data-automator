@@ -48,6 +48,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Import models to ensure they're registered with Base
+from .models import Member, Committee, CommitteeMembership, Hearing, Witness, HearingDocument
+
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
