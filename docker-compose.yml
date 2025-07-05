@@ -37,7 +37,7 @@ services:
       - REDIS_URL=redis://redis:6379
       - ALLOWED_ORIGINS=["http://localhost:3000","http://localhost:8080"]
       - LOG_LEVEL=INFO
-      - GCP_PROJECT_ID=congressional-db-service
+      - GCP_PROJECT_ID=chefgavin
     depends_on:
       db:
         condition: service_healthy
