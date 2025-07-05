@@ -139,14 +139,18 @@ export const apiService = {
     return response.data;
   },
 
-  // Data retrieval (placeholder for when we implement these endpoints)
+  // Data retrieval with fallback to mock data
   async getMembers(page = 1, limit = 50): Promise<Member[]> {
     try {
       const response = await api.get(`/api/v1/members?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Members endpoint not implemented yet');
-      return [];
+      console.warn('Members endpoint not available, using mock data');
+      // Import mock data dynamically
+      const { mockMembers } = await import('./mockData');
+      const start = (page - 1) * limit;
+      const end = start + limit;
+      return mockMembers.slice(start, end);
     }
   },
 
@@ -155,8 +159,12 @@ export const apiService = {
       const response = await api.get(`/api/v1/committees?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Committees endpoint not implemented yet');
-      return [];
+      console.warn('Committees endpoint not available, using mock data');
+      // Import mock data dynamically
+      const { mockCommittees } = await import('./mockData');
+      const start = (page - 1) * limit;
+      const end = start + limit;
+      return mockCommittees.slice(start, end);
     }
   },
 
@@ -165,8 +173,12 @@ export const apiService = {
       const response = await api.get(`/api/v1/hearings?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Hearings endpoint not implemented yet');
-      return [];
+      console.warn('Hearings endpoint not available, using mock data');
+      // Import mock data dynamically
+      const { mockHearings } = await import('./mockData');
+      const start = (page - 1) * limit;
+      const end = start + limit;
+      return mockHearings.slice(start, end);
     }
   },
 
