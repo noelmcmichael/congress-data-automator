@@ -23,7 +23,7 @@ class Hearing(Base):
     description = Column(Text)
     
     # Committee information
-    committee_id = Column(Integer, ForeignKey("committees.id"), nullable=False)
+    committee_id = Column(Integer, ForeignKey("committees.id"), nullable=True)
     
     # Scheduling
     scheduled_date = Column(DateTime(timezone=True))
