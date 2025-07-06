@@ -5,6 +5,7 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
+import logging
 
 from app.core.database import get_db
 from app.models.member import Member
@@ -14,7 +15,19 @@ from app.schemas.member import MemberResponse
 from app.schemas.committee import CommitteeResponse
 from app.schemas.hearing import HearingResponse
 
+# Configure logging
+logger = logging.getLogger(__name__)
+
 router = APIRouter()
+
+@router.get("/debug-test")
+async def debug_test():
+    """Debug test endpoint to verify we're hitting the right service"""
+    return {
+        "message": "This is the debug-filters version with logging",
+        "timestamp": "2025-07-06T15:20:00Z",
+        "version": "debug-filters"
+    }
 
 @router.get("/members", response_model=List[MemberResponse])
 async def get_members(
@@ -32,6 +45,7 @@ async def get_members(
     Retrieve congressional members with search, filtering, and sorting
     """
     # Debug logging to verify parameters are received
+    logger.info(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
     print(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
     
     query = db.query(Member)
@@ -48,12 +62,15 @@ async def get_members(
     
     # Apply filters (exact match for better accuracy)
     if chamber:
+        logger.info(f"DEBUG: Applying chamber filter: {chamber}")
         print(f"DEBUG: Applying chamber filter: {chamber}")
         query = query.filter(Member.chamber == chamber)
     if state:
+        logger.info(f"DEBUG: Applying state filter: {state}")
         print(f"DEBUG: Applying state filter: {state}")
         query = query.filter(Member.state == state)
     if party:
+        logger.info(f"DEBUG: Applying party filter: {party}")
         print(f"DEBUG: Applying party filter: {party}")
         query = query.filter(Member.party == party)
     
@@ -68,8 +85,10 @@ async def get_members(
     offset = (page - 1) * limit
     members = query.offset(offset).limit(limit).all()
     
+    logger.info(f"DEBUG: Returning {len(members)} members")
     print(f"DEBUG: Returning {len(members)} members")
     if members:
+        logger.info(f"DEBUG: First member: {members[0].first_name} {members[0].last_name} ({members[0].party}, {members[0].chamber}, {members[0].state})")
         print(f"DEBUG: First member: {members[0].first_name} {members[0].last_name} ({members[0].party}, {members[0].chamber}, {members[0].state})")
     
     return [MemberResponse.from_orm(member) for member in members]
