@@ -1,4 +1,5 @@
 """
+import os
 API endpoints for data updates and management.
 """
 from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
@@ -16,6 +17,17 @@ router = APIRouter()
 data_processor = DataProcessor()
 
 
+@router.get("/debug/environment")
+async def debug_environment():
+    """Debug endpoint to check environment variables."""
+    return {
+        "congress_api_key_exists": bool(os.getenv("CONGRESS_API_KEY")),
+        "congress_api_key_length": len(os.getenv("CONGRESS_API_KEY", "")),
+        "congress_api_key_prefix": os.getenv("CONGRESS_API_KEY", "")[:8] if os.getenv("CONGRESS_API_KEY") else None,
+        "all_env_vars": list(os.environ.keys()),
+        "database_url_exists": bool(os.getenv("DATABASE_URL")),
+        "secret_key_exists": bool(os.getenv("SECRET_KEY"))
+    }
 @router.post("/update/members")
 async def update_members(
     background_tasks: BackgroundTasks,
@@ -156,6 +168,15 @@ async def test_congress_api():
         API test results
     """
     try:
+        # Show environment variable status
+        env_debug = {
+            "congress_api_key_exists": bool(os.getenv("CONGRESS_API_KEY")),
+            "congress_api_key_length": len(os.getenv("CONGRESS_API_KEY", "")),
+            "congress_api_key_prefix": os.getenv("CONGRESS_API_KEY", "")[:8] if os.getenv("CONGRESS_API_KEY") else None,
+            "database_url_exists": bool(os.getenv("DATABASE_URL")),
+            "secret_key_exists": bool(os.getenv("SECRET_KEY"))
+        }
+        
         # Test basic API connectivity
         members = await data_processor.congress_api.get_members(chamber="house")
         rate_limit_status = data_processor.congress_api.get_rate_limit_status()
@@ -164,12 +185,21 @@ async def test_congress_api():
             "api_connection": "successful",
             "sample_members_count": len(members),
             "rate_limit_status": rate_limit_status,
-            "first_member_sample": members[0] if members else None
+            "first_member_sample": members[0] if members else None,
+            "environment_debug": env_debug
         }
         
     except Exception as e:
         logger.error("Error testing Congress API", error=str(e))
-        raise HTTPException(status_code=500, detail=f"Congress API test failed: {str(e)}")
+        # Return debug info even on error
+        env_debug = {
+            "congress_api_key_exists": bool(os.getenv("CONGRESS_API_KEY")),
+            "congress_api_key_length": len(os.getenv("CONGRESS_API_KEY", "")),
+            "congress_api_key_prefix": os.getenv("CONGRESS_API_KEY", "")[:8] if os.getenv("CONGRESS_API_KEY") else None,
+            "database_url_exists": bool(os.getenv("DATABASE_URL")),
+            "secret_key_exists": bool(os.getenv("SECRET_KEY"))
+        }
+        raise HTTPException(status_code=500, detail=f"Congress API test failed: {str(e)}", headers={"X-Debug-Info": str(env_debug)})
 
 
 @router.get("/test/scrapers")
@@ -272,9 +302,9 @@ async def populate_test_relationships(
         from ...models.member import Member
         from ...models.committee import Committee, CommitteeMembership
         
-        # Get some members and committees
-        members = db.query(Member).limit(20).all()
-        committees = db.query(Committee).limit(10).all()
+        # Get ALL members and committees (not just first 20)
+        members = db.query(Member).all()
+        committees = db.query(Committee).all()
         
         if not members or not committees:
             return {
@@ -283,41 +313,39 @@ async def populate_test_relationships(
                 "committees_count": len(committees)
             }
         
-        # Create test relationships
+        # Clear existing relationships first
+        db.query(CommitteeMembership).delete()
+        db.commit()
+        
+        # Create test relationships for current members
         relationships_created = 0
         
-        for i, member in enumerate(members):
-            # Assign each member to 1-3 random committees
-            num_committees = random.randint(1, min(3, len(committees)))
+        # Use first 50 members to avoid overwhelming the system
+        for i, member in enumerate(members[:50]):
+            # Assign each member to 1-2 random committees
+            num_committees = random.randint(1, min(2, len(committees)))
             assigned_committees = random.sample(committees, num_committees)
             
             for j, committee in enumerate(assigned_committees):
-                # Check if relationship already exists
-                existing = db.query(CommitteeMembership).filter(
-                    CommitteeMembership.member_id == member.id,
-                    CommitteeMembership.committee_id == committee.id
-                ).first()
+                # Determine position
+                if j == 0 and i < 10:  # First 10 members get chair positions
+                    position = "Chair"
+                elif j == 0 and i < 20:  # Next 10 get ranking member
+                    position = "Ranking Member"
+                else:
+                    position = "Member"
                 
-                if not existing:
-                    # Determine position
-                    if j == 0 and i < 5:  # First 5 members get chair positions
-                        position = "Chair"
-                    elif j == 0 and i < 10:  # Next 5 get ranking member
-                        position = "Ranking Member"
-                    else:
-                        position = "Member"
-                    
-                    # Create membership
-                    membership = CommitteeMembership(
-                        member_id=member.id,
-                        committee_id=committee.id,
-                        position=position,
-                        is_current=True,
-                        start_date=datetime.now()
-                    )
-                    
-                    db.add(membership)
-                    relationships_created += 1
+                # Create membership
+                membership = CommitteeMembership(
+                    member_id=member.id,
+                    committee_id=committee.id,
+                    position=position,
+                    is_current=True,
+                    start_date=datetime.now()
+                )
+                
+                db.add(membership)
+                relationships_created += 1
         
         # Commit changes
         db.commit()
@@ -325,7 +353,7 @@ async def populate_test_relationships(
         return {
             "message": "Test relationship data created successfully",
             "relationships_created": relationships_created,
-            "members_processed": len(members),
+            "members_processed": min(50, len(members)),
             "committees_available": len(committees),
             "status": "completed"
         }
