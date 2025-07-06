@@ -85,7 +85,7 @@ class CongressApiClient:
         return response.json()
     
     async def get_members(self, chamber: Optional[str] = None, state: Optional[str] = None, 
-                         current_only: bool = True) -> List[Dict[str, Any]]:
+                         current_only: bool = True, limit: int = 250) -> List[Dict[str, Any]]:
         """
         Get congressional members.
         
@@ -93,11 +93,12 @@ class CongressApiClient:
             chamber: Filter by chamber (house, senate)
             state: Filter by state abbreviation
             current_only: Only return current members
+            limit: Maximum number of members to return per request
             
         Returns:
             List of member data
         """
-        params = {}
+        params = {"limit": limit}
         if chamber:
             params["chamber"] = chamber.lower()
         if state:
@@ -107,6 +108,42 @@ class CongressApiClient:
         
         response = await self._make_request("/member", params)
         return response.get("members", [])
+    
+    async def get_all_members(self, current_only: bool = True) -> List[Dict[str, Any]]:
+        """
+        Get all congressional members by fetching from both chambers.
+        
+        Args:
+            current_only: Only return current members
+            
+        Returns:
+            List of all member data
+        """
+        all_members = []
+        
+        # Get House members
+        logger.info("Fetching House members...")
+        house_members = await self.get_members(chamber="house", current_only=current_only)
+        all_members.extend(house_members)
+        logger.info(f"Fetched {len(house_members)} House members")
+        
+        # Get Senate members
+        logger.info("Fetching Senate members...")
+        senate_members = await self.get_members(chamber="senate", current_only=current_only)
+        all_members.extend(senate_members)
+        logger.info(f"Fetched {len(senate_members)} Senate members")
+        
+        # Deduplicate by bioguide_id
+        members_dict = {}
+        for member in all_members:
+            bioguide_id = member.get("bioguideId")
+            if bioguide_id and bioguide_id not in members_dict:
+                members_dict[bioguide_id] = member
+        
+        deduplicated_members = list(members_dict.values())
+        logger.info(f"Total members after deduplication: {len(deduplicated_members)}")
+        
+        return deduplicated_members
     
     async def get_member_details(self, bioguide_id: str) -> Dict[str, Any]:
         """

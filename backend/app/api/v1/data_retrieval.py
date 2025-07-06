@@ -20,15 +20,28 @@ router = APIRouter()
 async def get_members(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=200, description="Items per page"),
+    search: Optional[str] = Query(None, description="Search by name"),
     chamber: Optional[str] = Query(None, description="Filter by chamber (house/senate)"),
     state: Optional[str] = Query(None, description="Filter by state"),
     party: Optional[str] = Query(None, description="Filter by party"),
+    sort_by: Optional[str] = Query("last_name", description="Sort by field (last_name, first_name, state, party)"),
+    sort_order: Optional[str] = Query("asc", description="Sort order (asc/desc)"),
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve congressional members with optional filtering
+    Retrieve congressional members with search, filtering, and sorting
     """
     query = db.query(Member)
+    
+    # Apply search
+    if search:
+        search_term = f"%{search}%"
+        query = query.filter(
+            (Member.first_name.ilike(search_term)) |
+            (Member.last_name.ilike(search_term)) |
+            (Member.middle_name.ilike(search_term)) |
+            (Member.nickname.ilike(search_term))
+        )
     
     # Apply filters
     if chamber:
@@ -38,9 +51,16 @@ async def get_members(
     if party:
         query = query.filter(Member.party.ilike(f"%{party}%"))
     
+    # Apply sorting
+    sort_column = getattr(Member, sort_by, Member.last_name)
+    if sort_order.lower() == "desc":
+        query = query.order_by(desc(sort_column))
+    else:
+        query = query.order_by(sort_column)
+    
     # Apply pagination
     offset = (page - 1) * limit
-    members = query.order_by(Member.last_name, Member.first_name).offset(offset).limit(limit).all()
+    members = query.offset(offset).limit(limit).all()
     
     return [MemberResponse.from_orm(member) for member in members]
 
@@ -48,14 +68,22 @@ async def get_members(
 async def get_committees(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=200, description="Items per page"),
+    search: Optional[str] = Query(None, description="Search by committee name"),
     chamber: Optional[str] = Query(None, description="Filter by chamber (house/senate)"),
     active_only: bool = Query(True, description="Only return active committees"),
+    sort_by: Optional[str] = Query("name", description="Sort by field (name, chamber)"),
+    sort_order: Optional[str] = Query("asc", description="Sort order (asc/desc)"),
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve congressional committees with optional filtering
+    Retrieve congressional committees with search, filtering, and sorting
     """
     query = db.query(Committee)
+    
+    # Apply search
+    if search:
+        search_term = f"%{search}%"
+        query = query.filter(Committee.name.ilike(search_term))
     
     # Apply filters
     if chamber:
@@ -63,9 +91,16 @@ async def get_committees(
     if active_only:
         query = query.filter(Committee.is_active == True)
     
+    # Apply sorting
+    sort_column = getattr(Committee, sort_by, Committee.name)
+    if sort_order.lower() == "desc":
+        query = query.order_by(desc(sort_column))
+    else:
+        query = query.order_by(sort_column)
+    
     # Apply pagination
     offset = (page - 1) * limit
-    committees = query.order_by(Committee.name).offset(offset).limit(limit).all()
+    committees = query.offset(offset).limit(limit).all()
     
     return [CommitteeResponse.from_orm(committee) for committee in committees]
 
@@ -73,14 +108,25 @@ async def get_committees(
 async def get_hearings(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=200, description="Items per page"),
+    search: Optional[str] = Query(None, description="Search by hearing title"),
     status: Optional[str] = Query(None, description="Filter by status (scheduled/completed)"),
     committee_id: Optional[int] = Query(None, description="Filter by committee ID"),
+    sort_by: Optional[str] = Query("scheduled_date", description="Sort by field (title, scheduled_date, created_at)"),
+    sort_order: Optional[str] = Query("desc", description="Sort order (asc/desc)"),
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve congressional hearings with optional filtering
+    Retrieve congressional hearings with search, filtering, and sorting
     """
     query = db.query(Hearing)
+    
+    # Apply search
+    if search:
+        search_term = f"%{search}%"
+        query = query.filter(
+            (Hearing.title.ilike(search_term)) |
+            (Hearing.description.ilike(search_term))
+        )
     
     # Apply filters
     if status:
@@ -88,9 +134,16 @@ async def get_hearings(
     if committee_id:
         query = query.filter(Hearing.committee_id == committee_id)
     
+    # Apply sorting
+    sort_column = getattr(Hearing, sort_by, Hearing.scheduled_date)
+    if sort_order.lower() == "desc":
+        query = query.order_by(desc(sort_column))
+    else:
+        query = query.order_by(sort_column)
+    
     # Apply pagination
     offset = (page - 1) * limit
-    hearings = query.order_by(desc(Hearing.created_at)).offset(offset).limit(limit).all()
+    hearings = query.offset(offset).limit(limit).all()
     
     return [HearingResponse.from_orm(hearing) for hearing in hearings]
 
