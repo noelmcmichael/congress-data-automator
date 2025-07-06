@@ -158,7 +158,7 @@ async def get_members_fixed(
         }
 
 @router.get("/members", response_model=List[MemberResponse])
-async def get_members(
+async def get_members_new_version(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=200, description="Items per page"),
     search: Optional[str] = Query(None, description="Search by name"),
@@ -172,9 +172,9 @@ async def get_members(
     """
     Retrieve congressional members with search, filtering, and sorting
     """
-    # CRITICAL DEBUG - MUST APPEAR IN LOGS
-    print("🚨 CRITICAL DEBUG: get_members function called - NEW VERSION!")
-    logger.error(f"🚨 CRITICAL DEBUG: get_members called with party={party}")
+    # CRITICAL DEBUG - MUST APPEAR IN LOGS - RENAMED FUNCTION  
+    print("🚨 NEW FUNCTION: get_members_new_version called - SHOULD SEE THIS!")
+    logger.error(f"🚨 NEW FUNCTION: get_members_new_version called with party={party}")
     
     # Debug logging to verify parameters are received
     logger.info(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
