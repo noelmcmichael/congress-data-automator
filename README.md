@@ -332,6 +332,18 @@ congress_data_automator/
   - **Technology**: React 18, Material-UI 5, TypeScript, deployed on Google Cloud Storage
   - **API Integration**: Connected to production backend service
 
+### 2025-01-04 (Evening Session) - API Connectivity Fix
+- **DIAGNOSED**: Frontend API connectivity issue ✅
+  - **Root cause**: GET endpoints (`/api/v1/members`, `/api/v1/committees`, `/api/v1/hearings`) missing from production
+  - **Status**: Frontend falling back to mock data, showing console errors when attempting API calls
+  - **Data available**: Backend has 108 items (confirmed via `/api/v1/stats/database`) but no GET endpoints to retrieve them
+  - **Verification**: OpenAPI schema confirms only POST update endpoints exist, no GET endpoints
+  - **Solution needed**: Deploy GET endpoints to production
+- **ISSUE**: Complex database connection problem preventing new deployments 🚨
+  - **Problem**: New Docker deployments fail with `sqlalchemy.exc.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed`
+  - **Current status**: Original service works but new code cannot be deployed due to DB connection issues
+  - **Working connection**: `postgresql+psycopg2://postgres:Noel19922024@/cloudsql/chefgavin:us-central1:congressional-db/congress_data`
+
 ---
 
 🤖 Generated with [Memex](https://memex.tech)
