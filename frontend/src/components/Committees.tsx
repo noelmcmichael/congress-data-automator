@@ -13,18 +13,32 @@ import {
 } from '@mui/material';
 import { Refresh as RefreshIcon, OpenInNew as OpenInNewIcon } from '@mui/icons-material';
 import { apiService, Committee } from '../services/api';
+import SearchFilter from './SearchFilter';
 
 const Committees: React.FC = () => {
   const [committees, setCommittees] = useState<Committee[]>([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Search and filter state
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filters, setFilters] = useState({
+    chamber: '',
+  });
+  const [sortBy, setSortBy] = useState('name');
+  const [sortOrder, setSortOrder] = useState('asc');
 
   const fetchCommittees = async () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await apiService.getCommittees();
+      const data = await apiService.getCommittees({
+        search: searchTerm || undefined,
+        chamber: filters.chamber || undefined,
+        sort_by: sortBy,
+        sort_order: sortOrder,
+      });
       setCommittees(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch committees');
@@ -51,7 +65,14 @@ const Committees: React.FC = () => {
 
   useEffect(() => {
     fetchCommittees();
-  }, []);
+  }, [searchTerm, filters, sortBy, sortOrder]);
+
+  const handleFilterChange = (filterKey: string, value: string) => {
+    setFilters(prev => ({
+      ...prev,
+      [filterKey]: value
+    }));
+  };
 
   if (loading) {
     return (
@@ -95,6 +116,31 @@ const Committees: React.FC = () => {
           {error}
         </Alert>
       )}
+
+      <SearchFilter
+        searchPlaceholder="Search committees by name..."
+        searchValue={searchTerm}
+        onSearchChange={setSearchTerm}
+        filters={{
+          chamber: {
+            label: 'Chamber',
+            options: [
+              { value: 'house', label: 'House' },
+              { value: 'senate', label: 'Senate' },
+            ],
+            value: filters.chamber,
+          },
+        }}
+        onFilterChange={handleFilterChange}
+        sortOptions={[
+          { value: 'name', label: 'Committee Name' },
+          { value: 'chamber', label: 'Chamber' },
+        ]}
+        sortValue={sortBy}
+        onSortChange={setSortBy}
+        sortOrderValue={sortOrder}
+        onSortOrderChange={setSortOrder}
+      />
 
       {committees.length === 0 ? (
         <Alert severity="info">

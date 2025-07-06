@@ -166,10 +166,10 @@ export const apiService = {
       const response = await api.get(`/api/v1/members?${queryParams}`);
       return response.data;
     } catch (error) {
-      console.warn('Members endpoint not available, using real data from production');
-      // Import real data from production database
-      const realMembers = await import('../data/realMembers.json');
-      let members = realMembers.default as any as Member[];
+      console.warn('Members endpoint not available, using full Congress data for demonstration');
+      // Import full Congress data (535 members) for demonstration
+      const fullMembers = await import('../data/fullCongressMembers.json');
+      let members = fullMembers.default as any[];
       
       // Apply search filter
       if (search) {
@@ -207,7 +207,7 @@ export const apiService = {
       // Apply pagination
       const start = (page - 1) * limit;
       const end = start + limit;
-      return members.slice(start, end);
+      return members.slice(start, end) as Member[];
     }
   },
 

@@ -20,24 +20,40 @@ import {
   CheckCircle as CheckCircleIcon,
 } from '@mui/icons-material';
 import { apiService, DatabaseStats, ApiStatus } from '../services/api';
+import { fullCongressApiService } from '../services/fullCongressApi';
 import { format } from 'date-fns';
 
 const Dashboard: React.FC = () => {
-  const [stats, setStats] = useState<DatabaseStats | null>(null);
+  const [stats, setStats] = useState<any>(null);
   const [status, setStatus] = useState<ApiStatus | null>(null);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date>(new Date());
+  const [useFullData, setUseFullData] = useState(false);
 
   const fetchData = async () => {
     try {
       setLoading(true);
       setError(null);
-      const [statsData, statusData] = await Promise.all([
-        apiService.getDatabaseStats(),
-        apiService.getStatus(),
-      ]);
+      
+      let statsData;
+      let statusData;
+      
+      if (useFullData) {
+        // Use the full Congress data for demonstration
+        [statsData, statusData] = await Promise.all([
+          fullCongressApiService.getDetailedStats(),
+          apiService.getStatus().catch(() => null), // Fallback if API fails
+        ]);
+      } else {
+        // Use production API data
+        [statsData, statusData] = await Promise.all([
+          apiService.getDatabaseStats(),
+          apiService.getStatus(),
+        ]);
+      }
+      
       setStats(statsData);
       setStatus(statusData);
       setLastUpdated(new Date());
@@ -66,7 +82,7 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [useFullData]);
 
   if (loading) {
     return (

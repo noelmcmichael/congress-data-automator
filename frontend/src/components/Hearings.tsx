@@ -19,18 +19,32 @@ import {
 } from '@mui/icons-material';
 import { apiService, Hearing } from '../services/api';
 import { format, parseISO } from 'date-fns';
+import SearchFilter from './SearchFilter';
 
 const Hearings: React.FC = () => {
   const [hearings, setHearings] = useState<Hearing[]>([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Search and filter state
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filters, setFilters] = useState({
+    status: '',
+  });
+  const [sortBy, setSortBy] = useState('scheduled_date');
+  const [sortOrder, setSortOrder] = useState('desc');
 
   const fetchHearings = async () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await apiService.getHearings();
+      const data = await apiService.getHearings({
+        search: searchTerm || undefined,
+        status: filters.status || undefined,
+        sort_by: sortBy,
+        sort_order: sortOrder,
+      });
       setHearings(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch hearings');
@@ -66,7 +80,14 @@ const Hearings: React.FC = () => {
 
   useEffect(() => {
     fetchHearings();
-  }, []);
+  }, [searchTerm, filters, sortBy, sortOrder]);
+
+  const handleFilterChange = (filterKey: string, value: string) => {
+    setFilters(prev => ({
+      ...prev,
+      [filterKey]: value
+    }));
+  };
 
   if (loading) {
     return (
@@ -110,6 +131,33 @@ const Hearings: React.FC = () => {
           {error}
         </Alert>
       )}
+
+      <SearchFilter
+        searchPlaceholder="Search hearings by title..."
+        searchValue={searchTerm}
+        onSearchChange={setSearchTerm}
+        filters={{
+          status: {
+            label: 'Status',
+            options: [
+              { value: 'scheduled', label: 'Scheduled' },
+              { value: 'completed', label: 'Completed' },
+              { value: 'cancelled', label: 'Cancelled' },
+            ],
+            value: filters.status,
+          },
+        }}
+        onFilterChange={handleFilterChange}
+        sortOptions={[
+          { value: 'scheduled_date', label: 'Scheduled Date' },
+          { value: 'title', label: 'Title' },
+          { value: 'created_at', label: 'Created Date' },
+        ]}
+        sortValue={sortBy}
+        onSortChange={setSortBy}
+        sortOrderValue={sortOrder}
+        onSortOrderChange={setSortOrder}
+      />
 
       {hearings.length === 0 ? (
         <Alert severity="info">
