@@ -125,8 +125,8 @@ const Committees: React.FC = () => {
           chamber: {
             label: 'Chamber',
             options: [
-              { value: 'house', label: 'House' },
-              { value: 'senate', label: 'Senate' },
+              { value: 'House', label: 'House' },
+              { value: 'Senate', label: 'Senate' },
             ],
             value: filters.chamber,
           },

@@ -140,9 +140,9 @@ const Hearings: React.FC = () => {
           status: {
             label: 'Status',
             options: [
-              { value: 'scheduled', label: 'Scheduled' },
-              { value: 'completed', label: 'Completed' },
-              { value: 'cancelled', label: 'Cancelled' },
+              { value: 'Scheduled', label: 'Scheduled' },
+              { value: 'Completed', label: 'Completed' },
+              { value: 'Cancelled', label: 'Cancelled' },
             ],
             value: filters.status,
           },

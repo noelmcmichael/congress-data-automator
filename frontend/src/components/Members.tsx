@@ -129,8 +129,8 @@ const Members: React.FC = () => {
           chamber: {
             label: 'Chamber',
             options: [
-              { value: 'house', label: 'House' },
-              { value: 'senate', label: 'Senate' },
+              { value: 'House', label: 'House' },
+              { value: 'Senate', label: 'Senate' },
             ],
             value: filters.chamber,
           },
@@ -193,9 +193,9 @@ const Members: React.FC = () => {
           party: {
             label: 'Party',
             options: [
-              { value: 'D', label: 'Democrat' },
-              { value: 'R', label: 'Republican' },
-              { value: 'I', label: 'Independent' },
+              { value: 'Democratic', label: 'Democrat' },
+              { value: 'Republican', label: 'Republican' },
+              { value: 'Independent', label: 'Independent' },
             ],
             value: filters.party,
           },
