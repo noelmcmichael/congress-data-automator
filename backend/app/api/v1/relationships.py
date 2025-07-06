@@ -16,10 +16,11 @@ from ...schemas.relationships import (
     CommitteeMemberResponse,
     CommitteeHearingResponse
 )
+from ...schemas.committee import CommitteeResponse
 
 router = APIRouter()
 
-@router.get("/members/{member_id}", response_model=MemberDetailResponse)
+@router.get("/members/{member_id}/detail", response_model=MemberDetailResponse)
 async def get_member_detail(
     member_id: int,
     db: Session = Depends(get_db)
@@ -60,7 +61,7 @@ async def get_member_detail(
         }
     )
 
-@router.get("/committees/{committee_id}", response_model=CommitteeDetailResponse)
+@router.get("/committees/{committee_id}/detail", response_model=CommitteeDetailResponse)
 async def get_committee_detail(
     committee_id: int,
     db: Session = Depends(get_db)
@@ -106,7 +107,7 @@ async def get_committee_detail(
         }
     )
 
-@router.get("/hearings/{hearing_id}", response_model=HearingDetailResponse)
+@router.get("/hearings/{hearing_id}/detail", response_model=HearingDetailResponse)
 async def get_hearing_detail(
     hearing_id: int,
     db: Session = Depends(get_db)
@@ -214,7 +215,7 @@ async def get_committee_hearings(
         for hearing in hearings
     ]
 
-@router.get("/committees/{committee_id}/subcommittees", response_model=List[Committee])
+@router.get("/committees/{committee_id}/subcommittees", response_model=List[CommitteeResponse])
 async def get_committee_subcommittees(
     committee_id: int,
     db: Session = Depends(get_db)

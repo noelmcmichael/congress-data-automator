@@ -4,13 +4,13 @@ Pydantic schemas for relationship and detail endpoints.
 from datetime import datetime, date
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
-from .member import Member
-from .committee import Committee
-from .hearing import Hearing
+from .member import MemberResponse
+from .committee import CommitteeResponse
+from .hearing import HearingResponse
 
 class MemberCommitteeResponse(BaseModel):
     """Response schema for member's committee membership."""
-    committee: Committee
+    committee: CommitteeResponse
     position: Optional[str] = None
     is_current: bool = True
     start_date: Optional[datetime] = None
@@ -21,7 +21,7 @@ class MemberCommitteeResponse(BaseModel):
 
 class CommitteeMemberResponse(BaseModel):
     """Response schema for committee's member."""
-    member: Member
+    member: MemberResponse
     position: Optional[str] = None
     is_current: bool = True
     start_date: Optional[datetime] = None
@@ -32,7 +32,7 @@ class CommitteeMemberResponse(BaseModel):
 
 class CommitteeHearingResponse(BaseModel):
     """Response schema for committee's hearing."""
-    hearing: Hearing
+    hearing: HearingResponse
     witness_count: int = 0
     document_count: int = 0
 
@@ -41,9 +41,9 @@ class CommitteeHearingResponse(BaseModel):
 
 class MemberDetailResponse(BaseModel):
     """Detailed response schema for a single member."""
-    member: Member
+    member: MemberResponse
     committee_memberships: List[MemberCommitteeResponse] = []
-    recent_hearings: List[Hearing] = []
+    recent_hearings: List[HearingResponse] = []
     statistics: Dict[str, Any] = Field(default_factory=dict)
 
     class Config:
@@ -51,10 +51,10 @@ class MemberDetailResponse(BaseModel):
 
 class CommitteeDetailResponse(BaseModel):
     """Detailed response schema for a single committee."""
-    committee: Committee
+    committee: CommitteeResponse
     memberships: List[CommitteeMemberResponse] = []
-    subcommittees: List[Committee] = []
-    recent_hearings: List[Hearing] = []
+    subcommittees: List[CommitteeResponse] = []
+    recent_hearings: List[HearingResponse] = []
     statistics: Dict[str, Any] = Field(default_factory=dict)
 
     class Config:
@@ -62,8 +62,8 @@ class CommitteeDetailResponse(BaseModel):
 
 class HearingDetailResponse(BaseModel):
     """Detailed response schema for a single hearing."""
-    hearing: Hearing
-    committee: Optional[Committee] = None
+    hearing: HearingResponse
+    committee: Optional[CommitteeResponse] = None
     witnesses: List[Dict[str, Any]] = []  # Will be Witness objects when available
     documents: List[Dict[str, Any]] = []  # Will be HearingDocument objects when available
     statistics: Dict[str, Any] = Field(default_factory=dict)
