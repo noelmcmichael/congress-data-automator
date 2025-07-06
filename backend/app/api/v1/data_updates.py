@@ -253,6 +253,125 @@ async def database_stats(db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail="Failed to get database statistics")
 
 
+@router.get("/members")
+async def get_members(
+    page: int = 1,
+    limit: int = 50,
+    db: Session = Depends(get_db)
+):
+    """Get congressional members using same DB pattern as stats endpoint."""
+    try:
+        from ...models import Member
+        
+        offset = (page - 1) * limit
+        members = db.query(Member).offset(offset).limit(limit).all()
+        
+        return [
+            {
+                "id": m.id,
+                "bioguide_id": m.bioguide_id,
+                "first_name": m.first_name,
+                "last_name": m.last_name,
+                "middle_name": m.middle_name,
+                "nickname": m.nickname,
+                "party": m.party,
+                "chamber": m.chamber,
+                "state": m.state,
+                "district": m.district,
+                "is_current": m.is_current,
+                "official_photo_url": m.official_photo_url,
+                "created_at": m.created_at.isoformat() if m.created_at else None,
+                "updated_at": m.updated_at.isoformat() if m.updated_at else None,
+                "last_scraped_at": m.last_scraped_at.isoformat() if m.last_scraped_at else None,
+            }
+            for m in members
+        ]
+        
+    except Exception as e:
+        logger.error("Error getting members", error=str(e))
+        raise HTTPException(status_code=500, detail="Failed to get members")
+
+
+@router.get("/committees")
+async def get_committees(
+    page: int = 1,
+    limit: int = 50,
+    db: Session = Depends(get_db)
+):
+    """Get congressional committees using same DB pattern as stats endpoint."""
+    try:
+        from ...models import Committee
+        
+        offset = (page - 1) * limit
+        committees = db.query(Committee).offset(offset).limit(limit).all()
+        
+        return [
+            {
+                "id": c.id,
+                "name": c.name,
+                "chamber": c.chamber,
+                "committee_code": c.committee_code,
+                "congress_gov_id": c.congress_gov_id,
+                "is_active": c.is_active,
+                "is_subcommittee": c.is_subcommittee,
+                "parent_committee_id": c.parent_committee_id,
+                "website_url": c.website_url,
+                "created_at": c.created_at.isoformat() if c.created_at else None,
+                "updated_at": c.updated_at.isoformat() if c.updated_at else None,
+            }
+            for c in committees
+        ]
+        
+    except Exception as e:
+        logger.error("Error getting committees", error=str(e))
+        raise HTTPException(status_code=500, detail="Failed to get committees")
+
+
+@router.get("/hearings")
+async def get_hearings(
+    page: int = 1,
+    limit: int = 50,
+    db: Session = Depends(get_db)
+):
+    """Get congressional hearings using same DB pattern as stats endpoint."""
+    try:
+        from ...models import Hearing
+        
+        offset = (page - 1) * limit
+        hearings = db.query(Hearing).offset(offset).limit(limit).all()
+        
+        return [
+            {
+                "id": h.id,
+                "congress_gov_id": h.congress_gov_id,
+                "title": h.title,
+                "description": h.description,
+                "committee_id": h.committee_id,
+                "scheduled_date": h.scheduled_date.isoformat() if h.scheduled_date else None,
+                "start_time": h.start_time.isoformat() if h.start_time else None,
+                "end_time": h.end_time.isoformat() if h.end_time else None,
+                "location": h.location,
+                "room": h.room,
+                "hearing_type": h.hearing_type,
+                "status": h.status,
+                "transcript_url": h.transcript_url,
+                "video_url": h.video_url,
+                "webcast_url": h.webcast_url,
+                "congress_session": h.congress_session,
+                "congress_number": h.congress_number,
+                "scraped_video_urls": h.scraped_video_urls,
+                "created_at": h.created_at.isoformat() if h.created_at else None,
+                "updated_at": h.updated_at.isoformat() if h.updated_at else None,
+                "last_scraped_at": h.last_scraped_at.isoformat() if h.last_scraped_at else None,
+            }
+            for h in hearings
+        ]
+        
+    except Exception as e:
+        logger.error("Error getting hearings", error=str(e))
+        raise HTTPException(status_code=500, detail="Failed to get hearings")
+
+
 # Data retrieval endpoints
 @router.get("/members")
 async def get_members(
