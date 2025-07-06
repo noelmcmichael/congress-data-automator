@@ -51,8 +51,8 @@ app.add_middleware(
 # Import models to ensure they're registered with Base
 from .models import Member, Committee, CommitteeMembership, Hearing, Witness, HearingDocument
 
-# Create database tables
-Base.metadata.create_all(bind=engine)
+# Create database tables (commented out for deployment - tables already exist)
+# Base.metadata.create_all(bind=engine)
 
 # Initialize API client
 congress_api = CongressApiClient()
