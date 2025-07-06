@@ -24,9 +24,10 @@ router = APIRouter()
 async def debug_test():
     """Debug test endpoint to verify we're hitting the right service"""
     return {
-        "message": "This is the debug-filters version with logging",
-        "timestamp": "2025-07-06T15:20:00Z",
-        "version": "debug-filters"
+        "message": "This is the FIXED version with raw SQL filtering",
+        "timestamp": "2025-07-06T15:30:00Z",
+        "version": "filter-fix-v2",
+        "fix": "Raw SQL implementation replacing broken ORM filtering"
     }
 
 @router.get("/debug-raw-sql")
