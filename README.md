@@ -520,4 +520,45 @@ See detailed debug plan in: [FILTER_DEBUG_PLAN.md](FILTER_DEBUG_PLAN.md)
 
 ---
 
+## 🚨 CURRENT CRITICAL DEBUGGING SESSION (January 6, 2025)
+
+### **Problem: API Filter Functionality Completely Broken**
+- **Severity**: HIGH - All search/filter parameters ignored in production
+- **Impact**: `?party=Republican` returns Democrats, `?state=CA` returns all states
+- **Scope**: All endpoints affected (`/members`, `/committees`, `/hearings`)
+
+### **Root Cause Identified ✅**
+**Duplicate API endpoints in codebase causing routing conflicts:**
+- `data_updates.py`: Simple endpoints without filtering (included FIRST)
+- `data_retrieval.py`: Advanced endpoints with filtering (included SECOND)
+- **FastAPI behavior**: First-included endpoint wins, second is ignored
+
+### **Fix Implemented ✅**
+- Removed duplicate endpoints from `data_updates.py`
+- Preserved advanced filtering endpoints in `data_retrieval.py`
+- Deployed fix to production: `congressional-data-api-v2-00016-k5g`
+
+### **Current Status**
+- **Fix deployed**: ✅ Duplicate endpoints removed
+- **Testing needed**: 🔄 Verify filters work in production
+- **Debug tools**: Available for validation
+
+### **Evidence of Working Solution**
+- **Raw SQL test**: `?party=Republican` returns 276 members ✅
+- **Fixed endpoint**: `/members-fixed?party=Republican` works correctly ✅
+- **Main endpoint**: `/members?party=Republican` still under investigation
+
+### **Next Actions**
+1. Verify the main `/members` endpoint uses the corrected code
+2. Test all filter combinations work correctly
+3. Validate performance and error handling
+4. Update frontend to use fully working API
+
+### **Debug Resources**
+- **Test script**: `test_filter_issue.py` - Demonstrates the problem
+- **Debug plan**: `CRITICAL_FILTER_DEBUG_PLAN.md` - Complete analysis
+- **Production tools**: Debug endpoints for real-time validation
+
+---
+
 🤖 Generated with [Memex](https://memex.tech)

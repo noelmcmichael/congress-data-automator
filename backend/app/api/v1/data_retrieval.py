@@ -24,11 +24,32 @@ router = APIRouter()
 async def debug_test():
     """Debug test endpoint to verify we're hitting the right service"""
     return {
-        "message": "This is the FIXED version with raw SQL filtering",
-        "timestamp": "2025-07-06T15:45:00Z",
-        "version": "filter-fix-v3",
-        "fix": "Raw SQL implementation replacing broken ORM filtering",
-        "deployment": "Testing if new code is deployed"
+        "message": "FINAL DEPLOYMENT - Duplicate endpoints removed",
+        "timestamp": "2025-07-06T16:00:00Z",
+        "version": "filter-fix-final",
+        "fix": "Removed duplicate endpoints from data_updates.py",
+        "deployment": "Should now use data_retrieval.py endpoints with filtering"
+    }
+
+@router.get("/test-members-endpoint")
+async def test_members_endpoint(
+    party: Optional[str] = Query(None, description="Filter by party"),
+    db: Session = Depends(get_db)
+):
+    """
+    Test endpoint to verify if the get_members function logic is accessible
+    """
+    print(f"🎯 TEST ENDPOINT: test_members_endpoint called with party={party}")
+    logger.error(f"🎯 TEST ENDPOINT: test_members_endpoint called with party={party}")
+    
+    # Call the exact same function that should be called by /members
+    result = await get_members(party=party, db=db)
+    
+    return {
+        "message": "This is calling the SAME get_members function",
+        "party_filter": party,
+        "result_count": len(result),
+        "first_member": result[0].dict() if result else None
     }
 
 @router.get("/debug-raw-sql")
