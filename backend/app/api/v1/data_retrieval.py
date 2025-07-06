@@ -25,9 +25,10 @@ async def debug_test():
     """Debug test endpoint to verify we're hitting the right service"""
     return {
         "message": "This is the FIXED version with raw SQL filtering",
-        "timestamp": "2025-07-06T15:30:00Z",
-        "version": "filter-fix-v2",
-        "fix": "Raw SQL implementation replacing broken ORM filtering"
+        "timestamp": "2025-07-06T15:45:00Z",
+        "version": "filter-fix-v3",
+        "fix": "Raw SQL implementation replacing broken ORM filtering",
+        "deployment": "Testing if new code is deployed"
     }
 
 @router.get("/debug-raw-sql")
@@ -82,6 +83,59 @@ async def debug_raw_sql(
             "message": "Error executing raw SQL"
         }
 
+@router.get("/members-test")
+async def get_members_test():
+    """Test endpoint to verify the new code is running"""
+    logger.info("DEBUG: get_members_test called - NEW CODE IS RUNNING!")
+    print("DEBUG: get_members_test called - NEW CODE IS RUNNING!")
+    return {
+        "message": "NEW CODE IS RUNNING - Raw SQL implementation",
+        "timestamp": "2025-07-06T15:45:00Z",
+        "status": "TESTING DEPLOYMENT"
+    }
+
+@router.get("/members-fixed")
+async def get_members_fixed(
+    party: Optional[str] = Query(None, description="Filter by party"),
+    db: Session = Depends(get_db)
+):
+    """
+    NEW ENDPOINT: Test the exact same raw SQL logic as in get_members
+    This will help us determine if the issue is with routing or logic
+    """
+    print(f"🚨 FIXED ENDPOINT: get_members_fixed called with party={party}")
+    logger.error(f"🚨 FIXED ENDPOINT: get_members_fixed called with party={party}")
+    
+    from sqlalchemy import text
+    
+    if party:
+        sql = text("SELECT id, first_name, last_name, party, chamber, state FROM members WHERE party = :party LIMIT 5")
+        result = db.execute(sql, {"party": party}).fetchall()
+        
+        members_data = []
+        for row in result:
+            members_data.append({
+                "id": row[0],
+                "first_name": row[1],
+                "last_name": row[2],
+                "party": row[3],
+                "chamber": row[4],
+                "state": row[5]
+            })
+        
+        return {
+            "message": f"Fixed endpoint with party filter: {party}",
+            "count": len(members_data),
+            "members": members_data
+        }
+    else:
+        sql = text("SELECT COUNT(*) FROM members")
+        total = db.execute(sql).scalar()
+        return {
+            "message": "Fixed endpoint without filter",
+            "total_members": total
+        }
+
 @router.get("/members", response_model=List[MemberResponse])
 async def get_members(
     page: int = Query(1, ge=1, description="Page number"),
@@ -97,6 +151,10 @@ async def get_members(
     """
     Retrieve congressional members with search, filtering, and sorting
     """
+    # CRITICAL DEBUG - MUST APPEAR IN LOGS
+    print("🚨 CRITICAL DEBUG: get_members function called - NEW VERSION!")
+    logger.error(f"🚨 CRITICAL DEBUG: get_members called with party={party}")
+    
     # Debug logging to verify parameters are received
     logger.info(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
     print(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
