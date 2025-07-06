@@ -1,0 +1,372 @@
+[
+  {
+    "member_id": 534,
+    "committee_id": 18,
+    "position": "Chair"
+  },
+  {
+    "member_id": 117,
+    "committee_id": 18,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 536,
+    "committee_id": 18,
+    "position": "Member"
+  },
+  {
+    "member_id": 245,
+    "committee_id": 18,
+    "position": "Member"
+  },
+  {
+    "member_id": 531,
+    "committee_id": 18,
+    "position": "Member"
+  },
+  {
+    "member_id": 130,
+    "committee_id": 38,
+    "position": "Chair"
+  },
+  {
+    "member_id": 19,
+    "committee_id": 38,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 454,
+    "committee_id": 38,
+    "position": "Member"
+  },
+  {
+    "member_id": 355,
+    "committee_id": 38,
+    "position": "Member"
+  },
+  {
+    "member_id": 535,
+    "committee_id": 38,
+    "position": "Member"
+  },
+  {
+    "member_id": 155,
+    "committee_id": 6,
+    "position": "Chair"
+  },
+  {
+    "member_id": 290,
+    "committee_id": 6,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 402,
+    "committee_id": 6,
+    "position": "Member"
+  },
+  {
+    "member_id": 216,
+    "committee_id": 26,
+    "position": "Chair"
+  },
+  {
+    "member_id": 63,
+    "committee_id": 26,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 132,
+    "committee_id": 26,
+    "position": "Member"
+  },
+  {
+    "member_id": 206,
+    "committee_id": 26,
+    "position": "Member"
+  },
+  {
+    "member_id": 537,
+    "committee_id": 26,
+    "position": "Member"
+  },
+  {
+    "member_id": 448,
+    "committee_id": 26,
+    "position": "Member"
+  },
+  {
+    "member_id": 206,
+    "committee_id": 10,
+    "position": "Chair"
+  },
+  {
+    "member_id": 161,
+    "committee_id": 10,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 63,
+    "committee_id": 10,
+    "position": "Member"
+  },
+  {
+    "member_id": 62,
+    "committee_id": 10,
+    "position": "Member"
+  },
+  {
+    "member_id": 95,
+    "committee_id": 10,
+    "position": "Member"
+  },
+  {
+    "member_id": 449,
+    "committee_id": 10,
+    "position": "Member"
+  },
+  {
+    "member_id": 62,
+    "committee_id": 30,
+    "position": "Chair"
+  },
+  {
+    "member_id": 421,
+    "committee_id": 30,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 536,
+    "committee_id": 30,
+    "position": "Member"
+  },
+  {
+    "member_id": 532,
+    "committee_id": 30,
+    "position": "Member"
+  },
+  {
+    "member_id": 62,
+    "committee_id": 25,
+    "position": "Chair"
+  },
+  {
+    "member_id": 117,
+    "committee_id": 25,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 290,
+    "committee_id": 25,
+    "position": "Member"
+  },
+  {
+    "member_id": 355,
+    "committee_id": 25,
+    "position": "Member"
+  },
+  {
+    "member_id": 245,
+    "committee_id": 5,
+    "position": "Chair"
+  },
+  {
+    "member_id": 120,
+    "committee_id": 5,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 442,
+    "committee_id": 5,
+    "position": "Member"
+  },
+  {
+    "member_id": 449,
+    "committee_id": 5,
+    "position": "Member"
+  },
+  {
+    "member_id": 367,
+    "committee_id": 5,
+    "position": "Member"
+  },
+  {
+    "member_id": 448,
+    "committee_id": 5,
+    "position": "Member"
+  },
+  {
+    "member_id": 537,
+    "committee_id": 29,
+    "position": "Chair"
+  },
+  {
+    "member_id": 117,
+    "committee_id": 29,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 161,
+    "committee_id": 29,
+    "position": "Member"
+  },
+  {
+    "member_id": 19,
+    "committee_id": 9,
+    "position": "Chair"
+  },
+  {
+    "member_id": 402,
+    "committee_id": 9,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 117,
+    "committee_id": 9,
+    "position": "Member"
+  },
+  {
+    "member_id": 291,
+    "committee_id": 9,
+    "position": "Member"
+  },
+  {
+    "member_id": 367,
+    "committee_id": 9,
+    "position": "Member"
+  },
+  {
+    "member_id": 191,
+    "committee_id": 9,
+    "position": "Member"
+  },
+  {
+    "member_id": 109,
+    "committee_id": 20,
+    "position": "Chair"
+  },
+  {
+    "member_id": 206,
+    "committee_id": 20,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 284,
+    "committee_id": 20,
+    "position": "Member"
+  },
+  {
+    "member_id": 327,
+    "committee_id": 20,
+    "position": "Member"
+  },
+  {
+    "member_id": 208,
+    "committee_id": 20,
+    "position": "Member"
+  },
+  {
+    "member_id": 252,
+    "committee_id": 40,
+    "position": "Chair"
+  },
+  {
+    "member_id": 63,
+    "committee_id": 40,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 535,
+    "committee_id": 40,
+    "position": "Member"
+  },
+  {
+    "member_id": 440,
+    "committee_id": 40,
+    "position": "Member"
+  },
+  {
+    "member_id": 414,
+    "committee_id": 40,
+    "position": "Member"
+  },
+  {
+    "member_id": 63,
+    "committee_id": 21,
+    "position": "Chair"
+  },
+  {
+    "member_id": 367,
+    "committee_id": 21,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 252,
+    "committee_id": 21,
+    "position": "Member"
+  },
+  {
+    "member_id": 535,
+    "committee_id": 21,
+    "position": "Member"
+  },
+  {
+    "member_id": 130,
+    "committee_id": 21,
+    "position": "Member"
+  },
+  {
+    "member_id": 449,
+    "committee_id": 21,
+    "position": "Member"
+  },
+  {
+    "member_id": 284,
+    "committee_id": 21,
+    "position": "Member"
+  },
+  {
+    "member_id": 216,
+    "committee_id": 1,
+    "position": "Chair"
+  },
+  {
+    "member_id": 221,
+    "committee_id": 1,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 206,
+    "committee_id": 1,
+    "position": "Member"
+  },
+  {
+    "member_id": 248,
+    "committee_id": 1,
+    "position": "Member"
+  },
+  {
+    "member_id": 111,
+    "committee_id": 1,
+    "position": "Member"
+  },
+  {
+    "member_id": 252,
+    "committee_id": 2,
+    "position": "Chair"
+  },
+  {
+    "member_id": 449,
+    "committee_id": 2,
+    "position": "Ranking Member"
+  },
+  {
+    "member_id": 538,
+    "committee_id": 2,
+    "position": "Member"
+  },
+  {
+    "member_id": 155,
+    "committee_id": 2,
+    "position": "Member"
+  }
+]
