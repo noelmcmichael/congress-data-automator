@@ -31,6 +31,9 @@ async def get_members(
     """
     Retrieve congressional members with search, filtering, and sorting
     """
+    # Debug logging to verify parameters are received
+    print(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
+    
     query = db.query(Member)
     
     # Apply search
@@ -45,10 +48,13 @@ async def get_members(
     
     # Apply filters (exact match for better accuracy)
     if chamber:
+        print(f"DEBUG: Applying chamber filter: {chamber}")
         query = query.filter(Member.chamber == chamber)
     if state:
+        print(f"DEBUG: Applying state filter: {state}")
         query = query.filter(Member.state == state)
     if party:
+        print(f"DEBUG: Applying party filter: {party}")
         query = query.filter(Member.party == party)
     
     # Apply sorting
@@ -61,6 +67,10 @@ async def get_members(
     # Apply pagination
     offset = (page - 1) * limit
     members = query.offset(offset).limit(limit).all()
+    
+    print(f"DEBUG: Returning {len(members)} members")
+    if members:
+        print(f"DEBUG: First member: {members[0].first_name} {members[0].last_name} ({members[0].party}, {members[0].chamber}, {members[0].state})")
     
     return [MemberResponse.from_orm(member) for member in members]
 
