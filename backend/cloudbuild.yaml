@@ -4,9 +4,9 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/congressional-db-service/congress-api:$COMMIT_SHA'
+      - 'gcr.io/chefgavin/congress-api:$COMMIT_SHA'
       - '-t'
-      - 'gcr.io/congressional-db-service/congress-api:latest'
+      - 'gcr.io/chefgavin/congress-api:latest'
       - '.'
     dir: 'backend'
 
@@ -14,12 +14,12 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'gcr.io/congressional-db-service/congress-api:$COMMIT_SHA'
+      - 'gcr.io/chefgavin/congress-api:$COMMIT_SHA'
 
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'gcr.io/congressional-db-service/congress-api:latest'
+      - 'gcr.io/chefgavin/congress-api:latest'
 
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -27,9 +27,9 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'congress-api'
+      - 'congressional-data-api'
       - '--image'
-      - 'gcr.io/congressional-db-service/congress-api:$COMMIT_SHA'
+      - 'gcr.io/chefgavin/congress-api:$COMMIT_SHA'
       - '--region'
       - 'us-central1'
       - '--platform'
@@ -48,11 +48,11 @@ steps:
       - '--set-env-vars'
       - 'DEBUG=false'
       - '--set-env-vars'
-      - 'GCP_PROJECT_ID=congressional-db-service'
+      - 'GCP_PROJECT_ID=chefgavin'
 
 images:
-  - 'gcr.io/congressional-db-service/congress-api:$COMMIT_SHA'
-  - 'gcr.io/congressional-db-service/congress-api:latest'
+  - 'gcr.io/chefgavin/congress-api:$COMMIT_SHA'
+  - 'gcr.io/chefgavin/congress-api:latest'
 
 options:
   logging: CLOUD_LOGGING_ONLY
