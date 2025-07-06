@@ -3,7 +3,7 @@
  */
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://congressional-data-api-1066017671167.us-central1.run.app';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://congressional-data-api-v2-1066017671167.us-central1.run.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
