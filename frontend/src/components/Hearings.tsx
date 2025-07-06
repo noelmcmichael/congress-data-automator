@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Typography,
@@ -22,6 +23,7 @@ import { format, parseISO } from 'date-fns';
 import SearchFilter from './SearchFilter';
 
 const Hearings: React.FC = () => {
+  const navigate = useNavigate();
   const [hearings, setHearings] = useState<Hearing[]>([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
@@ -168,7 +170,18 @@ const Hearings: React.FC = () => {
         <Grid container spacing={3}>
           {hearings.map((hearing) => (
             <Grid item xs={12} sm={6} md={4} key={hearing.id}>
-              <Card sx={{ height: '100%' }}>
+              <Card 
+                sx={{ 
+                  height: '100%', 
+                  cursor: 'pointer', 
+                  '&:hover': { 
+                    elevation: 4,
+                    transform: 'translateY(-2px)',
+                    transition: 'all 0.2s ease-in-out'
+                  } 
+                }}
+                onClick={() => navigate(`/hearings/${hearing.id}`)}
+              >
                 <CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <Typography variant="h6" component="div" sx={{ mb: 2 }}>
                     {hearing.title || 'Untitled Hearing'}

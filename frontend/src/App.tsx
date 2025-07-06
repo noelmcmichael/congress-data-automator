@@ -9,6 +9,9 @@ import Members from './components/Members';
 import Committees from './components/Committees';
 import Hearings from './components/Hearings';
 import Settings from './components/Settings';
+import MemberDetail from './components/MemberDetail';
+import CommitteeDetail from './components/CommitteeDetail';
+import HearingDetail from './components/HearingDetail';
 import './App.css';
 
 const theme = createTheme({
@@ -44,8 +47,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/members" element={<Members />} />
+              <Route path="/members/:id" element={<MemberDetail />} />
               <Route path="/committees" element={<Committees />} />
+              <Route path="/committees/:id" element={<CommitteeDetail />} />
               <Route path="/hearings" element={<Hearings />} />
+              <Route path="/hearings/:id" element={<HearingDetail />} />
               <Route path="/settings" element={<Settings />} />
             </Routes>
           </Box>

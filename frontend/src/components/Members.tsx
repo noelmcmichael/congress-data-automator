@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Typography,
@@ -16,6 +17,7 @@ import { apiService, Member } from '../services/api';
 import SearchFilter from './SearchFilter';
 
 const Members: React.FC = () => {
+  const navigate = useNavigate();
   const [members, setMembers] = useState<Member[]>([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
@@ -222,7 +224,17 @@ const Members: React.FC = () => {
         <Grid container spacing={3}>
           {members.map((member) => (
             <Grid item xs={12} sm={6} md={4} key={member.id}>
-              <Card>
+              <Card 
+                sx={{ 
+                  cursor: 'pointer', 
+                  '&:hover': { 
+                    elevation: 4,
+                    transform: 'translateY(-2px)',
+                    transition: 'all 0.2s ease-in-out'
+                  } 
+                }}
+                onClick={() => navigate(`/members/${member.id}`)}
+              >
                 <CardContent>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
                     <Avatar
