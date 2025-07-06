@@ -100,52 +100,97 @@ async def get_members(
     logger.info(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
     print(f"DEBUG: get_members called with params: page={page}, limit={limit}, search={search}, chamber={chamber}, state={state}, party={party}, sort_by={sort_by}, sort_order={sort_order}")
     
-    query = db.query(Member)
+    # TEMPORARY FIX: Use raw SQL instead of ORM since ORM filtering is broken
+    from sqlalchemy import text
     
-    # Apply search
+    # Build WHERE clause
+    where_conditions = []
+    params = {}
+    
     if search:
         search_term = f"%{search}%"
-        query = query.filter(
-            (Member.first_name.ilike(search_term)) |
-            (Member.last_name.ilike(search_term)) |
-            (Member.middle_name.ilike(search_term)) |
-            (Member.nickname.ilike(search_term))
-        )
+        where_conditions.append("(first_name ILIKE :search OR last_name ILIKE :search OR middle_name ILIKE :search OR nickname ILIKE :search)")
+        params["search"] = search_term
     
-    # Apply filters (exact match for better accuracy)
     if chamber:
-        logger.info(f"DEBUG: Applying chamber filter: {chamber}")
-        print(f"DEBUG: Applying chamber filter: {chamber}")
-        query = query.filter(Member.chamber == chamber)
+        where_conditions.append("chamber = :chamber")
+        params["chamber"] = chamber
+    
     if state:
-        logger.info(f"DEBUG: Applying state filter: {state}")
-        print(f"DEBUG: Applying state filter: {state}")
-        query = query.filter(Member.state == state)
+        where_conditions.append("state = :state")
+        params["state"] = state
+    
     if party:
-        logger.info(f"DEBUG: Applying party filter: {party}")
-        print(f"DEBUG: Applying party filter: {party}")
-        query = query.filter(Member.party == party)
+        where_conditions.append("party = :party")
+        params["party"] = party
     
-    # Apply sorting
-    sort_column = getattr(Member, sort_by, Member.last_name)
+    # Build ORDER BY clause
+    order_by = "last_name"
+    if sort_by in ["first_name", "last_name", "state", "party", "chamber"]:
+        order_by = sort_by
+    
     if sort_order.lower() == "desc":
-        query = query.order_by(desc(sort_column))
+        order_by += " DESC"
     else:
-        query = query.order_by(sort_column)
+        order_by += " ASC"
     
-    # Apply pagination
+    # Build complete SQL
+    where_clause = " AND ".join(where_conditions) if where_conditions else "1=1"
     offset = (page - 1) * limit
     
-    # Debug: Print the actual SQL query being executed
-    from sqlalchemy.dialects import postgresql
-    compiled_query = query.offset(offset).limit(limit).statement.compile(dialect=postgresql.dialect(), compile_kwargs={"literal_binds": True})
-    logger.info(f"DEBUG: Executing SQL query: {compiled_query}")
-    print(f"DEBUG: Executing SQL query: {compiled_query}")
+    sql = text(f"""
+        SELECT id, bioguide_id, congress_gov_id, first_name, last_name, middle_name, 
+               suffix, nickname, party, chamber, state, district, term_start, term_end, 
+               is_current, phone, email, website, birth_date, birth_state, birth_city, 
+               official_photo_url, created_at, updated_at, last_scraped_at
+        FROM members 
+        WHERE {where_clause}
+        ORDER BY {order_by}
+        LIMIT :limit OFFSET :offset
+    """)
     
-    members = query.offset(offset).limit(limit).all()
+    params.update({"limit": limit, "offset": offset})
     
-    logger.info(f"DEBUG: Returning {len(members)} members")
-    print(f"DEBUG: Returning {len(members)} members")
+    logger.info(f"DEBUG: Executing raw SQL with params: {params}")
+    print(f"DEBUG: Executing raw SQL with params: {params}")
+    
+    # Execute the query
+    result = db.execute(sql, params).fetchall()
+    
+    logger.info(f"DEBUG: Raw SQL returned {len(result)} members")
+    print(f"DEBUG: Raw SQL returned {len(result)} members")
+    
+    # Convert to Member objects
+    members = []
+    for row in result:
+        member = Member()
+        member.id = row[0]
+        member.bioguide_id = row[1]
+        member.congress_gov_id = row[2]
+        member.first_name = row[3]
+        member.last_name = row[4]
+        member.middle_name = row[5]
+        member.suffix = row[6]
+        member.nickname = row[7]
+        member.party = row[8]
+        member.chamber = row[9]
+        member.state = row[10]
+        member.district = row[11]
+        member.term_start = row[12]
+        member.term_end = row[13]
+        member.is_current = row[14]
+        member.phone = row[15]
+        member.email = row[16]
+        member.website = row[17]
+        member.birth_date = row[18]
+        member.birth_state = row[19]
+        member.birth_city = row[20]
+        member.official_photo_url = row[21]
+        member.created_at = row[22]
+        member.updated_at = row[23]
+        member.last_scraped_at = row[24]
+        members.append(member)
+    
     if members:
         logger.info(f"DEBUG: First member: {members[0].first_name} {members[0].last_name} ({members[0].party}, {members[0].chamber}, {members[0].state})")
         print(f"DEBUG: First member: {members[0].first_name} {members[0].last_name} ({members[0].party}, {members[0].chamber}, {members[0].state})")
