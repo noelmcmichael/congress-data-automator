@@ -253,6 +253,88 @@ async def database_stats(db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail="Failed to get database statistics")
 
 
+@router.post("/populate/test-relationships")
+async def populate_test_relationships(
+    db: Session = Depends(get_db)
+):
+    """
+    Populate test relationship data for demonstration purposes.
+    
+    Args:
+        db: Database session
+        
+    Returns:
+        Population results
+    """
+    try:
+        import random
+        from datetime import datetime
+        from ...models.member import Member
+        from ...models.committee import Committee, CommitteeMembership
+        
+        # Get some members and committees
+        members = db.query(Member).limit(20).all()
+        committees = db.query(Committee).limit(10).all()
+        
+        if not members or not committees:
+            return {
+                "error": "No members or committees found in database",
+                "members_count": len(members),
+                "committees_count": len(committees)
+            }
+        
+        # Create test relationships
+        relationships_created = 0
+        
+        for i, member in enumerate(members):
+            # Assign each member to 1-3 random committees
+            num_committees = random.randint(1, min(3, len(committees)))
+            assigned_committees = random.sample(committees, num_committees)
+            
+            for j, committee in enumerate(assigned_committees):
+                # Check if relationship already exists
+                existing = db.query(CommitteeMembership).filter(
+                    CommitteeMembership.member_id == member.id,
+                    CommitteeMembership.committee_id == committee.id
+                ).first()
+                
+                if not existing:
+                    # Determine position
+                    if j == 0 and i < 5:  # First 5 members get chair positions
+                        position = "Chair"
+                    elif j == 0 and i < 10:  # Next 5 get ranking member
+                        position = "Ranking Member"
+                    else:
+                        position = "Member"
+                    
+                    # Create membership
+                    membership = CommitteeMembership(
+                        member_id=member.id,
+                        committee_id=committee.id,
+                        position=position,
+                        is_current=True,
+                        start_date=datetime.now()
+                    )
+                    
+                    db.add(membership)
+                    relationships_created += 1
+        
+        # Commit changes
+        db.commit()
+        
+        return {
+            "message": "Test relationship data created successfully",
+            "relationships_created": relationships_created,
+            "members_processed": len(members),
+            "committees_available": len(committees),
+            "status": "completed"
+        }
+        
+    except Exception as e:
+        logger.error("Error creating test relationships", error=str(e))
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Failed to create test relationships: {str(e)}")
+
 @router.post("/populate/relationships")
 async def populate_relationships(
     background_tasks: BackgroundTasks,
