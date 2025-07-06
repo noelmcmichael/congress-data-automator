@@ -135,22 +135,23 @@ export const apiService = {
   },
 
   async updateAllData(forceRefresh = false) {
-    const response = await api.post('/api/v1/update/all', { force_refresh: forceRefresh });
+    const response = await api.post('/api/v1/update/full', { force_refresh: forceRefresh });
     return response.data;
   },
 
-  // Data retrieval with fallback to mock data
+  // Data retrieval with fallback to real data from production database
   async getMembers(page = 1, limit = 50): Promise<Member[]> {
     try {
       const response = await api.get(`/api/v1/members?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Members endpoint not available, using mock data');
-      // Import mock data dynamically
-      const { mockMembers } = await import('./mockData');
+      console.warn('Members endpoint not available, using real data from production');
+      // Import real data from production database
+      const realMembers = await import('../data/realMembers.json');
+      const members = realMembers.default as any as Member[];
       const start = (page - 1) * limit;
       const end = start + limit;
-      return mockMembers.slice(start, end);
+      return members.slice(start, end);
     }
   },
 
@@ -159,12 +160,13 @@ export const apiService = {
       const response = await api.get(`/api/v1/committees?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Committees endpoint not available, using mock data');
-      // Import mock data dynamically
-      const { mockCommittees } = await import('./mockData');
+      console.warn('Committees endpoint not available, using real data from production');
+      // Import real data from production database
+      const realCommittees = await import('../data/realCommittees.json');
+      const committees = realCommittees.default as any as Committee[];
       const start = (page - 1) * limit;
       const end = start + limit;
-      return mockCommittees.slice(start, end);
+      return committees.slice(start, end);
     }
   },
 
@@ -173,12 +175,13 @@ export const apiService = {
       const response = await api.get(`/api/v1/hearings?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
-      console.warn('Hearings endpoint not available, using mock data');
-      // Import mock data dynamically
-      const { mockHearings } = await import('./mockData');
+      console.warn('Hearings endpoint not available, using real data from production');
+      // Import real data from production database
+      const realHearings = await import('../data/realHearings.json');
+      const hearings = realHearings.default as any as Hearing[];
       const start = (page - 1) * limit;
       const end = start + limit;
-      return mockHearings.slice(start, end);
+      return hearings.slice(start, end);
     }
   },
 
