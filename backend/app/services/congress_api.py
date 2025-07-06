@@ -248,6 +248,97 @@ class CongressApiClient:
         response = await self._make_request("/hearing", params)
         return response.get("hearings", [])
     
+    async def get_member_committees(self, bioguide_id: str) -> List[Dict[str, Any]]:
+        """
+        Get committee memberships for a specific member.
+        
+        Args:
+            bioguide_id: Member's bioguide ID
+            
+        Returns:
+            List of committee memberships
+        """
+        try:
+            response = await self._make_request(f"/member/{bioguide_id}/committee-assignment")
+            return response.get("committeeAssignments", [])
+        except Exception as e:
+            logger.warning(f"Could not get committee assignments for {bioguide_id}: {e}")
+            return []
+    
+    async def get_all_committee_memberships(self) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        Get all committee memberships for all members.
+        
+        Returns:
+            Dictionary mapping bioguide_id to list of committee memberships
+        """
+        all_memberships = {}
+        
+        # First, get all members
+        members = await self.get_all_members()
+        
+        logger.info(f"Fetching committee memberships for {len(members)} members...")
+        
+        for i, member in enumerate(members):
+            bioguide_id = member.get("bioguideId")
+            if not bioguide_id:
+                continue
+            
+            try:
+                memberships = await self.get_member_committees(bioguide_id)
+                all_memberships[bioguide_id] = memberships
+                
+                if (i + 1) % 50 == 0:
+                    logger.info(f"Processed {i + 1}/{len(members)} members")
+                
+            except Exception as e:
+                logger.error(f"Error getting committees for member {bioguide_id}: {e}")
+                all_memberships[bioguide_id] = []
+        
+        logger.info(f"Committee membership collection completed for {len(all_memberships)} members")
+        return all_memberships
+    
+    async def get_committee_hierarchy(self) -> Dict[str, Any]:
+        """
+        Get committee hierarchy information including parent-child relationships.
+        
+        Returns:
+            Dictionary with committee hierarchy data
+        """
+        # Get all committees
+        committees = await self.get_committees()
+        
+        hierarchy = {
+            "committees": [],
+            "subcommittees": [],
+            "relationships": []
+        }
+        
+        for committee in committees:
+            committee_data = {
+                "name": committee.get("name", ""),
+                "chamber": committee.get("chamber", ""),
+                "committee_code": committee.get("systemCode", ""),
+                "congress_gov_id": committee.get("url", "").split("/")[-1] if committee.get("url") else None,
+                "committee_type": committee.get("type", "Standing"),
+                "is_subcommittee": committee.get("type", "").lower() == "subcommittee",
+                "parent_code": committee.get("parentCommitteeCode")
+            }
+            
+            if committee_data["is_subcommittee"]:
+                hierarchy["subcommittees"].append(committee_data)
+            else:
+                hierarchy["committees"].append(committee_data)
+            
+            # Add parent-child relationship
+            if committee_data["parent_code"]:
+                hierarchy["relationships"].append({
+                    "child": committee_data["committee_code"],
+                    "parent": committee_data["parent_code"]
+                })
+        
+        return hierarchy
+    
     async def get_hearing_details(self, hearing_id: str) -> Dict[str, Any]:
         """
         Get detailed information for a specific hearing.

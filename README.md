@@ -574,4 +574,32 @@ The Congressional Data API now provides a **fully functional, production-ready p
 
 ---
 
+## 🚀 NEXT ENHANCEMENT: Relationship-Aware Congressional Data Platform
+
+### **Enhancement Overview**
+Building on the successful core platform, we're implementing relationship functionality to show connections between Members, Committees, and Hearings. This will transform the current data browser into a comprehensive relationship-aware system.
+
+### **Key Features Being Added**
+- **Member Detail Pages**: Committee memberships, leadership positions, hearing participation
+- **Committee Detail Pages**: Member rosters, subcommittee hierarchies, hearing schedules
+- **Hearing Detail Pages**: Committee context, witness lists, related documents
+- **Cross-Entity Navigation**: Seamless navigation between related entities
+- **Relationship Visualizations**: Network graphs, collaboration matrices, timeline views
+
+### **Technical Approach**
+1. **Data Enhancement**: Populate committee membership and relationship data
+2. **API Expansion**: Add detailed entity endpoints with relationship data
+3. **Frontend Enhancement**: Create detail pages and relationship navigation
+4. **Data Visualization**: Interactive charts and network graphs
+
+### **Benefits**
+- **Discover Connections**: See which committees each member serves on
+- **Understand Hierarchies**: Distinguish committees from subcommittees
+- **Track Participation**: Member hearing attendance and activity
+- **Visualize Networks**: Congressional collaboration and influence patterns
+
+**Implementation Plan**: See [RELATIONSHIP_ENHANCEMENT_PLAN.md](RELATIONSHIP_ENHANCEMENT_PLAN.md) for detailed specifications.
+
+---
+
 🤖 Generated with [Memex](https://memex.tech)

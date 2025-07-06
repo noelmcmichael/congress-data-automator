@@ -110,9 +110,10 @@ async def global_exception_handler(request, exc):
 
 
 # Include API routers
-from .api.v1 import data_updates, data_retrieval
+from .api.v1 import data_updates, data_retrieval, relationships
 app.include_router(data_updates.router, prefix=settings.api_v1_prefix, tags=["data-updates"])
 app.include_router(data_retrieval.router, prefix=settings.api_v1_prefix, tags=["data-retrieval"])
+app.include_router(relationships.router, prefix=settings.api_v1_prefix, tags=["relationships"])
 
 
 if __name__ == "__main__":

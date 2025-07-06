@@ -253,21 +253,45 @@ async def database_stats(db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail="Failed to get database statistics")
 
 
-# REMOVED DUPLICATE /members endpoint - using the one in data_retrieval.py with filtering
-# This endpoint was overriding the advanced filtering endpoint in data_retrieval.py
+@router.post("/populate/relationships")
+async def populate_relationships(
+    background_tasks: BackgroundTasks,
+    db: Session = Depends(get_db)
+):
+    """
+    Populate relationship data (committee memberships, hierarchies, hearing associations).
+    
+    Args:
+        background_tasks: Background task executor
+        db: Database session
+        
+    Returns:
+        Population status
+    """
+    try:
+        from ...services.relationship_data_collector import populate_all_relationship_data
+        
+        # Run in background for large operations
+        background_tasks.add_task(
+            populate_all_relationship_data,
+            db
+        )
+        
+        return {
+            "message": "Relationship data population started",
+            "status": "processing",
+            "operations": [
+                "committee_memberships",
+                "committee_hierarchies", 
+                "hearing_associations"
+            ]
+        }
+        
+    except Exception as e:
+        logger.error("Error starting relationship data population", error=str(e))
+        raise HTTPException(status_code=500, detail="Failed to start relationship data population")
 
 
-# REMOVED DUPLICATE /committees endpoint - using the one in data_retrieval.py with filtering
-# This endpoint was overriding the advanced filtering endpoint in data_retrieval.py
-
-
-# REMOVED DUPLICATE /hearings endpoint - using the one in data_retrieval.py with filtering
-# This endpoint was overriding the advanced filtering endpoint in data_retrieval.py
-
-
-# REMOVED DUPLICATE /members endpoint - using the one in data_retrieval.py with filtering
-# This endpoint was overriding the advanced filtering endpoint in data_retrieval.py
-
-# REMOVED DUPLICATE /committees and /hearings endpoints
+# REMOVED DUPLICATE /members, /committees, /hearings endpoints
 # These were overriding the advanced filtering endpoints in data_retrieval.py
 # Using the ones in data_retrieval.py which have proper search and filtering capabilities
