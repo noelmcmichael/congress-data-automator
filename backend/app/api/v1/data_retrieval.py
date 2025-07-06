@@ -29,6 +29,58 @@ async def debug_test():
         "version": "debug-filters"
     }
 
+@router.get("/debug-raw-sql")
+async def debug_raw_sql(
+    party: Optional[str] = Query(None, description="Filter by party"),
+    db: Session = Depends(get_db)
+):
+    """Debug endpoint to test raw SQL queries"""
+    from sqlalchemy import text
+    
+    logger.info(f"DEBUG: debug_raw_sql called with party={party}")
+    print(f"DEBUG: debug_raw_sql called with party={party}")
+    
+    try:
+        # Test raw SQL query
+        if party:
+            sql = text("SELECT COUNT(*) FROM members WHERE party = :party")
+            result = db.execute(sql, {"party": party}).scalar()
+            
+            # Get a few sample members
+            sql_sample = text("SELECT first_name, last_name, party, chamber, state FROM members WHERE party = :party LIMIT 5")
+            sample_result = db.execute(sql_sample, {"party": party}).fetchall()
+            
+            return {
+                "message": "Raw SQL test with party filter",
+                "party": party,
+                "count": result,
+                "sample_members": [
+                    {
+                        "first_name": row[0],
+                        "last_name": row[1], 
+                        "party": row[2],
+                        "chamber": row[3],
+                        "state": row[4]
+                    } for row in sample_result
+                ]
+            }
+        else:
+            # Test without filter
+            sql = text("SELECT COUNT(*) FROM members")
+            result = db.execute(sql).scalar()
+            
+            return {
+                "message": "Raw SQL test without filter",
+                "total_count": result
+            }
+    except Exception as e:
+        logger.error(f"DEBUG: Error in debug_raw_sql: {e}")
+        print(f"DEBUG: Error in debug_raw_sql: {e}")
+        return {
+            "error": str(e),
+            "message": "Error executing raw SQL"
+        }
+
 @router.get("/members", response_model=List[MemberResponse])
 async def get_members(
     page: int = Query(1, ge=1, description="Page number"),
@@ -83,6 +135,13 @@ async def get_members(
     
     # Apply pagination
     offset = (page - 1) * limit
+    
+    # Debug: Print the actual SQL query being executed
+    from sqlalchemy.dialects import postgresql
+    compiled_query = query.offset(offset).limit(limit).statement.compile(dialect=postgresql.dialect(), compile_kwargs={"literal_binds": True})
+    logger.info(f"DEBUG: Executing SQL query: {compiled_query}")
+    print(f"DEBUG: Executing SQL query: {compiled_query}")
+    
     members = query.offset(offset).limit(limit).all()
     
     logger.info(f"DEBUG: Returning {len(members)} members")
