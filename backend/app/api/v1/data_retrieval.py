@@ -43,13 +43,13 @@ async def get_members(
             (Member.nickname.ilike(search_term))
         )
     
-    # Apply filters
+    # Apply filters (exact match for better accuracy)
     if chamber:
-        query = query.filter(Member.chamber.ilike(f"%{chamber}%"))
+        query = query.filter(Member.chamber == chamber)
     if state:
-        query = query.filter(Member.state.ilike(f"%{state}%"))
+        query = query.filter(Member.state == state)
     if party:
-        query = query.filter(Member.party.ilike(f"%{party}%"))
+        query = query.filter(Member.party == party)
     
     # Apply sorting
     sort_column = getattr(Member, sort_by, Member.last_name)
@@ -85,9 +85,9 @@ async def get_committees(
         search_term = f"%{search}%"
         query = query.filter(Committee.name.ilike(search_term))
     
-    # Apply filters
+    # Apply filters (exact match for better accuracy)
     if chamber:
-        query = query.filter(Committee.chamber.ilike(f"%{chamber}%"))
+        query = query.filter(Committee.chamber == chamber)
     if active_only:
         query = query.filter(Committee.is_active == True)
     
@@ -128,9 +128,9 @@ async def get_hearings(
             (Hearing.description.ilike(search_term))
         )
     
-    # Apply filters
+    # Apply filters (exact match for better accuracy)
     if status:
-        query = query.filter(Hearing.status.ilike(f"%{status}%"))
+        query = query.filter(Hearing.status == status)
     if committee_id:
         query = query.filter(Hearing.committee_id == committee_id)
     

@@ -111,7 +111,7 @@ class CongressApiClient:
     
     async def get_all_members(self, current_only: bool = True) -> List[Dict[str, Any]]:
         """
-        Get all congressional members by fetching from both chambers.
+        Get all congressional members using pagination to fetch complete dataset.
         
         Args:
             current_only: Only return current members
@@ -120,30 +120,52 @@ class CongressApiClient:
             List of all member data
         """
         all_members = []
-        
-        # Get House members
-        logger.info("Fetching House members...")
-        house_members = await self.get_members(chamber="house", current_only=current_only)
-        all_members.extend(house_members)
-        logger.info(f"Fetched {len(house_members)} House members")
-        
-        # Get Senate members
-        logger.info("Fetching Senate members...")
-        senate_members = await self.get_members(chamber="senate", current_only=current_only)
-        all_members.extend(senate_members)
-        logger.info(f"Fetched {len(senate_members)} Senate members")
-        
-        # Deduplicate by bioguide_id
         members_dict = {}
-        for member in all_members:
-            bioguide_id = member.get("bioguideId")
-            if bioguide_id and bioguide_id not in members_dict:
-                members_dict[bioguide_id] = member
         
-        deduplicated_members = list(members_dict.values())
-        logger.info(f"Total members after deduplication: {len(deduplicated_members)}")
+        # Use pagination to get all members
+        offset = 0
+        limit = 250
         
-        return deduplicated_members
+        logger.info("Starting comprehensive member collection with pagination...")
+        
+        while True:
+            # Fetch batch of members
+            params = {"limit": limit, "offset": offset}
+            if current_only:
+                params["currentMember"] = "true"
+            
+            logger.info(f"Fetching members batch (offset={offset}, limit={limit})...")
+            response = await self._make_request("/member", params)
+            batch_members = response.get("members", [])
+            
+            if not batch_members:
+                logger.info(f"No more members found at offset {offset}")
+                break
+            
+            # Add to collection and deduplicate
+            for member in batch_members:
+                bioguide_id = member.get("bioguideId")
+                if bioguide_id and bioguide_id not in members_dict:
+                    members_dict[bioguide_id] = member
+            
+            logger.info(f"Batch {offset//limit + 1}: Got {len(batch_members)} members, total unique: {len(members_dict)}")
+            
+            # If we got less than the limit, we've reached the end
+            if len(batch_members) < limit:
+                logger.info("Reached end of members data")
+                break
+            
+            offset += limit
+            
+            # Safety check to prevent infinite loops
+            if offset > 5000:  # Reasonable upper bound
+                logger.warning(f"Reached safety limit at offset {offset}")
+                break
+        
+        all_members = list(members_dict.values())
+        logger.info(f"Comprehensive member collection completed: {len(all_members)} unique members")
+        
+        return all_members
     
     async def get_member_details(self, bioguide_id: str) -> Dict[str, Any]:
         """
