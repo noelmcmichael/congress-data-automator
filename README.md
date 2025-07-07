@@ -1034,60 +1034,42 @@ With the rock-solid foundation of Chamber → Committee → Member relationships
 
 ---
 
-## 🚀 CURRENT SESSION: PHASE 2 ENHANCEMENT - OFFICIAL COMMITTEE URLS & ENHANCED WEB SCRAPING
+## 🚀 CURRENT SESSION: PHASE 2 COMPLETION - OFFICIAL COMMITTEE URLS & ENHANCED WEB SCRAPING
 
-### **🎉 PHASE 2A & 2B: ENHANCED WEB SCRAPING IMPLEMENTED (80% COMPLETE)**
-**Date**: January 7, 2025  
-**Status**: ✅ **DATABASE + WEB SCRAPING COMPLETE, API + FRONTEND PENDING**
+### **🎯 PHASE 2 COMPLETION PLAN CREATED**
+**Date**: January 8, 2025  
+**Status**: 🔄 **READY TO COMPLETE REMAINING 20% (API + FRONTEND INTEGRATION)**
 
-#### **✅ Phase 2A: Database Enhancement - COMPLETED (100%)**
-- **✅ Step 1**: Database schema analysis (35 standing committees identified)
-- **✅ Step 2**: Schema enhanced with URL columns (4 new fields added)
-- **✅ Step 3**: URL mapping system (97.1% success rate, 34/35 mapped + 1 manual)
-- **✅ Step 4**: Database population (100% success, all 35 committees populated)
+#### **📋 Implementation Plan Created**
+- **Comprehensive Plan**: 16-step detailed implementation plan created
+- **Time Estimate**: 4.4 hours to complete remaining 20%
+- **Focus Areas**: API enhancement, frontend integration, URL validation
+- **Success Criteria**: Complete production deployment with official resources
 
-#### **✅ Phase 2B: Enhanced Web Scraping Framework - COMPLETED (100%)**
-- **✅ Multi-Source Scraping**: Handles House and Senate committee pages
-- **✅ Confidence Scoring**: Algorithm rates data quality (0.0-1.0 scale)
-- **✅ Rate Limiting**: Respectful 2-second delays between requests
-- **✅ Data Validation**: Cross-reference validation and quality metrics
-- **✅ Error Handling**: Comprehensive exception handling and logging
+#### **✅ Phase 2A & 2B: COMPLETED (80%)**
+- **Database Enhancement**: ✅ 35 standing committees with official URLs populated
+- **Web Scraping Framework**: ✅ Production-ready with confidence scoring
+- **URL Quality Assessment**: ✅ 63% hearings success, 37% members success
+- **Data Infrastructure**: ✅ All backend systems operational
 
-#### **📊 Web Scraping Results**
-```
-✅ Committees Processed: 35/35 (100%)
-✅ Successful Hearings Scrapes: 22/35 (63%)
-✅ Successful Members Scrapes: 13/35 (37%)
-✅ High Confidence Results: 10/35 (29%)
-❌ Errors: 0 (perfect error handling)
-```
+#### **🔄 Phase 2C & 2D: REMAINING (20%)**
+- **API Enhancement**: Deploy URL fields in committee endpoints (7 steps)
+- **Frontend Integration**: Add official resource links to committee pages (5 steps)
+- **URL Validation**: Update broken House committee URLs (4 steps)
+- **Documentation**: Update user guides with new features
 
-#### **🔧 URL Quality Analysis**
-- **Senate Committees**: Higher success rate, better structured pages
-- **House Committees**: Some URL updates needed (404 errors detected)
-- **High-Confidence Committees**: Senate EPW (0.79), HELP (0.79), Finance (0.75)
-- **Framework Ready**: Production-ready for real-time committee data updates
+#### **📊 Current System Status**
+- **Database**: ✅ 35 committees with official URLs (hearings_url, members_url, official_website_url)
+- **Web Scraping**: ✅ Enhanced framework with confidence scoring (22/35 hearings, 13/35 members)
+- **API**: ⚠️ URL fields not yet exposed in endpoints (Cloud Run deployment issue)
+- **Frontend**: ⚠️ Official resource links not yet integrated into UI
 
-#### **📋 Enhanced Database Structure**
-```sql
--- All 35 standing committees now have:
-hearings_url: Official hearings page URL
-members_url: Official members page URL  
-official_website_url: Main committee website
-last_url_update: Timestamp of last URL update
-```
-
-#### **🔄 Phase 2C & 2D: Remaining Tasks (20%)**
-- **API Enhancement**: Deploy URL fields in committee endpoints
-- **Frontend Integration**: Add official resource links to committee pages
-- **Performance Testing**: Maintain <200ms API response times
-- **User Documentation**: Update guides with new official resources
-
-#### **🎯 Current Achievement**
-- **Database Infrastructure**: ✅ All committee URLs populated and verified
-- **Web Scraping Infrastructure**: ✅ Production-ready framework deployed
-- **Data Quality Monitoring**: ✅ Confidence scoring operational
-- **Official Resources**: ✅ Direct links to all 35 standing committee pages
+#### **🎯 Next Steps**
+1. **Diagnose API Deployment Issue**: Fix Cloud Run deployment blocking URL fields
+2. **Update API Models**: Include URL fields in committee endpoint responses
+3. **Enhance Frontend**: Add official resource buttons to committee detail pages
+4. **Validate URLs**: Fix broken House committee URLs identified during scraping
+5. **Documentation**: Update user guides with official resource features
 
 #### **🌐 Production System (Enhanced)**
 - **Frontend**: https://storage.googleapis.com/congressional-data-frontend/index.html
@@ -1095,8 +1077,8 @@ last_url_update: Timestamp of last URL update
 - **Database**: 538 members, 199 committees, 876 relationships + **35 committees with official URLs**
 - **Web Scraping**: ✅ Multi-source framework with confidence scoring
 
-**Phase 2 Status**: ✅ **80% COMPLETE** - Database + Web Scraping deployed, API + Frontend integration pending
+**Phase 2 Status**: ✅ **80% COMPLETE** - Ready to execute completion plan
 
-See [PHASE_2_PROGRESS_SUMMARY.md](PHASE_2_PROGRESS_SUMMARY.md) for detailed implementation results.
+See [PHASE_2_COMPLETION_PLAN.md](PHASE_2_COMPLETION_PLAN.md) for detailed 16-step implementation plan.
 
 🤖 Generated with [Memex](https://memex.tech)
