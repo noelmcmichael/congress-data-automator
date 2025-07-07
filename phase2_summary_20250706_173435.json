@@ -1,0 +1,22 @@
+{
+  "generated_at": "2025-07-06T17:34:35.519844",
+  "total_members": 500,
+  "total_relationships": 998,
+  "member_breakdown": {
+    "house": 492,
+    "senate": 8
+  },
+  "party_breakdown": {
+    "Democratic": 226,
+    "Republican": 274
+  },
+  "relationship_breakdown": {
+    "house": 975,
+    "senate": 23
+  },
+  "leadership_positions": {
+    "chairs": 15,
+    "ranking_members": 13,
+    "members": 970
+  }
+}
