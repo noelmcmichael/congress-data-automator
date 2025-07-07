@@ -17,5 +17,12 @@ class CommitteeResponse(BaseModel):
     is_subcommittee: bool
     parent_committee_id: Optional[int] = None
     website_url: Optional[str] = None
+    
+    # Official URLs
+    hearings_url: Optional[str] = None
+    members_url: Optional[str] = None
+    official_website_url: Optional[str] = None
+    last_url_update: Optional[datetime] = None
+    
     created_at: datetime
     updated_at: Optional[datetime] = None

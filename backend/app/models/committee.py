@@ -42,6 +42,12 @@ class Committee(Base):
     website = Column(String(500))
     office_location = Column(String(255))
     
+    # Official URLs
+    hearings_url = Column(String(255))
+    members_url = Column(String(255))
+    official_website_url = Column(String(255))
+    last_url_update = Column(DateTime(timezone=True))
+    
     # Activity status
     is_active = Column(Boolean, default=True)
     
