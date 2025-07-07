@@ -16,7 +16,7 @@ class CommitteeResponse(BaseModel):
     is_active: bool
     is_subcommittee: bool
     parent_committee_id: Optional[int] = None
-    website_url: Optional[str] = None
+    website: Optional[str] = None
     
     # Official URLs
     hearings_url: Optional[str] = None
