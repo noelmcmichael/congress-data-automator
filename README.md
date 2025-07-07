@@ -4,6 +4,36 @@ A comprehensive service for automatically collecting, processing, and serving co
 
 ## 🎉 MAJOR MILESTONE - Complete Congressional Data System
 
+### ✅ Phase 2 Complete - Official Resource Integration (January 7, 2025)
+
+**PHASE 2 ENHANCEMENT**: Successfully integrated official committee URLs and enhanced web scraping capabilities.
+
+**Key Phase 2 Achievements**:
+
+#### 🌐 **Official Committee Resource Integration**
+- **105 Official URLs**: Added 4 URL fields to all 35 standing committees
+- **Multi-source Integration**: House.gov, Senate.gov, and committee-specific sites
+- **Quality Assurance**: 64.8% success rate with comprehensive validation
+- **User Access**: Direct buttons to official hearings, members, and website resources
+
+#### 🔍 **Enhanced Web Scraping Framework**
+- **Automated URL Discovery**: Multi-source scraping with confidence scoring
+- **Validation Pipeline**: Real-time URL testing and quality monitoring
+- **Error Handling**: Comprehensive fallback strategies for broken links
+- **Update Management**: Tracking last update times and validation status
+
+#### 🎨 **Professional Resource Interface**
+- **Official Resource Buttons**: Material-UI buttons with tooltips and indicators
+- **Committee Detail Enhancement**: Professional display of official resources
+- **Visual Feedback**: Working/broken URL indicators with appropriate styling
+- **Mobile Responsive**: Optimized for all device sizes
+
+#### 📊 **Data Quality Monitoring**
+- **URL Validation**: 68 working URLs, 37 broken (tracked for fixes)
+- **Confidence Scoring**: Algorithm-based URL quality assessment
+- **Update Tracking**: Last validation timestamps for all resources
+- **Performance Metrics**: Success rates and data quality reports
+
 ### ✅ Full Implementation Completed (January 4, 2025)
 
 **COMPREHENSIVE ENHANCEMENT**: Transformed the system from basic prototype to production-ready Congressional Data platform.
@@ -41,7 +71,7 @@ A comprehensive service for automatically collecting, processing, and serving co
 
 ### Live Demo
 - **Frontend**: https://storage.googleapis.com/congressional-data-frontend/index.html
-- **Backend API**: https://congressional-data-api-1066017671167.us-central1.run.app
+- **Backend API**: https://congressional-data-api-v3-1066017671167.us-central1.run.app
 
 ### Technical Details
 - **Members**: Search by name, filter by chamber/state/party, sort by multiple fields

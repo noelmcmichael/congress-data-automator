@@ -2,13 +2,23 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   annotations:
+    run.googleapis.com/client-name: gcloud
+    run.googleapis.com/client-version: 527.0.0
     run.googleapis.com/ingress: all
     run.googleapis.com/ingress-status: all
-    run.googleapis.com/urls: '["https://congressional-data-api-1066017671167.us-central1.run.app","https://congressional-data-api-yovvxn4y7q-uc.a.run.app"]'
+    run.googleapis.com/operation-id: 98e2a8aa-a5bb-49b4-8e82-a16cf0a43fda
+    run.googleapis.com/urls: '["https://congressional-data-api-v3-1066017671167.us-central1.run.app"]'
+    serving.knative.dev/creator: ropak9@gmail.com
+    serving.knative.dev/lastModifier: ropak9@gmail.com
+  creationTimestamp: '2025-07-07T00:23:39.944262Z'
+  generation: 2
   labels:
     cloud.googleapis.com/location: us-central1
-  name: congressional-data-api
+  name: congressional-data-api-v3
   namespace: '1066017671167'
+  resourceVersion: AAY5S+bRq9M
+  selfLink: /apis/serving.knative.dev/v1/namespaces/1066017671167/services/congressional-data-api-v3
+  uid: c069b8d6-daf1-4307-8eb9-76beb244d82a
 spec:
   template:
     metadata:
@@ -19,28 +29,26 @@ spec:
         run.googleapis.com/cloudsql-instances: chefgavin:us-central1:congressional-db
         run.googleapis.com/startup-cpu-boost: 'true'
       labels:
-        client.knative.dev/nonce: omfcrfdlcl
+        client.knative.dev/nonce: fxwugtovhf
         run.googleapis.com/startupProbeType: Default
     spec:
       containerConcurrency: 80
       containers:
       - env:
-        - name: SECRET_KEY
-          value: your-secret-key-here
-        - name: DATABASE_URL
-          value: postgresql+psycopg2://postgres:Noel19922024@/cloudsql/chefgavin:us-central1:congressional-db/congress_data
         - name: CONGRESS_API_KEY
-          value: oM8IsuU5VfUiVsrMbUBNgYLpz2F2lUZEkTygiZik
-        - name: GCP_PROJECT_ID
-          value: chefgavin
-        image: gcr.io/chefgavin/congressional-data-api:simple-fix
+          value: NcMVmULsduvTXfEIXhKgAb1uWDDFdzOcPI57jpRG
+        - name: DATABASE_URL
+          value: postgresql://postgres:mDf3S9ZnBpQqJvGsY1@localhost:5432/congress_data?host=/cloudsql/chefgavin:us-central1:congressional-db
+        - name: ENVIRONMENT
+          value: production
+        image: gcr.io/chefgavin/congress-api:phase2-cloud-build
         ports:
         - containerPort: 8080
           name: http1
         resources:
           limits:
             cpu: '1'
-            memory: 1Gi
+            memory: 2Gi
         startupProbe:
           failureThreshold: 1
           periodSeconds: 240
@@ -48,7 +56,37 @@ spec:
             port: 8080
           timeoutSeconds: 240
       serviceAccountName: 1066017671167-compute@developer.gserviceaccount.com
-      timeoutSeconds: 3600
+      timeoutSeconds: 300
   traffic:
   - latestRevision: true
     percent: 100
+status:
+  conditions:
+  - lastTransitionTime: '2025-07-07T00:26:58.025557Z'
+    message: |-
+      Revision 'congressional-data-api-v3-00002-xtz' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+
+      Logs URL: https://console.cloud.google.com/logs/viewer?project=chefgavin&resource=cloud_run_revision/service_name/congressional-data-api-v3/revision_name/congressional-data-api-v3-00002-xtz&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22congressional-data-api-v3%22%0Aresource.labels.revision_name%3D%22congressional-data-api-v3-00002-xtz%22 
+      For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+    reason: HealthCheckContainerError
+    status: 'False'
+    type: Ready
+  - lastTransitionTime: '2025-07-07T00:26:58.019054Z'
+    message: |-
+      The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+
+      Logs URL: https://console.cloud.google.com/logs/viewer?project=chefgavin&resource=cloud_run_revision/service_name/congressional-data-api-v3/revision_name/congressional-data-api-v3-00002-xtz&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22congressional-data-api-v3%22%0Aresource.labels.revision_name%3D%22congressional-data-api-v3-00002-xtz%22 
+      For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+    status: 'True'
+    type: ConfigurationsReady
+  - lastTransitionTime: '2025-07-07T00:26:58.025557Z'
+    message: |-
+      Revision 'congressional-data-api-v3-00002-xtz' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+
+      Logs URL: https://console.cloud.google.com/logs/viewer?project=chefgavin&resource=cloud_run_revision/service_name/congressional-data-api-v3/revision_name/congressional-data-api-v3-00002-xtz&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22congressional-data-api-v3%22%0Aresource.labels.revision_name%3D%22congressional-data-api-v3-00002-xtz%22 
+      For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+    reason: HealthCheckContainerError
+    status: 'False'
+    type: RoutesReady
+  latestCreatedRevisionName: congressional-data-api-v3-00002-xtz
+  observedGeneration: 2
