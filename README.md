@@ -49,6 +49,30 @@ A comprehensive service for automatically collecting, processing, and serving co
 - **Hearings**: Search by title, filter by status, sort by date/title
 - **Dashboard**: Real-time metrics with party breakdowns and state representation
 
+## ⚠️ CRITICAL FOUNDATION ISSUES (2025-01-06)
+
+**STATUS**: Foundation data requires correction before further enhancements.
+
+### Issues Identified
+1. **Senate Count**: 55/100 senators (missing 45 senators from 25 states)
+2. **House Count**: 483/441 members (42 excess members)
+3. **Adam Schiff**: Listed as House member, should be Senator from CA
+4. **California Senators**: Only 1/2 senators (missing Schiff as 2nd senator)
+5. **States with Missing Senators**: 25 states have only 1 senator each
+6. **House Composition**: 426 voting + 57 non-voting (should be 435 voting + 6 non-voting)
+
+### Target Counts
+- **Senate**: 100 senators (2 per state)
+- **House**: 441 members (435 voting + 5 delegates + 1 commissioner)
+- **Total**: 541 members
+
+### Next Steps
+1. Fix Adam Schiff's chamber assignment (House → Senate)
+2. Complete Senate representation (45 missing senators)
+3. Correct House member count (remove 42 excess members)
+4. Validate all committee assignments
+5. Update API and frontend with corrected data
+
 ## Project Status
 
 ### Phase 1: Project Setup & Architecture ✅
