@@ -1034,7 +1034,34 @@ With the rock-solid foundation of Chamber → Committee → Member relationships
 
 ---
 
-## 🚀 CURRENT SESSION: PHASE 2 COMPLETION - OFFICIAL COMMITTEE URLS & ENHANCED WEB SCRAPING
+## 🚀 CURRENT SESSION: PHASE 2 COMPLETION - API DEPLOYMENT TROUBLESHOOTING
+
+### **📋 STEP-BY-STEP PLAN CREATED**
+**Date**: January 8, 2025  
+**Status**: 🔄 **SYSTEMATIC API DEPLOYMENT TROUBLESHOOTING IN PROGRESS**  
+**Priority**: Complete remaining 10% of Phase 2 implementation
+
+#### **Implementation Plan**
+- **17-Step Troubleshooting Plan**: Created systematic approach to resolve Cloud Run deployment issue
+- **Focus Areas**: Container configuration, environment variables, database connectivity
+- **Success Criteria**: API endpoints expose URL fields for committee resources
+- **Timeline**: 2-3 hours for complete resolution
+
+#### **Current Blocker**
+- **Issue**: Cloud Run container startup timeout preventing URL field deployment
+- **Root Cause**: Environment variable or port configuration mismatch
+- **Solution**: Systematic diagnosis and incremental fixes
+- **Impact**: 90% of Phase 2 complete, API enhancement blocked
+
+#### **Files Created**
+- `API_DEPLOYMENT_TROUBLESHOOTING_PLAN.md` - Comprehensive 17-step troubleshooting plan
+- `deploy_url_fix.py` - Deployment automation script ready for use
+- Phase 2 implementation 90% complete (4/5 phases successful)
+
+### **🎯 CURRENT FOCUS: PHASE 2C API ENHANCEMENT**
+Resolving the final technical hurdle to complete Phase 2 and enable full official committee resource integration.
+
+## 🚀 PREVIOUS SESSION: PHASE 2 COMPLETION - OFFICIAL COMMITTEE URLS & ENHANCED WEB SCRAPING
 
 ### **🎯 PHASE 2 COMPLETION PLAN CREATED**
 **Date**: January 8, 2025  

@@ -118,10 +118,15 @@ app.include_router(relationships.router, prefix=settings.api_v1_prefix, tags=["r
 
 if __name__ == "__main__":
     import uvicorn
+    import os
+    
+    # Use PORT environment variable for Cloud Run compatibility
+    port = int(os.environ.get("PORT", 8000))
+    
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=8000,
+        port=port,
         reload=settings.debug,
         log_level=settings.log_level.lower(),
     )
