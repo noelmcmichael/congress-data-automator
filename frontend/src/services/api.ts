@@ -71,7 +71,12 @@ export interface Committee {
   is_active: boolean;
   is_subcommittee: boolean;
   parent_committee_id?: number;
-  website_url?: string;
+  website?: string;
+  // Official committee URLs
+  hearings_url?: string;
+  members_url?: string;
+  official_website_url?: string;
+  last_url_update?: string;
   created_at: string;
   updated_at?: string;
 }

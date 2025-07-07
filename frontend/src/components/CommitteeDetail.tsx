@@ -279,14 +279,89 @@ const CommitteeDetail: React.FC = () => {
                 </Grid>
               </Grid>
 
-              {committee.website_url && (
-                <Box sx={{ mt: 2 }}>
-                  <Typography variant="body2" color="text.secondary">
-                    Website
+              {/* Official Resources Section */}
+              {(committee.hearings_url || committee.members_url || committee.official_website_url || committee.website) && (
+                <Box sx={{ mt: 3 }}>
+                  <Divider sx={{ mb: 2 }} />
+                  <Typography variant="h6" gutterBottom>
+                    Official Resources
                   </Typography>
-                  <Link href={committee.website_url} target="_blank" rel="noopener noreferrer">
-                    {committee.website_url}
-                  </Link>
+                  <Grid container spacing={2}>
+                    {committee.hearings_url && (
+                      <Grid item xs={12} sm={6}>
+                        <Button
+                          variant="outlined"
+                          startIcon={<EventIcon />}
+                          href={committee.hearings_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          fullWidth
+                          sx={{ 
+                            textTransform: 'none',
+                            color: 'primary.main',
+                            borderColor: 'primary.main'
+                          }}
+                        >
+                          Official Hearings
+                        </Button>
+                      </Grid>
+                    )}
+                    {committee.members_url && (
+                      <Grid item xs={12} sm={6}>
+                        <Button
+                          variant="outlined"
+                          startIcon={<GroupIcon />}
+                          href={committee.members_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          fullWidth
+                          sx={{ 
+                            textTransform: 'none',
+                            color: 'secondary.main',
+                            borderColor: 'secondary.main'
+                          }}
+                        >
+                          Committee Members
+                        </Button>
+                      </Grid>
+                    )}
+                    {committee.official_website_url && (
+                      <Grid item xs={12}>
+                        <Button
+                          variant="contained"
+                          startIcon={<HomeIcon />}
+                          href={committee.official_website_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          fullWidth
+                          sx={{ 
+                            textTransform: 'none',
+                            backgroundColor: 'success.main',
+                            '&:hover': {
+                              backgroundColor: 'success.dark'
+                            }
+                          }}
+                        >
+                          Official Website
+                        </Button>
+                      </Grid>
+                    )}
+                    {committee.website && (
+                      <Grid item xs={12}>
+                        <Typography variant="body2" color="text.secondary" gutterBottom>
+                          Additional Website
+                        </Typography>
+                        <Link href={committee.website} target="_blank" rel="noopener noreferrer">
+                          {committee.website}
+                        </Link>
+                      </Grid>
+                    )}
+                  </Grid>
+                  {committee.last_url_update && (
+                    <Typography variant="caption" color="text.secondary" sx={{ mt: 1, display: 'block' }}>
+                      Resources updated: {new Date(committee.last_url_update).toLocaleDateString()}
+                    </Typography>
+                  )}
                 </Box>
               )}
             </CardContent>

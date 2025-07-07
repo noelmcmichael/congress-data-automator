@@ -11,8 +11,15 @@ import {
   Grid,
   Chip,
   IconButton,
+  Tooltip,
 } from '@mui/material';
-import { Refresh as RefreshIcon, OpenInNew as OpenInNewIcon } from '@mui/icons-material';
+import { 
+  Refresh as RefreshIcon, 
+  OpenInNew as OpenInNewIcon, 
+  Event as EventIcon,
+  Group as GroupIcon,
+  Home as HomeIcon 
+} from '@mui/icons-material';
 import { apiService, Committee } from '../services/api';
 import SearchFilter from './SearchFilter';
 
@@ -170,16 +177,59 @@ const Committees: React.FC = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                       {committee.name}
                     </Typography>
-                    {committee.website_url && (
-                      <IconButton
-                        size="small"
-                        href={committee.website_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <OpenInNewIcon />
-                      </IconButton>
-                    )}
+                    <Box sx={{ display: 'flex', gap: 0.5 }}>
+                      {committee.hearings_url && (
+                        <Tooltip title="Official Hearings Page Available">
+                          <IconButton
+                            size="small"
+                            href={committee.hearings_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: 'primary.main' }}
+                          >
+                            <EventIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                      {committee.members_url && (
+                        <Tooltip title="Official Members Page Available">
+                          <IconButton
+                            size="small"
+                            href={committee.members_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: 'secondary.main' }}
+                          >
+                            <GroupIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                      {committee.official_website_url && (
+                        <Tooltip title="Official Website Available">
+                          <IconButton
+                            size="small"
+                            href={committee.official_website_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: 'success.main' }}
+                          >
+                            <HomeIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                      {committee.website && (
+                        <Tooltip title="Additional Website">
+                          <IconButton
+                            size="small"
+                            href={committee.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <OpenInNewIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </Box>
                   </Box>
                   
                   <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
@@ -201,6 +251,15 @@ const Committees: React.FC = () => {
                         size="small"
                         color="success"
                         variant="outlined"
+                      />
+                    )}
+                    {(committee.hearings_url || committee.members_url || committee.official_website_url) && (
+                      <Chip
+                        label="Official Resources"
+                        size="small"
+                        color="info"
+                        variant="outlined"
+                        sx={{ backgroundColor: 'rgba(0, 123, 255, 0.1)' }}
                       />
                     )}
                   </Box>
