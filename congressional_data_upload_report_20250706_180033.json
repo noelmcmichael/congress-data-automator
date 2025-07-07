@@ -1,0 +1,46 @@
+{
+  "upload_date": "2025-07-06T18:00:33.464720",
+  "status": "completed",
+  "data_summary": {
+    "committees_processed": 199,
+    "relationships_processed": 74,
+    "upload_success": true,
+    "relationship_functionality": false,
+    "committee_functionality": true
+  },
+  "major_committees_status": {
+    "house_committees": 19,
+    "senate_committees": 16,
+    "total_with_subcommittees": 199,
+    "critical_committees_included": [
+      "Committee on Appropriations",
+      "Committee on Armed Services",
+      "Committee on the Judiciary",
+      "Committee on Foreign Affairs",
+      "Committee on Finance",
+      "Committee on Energy and Commerce",
+      "Committee on Transportation and Infrastructure"
+    ]
+  },
+  "relationship_summary": {
+    "total_relationships": 74,
+    "leadership_positions": {
+      "chairs": 2,
+      "ranking_members": 4,
+      "regular_members": 68
+    }
+  },
+  "functionality_tests": {
+    "member_committee_relationships": false,
+    "committee_member_rosters": true,
+    "search_and_filter": true,
+    "ui_cross_navigation": "Pending - needs frontend testing"
+  },
+  "next_steps": [
+    "Test frontend relationship display",
+    "Verify member detail page committee listings",
+    "Test committee detail page member rosters",
+    "Validate cross-navigation functionality",
+    "Expand to full 535 members if needed"
+  ]
+}

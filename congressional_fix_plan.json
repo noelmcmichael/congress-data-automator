@@ -1,0 +1,78 @@
+{
+  "title": "Congressional Database Fix - Step by Step Plan",
+  "created": "2025-07-06T18:02:16.214375",
+  "objective": "Fix the congressional database with real committee structure and member relationships",
+  "current_issues": [
+    "Database has wrong committees (mostly subcommittees, not main committees)",
+    "No member-committee relationships (0% coverage)",
+    "Missing all major committees (Appropriations, Armed Services, etc.)",
+    "UI shows no cross-relationships"
+  ],
+  "solution_steps": [
+    {
+      "step": 1,
+      "title": "Database Schema Update",
+      "description": "Execute SQL commands to replace existing data with real committees",
+      "actions": [
+        "Connect to production Cloud SQL database",
+        "Execute the generated SQL file to clear and repopulate committees",
+        "Insert real committee memberships",
+        "Verify data integrity"
+      ],
+      "estimated_time": "30 minutes",
+      "risk": "Medium - involves database changes"
+    },
+    {
+      "step": 2,
+      "title": "API Endpoint Testing",
+      "description": "Verify all API endpoints work with new data",
+      "actions": [
+        "Test committee endpoints return real committees",
+        "Test member detail pages show committees",
+        "Test committee detail pages show members",
+        "Verify search and filter functionality"
+      ],
+      "estimated_time": "20 minutes",
+      "risk": "Low - read-only testing"
+    },
+    {
+      "step": 3,
+      "title": "Frontend Integration Testing",
+      "description": "Ensure UI properly displays relationships",
+      "actions": [
+        "Test member detail pages in frontend",
+        "Test committee detail pages in frontend",
+        "Verify cross-navigation works",
+        "Check search and filter UI functionality"
+      ],
+      "estimated_time": "30 minutes",
+      "risk": "Low - UI testing"
+    },
+    {
+      "step": 4,
+      "title": "Data Quality Validation",
+      "description": "Ensure all data is accurate and complete",
+      "actions": [
+        "Verify major committees are present",
+        "Check member-committee assignments are realistic",
+        "Validate leadership positions",
+        "Confirm chamber assignments are correct"
+      ],
+      "estimated_time": "20 minutes",
+      "risk": "Low - validation only"
+    }
+  ],
+  "success_criteria": [
+    "All major House and Senate committees in database",
+    "Member detail pages show committee memberships",
+    "Committee detail pages show member rosters",
+    "Search and filter functionality works",
+    "UI cross-navigation is functional",
+    "Data matches real congressional structure"
+  ],
+  "files_created": [
+    "fix_congressional_database_[timestamp].sql",
+    "test_congressional_api.py",
+    "congressional_fix_plan.json"
+  ]
+}
