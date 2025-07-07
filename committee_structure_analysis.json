@@ -1,0 +1,270 @@
+{
+  "timestamp": "2025-07-06T23:35:47.613126",
+  "table_structure": [
+    {
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "nextval('committees_id_seq'::regclass)"
+    },
+    {
+      "column_name": "congress_gov_id",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "committee_code",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "column_name": "chamber",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "column_name": "committee_type",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "column_name": "parent_committee_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "is_subcommittee",
+      "data_type": "boolean",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "jurisdiction",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "chair_member_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "ranking_member_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "phone",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "email",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "website",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "office_location",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "last_scraped_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null
+    }
+  ],
+  "sample_committees": [
+    {
+      "id": 1,
+      "name": "Committee on Agriculture",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 7,
+      "name": "Committee on Appropriations",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 20,
+      "name": "Committee on Armed Services",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 29,
+      "name": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 34,
+      "name": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 41,
+      "name": "Committee on Financial Services",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 48,
+      "name": "Committee on Foreign Affairs",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 56,
+      "name": "Committee on Homeland Security",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 63,
+      "name": "Committee on House Administration",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    },
+    {
+      "id": 70,
+      "name": "Committee on Natural Resources",
+      "chamber": "House",
+      "committee_type": "Standing",
+      "description": null,
+      "website": null,
+      "is_subcommittee": false
+    }
+  ],
+  "counts_by_chamber": [
+    {
+      "chamber": "House",
+      "committee_type": "Standing",
+      "count": 19,
+      "subcommittees": 0
+    },
+    {
+      "chamber": "House",
+      "committee_type": "Subcommittee",
+      "count": 95,
+      "subcommittees": 95
+    },
+    {
+      "chamber": "Senate",
+      "committee_type": "Standing",
+      "count": 16,
+      "subcommittees": 0
+    },
+    {
+      "chamber": "Senate",
+      "committee_type": "Subcommittee",
+      "count": 69,
+      "subcommittees": 69
+    }
+  ],
+  "url_status": {
+    "total_committees": 35,
+    "with_website": 0,
+    "without_website": 35
+  },
+  "required_columns": [
+    {
+      "name": "hearings_url",
+      "type": "VARCHAR(255)",
+      "description": "Official hearings page URL"
+    },
+    {
+      "name": "members_url",
+      "type": "VARCHAR(255)",
+      "description": "Official members page URL"
+    },
+    {
+      "name": "official_website",
+      "type": "VARCHAR(255)",
+      "description": "Main committee website URL"
+    },
+    {
+      "name": "last_url_update",
+      "type": "TIMESTAMP",
+      "description": "Last time URLs were updated"
+    }
+  ]
+}
