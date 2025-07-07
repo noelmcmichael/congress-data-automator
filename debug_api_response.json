@@ -1,0 +1,80 @@
+{
+  "members": [
+    {
+      "bioguideId": "R000617",
+      "depiction": {
+        "attribution": "Image courtesy of the Member",
+        "imageUrl": "https://www.congress.gov/img/member/684c2356333714e4aee2e1fd_200.jpg"
+      },
+      "district": 3,
+      "name": "Ramirez, Delia C.",
+      "partyName": "Democratic",
+      "state": "Illinois",
+      "terms": {
+        "item": [
+          {
+            "chamber": "House of Representatives",
+            "startYear": 2023
+          }
+        ]
+      },
+      "updateDate": "2025-06-13T13:48:04Z",
+      "url": "https://api.congress.gov/v3/member/R000617?format=json"
+    },
+    {
+      "bioguideId": "S001232",
+      "depiction": {
+        "attribution": "Official U.S. Senate Photo",
+        "imageUrl": "https://www.congress.gov/img/member/677d8231fdb6cf36bbb6498b_200.jpg"
+      },
+      "district": null,
+      "name": "Sheehy, Tim",
+      "partyName": "Republican",
+      "state": "Montana",
+      "terms": {
+        "item": [
+          {
+            "chamber": "Senate",
+            "startYear": 2025
+          }
+        ]
+      },
+      "updateDate": "2025-06-07T10:30:29Z",
+      "url": "https://api.congress.gov/v3/member/S001232?format=json"
+    },
+    {
+      "bioguideId": "L000570",
+      "depiction": {
+        "attribution": "Image courtesy of the Member",
+        "imageUrl": "https://www.congress.gov/img/member/l000570_200.jpg"
+      },
+      "district": null,
+      "name": "Luj\u00e1n, Ben Ray",
+      "partyName": "Democratic",
+      "state": "New Mexico",
+      "terms": {
+        "item": [
+          {
+            "chamber": "House of Representatives",
+            "endYear": 2021,
+            "startYear": 2009
+          },
+          {
+            "chamber": "Senate",
+            "startYear": 2021
+          }
+        ]
+      },
+      "updateDate": "2025-06-03T13:18:42Z",
+      "url": "https://api.congress.gov/v3/member/L000570?format=json"
+    }
+  ],
+  "pagination": {
+    "count": 544,
+    "next": "https://api.congress.gov/v3/member/congress/119?offset=3&limit=3&format=json"
+  },
+  "request": {
+    "contentType": "application/json",
+    "format": "json"
+  }
+}
