@@ -19,6 +19,7 @@ import {
   Settings as SettingsIcon,
   AccountBalance as CapitolIcon,
   Schedule as ScheduleIcon,
+  AccountTree as HierarchyIcon,
 } from '@mui/icons-material';
 
 const drawerWidth = 240;
@@ -27,6 +28,7 @@ const navigationItems = [
   { path: '/', label: 'Dashboard', icon: <DashboardIcon /> },
   { path: '/members', label: 'Members', icon: <PeopleIcon /> },
   { path: '/committees', label: 'Committees', icon: <GroupIcon /> },
+  { path: '/committee-hierarchy', label: 'Committee Hierarchy', icon: <HierarchyIcon /> },
   { path: '/hearings', label: 'Hearings', icon: <EventIcon /> },
   { path: '/senator-timeline', label: 'Senator Timeline', icon: <ScheduleIcon /> },
   { path: '/settings', label: 'Settings', icon: <SettingsIcon /> },

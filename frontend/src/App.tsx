@@ -13,6 +13,7 @@ import MemberDetail from './components/MemberDetail';
 import CommitteeDetail from './components/CommitteeDetail';
 import HearingDetail from './components/HearingDetail';
 import SenatorTimeline from './components/SenatorTimeline';
+import CommitteeHierarchy from './components/CommitteeHierarchy';
 import './App.css';
 
 const theme = createTheme({
@@ -51,6 +52,7 @@ function App() {
               <Route path="/members/:id" element={<MemberDetail />} />
               <Route path="/committees" element={<Committees />} />
               <Route path="/committees/:id" element={<CommitteeDetail />} />
+              <Route path="/committee-hierarchy" element={<CommitteeHierarchy />} />
               <Route path="/hearings" element={<Hearings />} />
               <Route path="/hearings/:id" element={<HearingDetail />} />
               <Route path="/senator-timeline" element={<SenatorTimeline />} />
