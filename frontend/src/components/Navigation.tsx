@@ -18,6 +18,7 @@ import {
   Event as EventIcon,
   Settings as SettingsIcon,
   AccountBalance as CapitolIcon,
+  Schedule as ScheduleIcon,
 } from '@mui/icons-material';
 
 const drawerWidth = 240;
@@ -27,6 +28,7 @@ const navigationItems = [
   { path: '/members', label: 'Members', icon: <PeopleIcon /> },
   { path: '/committees', label: 'Committees', icon: <GroupIcon /> },
   { path: '/hearings', label: 'Hearings', icon: <EventIcon /> },
+  { path: '/senator-timeline', label: 'Senator Timeline', icon: <ScheduleIcon /> },
   { path: '/settings', label: 'Settings', icon: <SettingsIcon /> },
 ];
 
