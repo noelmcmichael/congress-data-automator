@@ -19,8 +19,9 @@ import {
   Warning as WarningIcon,
   CheckCircle as CheckCircleIcon,
 } from '@mui/icons-material';
-import { apiService, DatabaseStats, ApiStatus } from '../services/api';
+import { apiService, ApiStatus } from '../services/api';
 import { fullCongressApiService } from '../services/fullCongressApi';
+import UniversalSearch from './UniversalSearch';
 import { format } from 'date-fns';
 
 const Dashboard: React.FC = () => {
@@ -31,6 +32,7 @@ const Dashboard: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date>(new Date());
   const [useFullData, setUseFullData] = useState(false);
+  const [upcomingHearings, setUpcomingHearings] = useState<any[]>([]);
 
   const fetchData = async () => {
     try {
@@ -39,44 +41,30 @@ const Dashboard: React.FC = () => {
       
       let statsData;
       let statusData;
+      let hearingsData;
       
       if (useFullData) {
-        // Use the full Congress data for demonstration
-        [statsData, statusData] = await Promise.all([
+        [statsData, statusData, hearingsData] = await Promise.all([
           fullCongressApiService.getDetailedStats(),
-          apiService.getStatus().catch(() => null), // Fallback if API fails
+          apiService.getStatus().catch(() => null),
+          apiService.getHearings({ page: 1, limit: 5, status: 'scheduled' }).catch(() => []),
         ]);
       } else {
-        // Use production API data
-        [statsData, statusData] = await Promise.all([
+        [statsData, statusData, hearingsData] = await Promise.all([
           apiService.getDatabaseStats(),
           apiService.getStatus(),
+          apiService.getHearings({ page: 1, limit: 5, status: 'scheduled' }),
         ]);
       }
       
       setStats(statsData);
       setStatus(statusData);
+      setUpcomingHearings(hearingsData);
       setLastUpdated(new Date());
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch data');
     } finally {
       setLoading(false);
-    }
-  };
-
-  const handleUpdateAll = async () => {
-    try {
-      setUpdating(true);
-      setError(null);
-      await apiService.updateAllData(false);
-      // Wait a bit for the background task to complete
-      setTimeout(() => {
-        fetchData();
-        setUpdating(false);
-      }, 5000);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to update data');
-      setUpdating(false);
     }
   };
 
@@ -114,183 +102,112 @@ const Dashboard: React.FC = () => {
 
   return (
     <Box>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h4">
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h4" gutterBottom>
           Congressional Data Dashboard
         </Typography>
-        <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button
-            variant="outlined"
-            startIcon={<RefreshIcon />}
-            onClick={fetchData}
-            disabled={updating}
-          >
-            Refresh
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={<RefreshIcon />}
-            onClick={handleUpdateAll}
-            disabled={updating}
-          >
-            {updating ? 'Updating...' : 'Update All Data'}
-          </Button>
-        </Box>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
+          A central hub for tracking legislative activity.
+        </Typography>
+        <UniversalSearch />
       </Box>
 
-      {/* API Status */}
-      <Card sx={{ mb: 3 }}>
-        <CardContent>
-          <Typography variant="h6" gutterBottom>
-            API Status
-          </Typography>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={3}>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                {status?.api_status === 'active' ? (
-                  <CheckCircleIcon color="success" />
-                ) : (
-                  <WarningIcon color="warning" />
-                )}
-                <Typography>
-                  Service: <strong>{status?.api_status || 'Unknown'}</strong>
-                </Typography>
+      <Grid container spacing={3}>
+        {/* Left Column */}
+        <Grid item xs={12} md={8}>
+          {/* Upcoming Hearings */}
+          <Card sx={{ mb: 3 }}>
+            <CardContent>
+              <Typography variant="h6" gutterBottom>
+                Upcoming Hearings
+              </Typography>
+              {upcomingHearings.length > 0 ? (
+                <Box>
+                  {upcomingHearings.map((hearing) => (
+                    <Box key={hearing.id} sx={{ mb: 2, pb: 1, borderBottom: '1px solid #eee' }}>
+                      <Typography variant="body1"><strong>{hearing.title}</strong></Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {hearing.committee.name}
+                      </Typography>
+                      <Typography variant="caption" color="text.secondary">
+                        {format(new Date(hearing.scheduled_date), 'PPP p')}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+              ) : (
+                <Typography>No upcoming hearings scheduled.</Typography>
+              )}
+            </CardContent>
+          </Card>
+
+          {/* Key Committees */}
+          <Card>
+            <CardContent>
+              <Typography variant="h6" gutterBottom>
+                Key Committees
+              </Typography>
+              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+                <Chip label="Appropriations (House)" component="a" href="/committees/1" clickable />
+                <Chip label="Appropriations (Senate)" component="a" href="/committees/2" clickable />
+                <Chip label="Ways and Means (House)" component="a" href="/committees/3" clickable />
+                <Chip label="Finance (Senate)" component="a" href="/committees/4" clickable />
+                <Chip label="Rules (House)" component="a" href="/committees/5" clickable />
+                <Chip label="Judiciary (Senate)" component="a" href="/committees/6" clickable />
               </Box>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                {status?.database_status === 'connected' ? (
-                  <CheckCircleIcon color="success" />
-                ) : (
-                  <WarningIcon color="warning" />
-                )}
-                <Typography>
-                  Database: <strong>{status?.database_status || 'Unknown'}</strong>
-                </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Right Column */}
+        <Grid item xs={12} md={4}>
+          {/* API Status */}
+          <Card sx={{ mb: 3 }}>
+            <CardContent>
+              <Typography variant="h6" gutterBottom>
+                Platform Status
+              </Typography>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
+                {status?.api_status === 'active' ? <CheckCircleIcon color="success" /> : <WarningIcon color="warning" />}
+                <Typography>Service: <strong>{status?.api_status || 'Unknown'}</strong></Typography>
               </Box>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
+                {status?.database_status === 'connected' ? <CheckCircleIcon color="success" /> : <WarningIcon color="warning" />}
+                <Typography>Database: <strong>{status?.database_status || 'Unknown'}</strong></Typography>
+              </Box>
               <Typography>
                 API Rate Limit: <strong>{status?.congress_api_rate_limit.remaining || 0} / {status?.congress_api_rate_limit.daily_limit || 0}</strong>
               </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Typography>
-                Version: <strong>{status?.version || 'Unknown'}</strong>
+              <Button
+                fullWidth
+                variant="outlined"
+                startIcon={<RefreshIcon />}
+                onClick={fetchData}
+                disabled={updating}
+                sx={{ mt: 2 }}
+              >
+                Refresh Status
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Data Stats */}
+          <Card>
+            <CardContent>
+              <Typography variant="h6" gutterBottom>
+                Data Overview
               </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-
-      {/* Data Statistics */}
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
-          <Card>
-            <CardContent>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                <PeopleIcon color="primary" />
+                <Typography><strong>{stats?.members.total || 0}</strong> Members</Typography>
+              </Box>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                <GroupIcon color="primary" />
+                <Typography><strong>{stats?.committees.total || 0}</strong> Committees</Typography>
+              </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <PeopleIcon color="primary" sx={{ fontSize: 40 }} />
-                <Box>
-                  <Typography variant="h4" color="primary">
-                    {stats?.members.total || 0}
-                  </Typography>
-                  <Typography variant="h6" color="text.secondary">
-                    Members
-                  </Typography>
-                </Box>
-              </Box>
-              <Divider sx={{ my: 2 }} />
-              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                <Chip
-                  label={`House: ${stats?.members.house || 0}`}
-                  size="small"
-                  color="primary"
-                  variant="outlined"
-                />
-                <Chip
-                  label={`Senate: ${stats?.members.senate || 0}`}
-                  size="small"
-                  color="secondary"
-                  variant="outlined"
-                />
-                <Chip
-                  label={`Current: ${stats?.members.current || 0}`}
-                  size="small"
-                  color="success"
-                  variant="outlined"
-                />
-              </Box>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          <Card>
-            <CardContent>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <GroupIcon color="primary" sx={{ fontSize: 40 }} />
-                <Box>
-                  <Typography variant="h4" color="primary">
-                    {stats?.committees.total || 0}
-                  </Typography>
-                  <Typography variant="h6" color="text.secondary">
-                    Committees
-                  </Typography>
-                </Box>
-              </Box>
-              <Divider sx={{ my: 2 }} />
-              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                <Chip
-                  label={`House: ${stats?.committees.house || 0}`}
-                  size="small"
-                  color="primary"
-                  variant="outlined"
-                />
-                <Chip
-                  label={`Senate: ${stats?.committees.senate || 0}`}
-                  size="small"
-                  color="secondary"
-                  variant="outlined"
-                />
-                <Chip
-                  label={`Active: ${stats?.committees.active || 0}`}
-                  size="small"
-                  color="success"
-                  variant="outlined"
-                />
-              </Box>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          <Card>
-            <CardContent>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <EventIcon color="primary" sx={{ fontSize: 40 }} />
-                <Box>
-                  <Typography variant="h4" color="primary">
-                    {stats?.hearings.total || 0}
-                  </Typography>
-                  <Typography variant="h6" color="text.secondary">
-                    Hearings
-                  </Typography>
-                </Box>
-              </Box>
-              <Divider sx={{ my: 2 }} />
-              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                <Chip
-                  label={`Scheduled: ${stats?.hearings.scheduled || 0}`}
-                  size="small"
-                  color="info"
-                  variant="outlined"
-                />
-                <Chip
-                  label={`Completed: ${stats?.hearings.completed || 0}`}
-                  size="small"
-                  color="success"
-                  variant="outlined"
-                />
+                <EventIcon color="primary" />
+                <Typography><strong>{stats?.hearings.total || 0}</strong> Hearings</Typography>
               </Box>
             </CardContent>
           </Card>
