@@ -1,0 +1,605 @@
+[
+  {
+    "committee": "Committee on Agriculture",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://agriculture.house.gov/calendar/?EventTypeID=214",
+    "response_time": 0.26,
+    "content_length": 13468,
+    "last_validated": "2025-07-07T12:21:19.984873"
+  },
+  {
+    "committee": "Committee on Agriculture",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://agriculture.house.gov",
+    "response_time": 0.25,
+    "content_length": 20526,
+    "last_validated": "2025-07-07T12:21:19.984894"
+  },
+  {
+    "committee": "Committee on Agriculture, Nutrition, and Forestry",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.agriculture.senate.gov/hearings",
+    "response_time": 1.14,
+    "content_length": 121542,
+    "last_validated": "2025-07-07T12:21:19.984901"
+  },
+  {
+    "committee": "Committee on Agriculture, Nutrition, and Forestry",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.agriculture.senate.gov/about/membership",
+    "response_time": 0.07,
+    "content_length": 121378,
+    "last_validated": "2025-07-07T12:21:19.984907"
+  },
+  {
+    "committee": "Committee on Agriculture, Nutrition, and Forestry",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.agriculture.senate.gov",
+    "response_time": 0.05,
+    "content_length": 107922,
+    "last_validated": "2025-07-07T12:21:19.984913"
+  },
+  {
+    "committee": "Committee on Appropriations",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.appropriations.senate.gov/hearings",
+    "response_time": 1.06,
+    "content_length": 82522,
+    "last_validated": "2025-07-07T12:21:19.984921"
+  },
+  {
+    "committee": "Committee on Appropriations",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.appropriations.senate.gov/about/members",
+    "response_time": 0.06,
+    "content_length": 51889,
+    "last_validated": "2025-07-07T12:21:19.984927"
+  },
+  {
+    "committee": "Committee on Appropriations",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.appropriations.senate.gov",
+    "response_time": 0.1,
+    "content_length": 38201,
+    "last_validated": "2025-07-07T12:21:19.984934"
+  },
+  {
+    "committee": "Committee on Appropriations",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://appropriations.house.gov",
+    "response_time": 0.08,
+    "content_length": 353462,
+    "last_validated": "2025-07-07T12:21:19.984939"
+  },
+  {
+    "committee": "Committee on Armed Services",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.armed-services.senate.gov/hearings",
+    "response_time": 0.66,
+    "content_length": 136952,
+    "last_validated": "2025-07-07T12:21:19.984945"
+  },
+  {
+    "committee": "Committee on Armed Services",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.armed-services.senate.gov/about",
+    "response_time": 0.09,
+    "content_length": 131315,
+    "last_validated": "2025-07-07T12:21:19.984950"
+  },
+  {
+    "committee": "Committee on Armed Services",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.armed-services.senate.gov",
+    "response_time": 0.09,
+    "content_length": 113351,
+    "last_validated": "2025-07-07T12:21:19.984955"
+  },
+  {
+    "committee": "Committee on Armed Services",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://armedservices.house.gov",
+    "response_time": 0.28,
+    "content_length": 47671,
+    "last_validated": "2025-07-07T12:21:19.984960"
+  },
+  {
+    "committee": "Committee on Banking, Housing, and Urban Affairs",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.banking.senate.gov/hearings",
+    "response_time": 0.34,
+    "content_length": 112692,
+    "last_validated": "2025-07-07T12:21:19.984966"
+  },
+  {
+    "committee": "Committee on Banking, Housing, and Urban Affairs",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.banking.senate.gov",
+    "response_time": 0.14,
+    "content_length": 123291,
+    "last_validated": "2025-07-07T12:21:19.984972"
+  },
+  {
+    "committee": "Committee on Commerce, Science, and Transportation",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.commerce.senate.gov/members",
+    "response_time": 0.1,
+    "content_length": 19515,
+    "last_validated": "2025-07-07T12:21:19.984977"
+  },
+  {
+    "committee": "Committee on Commerce, Science, and Transportation",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.commerce.senate.gov",
+    "response_time": 1.14,
+    "content_length": 26340,
+    "last_validated": "2025-07-07T12:21:19.984982"
+  },
+  {
+    "committee": "Committee on Education and the Workforce",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://edworkforce.house.gov",
+    "response_time": 0.16,
+    "content_length": 20987,
+    "last_validated": "2025-07-07T12:21:19.984987"
+  },
+  {
+    "committee": "Committee on Energy and Commerce",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://energycommerce.house.gov",
+    "response_time": 0.55,
+    "content_length": 246405,
+    "last_validated": "2025-07-07T12:21:19.984993"
+  },
+  {
+    "committee": "Committee on Energy and Natural Resources",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.energy.senate.gov/hearings",
+    "response_time": 0.36,
+    "content_length": 44152,
+    "last_validated": "2025-07-07T12:21:19.984998"
+  },
+  {
+    "committee": "Committee on Energy and Natural Resources",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.energy.senate.gov",
+    "response_time": 1.17,
+    "content_length": 37580,
+    "last_validated": "2025-07-07T12:21:19.985004"
+  },
+  {
+    "committee": "Committee on Environment and Public Works",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.epw.senate.gov/public/index.cfm/hearings",
+    "response_time": 0.63,
+    "content_length": 40536,
+    "last_validated": "2025-07-07T12:21:19.985009"
+  },
+  {
+    "committee": "Committee on Environment and Public Works",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.epw.senate.gov/public/index.cfm/members",
+    "response_time": 0.08,
+    "content_length": 22383,
+    "last_validated": "2025-07-07T12:21:19.985014"
+  },
+  {
+    "committee": "Committee on Environment and Public Works",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.epw.senate.gov",
+    "response_time": 2.65,
+    "content_length": 19706,
+    "last_validated": "2025-07-07T12:21:19.985019"
+  },
+  {
+    "committee": "Committee on Finance",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.finance.senate.gov/hearings",
+    "response_time": 0.32,
+    "content_length": 82126,
+    "last_validated": "2025-07-07T12:21:19.985024"
+  },
+  {
+    "committee": "Committee on Finance",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.finance.senate.gov/about/membership",
+    "response_time": 0.06,
+    "content_length": 53511,
+    "last_validated": "2025-07-07T12:21:19.985030"
+  },
+  {
+    "committee": "Committee on Finance",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.finance.senate.gov",
+    "response_time": 0.09,
+    "content_length": 47628,
+    "last_validated": "2025-07-07T12:21:19.985035"
+  },
+  {
+    "committee": "Committee on Financial Services",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://financialservices.house.gov/calendar",
+    "response_time": 0.47,
+    "content_length": 45667,
+    "last_validated": "2025-07-07T12:21:19.985040"
+  },
+  {
+    "committee": "Committee on Financial Services",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://financialservices.house.gov",
+    "response_time": 0.19,
+    "content_length": 60818,
+    "last_validated": "2025-07-07T12:21:19.985046"
+  },
+  {
+    "committee": "Committee on Foreign Affairs",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://foreignaffairs.house.gov/hearings",
+    "response_time": 1.82,
+    "content_length": 77872,
+    "last_validated": "2025-07-07T12:21:19.985052"
+  },
+  {
+    "committee": "Committee on Foreign Affairs",
+    "chamber": "House",
+    "url_type": "members_url",
+    "url": "https://foreignaffairs.house.gov/members",
+    "response_time": 1.38,
+    "content_length": 38927,
+    "last_validated": "2025-07-07T12:21:19.985057"
+  },
+  {
+    "committee": "Committee on Foreign Affairs",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://foreignaffairs.house.gov",
+    "response_time": 0.18,
+    "content_length": 373188,
+    "last_validated": "2025-07-07T12:21:19.985062"
+  },
+  {
+    "committee": "Committee on Foreign Relations",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.foreign.senate.gov/hearings",
+    "response_time": 0.39,
+    "content_length": 374574,
+    "last_validated": "2025-07-07T12:21:19.985068"
+  },
+  {
+    "committee": "Committee on Foreign Relations",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.foreign.senate.gov",
+    "response_time": 0.13,
+    "content_length": 287315,
+    "last_validated": "2025-07-07T12:21:19.985073"
+  },
+  {
+    "committee": "Committee on Health, Education, Labor and Pensions",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.help.senate.gov/hearings",
+    "response_time": 1.03,
+    "content_length": 205840,
+    "last_validated": "2025-07-07T12:21:19.985078"
+  },
+  {
+    "committee": "Committee on Health, Education, Labor and Pensions",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.help.senate.gov/about/members",
+    "response_time": 0.09,
+    "content_length": 182784,
+    "last_validated": "2025-07-07T12:21:19.985083"
+  },
+  {
+    "committee": "Committee on Health, Education, Labor and Pensions",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.help.senate.gov",
+    "response_time": 0.1,
+    "content_length": 448796,
+    "last_validated": "2025-07-07T12:21:19.985088"
+  },
+  {
+    "committee": "Committee on Homeland Security",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://homeland.house.gov",
+    "response_time": 0.08,
+    "content_length": 207552,
+    "last_validated": "2025-07-07T12:21:19.985094"
+  },
+  {
+    "committee": "Committee on Homeland Security and Governmental Affairs",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.hsgac.senate.gov",
+    "response_time": 1.33,
+    "content_length": 213115,
+    "last_validated": "2025-07-07T12:21:19.985100"
+  },
+  {
+    "committee": "Committee on House Administration",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://cha.house.gov",
+    "response_time": 0.31,
+    "content_length": 29243,
+    "last_validated": "2025-07-07T12:21:19.985105"
+  },
+  {
+    "committee": "Committee on Natural Resources",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://naturalresources.house.gov/calendar",
+    "response_time": 0.38,
+    "content_length": 14289,
+    "last_validated": "2025-07-07T12:21:19.985110"
+  },
+  {
+    "committee": "Committee on Natural Resources",
+    "chamber": "House",
+    "url_type": "members_url",
+    "url": "https://naturalresources.house.gov/about/members.htm",
+    "response_time": 0.19,
+    "content_length": 25967,
+    "last_validated": "2025-07-07T12:21:19.985115"
+  },
+  {
+    "committee": "Committee on Natural Resources",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://naturalresources.house.gov",
+    "response_time": 0.24,
+    "content_length": 46490,
+    "last_validated": "2025-07-07T12:21:19.985120"
+  },
+  {
+    "committee": "Committee on Oversight and Accountability",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://oversight.house.gov/hearing",
+    "response_time": 1.32,
+    "content_length": 59903,
+    "last_validated": "2025-07-07T12:21:19.985126"
+  },
+  {
+    "committee": "Committee on Oversight and Accountability",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://oversight.house.gov",
+    "response_time": 0.53,
+    "content_length": 60726,
+    "last_validated": "2025-07-07T12:21:19.985131"
+  },
+  {
+    "committee": "Committee on Rules",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://rules.house.gov",
+    "response_time": 0.11,
+    "content_length": 47246,
+    "last_validated": "2025-07-07T12:21:19.985136"
+  },
+  {
+    "committee": "Committee on Rules and Administration",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.rules.senate.gov/hearings",
+    "response_time": 0.78,
+    "content_length": 138750,
+    "last_validated": "2025-07-07T12:21:19.985142"
+  },
+  {
+    "committee": "Committee on Rules and Administration",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.rules.senate.gov/about/members",
+    "response_time": 0.58,
+    "content_length": 178100,
+    "last_validated": "2025-07-07T12:21:19.985147"
+  },
+  {
+    "committee": "Committee on Rules and Administration",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.rules.senate.gov",
+    "response_time": 0.08,
+    "content_length": 117998,
+    "last_validated": "2025-07-07T12:21:19.985152"
+  },
+  {
+    "committee": "Committee on Science, Space, and Technology",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://science.house.gov/hearings",
+    "response_time": 0.1,
+    "content_length": 37279,
+    "last_validated": "2025-07-07T12:21:19.985158"
+  },
+  {
+    "committee": "Committee on Science, Space, and Technology",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://science.house.gov",
+    "response_time": 0.21,
+    "content_length": 28304,
+    "last_validated": "2025-07-07T12:21:19.985163"
+  },
+  {
+    "committee": "Committee on Small Business",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://smallbusiness.house.gov",
+    "response_time": 0.14,
+    "content_length": 28297,
+    "last_validated": "2025-07-07T12:21:19.985168"
+  },
+  {
+    "committee": "Committee on Small Business and Entrepreneurship",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.sbc.senate.gov/public/index.cfm/hearings",
+    "response_time": 0.92,
+    "content_length": 31354,
+    "last_validated": "2025-07-07T12:21:19.985174"
+  },
+  {
+    "committee": "Committee on Small Business and Entrepreneurship",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.sbc.senate.gov",
+    "response_time": 0.22,
+    "content_length": 32725,
+    "last_validated": "2025-07-07T12:21:19.985180"
+  },
+  {
+    "committee": "Committee on the Budget",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.budget.senate.gov/hearings",
+    "response_time": 1.04,
+    "content_length": 68420,
+    "last_validated": "2025-07-07T12:21:19.985185"
+  },
+  {
+    "committee": "Committee on the Budget",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.budget.senate.gov/about/committee-members",
+    "response_time": 0.37,
+    "content_length": 43760,
+    "last_validated": "2025-07-07T12:21:19.985191"
+  },
+  {
+    "committee": "Committee on the Budget",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.budget.senate.gov",
+    "response_time": 0.07,
+    "content_length": 63840,
+    "last_validated": "2025-07-07T12:21:19.985198"
+  },
+  {
+    "committee": "Committee on the Budget",
+    "chamber": "House",
+    "url_type": "members_url",
+    "url": "https://budget.house.gov/about/members",
+    "response_time": 0.07,
+    "content_length": 95958,
+    "last_validated": "2025-07-07T12:21:19.985203"
+  },
+  {
+    "committee": "Committee on the Budget",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://budget.house.gov",
+    "response_time": 0.06,
+    "content_length": 73365,
+    "last_validated": "2025-07-07T12:21:19.985209"
+  },
+  {
+    "committee": "Committee on the Judiciary",
+    "chamber": "House",
+    "url_type": "hearings_url",
+    "url": "https://judiciary.house.gov/committee-activity/hearings",
+    "response_time": 0.37,
+    "content_length": 50314,
+    "last_validated": "2025-07-07T12:21:19.985216"
+  },
+  {
+    "committee": "Committee on the Judiciary",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://judiciary.house.gov",
+    "response_time": 0.34,
+    "content_length": 52302,
+    "last_validated": "2025-07-07T12:21:19.985222"
+  },
+  {
+    "committee": "Committee on the Judiciary",
+    "chamber": "Senate",
+    "url_type": "members_url",
+    "url": "https://www.judiciary.senate.gov/about/members",
+    "response_time": 0.08,
+    "content_length": 134036,
+    "last_validated": "2025-07-07T12:21:19.985227"
+  },
+  {
+    "committee": "Committee on the Judiciary",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.judiciary.senate.gov",
+    "response_time": 0.06,
+    "content_length": 128901,
+    "last_validated": "2025-07-07T12:21:19.985232"
+  },
+  {
+    "committee": "Committee on Transportation and Infrastructure",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://transportation.house.gov",
+    "response_time": 0.22,
+    "content_length": 36801,
+    "last_validated": "2025-07-07T12:21:19.985238"
+  },
+  {
+    "committee": "Committee on Veterans' Affairs",
+    "chamber": "House",
+    "url_type": "official_website_url",
+    "url": "https://veterans.house.gov",
+    "response_time": 0.09,
+    "content_length": 40386,
+    "last_validated": "2025-07-07T12:21:19.985244"
+  },
+  {
+    "committee": "Committee on Veterans' Affairs",
+    "chamber": "Senate",
+    "url_type": "hearings_url",
+    "url": "https://www.veterans.senate.gov/hearings",
+    "response_time": 0.52,
+    "content_length": 34534,
+    "last_validated": "2025-07-07T12:21:19.985251"
+  },
+  {
+    "committee": "Committee on Veterans' Affairs",
+    "chamber": "Senate",
+    "url_type": "official_website_url",
+    "url": "https://www.veterans.senate.gov",
+    "response_time": 2.04,
+    "content_length": 34251,
+    "last_validated": "2025-07-07T12:21:19.985256"
+  }
+]
