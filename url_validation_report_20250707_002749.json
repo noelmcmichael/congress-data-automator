@@ -1,0 +1,1790 @@
+{
+  "timestamp": "2025-07-07T00:27:49.975558",
+  "summary": {
+    "total_committees": 35,
+    "total_urls": 105,
+    "valid_urls": 68,
+    "broken_urls": 37,
+    "suggested_fixes": 32
+  },
+  "results": [
+    {
+      "id": 1,
+      "name": "Committee on Agriculture",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://agriculture.house.gov/calendar/?EventTypeID=214",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://agriculture.house.gov/calendar/?EventTypeID=214",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://agriculture.house.gov/about/committee-members.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://agriculture.house.gov/about/committee-members.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://agriculture.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://agriculture.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Committee on Appropriations",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://appropriations.house.gov/calendar",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://appropriations.house.gov/calendar",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://appropriations.house.gov/about/members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://appropriations.house.gov/about/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://appropriations.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://appropriations.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Committee on Armed Services",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://armedservices.house.gov/meetings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://armedservices.house.gov/meetings/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://armedservices.house.gov/members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://armedservices.house.gov/members/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://armedservices.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://armedservices.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://edworkforce.house.gov/schedule",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://edworkforce.house.gov/schedule/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://edworkforce.house.gov/about/members.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://edworkforce.house.gov/about/members.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://edworkforce.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://edworkforce.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://energycommerce.house.gov/committee-activity/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://energycommerce.house.gov/committee-activity/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://energycommerce.house.gov/about-ec/committee-members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://energycommerce.house.gov/about-ec/committee-members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://energycommerce.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://energycommerce.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Committee on Financial Services",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://financialservices.house.gov/calendar",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://financialservices.house.gov/calendar/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://financialservices.house.gov/about/membership.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://financialservices.house.gov/about/membership.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://financialservices.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://financialservices.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 48,
+      "name": "Committee on Foreign Affairs",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://foreignaffairs.house.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://foreignaffairs.house.gov/hearings-and-markups/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://foreignaffairs.house.gov/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://foreignaffairs.house.gov/press-release/members-congress-pen-letter-urging-treasury-department-address-war-profiteering-south-sudan/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://foreignaffairs.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://foreignaffairs.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 56,
+      "name": "Committee on Homeland Security",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://homeland.house.gov/activities/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://homeland.house.gov/activities/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://homeland.house.gov/about/membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://homeland.house.gov/about/membership",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://homeland.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://homeland.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Committee on House Administration",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://cha.house.gov/committee-activity/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://cha.house.gov/committee-activity/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://cha.house.gov/about/members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://cha.house.gov/about/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://cha.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://cha.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 70,
+      "name": "Committee on Natural Resources",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://naturalresources.house.gov/calendar",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://naturalresources.house.gov/calendar/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://naturalresources.house.gov/about/members.htm",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://naturalresources.house.gov/about/members.htm",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://naturalresources.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://naturalresources.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 76,
+      "name": "Committee on Oversight and Accountability",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://oversight.house.gov/hearing",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://oversight.house.gov/hearing/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://oversight.house.gov/full-committee-members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://oversight.house.gov/full-committee-members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://oversight.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://oversight.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 82,
+      "name": "Committee on Rules",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://rules.house.gov/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://rules.house.gov/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://rules.house.gov/about/members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://rules.house.gov/about/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://rules.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://rules.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 83,
+      "name": "Committee on Science, Space, and Technology",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://science.house.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://science.house.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://science.house.gov/about/membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://science.house.gov/about/membership",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://science.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://science.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 89,
+      "name": "Committee on Small Business",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://smallbusiness.house.gov/legislation/hearings.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://smallbusiness.house.gov/legislation/hearings.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://smallbusiness.house.gov/about/members.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://smallbusiness.house.gov/about/members.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://smallbusiness.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://smallbusiness.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Committee on the Budget",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://budget.house.gov/legislation/hearings",
+          "result": {
+            "status_code": 410,
+            "final_url": "https://budget.house.gov/legislation/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://budget.house.gov/about/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://budget.house.gov/about/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://budget.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://budget.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "Committee on the Judiciary",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://judiciary.house.gov/committee-activity/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://judiciary.house.gov/committee-activity/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://judiciary.house.gov/about/members",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://judiciary.house.gov/about/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://judiciary.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://judiciary.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 95,
+      "name": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://transportation.house.gov/committee-activity/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://transportation.house.gov/committee-activity/hearings/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://transportation.house.gov/about/members.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://transportation.house.gov/about/members.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://transportation.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://transportation.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 102,
+      "name": "Committee on Veterans' Affairs",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://veterans.house.gov/events/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://veterans.house.gov/events/hearings/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://veterans.house.gov/about/membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://veterans.house.gov/about/membership/",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://veterans.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://veterans.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 108,
+      "name": "Committee on Ways and Means",
+      "chamber": "House",
+      "urls": {
+        "hearings_url": {
+          "url": "https://waysandmeans.house.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://waysandmeans.house.gov/hearings/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://waysandmeans.house.gov/about/members.htm",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://waysandmeans.house.gov/about/members.htm",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://waysandmeans.house.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://waysandmeans.house.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 115,
+      "name": "Committee on Agriculture, Nutrition, and Forestry",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.agriculture.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.agriculture.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.agriculture.senate.gov/about/membership",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.agriculture.senate.gov/about/membership",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.agriculture.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.agriculture.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 121,
+      "name": "Committee on Appropriations",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.appropriations.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.appropriations.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.appropriations.senate.gov/about/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.appropriations.senate.gov/about/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.appropriations.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.appropriations.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 134,
+      "name": "Committee on Armed Services",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.armed-services.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.armed-services.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.armed-services.senate.gov/about",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.armed-services.senate.gov/about/membership",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.armed-services.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.armed-services.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 142,
+      "name": "Committee on Banking, Housing, and Urban Affairs",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.banking.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.banking.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.banking.senate.gov/about/members",
+          "result": {
+            "status_code": 503,
+            "final_url": "https://www.banking.senate.gov/about/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.banking.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.banking.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 149,
+      "name": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.commerce.senate.gov/2025/hearings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.commerce.senate.gov/2025/hearings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.commerce.senate.gov/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.commerce.senate.gov/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.commerce.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.commerce.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 157,
+      "name": "Committee on Energy and Natural Resources",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.energy.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.energy.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.energy.senate.gov/about-committees",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.energy.senate.gov/about-committees",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.energy.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.energy.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 162,
+      "name": "Committee on Environment and Public Works",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.epw.senate.gov/public/index.cfm/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.epw.senate.gov/public/index.cfm/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.epw.senate.gov/public/index.cfm/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.epw.senate.gov/public/index.cfm/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.epw.senate.gov",
+          "result": {
+            "status_code": 503,
+            "final_url": "https://www.epw.senate.gov/",
+            "valid": false,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 167,
+      "name": "Committee on Finance",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.finance.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.finance.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.finance.senate.gov/about/membership",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.finance.senate.gov/about/membership",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.finance.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.finance.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 173,
+      "name": "Committee on Foreign Relations",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.foreign.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.foreign.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.foreign.senate.gov/about/committee-membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.foreign.senate.gov/404?notfound=/about/committee-membership",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.foreign.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.foreign.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 181,
+      "name": "Committee on Health, Education, Labor and Pensions",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.help.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.help.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.help.senate.gov/about/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.help.senate.gov/about/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.help.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.help.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 185,
+      "name": "Committee on Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.hsgac.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.hsgac.senate.gov/hearings/",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.hsgac.senate.gov/about/committee-membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.hsgac.senate.gov/about/committee-membership",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.hsgac.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.hsgac.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 197,
+      "name": "Committee on Rules and Administration",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.rules.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.rules.senate.gov/hearings/list",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.rules.senate.gov/about/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.rules.senate.gov/about/committee-membership",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.rules.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.rules.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 198,
+      "name": "Committee on Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.sbc.senate.gov/public/index.cfm/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.sbc.senate.gov/public/index.cfm/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.sbc.senate.gov/public/index.cfm/members",
+          "result": {
+            "status_code": 503,
+            "final_url": "https://www.sbc.senate.gov/public/index.cfm/members",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.sbc.senate.gov",
+          "result": {
+            "status_code": 503,
+            "final_url": "https://www.sbc.senate.gov/",
+            "valid": false,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 148,
+      "name": "Committee on the Budget",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.budget.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.budget.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.budget.senate.gov/about/committee-members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.budget.senate.gov/about/committee-members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.budget.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.budget.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 189,
+      "name": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.judiciary.senate.gov/meetings",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.judiciary.senate.gov/404?notfound=/meetings",
+            "valid": false,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.judiciary.senate.gov/about/members",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.judiciary.senate.gov/about/members",
+            "valid": true,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.judiciary.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.judiciary.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": 199,
+      "name": "Committee on Veterans' Affairs",
+      "chamber": "Senate",
+      "urls": {
+        "hearings_url": {
+          "url": "https://www.veterans.senate.gov/hearings",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.veterans.senate.gov/hearings",
+            "valid": true,
+            "error": null
+          }
+        },
+        "members_url": {
+          "url": "https://www.veterans.senate.gov/about/membership",
+          "result": {
+            "status_code": 404,
+            "final_url": "https://www.veterans.senate.gov/about/membership",
+            "valid": false,
+            "error": null
+          }
+        },
+        "official_website_url": {
+          "url": "https://www.veterans.senate.gov",
+          "result": {
+            "status_code": 200,
+            "final_url": "https://www.veterans.senate.gov/",
+            "valid": true,
+            "error": null
+          }
+        }
+      }
+    }
+  ],
+  "broken_urls": [
+    {
+      "committee": "Committee on Agriculture",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://agriculture.house.gov/about/committee-members.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Appropriations",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://appropriations.house.gov/calendar",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Appropriations",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://appropriations.house.gov/about/members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Armed Services",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://armedservices.house.gov/meetings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Armed Services",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://armedservices.house.gov/members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://edworkforce.house.gov/schedule",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://edworkforce.house.gov/about/members.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://energycommerce.house.gov/committee-activity/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://energycommerce.house.gov/about-ec/committee-members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Financial Services",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://financialservices.house.gov/about/membership.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Homeland Security",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://homeland.house.gov/activities/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Homeland Security",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://homeland.house.gov/about/membership",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on House Administration",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://cha.house.gov/committee-activity/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on House Administration",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://cha.house.gov/about/members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Oversight and Accountability",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://oversight.house.gov/full-committee-members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Rules",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://rules.house.gov/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Rules",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://rules.house.gov/about/members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Science, Space, and Technology",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://science.house.gov/about/membership",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Small Business",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://smallbusiness.house.gov/legislation/hearings.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Small Business",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://smallbusiness.house.gov/about/members.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on the Budget",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://budget.house.gov/legislation/hearings",
+      "error": null,
+      "status_code": 410
+    },
+    {
+      "committee": "Committee on the Judiciary",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://judiciary.house.gov/about/members",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://transportation.house.gov/committee-activity/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://transportation.house.gov/about/members.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "url": "https://veterans.house.gov/events/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://veterans.house.gov/about/membership",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Ways and Means",
+      "chamber": "House",
+      "url_type": "members_url",
+      "url": "https://waysandmeans.house.gov/about/members.htm",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Banking, Housing, and Urban Affairs",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.banking.senate.gov/about/members",
+      "error": null,
+      "status_code": 503
+    },
+    {
+      "committee": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "url_type": "hearings_url",
+      "url": "https://www.commerce.senate.gov/2025/hearings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Energy and Natural Resources",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.energy.senate.gov/about-committees",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Environment and Public Works",
+      "chamber": "Senate",
+      "url_type": "official_website_url",
+      "url": "https://www.epw.senate.gov",
+      "error": null,
+      "status_code": 503
+    },
+    {
+      "committee": "Committee on Foreign Relations",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.foreign.senate.gov/about/committee-membership",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.hsgac.senate.gov/about/committee-membership",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.sbc.senate.gov/public/index.cfm/members",
+      "error": null,
+      "status_code": 503
+    },
+    {
+      "committee": "Committee on Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "url_type": "official_website_url",
+      "url": "https://www.sbc.senate.gov",
+      "error": null,
+      "status_code": 503
+    },
+    {
+      "committee": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "url_type": "hearings_url",
+      "url": "https://www.judiciary.senate.gov/meetings",
+      "error": null,
+      "status_code": 404
+    },
+    {
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "url": "https://www.veterans.senate.gov/about/membership",
+      "error": null,
+      "status_code": 404
+    }
+  ],
+  "suggested_fixes": [
+    {
+      "committee_id": null,
+      "committee": "Committee on Agriculture",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://agriculture.house.gov/about/committee-members.htm",
+      "suggested_url": "https://onagriculture.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Appropriations",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://appropriations.house.gov/calendar",
+      "suggested_url": "https://onappropriations.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Appropriations",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://appropriations.house.gov/about/members",
+      "suggested_url": "https://onappropriations.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Armed Services",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://armedservices.house.gov/meetings",
+      "suggested_url": "https://onarmedservices.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Armed Services",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://armedservices.house.gov/members",
+      "suggested_url": "https://onarmedservices.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://edworkforce.house.gov/schedule",
+      "suggested_url": "https://oneducationandtheworkforce.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Education and the Workforce",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://edworkforce.house.gov/about/members.htm",
+      "suggested_url": "https://oneducationandtheworkforce.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://energycommerce.house.gov/committee-activity/hearings",
+      "suggested_url": "https://onenergyandcommerce.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://energycommerce.house.gov/about-ec/committee-members",
+      "suggested_url": "https://onenergyandcommerce.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Financial Services",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://financialservices.house.gov/about/membership.htm",
+      "suggested_url": "https://onfinancialservices.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Homeland Security",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://homeland.house.gov/activities/hearings",
+      "suggested_url": "https://onhomelandsecurity.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Homeland Security",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://homeland.house.gov/about/membership",
+      "suggested_url": "https://onhomelandsecurity.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on House Administration",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://cha.house.gov/committee-activity/hearings",
+      "suggested_url": "https://onhouseadministration.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on House Administration",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://cha.house.gov/about/members",
+      "suggested_url": "https://onhouseadministration.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Oversight and Accountability",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://oversight.house.gov/full-committee-members",
+      "suggested_url": "https://onoversightandaccountability.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Rules",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://rules.house.gov/hearings",
+      "suggested_url": "https://onrules.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Rules",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://rules.house.gov/about/members",
+      "suggested_url": "https://onrules.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Science, Space, and Technology",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://science.house.gov/about/membership",
+      "suggested_url": "https://onscience,space,andtechnology.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Small Business",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://smallbusiness.house.gov/legislation/hearings.htm",
+      "suggested_url": "https://onsmallbusiness.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Small Business",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://smallbusiness.house.gov/about/members.htm",
+      "suggested_url": "https://onsmallbusiness.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on the Judiciary",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://judiciary.house.gov/about/members",
+      "suggested_url": "https://onthejudiciary.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://transportation.house.gov/committee-activity/hearings",
+      "suggested_url": "https://ontransportationandinfrastructure.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://transportation.house.gov/about/members.htm",
+      "suggested_url": "https://ontransportationandinfrastructure.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "House",
+      "url_type": "hearings_url",
+      "current_url": "https://veterans.house.gov/events/hearings",
+      "suggested_url": "https://onveterans'affairs.house.gov/calendar",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://veterans.house.gov/about/membership",
+      "suggested_url": "https://onveterans'affairs.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Ways and Means",
+      "chamber": "House",
+      "url_type": "members_url",
+      "current_url": "https://waysandmeans.house.gov/about/members.htm",
+      "suggested_url": "https://onwaysandmeans.house.gov/about/members",
+      "reason": "Standard House committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "url_type": "hearings_url",
+      "current_url": "https://www.commerce.senate.gov/2025/hearings",
+      "suggested_url": "https://www.commerce,science,andtransportation.senate.gov/hearings",
+      "reason": "Standard Senate committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Energy and Natural Resources",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "current_url": "https://www.energy.senate.gov/about-committees",
+      "suggested_url": "https://www.energyandnaturalresources.senate.gov/about/members",
+      "reason": "Standard Senate committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Foreign Relations",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "current_url": "https://www.foreign.senate.gov/about/committee-membership",
+      "suggested_url": "https://www.foreignrelations.senate.gov/about/members",
+      "reason": "Standard Senate committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "current_url": "https://www.hsgac.senate.gov/about/committee-membership",
+      "suggested_url": "https://www.homelandsecurityandgovernmentalaffairs.senate.gov/about/members",
+      "reason": "Standard Senate committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "url_type": "hearings_url",
+      "current_url": "https://www.judiciary.senate.gov/meetings",
+      "suggested_url": "https://www.thejudiciary.senate.gov/hearings",
+      "reason": "Standard Senate committee URL pattern"
+    },
+    {
+      "committee_id": null,
+      "committee": "Committee on Veterans' Affairs",
+      "chamber": "Senate",
+      "url_type": "members_url",
+      "current_url": "https://www.veterans.senate.gov/about/membership",
+      "suggested_url": "https://www.veterans'affairs.senate.gov/about/members",
+      "reason": "Standard Senate committee URL pattern"
+    }
+  ]
+}
