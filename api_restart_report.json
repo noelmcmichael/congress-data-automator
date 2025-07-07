@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-07-06T22:57:07.980531",
+  "restart_results": {
+    "api_status_before": true,
+    "committees_before": 2,
+    "restart_success": true,
+    "service_ready": true,
+    "committees_after": 2,
+    "judiciary_found": false,
+    "search_functional": true
+  },
+  "success_rate": 66.66666666666666,
+  "summary": [
+    "\u2705 API service was healthy before restart",
+    "\u2705 Found 2 committees before restart",
+    "\u2705 API service restart successful",
+    "\u2705 Service ready after restart",
+    "\u274c Only 2 committees found after restart",
+    "\u274c Senate Judiciary Committee not visible"
+  ],
+  "final_status": "INCOMPLETE"
+}
