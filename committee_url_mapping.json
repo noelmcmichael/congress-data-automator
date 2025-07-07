@@ -1,0 +1,395 @@
+{
+  "timestamp": "2025-07-06T23:38:30.742199",
+  "source": "Official Congressional Committee URLs Research",
+  "mapping_stats": {
+    "total_db_committees": 35,
+    "total_senate_urls": 18,
+    "total_house_urls": 22,
+    "successful_mappings": 34,
+    "unmapped_committees": 1,
+    "unmapped_urls": 6,
+    "mapping_rate": 97.14285714285714
+  },
+  "mappings": [
+    {
+      "committee_id": 1,
+      "database_name": "Committee on Agriculture",
+      "official_name": "Agriculture",
+      "chamber": "House",
+      "hearings_url": "https://agriculture.house.gov/calendar/?EventTypeID=214",
+      "members_url": "https://agriculture.house.gov/about/committee-members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 7,
+      "database_name": "Committee on Appropriations",
+      "official_name": "Appropriations",
+      "chamber": "House",
+      "hearings_url": "https://appropriations.house.gov/calendar",
+      "members_url": "https://appropriations.house.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 20,
+      "database_name": "Committee on Armed Services",
+      "official_name": "Armed Services",
+      "chamber": "House",
+      "hearings_url": "https://armedservices.house.gov/meetings",
+      "members_url": "https://armedservices.house.gov/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 29,
+      "database_name": "Committee on Education and the Workforce",
+      "official_name": "Education and the Workforce",
+      "chamber": "House",
+      "hearings_url": "https://edworkforce.house.gov/schedule",
+      "members_url": "https://edworkforce.house.gov/about/members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 34,
+      "database_name": "Committee on Energy and Commerce",
+      "official_name": "Energy and Commerce",
+      "chamber": "House",
+      "hearings_url": "https://energycommerce.house.gov/committee-activity/hearings",
+      "members_url": "https://energycommerce.house.gov/about-ec/committee-members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 41,
+      "database_name": "Committee on Financial Services",
+      "official_name": "Financial Services",
+      "chamber": "House",
+      "hearings_url": "https://financialservices.house.gov/calendar",
+      "members_url": "https://financialservices.house.gov/about/membership.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 48,
+      "database_name": "Committee on Foreign Affairs",
+      "official_name": "Foreign Affairs",
+      "chamber": "House",
+      "hearings_url": "https://foreignaffairs.house.gov/hearings",
+      "members_url": "https://foreignaffairs.house.gov/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 56,
+      "database_name": "Committee on Homeland Security",
+      "official_name": "Homeland Security",
+      "chamber": "House",
+      "hearings_url": "https://homeland.house.gov/activities/hearings",
+      "members_url": "https://homeland.house.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 63,
+      "database_name": "Committee on House Administration",
+      "official_name": "House Administration",
+      "chamber": "House",
+      "hearings_url": "https://cha.house.gov/committee-activity/hearings",
+      "members_url": "https://cha.house.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 70,
+      "database_name": "Committee on Natural Resources",
+      "official_name": "Natural Resources",
+      "chamber": "House",
+      "hearings_url": "https://naturalresources.house.gov/calendar",
+      "members_url": "https://naturalresources.house.gov/about/members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 76,
+      "database_name": "Committee on Oversight and Accountability",
+      "official_name": "Oversight and Accountability",
+      "chamber": "House",
+      "hearings_url": "https://oversight.house.gov/hearing",
+      "members_url": "https://oversight.house.gov/full-committee-members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 82,
+      "database_name": "Committee on Rules",
+      "official_name": "Rules",
+      "chamber": "House",
+      "hearings_url": "https://rules.house.gov/hearings",
+      "members_url": "https://rules.house.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 83,
+      "database_name": "Committee on Science, Space, and Technology",
+      "official_name": "Science, Space, and Technology",
+      "chamber": "House",
+      "hearings_url": "https://science.house.gov/hearings",
+      "members_url": "https://science.house.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 89,
+      "database_name": "Committee on Small Business",
+      "official_name": "Small Business",
+      "chamber": "House",
+      "hearings_url": "https://smallbusiness.house.gov/legislation/hearings.htm",
+      "members_url": "https://smallbusiness.house.gov/about/members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 28,
+      "database_name": "Committee on the Budget",
+      "official_name": "Budget",
+      "chamber": "House",
+      "hearings_url": "https://budget.house.gov/legislation/hearings",
+      "members_url": "https://budget.house.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 64,
+      "database_name": "Committee on the Judiciary",
+      "official_name": "Judiciary",
+      "chamber": "House",
+      "hearings_url": "https://judiciary.house.gov/committee-activity/hearings",
+      "members_url": "https://judiciary.house.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 95,
+      "database_name": "Committee on Transportation and Infrastructure",
+      "official_name": "Transportation and Infrastructure",
+      "chamber": "House",
+      "hearings_url": "https://transportation.house.gov/committee-activity/hearings",
+      "members_url": "https://transportation.house.gov/about/members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 102,
+      "database_name": "Committee on Veterans' Affairs",
+      "official_name": "Veterans' Affairs",
+      "chamber": "House",
+      "hearings_url": "https://veterans.house.gov/events/hearings",
+      "members_url": "https://veterans.house.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 108,
+      "database_name": "Committee on Ways and Means",
+      "official_name": "Ways and Means",
+      "chamber": "House",
+      "hearings_url": "https://waysandmeans.house.gov/hearings",
+      "members_url": "https://waysandmeans.house.gov/about/members.htm",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 115,
+      "database_name": "Committee on Agriculture, Nutrition, and Forestry",
+      "official_name": "Agriculture, Nutrition, and Forestry",
+      "chamber": "Senate",
+      "hearings_url": "https://www.agriculture.senate.gov/hearings",
+      "members_url": "https://www.agriculture.senate.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 121,
+      "database_name": "Committee on Appropriations",
+      "official_name": "Appropriations",
+      "chamber": "Senate",
+      "hearings_url": "https://www.appropriations.senate.gov/hearings",
+      "members_url": "https://www.appropriations.senate.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 134,
+      "database_name": "Committee on Armed Services",
+      "official_name": "Armed Services",
+      "chamber": "Senate",
+      "hearings_url": "https://www.armed-services.senate.gov/hearings",
+      "members_url": "https://www.armed-services.senate.gov/about",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 142,
+      "database_name": "Committee on Banking, Housing, and Urban Affairs",
+      "official_name": "Banking, Housing, and Urban Affairs",
+      "chamber": "Senate",
+      "hearings_url": "https://www.banking.senate.gov/hearings",
+      "members_url": "https://www.banking.senate.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 149,
+      "database_name": "Committee on Commerce, Science, and Transportation",
+      "official_name": "Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "hearings_url": "https://www.commerce.senate.gov/2025/hearings",
+      "members_url": "https://www.commerce.senate.gov/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 157,
+      "database_name": "Committee on Energy and Natural Resources",
+      "official_name": "Energy and Natural Resources",
+      "chamber": "Senate",
+      "hearings_url": "https://www.energy.senate.gov/hearings",
+      "members_url": "https://www.energy.senate.gov/about-committees",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 162,
+      "database_name": "Committee on Environment and Public Works",
+      "official_name": "Environment and Public Works",
+      "chamber": "Senate",
+      "hearings_url": "https://www.epw.senate.gov/public/index.cfm/hearings",
+      "members_url": "https://www.epw.senate.gov/public/index.cfm/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 167,
+      "database_name": "Committee on Finance",
+      "official_name": "Finance",
+      "chamber": "Senate",
+      "hearings_url": "https://www.finance.senate.gov/hearings",
+      "members_url": "https://www.finance.senate.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 173,
+      "database_name": "Committee on Foreign Relations",
+      "official_name": "Foreign Relations",
+      "chamber": "Senate",
+      "hearings_url": "https://www.foreign.senate.gov/hearings",
+      "members_url": "https://www.foreign.senate.gov/about/committee-membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 185,
+      "database_name": "Committee on Homeland Security and Governmental Affairs",
+      "official_name": "Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "hearings_url": "https://www.hsgac.senate.gov/hearings",
+      "members_url": "https://www.hsgac.senate.gov/about/committee-membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 197,
+      "database_name": "Committee on Rules and Administration",
+      "official_name": "Rules and Administration",
+      "chamber": "Senate",
+      "hearings_url": "https://www.rules.senate.gov/hearings",
+      "members_url": "https://www.rules.senate.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 198,
+      "database_name": "Committee on Small Business and Entrepreneurship",
+      "official_name": "Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "hearings_url": "https://www.sbc.senate.gov/public/index.cfm/hearings",
+      "members_url": "https://www.sbc.senate.gov/public/index.cfm/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 148,
+      "database_name": "Committee on the Budget",
+      "official_name": "Budget",
+      "chamber": "Senate",
+      "hearings_url": "https://www.budget.senate.gov/hearings",
+      "members_url": "https://www.budget.senate.gov/about/committee-members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 189,
+      "database_name": "Committee on the Judiciary",
+      "official_name": "Judiciary",
+      "chamber": "Senate",
+      "hearings_url": "https://www.judiciary.senate.gov/meetings",
+      "members_url": "https://www.judiciary.senate.gov/about/members",
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "committee_id": 199,
+      "database_name": "Committee on Veterans' Affairs",
+      "official_name": "Veterans' Affairs",
+      "chamber": "Senate",
+      "hearings_url": "https://www.veterans.senate.gov/hearings",
+      "members_url": "https://www.veterans.senate.gov/about/membership",
+      "match_type": "exact",
+      "confidence": 1.0
+    }
+  ],
+  "unmapped_committees": [
+    {
+      "committee_id": 181,
+      "name": "Committee on Health, Education, Labor and Pensions",
+      "chamber": "Senate",
+      "reason": "No matching URL found"
+    }
+  ],
+  "unmapped_urls": [
+    {
+      "name": "Health, Education, Labor, and Pensions",
+      "chamber": "Senate",
+      "reason": "No matching committee in database"
+    },
+    {
+      "name": "Select Committee on Intelligence",
+      "chamber": "Senate",
+      "reason": "No matching committee in database"
+    },
+    {
+      "name": "Special Committee on Aging",
+      "chamber": "Senate",
+      "reason": "No matching committee in database"
+    },
+    {
+      "name": "Ethics",
+      "chamber": "House",
+      "reason": "No matching committee in database"
+    },
+    {
+      "name": "Permanent Select Committee on Intelligence",
+      "chamber": "House",
+      "reason": "No matching committee in database"
+    },
+    {
+      "name": "Select Committee on the Strategic Competition Between the U.S. and the CCP",
+      "chamber": "House",
+      "reason": "No matching committee in database"
+    }
+  ]
+}
