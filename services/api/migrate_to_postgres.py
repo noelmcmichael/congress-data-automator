@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from api.core.config import settings
 from api.core.logging import logger
 from api.database.connection import db_manager
-from api.models.database import Member, Committee, Hearing, CommitteeMembership, Witness, HearingDocument
+from api.database.models import Member, Committee, Hearing, CommitteeMembership, Witness, HearingDocument
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
