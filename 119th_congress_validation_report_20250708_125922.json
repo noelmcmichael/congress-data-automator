@@ -1,0 +1,202 @@
+{
+  "validation_timestamp": "2025-07-08T12:59:22.905634",
+  "database_file": "congress_119th.db",
+  "congress_session": "119th Congress (2025-2027)",
+  "validation_version": "1.0.0",
+  "session_accuracy": {
+    "current_congress_detected": 119,
+    "database_has_current_session": true,
+    "session_details": {
+      "congress": 119,
+      "start_date": "2025-01-03",
+      "end_date": "2027-01-03",
+      "is_current": 1,
+      "house_control": "Republican",
+      "senate_control": "Republican"
+    },
+    "data_currency_check": {
+      "is_current": true,
+      "status": {
+        "is_current": true,
+        "current_congress": 119,
+        "data_congress": 119,
+        "status": "UP_TO_DATE"
+      }
+    }
+  },
+  "leadership_accuracy": {
+    "committees_tested": 4,
+    "total_leadership_positions": 8,
+    "correct_positions": 6,
+    "accuracy_percentage": 75.0,
+    "tests": {
+      "Judiciary": {
+        "expected_chair": "Chuck Grassley",
+        "actual_chair": "Chuck Grassley",
+        "chair_correct": true,
+        "expected_ranking": "Dick Durbin",
+        "actual_ranking": "Dick Durbin",
+        "ranking_correct": true,
+        "chamber": "Senate"
+      },
+      "Commerce, Science, and Transportation": {
+        "expected_chair": "Ted Cruz",
+        "actual_chair": "Ted Cruz",
+        "chair_correct": true,
+        "expected_ranking": "Maria Cantwell",
+        "actual_ranking": "Maria Cantwell",
+        "ranking_correct": true,
+        "chamber": "Senate"
+      },
+      "Finance": {
+        "expected_chair": "Mike Crapo",
+        "actual_chair": "Mike Crapo",
+        "chair_correct": true,
+        "expected_ranking": "Ron Wyden",
+        "actual_ranking": "Ron Wyden",
+        "ranking_correct": true,
+        "chamber": "Senate"
+      },
+      "Armed Services": {
+        "expected_chair": "Roger Wicker",
+        "actual_chair": "Mike Rogers",
+        "chair_correct": false,
+        "expected_ranking": "Jack Reed",
+        "actual_ranking": "Adam Smith",
+        "ranking_correct": false,
+        "chamber": "House"
+      }
+    }
+  },
+  "relationship_integrity": {
+    "total_relationships": 32,
+    "position_breakdown": {
+      "Ranking Member": 16,
+      "Chair": 16
+    },
+    "sample_relationships": [
+      [
+        "Adam Smith",
+        "Democratic",
+        "WA",
+        "Armed Services",
+        "Ranking Member"
+      ],
+      [
+        "Amy Klobuchar",
+        "Democratic",
+        "MN",
+        "Agriculture, Nutrition, and Forestry",
+        "Ranking Member"
+      ],
+      [
+        "Bernie Sanders",
+        "Independent",
+        "VT",
+        "Health, Education, Labor, and Pensions",
+        "Ranking Member"
+      ],
+      [
+        "Bill Cassidy",
+        "Republican",
+        "LA",
+        "Health, Education, Labor, and Pensions",
+        "Chair"
+      ],
+      [
+        "Brett Guthrie",
+        "Republican",
+        "KY",
+        "Energy and Commerce",
+        "Chair"
+      ],
+      [
+        "Chuck Grassley",
+        "Republican",
+        "IA",
+        "Judiciary",
+        "Chair"
+      ],
+      [
+        "Dick Durbin",
+        "Democratic",
+        "IL",
+        "Judiciary",
+        "Ranking Member"
+      ],
+      [
+        "Elizabeth Warren",
+        "Democratic",
+        "MA",
+        "Banking, Housing, and Urban Affairs",
+        "Ranking Member"
+      ],
+      [
+        "Frank Pallone",
+        "Democratic",
+        "NJ",
+        "Energy and Commerce",
+        "Ranking Member"
+      ],
+      [
+        "Gary Peters",
+        "Democratic",
+        "MI",
+        "Homeland Security and Governmental Affairs",
+        "Ranking Member"
+      ]
+    ],
+    "specific_tests": {
+      "grassley_judiciary": {
+        "found": true,
+        "details": [
+          "Chuck Grassley",
+          "Judiciary",
+          "Chair"
+        ]
+      },
+      "cruz_commerce": {
+        "found": true,
+        "details": [
+          "Ted Cruz",
+          "Commerce, Science, and Transportation",
+          "Chair"
+        ]
+      }
+    }
+  },
+  "data_completeness": {
+    "record_counts": {
+      "committees": 16,
+      "members": 32,
+      "memberships": 32
+    },
+    "data_quality": {
+      "committees_missing_leadership": 0,
+      "leadership_coverage": "100.0%"
+    },
+    "distributions": {
+      "chamber": {
+        "House": 4,
+        "Senate": 12
+      },
+      "party": {
+        "Democratic": 15,
+        "Independent": 1,
+        "Republican": 16
+      }
+    },
+    "completeness_score": 100
+  },
+  "overall_assessment": {
+    "overall_score": 93.75,
+    "grade": "A",
+    "status": "EXCELLENT",
+    "component_scores": {
+      "leadership_accuracy": 75.0,
+      "data_completeness": 100,
+      "relationship_integrity": 100,
+      "session_accuracy": 100
+    }
+  }
+}

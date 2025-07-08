@@ -1,0 +1,74 @@
+{
+  "report_timestamp": "2025-07-08T12:50:04.604090",
+  "current_congress": 119,
+  "data_congress_in_db": 118,
+  "data_currency_status": {
+    "is_current": false,
+    "current_congress": 119,
+    "data_congress": 118,
+    "congress_gap": 1,
+    "days_since_transition": 186,
+    "current_period": "2025-2027",
+    "data_period": "2023-2025",
+    "alert_level": "HIGH"
+  },
+  "alert_info": {
+    "timestamp": "2025-07-08T12:50:04.603645",
+    "alert_triggered": true,
+    "severity": "HIGH",
+    "message": "⚠️ Database contains 118th Congress data. Current 119th Congress started 186 days ago. Committee assignments and leadership positions may be outdated.",
+    "status": {
+      "is_current": false,
+      "current_congress": 119,
+      "data_congress": 118,
+      "congress_gap": 1,
+      "days_since_transition": 186,
+      "current_period": "2025-2027",
+      "data_period": "2023-2025",
+      "alert_level": "HIGH"
+    },
+    "action_required": true
+  },
+  "historical_sessions": [
+    {
+      "congress_number": 117,
+      "start_date": "2021-01-03",
+      "end_date": "2023-01-03",
+      "is_current": false,
+      "party_control_house": null,
+      "party_control_senate": null
+    },
+    {
+      "congress_number": 118,
+      "start_date": "2023-01-03",
+      "end_date": "2025-01-03",
+      "is_current": false,
+      "party_control_house": null,
+      "party_control_senate": null
+    },
+    {
+      "congress_number": 119,
+      "start_date": "2025-01-03",
+      "end_date": "2027-01-03",
+      "is_current": true,
+      "party_control_house": null,
+      "party_control_senate": null
+    },
+    {
+      "congress_number": 120,
+      "start_date": "2027-01-03",
+      "end_date": "2029-01-03",
+      "is_current": false,
+      "party_control_house": null,
+      "party_control_senate": null
+    }
+  ],
+  "recommendations": [
+    "🎯 UPDATE REQUIRED: Transition from 118th to 119th Congress",
+    "📊 Update committee structures and assignments",
+    "👥 Update member committee assignments and leadership positions",
+    "🏛️ Verify new committee chairs and ranking members",
+    "⚠️ HIGH PRIORITY: Data is significantly outdated",
+    "🔄 Consider implementing automated Congressional transition detection"
+  ]
+}

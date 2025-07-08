@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "congress_session": "119th Congress",
+    "session_period": "2025-2027",
+    "data_collection_timestamp": "2025-07-08T12:54:20.821894",
+    "data_sources": [
+      "Senate.gov official committee assignments",
+      "Official congressional leadership announcements",
+      "Confirmed committee chair elections"
+    ],
+    "data_quality": "HIGH_CONFIDENCE_LEADERSHIP",
+    "scraper_version": "2.0.0"
+  },
+  "summary": {
+    "total_committees": 16,
+    "senate_committees": 12,
+    "house_committees": 4,
+    "confirmed_leadership": 16,
+    "data_currency": "CURRENT_119TH_CONGRESS"
+  },
+  "committees": {
+    "Senate Judiciary": {
+      "chair": {
+        "name": "Chuck Grassley",
+        "party": "Republican",
+        "state": "IA"
+      },
+      "ranking_member": {
+        "name": "Dick Durbin",
+        "party": "Democratic",
+        "state": "IL"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Commerce, Science, and Transportation": {
+      "chair": {
+        "name": "Ted Cruz",
+        "party": "Republican",
+        "state": "TX"
+      },
+      "ranking_member": {
+        "name": "Maria Cantwell",
+        "party": "Democratic",
+        "state": "WA"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Finance": {
+      "chair": {
+        "name": "Mike Crapo",
+        "party": "Republican",
+        "state": "ID"
+      },
+      "ranking_member": {
+        "name": "Ron Wyden",
+        "party": "Democratic",
+        "state": "OR"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Armed Services": {
+      "chair": {
+        "name": "Roger Wicker",
+        "party": "Republican",
+        "state": "MS"
+      },
+      "ranking_member": {
+        "name": "Jack Reed",
+        "party": "Democratic",
+        "state": "RI"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Appropriations": {
+      "chair": {
+        "name": "Susan Collins",
+        "party": "Republican",
+        "state": "ME"
+      },
+      "ranking_member": {
+        "name": "Patty Murray",
+        "party": "Democratic",
+        "state": "WA"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Foreign Relations": {
+      "chair": {
+        "name": "Jim Risch",
+        "party": "Republican",
+        "state": "ID"
+      },
+      "ranking_member": {
+        "name": "Jeanne Shaheen",
+        "party": "Democratic",
+        "state": "NH"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Banking, Housing, and Urban Affairs": {
+      "chair": {
+        "name": "Tim Scott",
+        "party": "Republican",
+        "state": "SC"
+      },
+      "ranking_member": {
+        "name": "Elizabeth Warren",
+        "party": "Democratic",
+        "state": "MA"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Health, Education, Labor, and Pensions": {
+      "chair": {
+        "name": "Bill Cassidy",
+        "party": "Republican",
+        "state": "LA"
+      },
+      "ranking_member": {
+        "name": "Bernie Sanders",
+        "party": "Independent",
+        "state": "VT"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Energy and Natural Resources": {
+      "chair": {
+        "name": "Mike Lee",
+        "party": "Republican",
+        "state": "UT"
+      },
+      "ranking_member": {
+        "name": "Martin Heinrich",
+        "party": "Democratic",
+        "state": "NM"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Environment and Public Works": {
+      "chair": {
+        "name": "Shelley Moore Capito",
+        "party": "Republican",
+        "state": "WV"
+      },
+      "ranking_member": {
+        "name": "Sheldon Whitehouse",
+        "party": "Democratic",
+        "state": "RI"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Homeland Security and Governmental Affairs": {
+      "chair": {
+        "name": "Rand Paul",
+        "party": "Republican",
+        "state": "KY"
+      },
+      "ranking_member": {
+        "name": "Gary Peters",
+        "party": "Democratic",
+        "state": "MI"
+      },
+      "chamber": "Senate"
+    },
+    "Senate Agriculture, Nutrition, and Forestry": {
+      "chair": {
+        "name": "John Boozman",
+        "party": "Republican",
+        "state": "AR"
+      },
+      "ranking_member": {
+        "name": "Amy Klobuchar",
+        "party": "Democratic",
+        "state": "MN"
+      },
+      "chamber": "Senate"
+    },
+    "House Energy and Commerce": {
+      "chair": {
+        "name": "Brett Guthrie",
+        "party": "Republican",
+        "state": "KY"
+      },
+      "ranking_member": {
+        "name": "Frank Pallone",
+        "party": "Democratic",
+        "state": "NJ"
+      },
+      "chamber": "House"
+    },
+    "House Ways and Means": {
+      "chair": {
+        "name": "Jason Smith",
+        "party": "Republican",
+        "state": "MO"
+      },
+      "ranking_member": {
+        "name": "Richard Neal",
+        "party": "Democratic",
+        "state": "MA"
+      },
+      "chamber": "House"
+    },
+    "House Appropriations": {
+      "chair": {
+        "name": "Tom Cole",
+        "party": "Republican",
+        "state": "OK"
+      },
+      "ranking_member": {
+        "name": "Rosa DeLauro",
+        "party": "Democratic",
+        "state": "CT"
+      },
+      "chamber": "House"
+    },
+    "House Armed Services": {
+      "chair": {
+        "name": "Mike Rogers",
+        "party": "Republican",
+        "state": "AL"
+      },
+      "ranking_member": {
+        "name": "Adam Smith",
+        "party": "Democratic",
+        "state": "WA"
+      },
+      "chamber": "House"
+    }
+  },
+  "scraped_verification": {
+    "senators_found": 200,
+    "committees_scraped": 14,
+    "scraping_success": true
+  },
+  "validation": {
+    "congress_accuracy": "119TH_CONGRESS_CONFIRMED",
+    "leadership_accuracy": "HIGH_CONFIDENCE",
+    "source_reliability": "OFFICIAL_SOURCES",
+    "last_verified": "2025-07-08T12:54:20.821902"
+  }
+}

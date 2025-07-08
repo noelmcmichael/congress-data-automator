@@ -1,0 +1,48 @@
+{
+  "migration_status": "SUCCESS",
+  "duration_seconds": 0.007813,
+  "committees_migrated": 16,
+  "members_created": 32,
+  "memberships_created": 32,
+  "database_file": "congress_119th.db",
+  "validation": {
+    "migration_timestamp": "2025-07-08T12:56:13.446453",
+    "congress_session": "119th Congress (2025-2027)",
+    "record_counts": {
+      "committees": 16,
+      "members": 32,
+      "memberships": 32
+    },
+    "key_committees_verified": 5,
+    "leadership_sample": [
+      {
+        "committee": "Armed Services",
+        "chair": "Mike Rogers",
+        "ranking": "Adam Smith"
+      },
+      {
+        "committee": "Armed Services",
+        "chair": "Roger Wicker",
+        "ranking": "Jack Reed"
+      },
+      {
+        "committee": "Commerce, Science, and Transportation",
+        "chair": "Ted Cruz",
+        "ranking": "Maria Cantwell"
+      },
+      {
+        "committee": "Finance",
+        "chair": "Mike Crapo",
+        "ranking": "Ron Wyden"
+      },
+      {
+        "committee": "Judiciary",
+        "chair": "Chuck Grassley",
+        "ranking": "Dick Durbin"
+      }
+    ],
+    "migration_success": true,
+    "data_quality": "HIGH"
+  },
+  "completion_timestamp": "2025-07-08T12:56:13.446472"
+}

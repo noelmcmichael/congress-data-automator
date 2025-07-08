@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "congress_session": "119th Congress",
+    "session_period": "2025-2027",
+    "collection_timestamp": "2025-07-08T12:52:28.876092",
+    "data_source": "Official Congressional websites",
+    "scraper_version": "1.0.0"
+  },
+  "summary": {
+    "total_committees": 18,
+    "senate_committees": 0,
+    "house_committees": 18,
+    "committees_with_chairs": 0,
+    "total_member_assignments": 0
+  },
+  "committees": {
+    "House Agriculture": {
+      "name": "Agriculture",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Appropriations": {
+      "name": "Appropriations",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Armed Services": {
+      "name": "Armed Services",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Education and the Workforce": {
+      "name": "Education and the Workforce",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Energy and Commerce": {
+      "name": "Energy and Commerce",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Financial Services": {
+      "name": "Financial Services",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Foreign Affairs": {
+      "name": "Foreign Affairs",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Homeland Security": {
+      "name": "Homeland Security",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House House Administration": {
+      "name": "House Administration",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Judiciary": {
+      "name": "Judiciary",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Natural Resources": {
+      "name": "Natural Resources",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Oversight and Accountability": {
+      "name": "Oversight and Accountability",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Rules": {
+      "name": "Rules",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Science, Space, and Technology": {
+      "name": "Science, Space, and Technology",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Small Business": {
+      "name": "Small Business",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Transportation and Infrastructure": {
+      "name": "Transportation and Infrastructure",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Veterans' Affairs": {
+      "name": "Veterans' Affairs",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    },
+    "House Ways and Means": {
+      "name": "Ways and Means",
+      "chamber": "House",
+      "type": "Standing",
+      "chair": null,
+      "ranking_member": null,
+      "members": [],
+      "total_members": 0,
+      "republicans": 0,
+      "democrats": 0
+    }
+  },
+  "validation": {
+    "timestamp": "2025-07-08T12:52:28.876080",
+    "congress_session": "119th Congress (2025-2027)",
+    "validation_checks": [],
+    "warnings": [
+      "⚠️ Judiciary: Committee not found in data",
+      "⚠️ Commerce, Science, and Transportation: Committee not found in data",
+      "⚠️ Finance: Committee not found in data",
+      "⚠️ Armed Services: Committee not found in data"
+    ],
+    "data_quality": "UNKNOWN"
+  },
+  "data_quality_assessment": {
+    "senate_data": "INCOMPLETE",
+    "house_data": "STRUCTURE_ONLY",
+    "leadership_accuracy": "UNKNOWN",
+    "currency": "119TH_CONGRESS_CURRENT"
+  }
+}
