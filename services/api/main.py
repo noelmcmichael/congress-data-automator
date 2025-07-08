@@ -51,13 +51,16 @@ def run_api_server():
     from api.app import app
     
     logger.info(f"Starting API server on {settings.api_host}:{settings.api_port}")
+    
+    # Configure uvicorn directly since our config property might have issues
     uvicorn.run(
         app,
         host=settings.api_host,
         port=settings.api_port,
-        workers=settings.api_workers if settings.is_production else 1,
+        workers=settings.uvicorn_workers if settings.is_production else 1,
         log_config=None,  # Use our custom logging
-        reload=settings.api_reload,
+        access_log=False,  # We have our own request logging
+        reload=settings.api_reload and not settings.is_production,
     )
 
 

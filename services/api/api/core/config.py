@@ -1,6 +1,7 @@
 """Configuration management for the API service."""
 
 import os
+import secrets
 from pathlib import Path
 from typing import List, Optional
 
@@ -61,6 +62,7 @@ class Settings(BaseSettings):
     # Rate Limiting
     rate_limit_requests: int = Field(default=100, description="Rate limit requests")
     rate_limit_period: int = Field(default=60, description="Rate limit period")
+    rate_limit_burst: int = Field(default=200, description="Rate limit burst allowance")
 
     # Pagination
     default_page_size: int = Field(default=20, description="Default page size")
@@ -75,6 +77,20 @@ class Settings(BaseSettings):
     health_check_interval: int = Field(
         default=30, description="Health check interval"
     )
+    health_check_timeout: int = Field(default=10, description="Health check timeout")
+    
+    # Performance Settings
+    uvicorn_workers: int = Field(default=4, description="Uvicorn workers")
+    uvicorn_worker_class: str = Field(
+        default="uvicorn.workers.UvicornWorker", description="Uvicorn worker class"
+    )
+    uvicorn_max_requests: int = Field(default=1000, description="Max requests per worker")
+    uvicorn_max_requests_jitter: int = Field(default=100, description="Max requests jitter")
+    
+    # Logging
+    log_format: str = Field(default="pretty", description="Log format (pretty/json)")
+    log_rotation: bool = Field(default=False, description="Enable log rotation")
+    log_retention: int = Field(default=30, description="Log retention in days")
 
     # API Versioning
     api_version_prefix: str = Field(default="/api/v1", description="API version prefix")
@@ -87,12 +103,17 @@ class Settings(BaseSettings):
 
     # Security
     secret_key: str = Field(
-        default="your-secret-key-here", description="Secret key"
+        default_factory=lambda: secrets.token_urlsafe(32), description="Secret key"
     )
     algorithm: str = Field(default="HS256", description="Algorithm")
     access_token_expire_minutes: int = Field(
         default=30, description="Access token expire minutes"
     )
+    
+    # Security Headers
+    security_headers_enabled: bool = Field(default=True, description="Enable security headers")
+    hsts_max_age: int = Field(default=31536000, description="HSTS max age")
+    csrf_protection: bool = Field(default=True, description="Enable CSRF protection")
 
     @field_validator("database_url")
     @classmethod
@@ -145,12 +166,30 @@ class Settings(BaseSettings):
             raise ValueError("Max page size must be greater than default page size")
         return v
 
+    @field_validator("log_format")
+    @classmethod
+    def validate_log_format(cls, v: str) -> str:
+        """Validate log format."""
+        valid_formats = ["pretty", "json"]
+        if v.lower() not in valid_formats:
+            raise ValueError(f"Log format must be one of: {valid_formats}")
+        return v.lower()
+
+    @field_validator("secret_key")
+    @classmethod
+    def validate_secret_key(cls, v: str) -> str:
+        """Validate secret key."""
+        if len(v) < 32:
+            raise ValueError("Secret key must be at least 32 characters long")
+        return v
+
     class Config:
         """Pydantic configuration."""
 
         env_file = ".env"
         env_file_encoding = "utf-8"
         case_sensitive = False
+        extra = "ignore"  # Ignore extra environment variables
 
     @property
     def is_production(self) -> bool:
@@ -195,6 +234,59 @@ class Settings(BaseSettings):
             "headers": self.cors_headers,
         }
 
+    @property
+    def uvicorn_config(self) -> dict:
+        """Get Uvicorn configuration."""
+        return {
+            "host": self.api_host,
+            "port": self.api_port,
+            "workers": self.uvicorn_workers if self.is_production else 1,
+            "worker_class": self.uvicorn_worker_class,
+            "max_requests": self.uvicorn_max_requests,
+            "max_requests_jitter": self.uvicorn_max_requests_jitter,
+            "reload": self.api_reload and not self.is_production,
+        }
+
+    @property
+    def security_config(self) -> dict:
+        """Get security configuration."""
+        return {
+            "secret_key": self.secret_key,
+            "algorithm": self.algorithm,
+            "access_token_expire_minutes": self.access_token_expire_minutes,
+            "security_headers_enabled": self.security_headers_enabled,
+            "hsts_max_age": self.hsts_max_age,
+            "csrf_protection": self.csrf_protection,
+        }
+
+    @property
+    def rate_limit_config(self) -> dict:
+        """Get rate limiting configuration."""
+        return {
+            "requests": self.rate_limit_requests,
+            "period": self.rate_limit_period,
+            "burst": self.rate_limit_burst,
+        }
+
+
+# Load settings based on environment
+def load_settings() -> Settings:
+    """Load settings based on environment."""
+    env = os.getenv("ENVIRONMENT", "development").lower()
+    
+    # Determine which env file to load
+    env_files = [".env"]
+    if env == "production":
+        env_files.append(".env.production")
+    elif env == "staging":
+        env_files.append(".env.staging")
+    
+    # Load settings with appropriate env file
+    for env_file in env_files:
+        if Path(env_file).exists():
+            return Settings(_env_file=env_file)
+    
+    return Settings()
 
 # Global settings instance
-settings = Settings()
+settings = load_settings()

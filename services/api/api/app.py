@@ -13,6 +13,7 @@ from fastapi.encoders import jsonable_encoder
 
 from .core.config import settings
 from .core.logging import logger, LoggingMiddleware
+from .core.security import SecurityHeadersMiddleware, RateLimitMiddleware, RequestLoggingMiddleware
 from .core.exceptions import APIException
 from .database.connection import db_manager
 from .models.base import ErrorResponse
@@ -77,6 +78,14 @@ def create_app() -> FastAPI:
         docs_url="/docs" if not settings.is_production else None,
         redoc_url="/redoc" if not settings.is_production else None,
     )
+    
+    # Add security middleware (order matters!)
+    if settings.is_production or settings.is_staging:
+        app.add_middleware(SecurityHeadersMiddleware)
+        app.add_middleware(RateLimitMiddleware)
+    
+    # Add request logging middleware
+    app.add_middleware(RequestLoggingMiddleware)
     
     # Add CORS middleware
     app.add_middleware(
@@ -201,12 +210,14 @@ def create_app() -> FastAPI:
     from .endpoints.hearings import router as hearings_router
     from .endpoints.search import router as search_router
     from .endpoints.statistics import router as statistics_router
+    from .endpoints.monitoring import router as monitoring_router
     
     app.include_router(members_router, prefix=settings.api_version_prefix)
     app.include_router(committees_router, prefix=settings.api_version_prefix)
     app.include_router(hearings_router, prefix=settings.api_version_prefix)
     app.include_router(search_router, prefix=settings.api_version_prefix)
     app.include_router(statistics_router, prefix=settings.api_version_prefix)
+    app.include_router(monitoring_router)  # No prefix for monitoring endpoints
     
     return app
 
