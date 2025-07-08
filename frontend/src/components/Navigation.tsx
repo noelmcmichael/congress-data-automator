@@ -15,6 +15,7 @@ import {
   useMediaQuery,
   AppBar,
 } from '@mui/material';
+import { getSessionDisplayString } from '../services/congressionalSession';
 import {
   Dashboard as DashboardIcon,
   People as PeopleIcon,
@@ -74,9 +75,24 @@ const Navigation: React.FC<NavigationProps> = ({ onMobileToggle }) => {
       }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <CapitolIcon sx={{ color: 'white', fontSize: 28 }} />
-          <Typography variant="h6" noWrap component="div" sx={{ color: 'white', fontWeight: 600 }}>
-            Congress Data
-          </Typography>
+          <Box>
+            <Typography variant="h6" noWrap component="div" sx={{ color: 'white', fontWeight: 600 }}>
+              Congress Data
+            </Typography>
+            <Typography 
+              variant="caption" 
+              noWrap 
+              component="div" 
+              sx={{ 
+                color: 'rgba(255, 255, 255, 0.9)', 
+                fontWeight: 500,
+                fontSize: '0.75rem',
+                lineHeight: 1
+              }}
+            >
+              {getSessionDisplayString()}
+            </Typography>
+          </Box>
         </Box>
       </Toolbar>
       <Box sx={{ overflow: 'auto', pt: 1 }}>
@@ -146,9 +162,25 @@ const Navigation: React.FC<NavigationProps> = ({ onMobileToggle }) => {
             </IconButton>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <CapitolIcon />
-              <Typography variant="h6" noWrap component="div">
-                Congress Data
-              </Typography>
+              <Box>
+                <Typography variant="h6" noWrap component="div">
+                  Congress Data
+                </Typography>
+                <Typography 
+                  variant="caption" 
+                  noWrap 
+                  component="div" 
+                  sx={{ 
+                    color: 'rgba(255, 255, 255, 0.9)', 
+                    fontWeight: 500,
+                    fontSize: '0.7rem',
+                    lineHeight: 1,
+                    mt: -0.5
+                  }}
+                >
+                  {getSessionDisplayString()}
+                </Typography>
+              </Box>
             </Box>
           </Toolbar>
         </AppBar>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -6,6 +6,7 @@ import { Box, useMediaQuery, useTheme } from '@mui/material';
 import Navigation from './components/Navigation';
 import Dashboard from './components/Dashboard';
 import Members from './components/Members';
+import { getSessionDisplayString } from './services/congressionalSession';
 
 import Hearings from './components/Hearings';
 import Settings from './components/Settings';
@@ -95,6 +96,12 @@ const theme = createTheme({
 const AppContent: React.FC = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
+
+  // Update document title with Congressional session context
+  useEffect(() => {
+    const sessionString = getSessionDisplayString();
+    document.title = `Congressional Data Automator - ${sessionString}`;
+  }, []);
 
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh', backgroundColor: theme.palette.background.default }}>
