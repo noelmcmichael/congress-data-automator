@@ -1,0 +1,115 @@
+# Optimized Multi-stage Dockerfile for Congressional Data API Service
+# Uses uv for faster dependency management and enhanced security
+
+# Stage 1: Build dependencies with uv
+FROM python:3.11-slim as builder
+
+# Set build arguments
+ARG BUILD_DEPS="build-essential curl git"
+ARG UV_VERSION=0.1.24
+
+# Install system dependencies and uv
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends $BUILD_DEPS && \
+    rm -rf /var/lib/apt/lists/* && \
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Add uv to PATH
+ENV PATH="/root/.cargo/bin:$PATH"
+
+# Set working directory
+WORKDIR /app
+
+# Create virtual environment
+RUN uv venv .venv
+
+# Activate virtual environment
+ENV PATH="/app/.venv/bin:$PATH" \
+    VIRTUAL_ENV="/app/.venv"
+
+# Copy dependency files
+COPY requirements.txt ./
+
+# Install dependencies with uv (much faster than pip)
+RUN uv pip install -r requirements.txt
+
+# Install additional production dependencies
+RUN uv pip install \
+    psutil \
+    gunicorn \
+    uvicorn[standard] \
+    prometheus-client
+
+# Stage 2: Production image
+FROM python:3.11-slim as production
+
+# Set production environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PATH="/app/.venv/bin:$PATH" \
+    VIRTUAL_ENV="/app/.venv" \
+    ENVIRONMENT=production \
+    LOG_LEVEL=INFO \
+    PYTHONPATH="/app"
+
+# Install runtime dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        libpq5 \
+        curl \
+        && \
+    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean
+
+# Create non-root user with specific UID/GID for security
+RUN groupadd -g 1000 apiuser && \
+    useradd -r -u 1000 -g apiuser -d /app -s /bin/bash apiuser && \
+    mkdir -p /app && \
+    chown -R apiuser:apiuser /app
+
+# Set working directory
+WORKDIR /app
+
+# Copy virtual environment from builder stage
+COPY --from=builder --chown=apiuser:apiuser /app/.venv /app/.venv
+
+# Copy application code with proper permissions
+COPY --chown=apiuser:apiuser api/ ./api/
+COPY --chown=apiuser:apiuser main.py ./
+COPY --chown=apiuser:apiuser .env.production ./.env
+
+# Create necessary directories
+RUN mkdir -p /app/logs && \
+    chown -R apiuser:apiuser /app/logs
+
+# Switch to non-root user
+USER apiuser
+
+# Create startup script for better process management
+RUN echo '#!/bin/bash\n\
+set -e\n\
+echo "Starting Congressional Data API Service..."\n\
+echo "Environment: $ENVIRONMENT"\n\
+echo "Port: ${API_PORT:-8003}"\n\
+echo "Workers: ${UVICORN_WORKERS:-4}"\n\
+exec python main.py api\n\
+' > /app/start.sh && chmod +x /app/start.sh
+
+# Health check with proper curl usage
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+    CMD curl -f http://localhost:${API_PORT:-8003}/health || exit 1
+
+# Expose port (configurable via environment)
+EXPOSE ${API_PORT:-8003}
+
+# Use exec form for proper signal handling
+CMD ["/app/start.sh"]
+
+# Add labels for better maintainability
+LABEL maintainer="Congressional Data Team <team@congressionaldata.com>" \
+      version="1.0.0" \
+      description="Production-ready Congressional Data API Service" \
+      org.opencontainers.image.source="https://github.com/congressional-data/api-service" \
+      org.opencontainers.image.vendor="Congressional Data Automation" \
+      org.opencontainers.image.title="Congressional Data API" \
+      org.opencontainers.image.description="Enterprise-grade read-only API for congressional data"

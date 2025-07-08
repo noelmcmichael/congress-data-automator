@@ -1,0 +1,109 @@
+# Git and version control
+.git
+.gitignore
+.github/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and coverage
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation
+*.md
+docs/
+README*
+CHANGELOG*
+LICENSE*
+
+# Logs
+*.log
+logs/
+log/
+
+# Development and testing files
+test*.py
+*_test.py
+tests/
+test_*
+.env.local
+.env.development
+.env.test
+
+# Docker files (except what we need)
+Dockerfile
+docker-compose*.yml
+!Dockerfile.optimized
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Application specific
+api_server.log
+*.json
+!package*.json
+
+# Development scripts
+scripts/
+tools/
+utilities/
+
+# Configuration files that shouldn't be in container
+.env.example
+*.local.conf
+local_*

@@ -1,0 +1,229 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database with production configuration
+  postgres:
+    image: postgres:15-alpine
+    container_name: congressional_db_prod
+    environment:
+      POSTGRES_USER: ${DATABASE_USER:-congress_user}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-congress_pass}
+      POSTGRES_DB: ${DATABASE_NAME:-congress_data}
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256 --auth-local=scram-sha-256"
+    ports:
+      - "${DATABASE_PORT:-5432}:5432"
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf:ro
+      - ./pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+    command: >
+      postgres 
+      -c config_file=/etc/postgresql/postgresql.conf
+      -c hba_file=/etc/postgresql/pg_hba.conf
+      -c shared_preload_libraries=pg_stat_statements
+      -c log_statement=all
+      -c log_duration=on
+      -c log_min_duration_statement=1000
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USER:-congress_user} -d ${DATABASE_NAME:-congress_data}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: "1.0"
+        reservations:
+          memory: 512M
+          cpus: "0.25"
+
+  # Redis cache with persistence
+  redis:
+    image: redis:7-alpine
+    container_name: congressional_redis_prod
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    command: >
+      redis-server 
+      --appendonly yes 
+      --appendfsync everysec 
+      --maxmemory 512mb 
+      --maxmemory-policy allkeys-lru
+      --tcp-keepalive 60
+      --timeout 300
+    volumes:
+      - redis_data_prod:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "0.5"
+        reservations:
+          memory: 128M
+          cpus: "0.1"
+
+  # API service with production configuration
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.optimized
+      target: production
+    container_name: congressional_api_prod
+    environment:
+      # Database configuration
+      DATABASE_URL: postgresql://${DATABASE_USER:-congress_user}:${DATABASE_PASSWORD:-congress_pass}@postgres:5432/${DATABASE_NAME:-congress_data}
+      DATABASE_POOL_SIZE: 20
+      DATABASE_MAX_OVERFLOW: 10
+      DATABASE_POOL_TIMEOUT: 30
+      
+      # Redis configuration  
+      REDIS_URL: redis://redis:6379/0
+      REDIS_TIMEOUT: 5
+      REDIS_MAX_CONNECTIONS: 20
+      
+      # API configuration
+      ENVIRONMENT: production
+      LOG_LEVEL: INFO
+      DEBUG: false
+      API_HOST: 0.0.0.0
+      API_PORT: 8003
+      API_WORKERS: 4
+      
+      # Performance configuration
+      UVICORN_WORKERS: 4
+      UVICORN_MAX_REQUESTS: 1000
+      UVICORN_MAX_REQUESTS_JITTER: 100
+      
+      # Security configuration
+      SECRET_KEY: ${SECRET_KEY}
+      CORS_ORIGINS: ${CORS_ORIGINS:-["https://yourdomain.com"]}
+      
+      # Rate limiting
+      RATE_LIMIT_REQUESTS: 100
+      RATE_LIMIT_PERIOD: 60
+      RATE_LIMIT_BURST: 200
+      
+      # Caching
+      CACHE_TTL: 1800
+      CACHE_ENABLED: true
+      
+      # Monitoring
+      METRICS_ENABLED: true
+      HEALTH_CHECK_INTERVAL: 30
+      
+      # Logging
+      LOG_FORMAT: json
+      LOG_ROTATION: true
+      LOG_RETENTION: 30
+    ports:
+      - "${API_PORT:-8003}:8003"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+      - /etc/ssl/certs:/etc/ssl/certs:ro  # SSL certificates for outbound requests
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 45s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "2.0"
+        reservations:
+          memory: 256M
+          cpus: "0.5"
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+
+  # Nginx reverse proxy with SSL termination
+  nginx:
+    image: nginx:alpine
+    container_name: congressional_nginx_prod
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - api
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Prometheus monitoring (optional)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: congressional_prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # Grafana dashboard (optional)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: congressional_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin123}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  postgres_data_prod:
+    driver: local
+  redis_data_prod:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+networks:
+  default:
+    name: congressional_network_prod
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
