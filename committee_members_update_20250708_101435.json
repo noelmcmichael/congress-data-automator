@@ -1,0 +1,338 @@
+{
+  "189": {
+    "committee_id": 189,
+    "committee_name": "Committee on the Judiciary",
+    "members": [
+      {
+        "id": 510,
+        "name": "Chuck Grassley",
+        "state": "IA",
+        "role": "Member"
+      },
+      {
+        "id": 515,
+        "name": "Lindsey Graham",
+        "state": "SC",
+        "role": "Member"
+      },
+      {
+        "id": 525,
+        "name": "John Cornyn",
+        "state": "TX",
+        "role": "Member"
+      },
+      {
+        "id": 496,
+        "name": "Mike Lee",
+        "state": "UT",
+        "role": "Member"
+      },
+      {
+        "id": 517,
+        "name": "Ted Cruz",
+        "state": "TX",
+        "role": "Member"
+      },
+      {
+        "id": 4,
+        "name": "Josh Hawley",
+        "state": "MO",
+        "role": "Member"
+      },
+      {
+        "id": 524,
+        "name": "Tom Cotton",
+        "state": "AR",
+        "role": "Member"
+      },
+      {
+        "id": 499,
+        "name": "John Kennedy",
+        "state": "LA",
+        "role": "Member"
+      },
+      {
+        "id": 459,
+        "name": "Sheldon Whitehouse",
+        "state": "RI",
+        "role": "Member"
+      },
+      {
+        "id": 495,
+        "name": "Amy Klobuchar",
+        "state": "MN",
+        "role": "Member"
+      },
+      {
+        "id": 533,
+        "name": "Richard Blumenthal",
+        "state": "CT",
+        "role": "Member"
+      },
+      {
+        "id": 505,
+        "name": "Mazie Hirono",
+        "state": "HI",
+        "role": "Member"
+      },
+      {
+        "id": 532,
+        "name": "Cory Booker",
+        "state": "NJ",
+        "role": "Member"
+      },
+      {
+        "id": 481,
+        "name": "Alex Padilla",
+        "state": "CA",
+        "role": "Member"
+      },
+      {
+        "id": 482,
+        "name": "Jon Ossoff",
+        "state": "GA",
+        "role": "Member"
+      },
+      {
+        "id": 5,
+        "name": "Peter Welch",
+        "state": "VT",
+        "role": "Member"
+      }
+    ]
+  },
+  "134": {
+    "committee_id": 134,
+    "committee_name": "Committee on Armed Services",
+    "members": [
+      {
+        "id": 461,
+        "name": "Roger Wicker",
+        "state": "MS",
+        "role": "Member"
+      },
+      {
+        "id": 513,
+        "name": "Deb Fischer",
+        "state": "NE",
+        "role": "Member"
+      },
+      {
+        "id": 524,
+        "name": "Tom Cotton",
+        "state": "AR",
+        "role": "Member"
+      },
+      {
+        "id": 470,
+        "name": "Mike Rounds",
+        "state": "SD",
+        "role": "Member"
+      },
+      {
+        "id": 516,
+        "name": "Joni Ernst",
+        "state": "IA",
+        "role": "Member"
+      },
+      {
+        "id": 466,
+        "name": "Dan Sullivan",
+        "state": "AK",
+        "role": "Member"
+      },
+      {
+        "id": 523,
+        "name": "Kevin Cramer",
+        "state": "ND",
+        "role": "Member"
+      },
+      {
+        "id": 468,
+        "name": "Rick Scott",
+        "state": "FL",
+        "role": "Member"
+      },
+      {
+        "id": 480,
+        "name": "Jack Reed",
+        "state": "RI",
+        "role": "Member"
+      },
+      {
+        "id": 469,
+        "name": "Jeanne Shaheen",
+        "state": "NH",
+        "role": "Member"
+      },
+      {
+        "id": 514,
+        "name": "Kirsten Gillibrand",
+        "state": "NY",
+        "role": "Member"
+      },
+      {
+        "id": 533,
+        "name": "Richard Blumenthal",
+        "state": "CT",
+        "role": "Member"
+      },
+      {
+        "id": 505,
+        "name": "Mazie Hirono",
+        "state": "HI",
+        "role": "Member"
+      },
+      {
+        "id": 500,
+        "name": "Tim Kaine",
+        "state": "VA",
+        "role": "Member"
+      },
+      {
+        "id": 494,
+        "name": "Angus King",
+        "state": "ME",
+        "role": "Member"
+      },
+      {
+        "id": 509,
+        "name": "Martin Heinrich",
+        "state": "NM",
+        "role": "Member"
+      },
+      {
+        "id": 458,
+        "name": "Elizabeth Warren",
+        "state": "MA",
+        "role": "Member"
+      },
+      {
+        "id": 478,
+        "name": "Gary Peters",
+        "state": "MI",
+        "role": "Member"
+      },
+      {
+        "id": 477,
+        "name": "Jacky Rosen",
+        "state": "NV",
+        "role": "Member"
+      },
+      {
+        "id": 498,
+        "name": "Mark Kelly",
+        "state": "AZ",
+        "role": "Member"
+      },
+      {
+        "id": 451,
+        "name": "Elissa Slotkin",
+        "state": "MI",
+        "role": "Member"
+      }
+    ]
+  },
+  "167": {
+    "committee_id": 167,
+    "committee_name": "Committee on Finance",
+    "members": [
+      {
+        "id": 521,
+        "name": "Mike Crapo",
+        "state": "ID",
+        "role": "Member"
+      },
+      {
+        "id": 510,
+        "name": "Chuck Grassley",
+        "state": "IA",
+        "role": "Member"
+      },
+      {
+        "id": 525,
+        "name": "John Cornyn",
+        "state": "TX",
+        "role": "Member"
+      },
+      {
+        "id": 467,
+        "name": "John Thune",
+        "state": "SD",
+        "role": "Member"
+      },
+      {
+        "id": 472,
+        "name": "Tim Scott",
+        "state": "SC",
+        "role": "Member"
+      },
+      {
+        "id": 527,
+        "name": "Bill Cassidy",
+        "state": "LA",
+        "role": "Member"
+      },
+      {
+        "id": 497,
+        "name": "James Lankford",
+        "state": "OK",
+        "role": "Member"
+      },
+      {
+        "id": 518,
+        "name": "Steve Daines",
+        "state": "MT",
+        "role": "Member"
+      },
+      {
+        "id": 455,
+        "name": "Todd Young",
+        "state": "IN",
+        "role": "Member"
+      },
+      {
+        "id": 456,
+        "name": "Ron Wyden",
+        "state": "OR",
+        "role": "Member"
+      },
+      {
+        "id": 530,
+        "name": "Maria Cantwell",
+        "state": "WA",
+        "role": "Member"
+      },
+      {
+        "id": 536,
+        "name": "Michael Bennet",
+        "state": "CO",
+        "role": "Member"
+      },
+      {
+        "id": 460,
+        "name": "Mark Warner",
+        "state": "VA",
+        "role": "Member"
+      },
+      {
+        "id": 459,
+        "name": "Sheldon Whitehouse",
+        "state": "RI",
+        "role": "Member"
+      },
+      {
+        "id": 522,
+        "name": "Catherine Cortez Masto",
+        "state": "NV",
+        "role": "Member"
+      },
+      {
+        "id": 458,
+        "name": "Elizabeth Warren",
+        "state": "MA",
+        "role": "Member"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-08T10:14:35.622372",
+  "relationships_file": "manual_senate_assignments_20250708_101321.json",
+  "total_relationships": 53,
+  "unique_members": 46,
+  "unique_committees": 3,
+  "files_created": {
+    "member_committees": "member_committees_update_20250708_101435.json",
+    "committee_members": "committee_members_update_20250708_101435.json",
+    "sql_script": "database_committee_update_20250708_101435.sql"
+  },
+  "next_steps": [
+    "Review generated SQL script",
+    "Test SQL script in staging environment",
+    "Execute SQL script in production database",
+    "Verify API returns committee data",
+    "Test relationship queries"
+  ]
+}

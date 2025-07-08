@@ -1,0 +1,609 @@
+{
+  "senate_gov_links": [
+    {
+      "text": "COMMITTEES",
+      "href": "/committees/committees_home.htm",
+      "full_url": "https://www.senate.gov/committees/committees_home.htm"
+    },
+    {
+      "text": "Membership & Assignments",
+      "href": "/committees/membership_assignments.htm",
+      "full_url": "https://www.senate.gov/committees/membership_assignments.htm"
+    },
+    {
+      "text": "Hearings & Meetings",
+      "href": "/committees/hearings_meetings.htm",
+      "full_url": "https://www.senate.gov/committees/hearings_meetings.htm"
+    },
+    {
+      "text": "History",
+      "href": "/committees/history.htm",
+      "full_url": "https://www.senate.gov/committees/history.htm"
+    },
+    {
+      "text": "Committee & Office Staff",
+      "href": "/about/officers-staff/committee-office-staff.htm",
+      "full_url": "https://www.senate.gov/about/officers-staff/committee-office-staff.htm"
+    },
+    {
+      "text": "Committee System",
+      "href": "/about/origins-foundations/committee-system.htm",
+      "full_url": "https://www.senate.gov/about/origins-foundations/committee-system.htm"
+    },
+    {
+      "text": "List of Committees for the 119th Congress",
+      "href": "/committees/index.htm#committeelist",
+      "full_url": "https://www.senate.gov/committees/index.htm#committeelist"
+    },
+    {
+      "text": "Membership & Assignments",
+      "href": "/committees/membership_assignments.htm",
+      "full_url": "https://www.senate.gov/committees/membership_assignments.htm"
+    },
+    {
+      "text": "Hearings & Meetings",
+      "href": "/committees/hearings_meetings.htm",
+      "full_url": "https://www.senate.gov/committees/hearings_meetings.htm"
+    },
+    {
+      "text": "History",
+      "href": "/committees/history.htm",
+      "full_url": "https://www.senate.gov/committees/history.htm"
+    },
+    {
+      "text": "Appropriations",
+      "href": "http://www.appropriations.senate.gov/",
+      "full_url": "http://www.appropriations.senate.gov/"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm"
+    },
+    {
+      "text": "Subcommittee on Agriculture, Rural Development, Food and Drug Administration, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP01",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP01"
+    },
+    {
+      "text": "Subcommittee on Commerce, Justice, Science, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP16",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP16"
+    },
+    {
+      "text": "Subcommittee on Department of Defense",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP02",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP02"
+    },
+    {
+      "text": "Subcommittee on Department of Homeland Security",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP14",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP14"
+    },
+    {
+      "text": "Subcommittee on Department of Interior, Environment, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP17",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP17"
+    },
+    {
+      "text": "Subcommittee on Departments of Labor, Health and Human Services, and Education, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP18",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP18"
+    },
+    {
+      "text": "Subcommittee on Energy and Water Development",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP22",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP22"
+    },
+    {
+      "text": "Subcommittee on Financial Services and General Government",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP23",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP23"
+    },
+    {
+      "text": "Subcommittee on Legislative Branch",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP08",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP08"
+    },
+    {
+      "text": "Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP19",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP19"
+    },
+    {
+      "text": "Subcommittee on State, Foreign Operations, and Related Programs",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP20",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP20"
+    },
+    {
+      "text": "Subcommittee on Transportation, Housing and Urban Development, and Related Agencies",
+      "href": "/general/committee_membership/committee_memberships_SSAP.htm#SSAP24",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAP.htm#SSAP24"
+    },
+    {
+      "text": "Agriculture, Nutrition, and Forestry",
+      "href": "http://www.agriculture.senate.gov/",
+      "full_url": "http://www.agriculture.senate.gov/"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm"
+    },
+    {
+      "text": "Subcommittee on Commodities, Derivatives, Risk Management, and Trade",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm#SSAF13",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm#SSAF13"
+    },
+    {
+      "text": "Subcommittee on Conservation, Forestry, Natural Resources, and Biotechnology",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm#SSAF14",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm#SSAF14"
+    },
+    {
+      "text": "Subcommittee on Food and Nutrition, Specialty Crops, Organics, and Research",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm#SSAF16",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm#SSAF16"
+    },
+    {
+      "text": "Subcommittee on Livestock, Dairy, Poultry, and Food Safety",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm#SSAF17",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm#SSAF17"
+    },
+    {
+      "text": "Subcommittee on Rural Development, Energy, and Credit",
+      "href": "/general/committee_membership/committee_memberships_SSAF.htm#SSAF15",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAF.htm#SSAF15"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SPAG.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SPAG.htm"
+    },
+    {
+      "text": "Armed Services",
+      "href": "http://www.armed-services.senate.gov/",
+      "full_url": "http://www.armed-services.senate.gov/"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm"
+    },
+    {
+      "text": "Subcommittee on Airland",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS14",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS14"
+    },
+    {
+      "text": "Subcommittee on Cybersecurity",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS21",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS21"
+    },
+    {
+      "text": "Subcommittee on Emerging Threats and Capabilities",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS20",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS20"
+    },
+    {
+      "text": "Subcommittee on Personnel",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS17",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS17"
+    },
+    {
+      "text": "Subcommittee on Readiness and Management Support",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS15",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS15"
+    },
+    {
+      "text": "Subcommittee on Seapower",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS13",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS13"
+    },
+    {
+      "text": "Subcommittee on Strategic Forces",
+      "href": "/general/committee_membership/committee_memberships_SSAS.htm#SSAS16",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSAS.htm#SSAS16"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm"
+    },
+    {
+      "text": "Subcommittee on Digital Assets",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK13",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK13"
+    },
+    {
+      "text": "Subcommittee on Economic Policy",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK12",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK12"
+    },
+    {
+      "text": "Subcommittee on Financial Institutions and Consumer Protection",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK08",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK08"
+    },
+    {
+      "text": "Subcommittee on Housing, Transportation, and Community Development",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK09",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK09"
+    },
+    {
+      "text": "Subcommittee on National Security and  International Trade and Finance",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK05",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK05"
+    },
+    {
+      "text": "Subcommittee on Securities, Insurance, and Investment",
+      "href": "/general/committee_membership/committee_memberships_SSBK.htm#SSBK04",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBK.htm#SSBK04"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSBU.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSBU.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm"
+    },
+    {
+      "text": "Subcommittee on Aviation, Space, and Innovation",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM33",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM33"
+    },
+    {
+      "text": "Subcommittee on Coast Guard, Maritime, and Fisheries",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM36",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM36"
+    },
+    {
+      "text": "Subcommittee on Consumer Protection, Technology, and Data Privacy",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM35",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM35"
+    },
+    {
+      "text": "Subcommittee on Science, Manufacturing, and Competitiveness",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM37",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM37"
+    },
+    {
+      "text": "Subcommittee on Surface Transportation, Freight, Pipelines, and Safety",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM38",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM38"
+    },
+    {
+      "text": "Subcommittee on Telecommunications and Media",
+      "href": "/general/committee_membership/committee_memberships_SSCM.htm#SSCM34",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSCM.htm#SSCM34"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSEG.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEG.htm"
+    },
+    {
+      "text": "Subcommittee on Energy",
+      "href": "/general/committee_membership/committee_memberships_SSEG.htm#SSEG01",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEG.htm#SSEG01"
+    },
+    {
+      "text": "Subcommittee on National Parks",
+      "href": "/general/committee_membership/committee_memberships_SSEG.htm#SSEG04",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEG.htm#SSEG04"
+    },
+    {
+      "text": "Subcommittee on Public Lands, Forests, and Mining",
+      "href": "/general/committee_membership/committee_memberships_SSEG.htm#SSEG03",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEG.htm#SSEG03"
+    },
+    {
+      "text": "Subcommittee on Water and Power",
+      "href": "/general/committee_membership/committee_memberships_SSEG.htm#SSEG07",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEG.htm#SSEG07"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSEV.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEV.htm"
+    },
+    {
+      "text": "Subcommittee on Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight",
+      "href": "/general/committee_membership/committee_memberships_SSEV.htm#SSEV09",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEV.htm#SSEV09"
+    },
+    {
+      "text": "Subcommittee on Clean Air, Climate, and Nuclear Innovation and Safety",
+      "href": "/general/committee_membership/committee_memberships_SSEV.htm#SSEV10",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEV.htm#SSEV10"
+    },
+    {
+      "text": "Subcommittee on Fisheries, Wildlife, and Water",
+      "href": "/general/committee_membership/committee_memberships_SSEV.htm#SSEV15",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEV.htm#SSEV15"
+    },
+    {
+      "text": "Subcommittee on Transportation and Infrastructure",
+      "href": "/general/committee_membership/committee_memberships_SSEV.htm#SSEV08",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSEV.htm#SSEV08"
+    },
+    {
+      "text": "Finance",
+      "href": "http://www.finance.senate.gov/",
+      "full_url": "http://www.finance.senate.gov/"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm"
+    },
+    {
+      "text": "Subcommittee on Energy, Natural Resources, and Infrastructure",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI12",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI12"
+    },
+    {
+      "text": "Subcommittee on Fiscal Responsibility and Economic Growth",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI14",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI14"
+    },
+    {
+      "text": "Subcommittee on Health Care",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI10",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI10"
+    },
+    {
+      "text": "Subcommittee on International Trade, Customs, and Global Competitiveness",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI13",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI13"
+    },
+    {
+      "text": "Subcommittee on Social Security, Pensions, and Family Policy",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI02",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI02"
+    },
+    {
+      "text": "Subcommittee on Taxation and IRS Oversight",
+      "href": "/general/committee_membership/committee_memberships_SSFI.htm#SSFI11",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFI.htm#SSFI11"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm"
+    },
+    {
+      "text": "Subcommittee on Africa and Global Health Policy",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR09",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR09"
+    },
+    {
+      "text": "Subcommittee on East Asia, the Pacific, and International Cybersecurity Policy",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR02",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR02"
+    },
+    {
+      "text": "Subcommittee on Europe and Regional Security Cooperation",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR01",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR01"
+    },
+    {
+      "text": "Subcommittee on Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR15",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR15"
+    },
+    {
+      "text": "Subcommittee on Near East, South Asia, Central Asia, and Counterterrorism",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR07",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR07"
+    },
+    {
+      "text": "Subcommittee on State Department and USAID Management, International Operations, and Bilateral International Development",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR14",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR14"
+    },
+    {
+      "text": "Subcommittee on Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues",
+      "href": "/general/committee_membership/committee_memberships_SSFR.htm#SSFR06",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSFR.htm#SSFR06"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSGA.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSGA.htm"
+    },
+    {
+      "text": "Permanent Subcommittee on Investigations",
+      "href": "/general/committee_membership/committee_memberships_SSGA.htm#SSGA01",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSGA.htm#SSGA01"
+    },
+    {
+      "text": "Subcommittee on Border Management, Federal Workforce, and Regulatory Affairs",
+      "href": "/general/committee_membership/committee_memberships_SSGA.htm#SSGA22",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSGA.htm#SSGA22"
+    },
+    {
+      "text": "Subcommittee on Disaster Management, District of Columbia, and Census",
+      "href": "/general/committee_membership/committee_memberships_SSGA.htm#SSGA20",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSGA.htm#SSGA20"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSHR.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSHR.htm"
+    },
+    {
+      "text": "Subcommittee on Education and the American Family",
+      "href": "/general/committee_membership/committee_memberships_SSHR.htm#SSHR09",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSHR.htm#SSHR09"
+    },
+    {
+      "text": "Subcommittee on Employment and Workplace Safety",
+      "href": "/general/committee_membership/committee_memberships_SSHR.htm#SSHR11",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSHR.htm#SSHR11"
+    },
+    {
+      "text": "Subcommittee on Primary Health and Retirement Security",
+      "href": "/general/committee_membership/committee_memberships_SSHR.htm#SSHR12",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSHR.htm#SSHR12"
+    },
+    {
+      "text": "Judiciary",
+      "href": "http://www.judiciary.senate.gov/",
+      "full_url": "http://www.judiciary.senate.gov/"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm"
+    },
+    {
+      "text": "Subcommittee on Antitrust, Competition Policy, and Consumer Rights",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU01",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU01"
+    },
+    {
+      "text": "Subcommittee on Border Security and Immigration",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU04",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU04"
+    },
+    {
+      "text": "Subcommittee on Crime and Counterterrorism",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU22",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU22"
+    },
+    {
+      "text": "Subcommittee on Federal Courts, Oversight, Agency Action, and Federal Rights",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU25",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU25"
+    },
+    {
+      "text": "Subcommittee on Intellectual Property",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU26",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU26"
+    },
+    {
+      "text": "Subcommittee on Privacy, Technology, and the Law",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU28",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU28"
+    },
+    {
+      "text": "Subcommittee on the Constitution",
+      "href": "/general/committee_membership/committee_memberships_SSJU.htm#SSJU21",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSJU.htm#SSJU21"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSRA.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSRA.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSSB.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSSB.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SSVA.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SSVA.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SLIN.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SLIN.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SLIA.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SLIA.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_SLET.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_SLET.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_JSEC.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_JSEC.htm"
+    },
+    {
+      "text": "Joint Committee on the Library",
+      "href": "http://www.senate.gov/general/committee_membership/committee_memberships_JSLC.htm",
+      "full_url": "http://www.senate.gov/general/committee_membership/committee_memberships_JSLC.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_JSLC.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_JSLC.htm"
+    },
+    {
+      "text": "Joint Committee on Printing",
+      "href": "http://www.senate.gov/general/committee_membership/committee_memberships_JSPR.htm",
+      "full_url": "http://www.senate.gov/general/committee_membership/committee_memberships_JSPR.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_JSPR.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_JSPR.htm"
+    },
+    {
+      "text": "(Committee Member List)",
+      "href": "/general/committee_membership/committee_memberships_JSTX.htm",
+      "full_url": "https://www.senate.gov/general/committee_membership/committee_memberships_JSTX.htm"
+    },
+    {
+      "text": "Membership & Assignments",
+      "href": "/committees/membership_assignments.htm",
+      "full_url": "https://www.senate.gov/committees/membership_assignments.htm"
+    },
+    {
+      "text": "Hearings & Meetings",
+      "href": "/committees/hearings_meetings.htm",
+      "full_url": "https://www.senate.gov/committees/hearings_meetings.htm"
+    },
+    {
+      "text": "History",
+      "href": "/committees/history.htm",
+      "full_url": "https://www.senate.gov/committees/history.htm"
+    },
+    {
+      "text": "More...",
+      "href": "/about/origins-foundations/committee-system.htm",
+      "full_url": "https://www.senate.gov/about/origins-foundations/committee-system.htm"
+    },
+    {
+      "text": "Frequently Asked Questions about Committees",
+      "href": "/committees/committees_faq.htm",
+      "full_url": "https://www.senate.gov/committees/committees_faq.htm"
+    },
+    {
+      "text": "Committees section of Congress.gov",
+      "href": "https://www.congress.gov/committees",
+      "full_url": "https://www.congress.gov/committees"
+    },
+    {
+      "text": "COMMITTEES",
+      "href": "/committees/committees_home.htm",
+      "full_url": "https://www.senate.gov/committees/committees_home.htm"
+    },
+    {
+      "text": "Membership & Assignments",
+      "href": "/committees/membership_assignments.htm",
+      "full_url": "https://www.senate.gov/committees/membership_assignments.htm"
+    },
+    {
+      "text": "Hearings & Meetings",
+      "href": "/committees/hearings_meetings.htm",
+      "full_url": "https://www.senate.gov/committees/hearings_meetings.htm"
+    },
+    {
+      "text": "History",
+      "href": "/committees/history.htm",
+      "full_url": "https://www.senate.gov/committees/history.htm"
+    }
+  ]
+}

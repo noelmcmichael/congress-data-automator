@@ -1,0 +1,252 @@
+{
+  "timestamp": "2025-07-08T10:16:58.385071",
+  "source": "Manual House Assignment",
+  "representatives_in_database": 200,
+  "committees_in_database": 109,
+  "relationships_created": 27,
+  "relationships": [
+    {
+      "member_id": 383,
+      "member_name": "Darrell Issa",
+      "member_state": "CA",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 421,
+      "member_name": "Andy Biggs",
+      "member_state": "AZ",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 101,
+      "member_name": "Steve Cohen",
+      "member_state": "TN",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 31,
+      "member_name": "Pramila Jayapal",
+      "member_state": "WA",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 58,
+      "member_name": "Sylvia Garcia",
+      "member_state": "TX",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 124,
+      "member_name": "Madeleine Dean",
+      "member_state": "PA",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 85,
+      "member_name": "Veronica Escobar",
+      "member_state": "TX",
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 239,
+      "member_name": "Sam Graves",
+      "member_state": "MO",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 377,
+      "member_name": "Joe Courtney",
+      "member_state": "CT",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 430,
+      "member_name": "John Garamendi",
+      "member_state": "CA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 402,
+      "member_name": "Pete Aguilar",
+      "member_state": "CA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 397,
+      "member_name": "Salud Carbajal",
+      "member_state": "CA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 369,
+      "member_name": "Jason Crow",
+      "member_state": "CO",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 395,
+      "member_name": "Gilbert Cisneros",
+      "member_state": "CA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 8,
+      "member_name": "Chrissy Houlahan",
+      "member_state": "PA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 366,
+      "member_name": "Sara Jacobs",
+      "member_state": "CA",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 258,
+      "member_name": "Bill Huizenga",
+      "member_state": "MI",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 291,
+      "member_name": "Andy Barr",
+      "member_state": "KY",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 104,
+      "member_name": "Al Green",
+      "member_state": "TX",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 238,
+      "member_name": "Emanuel Cleaver",
+      "member_state": "MO",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 296,
+      "member_name": "Bill Foster",
+      "member_state": "IL",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 161,
+      "member_name": "Joyce Beatty",
+      "member_state": "OH",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 185,
+      "member_name": "Josh Gottheimer",
+      "member_state": "NJ",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 61,
+      "member_name": "Vicente Gonzalez",
+      "member_state": "TX",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 312,
+      "member_name": "Sean Casten",
+      "member_state": "IL",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 58,
+      "member_name": "Sylvia Garcia",
+      "member_state": "TX",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    },
+    {
+      "member_id": 208,
+      "member_name": "Alma Adams",
+      "member_state": "NC",
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual House Assignment"
+    }
+  ]
+}

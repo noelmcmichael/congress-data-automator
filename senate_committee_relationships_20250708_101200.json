@@ -1,0 +1,213 @@
+{
+  "timestamp": "2025-07-08T10:12:00.024099",
+  "source": "Congress.gov API",
+  "congress": "119th",
+  "senators_in_database": 100,
+  "committees_in_database": 85,
+  "congress_committees_found": 50,
+  "relationships_created": 0,
+  "success_rate": 0.0,
+  "relationships": [],
+  "committees_processed": [
+    {
+      "name": "Indian Affairs Committee",
+      "system_code": "n79043125"
+    },
+    {
+      "name": "Territories and Insular Affairs Committee",
+      "system_code": "n79043126"
+    },
+    {
+      "name": "Digital Assets Subcommittee",
+      "system_code": "ssbk13"
+    },
+    {
+      "name": "Veterans' Affairs Committee",
+      "system_code": "ssva00"
+    },
+    {
+      "name": "Rules and Administration Committee",
+      "system_code": "ssra00"
+    },
+    {
+      "name": "Small Business and Entrepreneurship Committee",
+      "system_code": "sssb00"
+    },
+    {
+      "name": "Human Rights and the Law Subcommittee",
+      "system_code": "ssju27"
+    },
+    {
+      "name": "Federal Courts, Oversight, Agency Action, and Federal Rights Subcommittee",
+      "system_code": "ssju25"
+    },
+    {
+      "name": "Governmental Operations and Border Management Subcommittee",
+      "system_code": "ssga22"
+    },
+    {
+      "name": "Employment and Workplace Safety Subcommittee",
+      "system_code": "sshr11"
+    },
+    {
+      "name": "Children and Families Subcommittee",
+      "system_code": "sshr09"
+    },
+    {
+      "name": "Primary Health and Retirement Security Subcommittee",
+      "system_code": "sshr12"
+    },
+    {
+      "name": "Intellectual Property Subcommittee",
+      "system_code": "ssju26"
+    },
+    {
+      "name": "Judiciary Committee",
+      "system_code": "ssju00"
+    },
+    {
+      "name": "Constitution Subcommittee",
+      "system_code": "ssju21"
+    },
+    {
+      "name": "Health, Education, Labor, and Pensions Committee",
+      "system_code": "sshr00"
+    },
+    {
+      "name": "Criminal Justice and Counterterrorism Subcommittee",
+      "system_code": "ssju22"
+    },
+    {
+      "name": "Immigration, Citizenship, and Border Safety Subcommittee",
+      "system_code": "ssju04"
+    },
+    {
+      "name": "Competition Policy, Antitrust, and Consumer Rights Subcommittee",
+      "system_code": "ssju01"
+    },
+    {
+      "name": "Privacy, Technology, and the Law Subcommittee",
+      "system_code": "ssju28"
+    },
+    {
+      "name": "State Department and USAID Management, International Operations, and Bilateral International Development Subcommittee",
+      "system_code": "ssfr14"
+    },
+    {
+      "name": "Emerging Threats and Spending Oversight Subcommittee",
+      "system_code": "ssga20"
+    },
+    {
+      "name": "International Trade, Customs, and Global Competitiveness Subcommittee",
+      "system_code": "ssfi13"
+    },
+    {
+      "name": "Europe and Regional Security Cooperation Subcommittee",
+      "system_code": "ssfr01"
+    },
+    {
+      "name": "Fiscal Responsibility and Economic Growth Subcommittee",
+      "system_code": "ssfi14"
+    },
+    {
+      "name": "Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy Subcommittee",
+      "system_code": "ssfr15"
+    },
+    {
+      "name": "Foreign Relations Committee",
+      "system_code": "ssfr00"
+    },
+    {
+      "name": "Africa and Global Health Policy Subcommittee",
+      "system_code": "ssfr09"
+    },
+    {
+      "name": "Energy, Natural Resources, and Infrastructure Subcommittee",
+      "system_code": "ssfi12"
+    },
+    {
+      "name": "Health Care Subcommittee",
+      "system_code": "ssfi10"
+    },
+    {
+      "name": "Social Security, Pensions, and Family Policy Subcommittee",
+      "system_code": "ssfi02"
+    },
+    {
+      "name": "East Asia, the Pacific, and International Cybersecurity Policy Subcommittee",
+      "system_code": "ssfr02"
+    },
+    {
+      "name": "Permanent Subcommittee on Investigations",
+      "system_code": "ssga01"
+    },
+    {
+      "name": "Taxation and IRS Oversight Subcommittee",
+      "system_code": "ssfi11"
+    },
+    {
+      "name": "Near East, South Asia, Central Asia, and Counterterrorism Subcommittee",
+      "system_code": "ssfr07"
+    },
+    {
+      "name": "Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues Subcommittee",
+      "system_code": "ssfr06"
+    },
+    {
+      "name": "Finance Committee",
+      "system_code": "ssfi00"
+    },
+    {
+      "name": "Homeland Security and Governmental Affairs Committee",
+      "system_code": "ssga00"
+    },
+    {
+      "name": "Superfund, Waste Management, and Regulatory Oversight Subcommittee",
+      "system_code": "ssev09"
+    },
+    {
+      "name": "Transportation and Infrastructure Subcommittee",
+      "system_code": "ssev08"
+    },
+    {
+      "name": "Water and Power Subcommittee",
+      "system_code": "sseg07"
+    },
+    {
+      "name": "Surface Transportation, Maritime, Freight, and Ports",
+      "system_code": "sscm38"
+    },
+    {
+      "name": "Oceans, Fisheries, Climate Change, and Manufacturing",
+      "system_code": "sscm36"
+    },
+    {
+      "name": "Tourism, Trade, and Export",
+      "system_code": "sscm39"
+    },
+    {
+      "name": "Space and Science",
+      "system_code": "sscm37"
+    },
+    {
+      "name": "Environment and Public Works Committee",
+      "system_code": "ssev00"
+    },
+    {
+      "name": "Clean Air and Nuclear Safety Subcommittee",
+      "system_code": "ssev10"
+    },
+    {
+      "name": "Consumer Protection, Product Safety, and Data Security",
+      "system_code": "sscm35"
+    },
+    {
+      "name": "Energy and Natural Resources Committee",
+      "system_code": "sseg00"
+    },
+    {
+      "name": "Fisheries, Water, and Wildlife Subcommittee",
+      "system_code": "ssev15"
+    }
+  ]
+}

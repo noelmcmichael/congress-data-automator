@@ -1,0 +1,536 @@
+{
+  "timestamp": "2025-07-08T10:13:21.155885",
+  "source": "Manual Assignment",
+  "senators_in_database": 100,
+  "committees_in_database": 85,
+  "relationships_created": 53,
+  "validation": {
+    "total_relationships": 53,
+    "unique_senators": 46,
+    "unique_committees": 3,
+    "committee_counts": {
+      "Committee on the Judiciary": 16,
+      "Committee on Armed Services": 21,
+      "Committee on Finance": 16
+    },
+    "state_counts": {
+      "IA": 3,
+      "SC": 2,
+      "TX": 3,
+      "UT": 1,
+      "MO": 1,
+      "AR": 2,
+      "LA": 2,
+      "RI": 3,
+      "MN": 1,
+      "CT": 2,
+      "HI": 2,
+      "NJ": 1,
+      "CA": 1,
+      "GA": 1,
+      "VT": 1,
+      "MS": 1,
+      "NE": 1,
+      "SD": 2,
+      "AK": 1,
+      "ND": 1,
+      "FL": 1,
+      "NH": 1,
+      "NY": 1,
+      "VA": 2,
+      "ME": 1,
+      "NM": 1,
+      "MA": 2,
+      "MI": 2,
+      "NV": 2,
+      "AZ": 1,
+      "ID": 1,
+      "OK": 1,
+      "MT": 1,
+      "IN": 1,
+      "OR": 1,
+      "WA": 1,
+      "CO": 1
+    },
+    "validation_passed": true
+  },
+  "relationships": [
+    {
+      "member_id": 510,
+      "member_name": "Chuck Grassley",
+      "member_state": "IA",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 515,
+      "member_name": "Lindsey Graham",
+      "member_state": "SC",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 525,
+      "member_name": "John Cornyn",
+      "member_state": "TX",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 496,
+      "member_name": "Mike Lee",
+      "member_state": "UT",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 517,
+      "member_name": "Ted Cruz",
+      "member_state": "TX",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 4,
+      "member_name": "Josh Hawley",
+      "member_state": "MO",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 524,
+      "member_name": "Tom Cotton",
+      "member_state": "AR",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 499,
+      "member_name": "John Kennedy",
+      "member_state": "LA",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 459,
+      "member_name": "Sheldon Whitehouse",
+      "member_state": "RI",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 495,
+      "member_name": "Amy Klobuchar",
+      "member_state": "MN",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 533,
+      "member_name": "Richard Blumenthal",
+      "member_state": "CT",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 505,
+      "member_name": "Mazie Hirono",
+      "member_state": "HI",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 532,
+      "member_name": "Cory Booker",
+      "member_state": "NJ",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 481,
+      "member_name": "Alex Padilla",
+      "member_state": "CA",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 482,
+      "member_name": "Jon Ossoff",
+      "member_state": "GA",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 5,
+      "member_name": "Peter Welch",
+      "member_state": "VT",
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 461,
+      "member_name": "Roger Wicker",
+      "member_state": "MS",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 513,
+      "member_name": "Deb Fischer",
+      "member_state": "NE",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 524,
+      "member_name": "Tom Cotton",
+      "member_state": "AR",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 470,
+      "member_name": "Mike Rounds",
+      "member_state": "SD",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 516,
+      "member_name": "Joni Ernst",
+      "member_state": "IA",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 466,
+      "member_name": "Dan Sullivan",
+      "member_state": "AK",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 523,
+      "member_name": "Kevin Cramer",
+      "member_state": "ND",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 468,
+      "member_name": "Rick Scott",
+      "member_state": "FL",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 480,
+      "member_name": "Jack Reed",
+      "member_state": "RI",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 469,
+      "member_name": "Jeanne Shaheen",
+      "member_state": "NH",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 514,
+      "member_name": "Kirsten Gillibrand",
+      "member_state": "NY",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 533,
+      "member_name": "Richard Blumenthal",
+      "member_state": "CT",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 505,
+      "member_name": "Mazie Hirono",
+      "member_state": "HI",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 500,
+      "member_name": "Tim Kaine",
+      "member_state": "VA",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 494,
+      "member_name": "Angus King",
+      "member_state": "ME",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 509,
+      "member_name": "Martin Heinrich",
+      "member_state": "NM",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 458,
+      "member_name": "Elizabeth Warren",
+      "member_state": "MA",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 478,
+      "member_name": "Gary Peters",
+      "member_state": "MI",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 477,
+      "member_name": "Jacky Rosen",
+      "member_state": "NV",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 498,
+      "member_name": "Mark Kelly",
+      "member_state": "AZ",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 451,
+      "member_name": "Elissa Slotkin",
+      "member_state": "MI",
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 521,
+      "member_name": "Mike Crapo",
+      "member_state": "ID",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 510,
+      "member_name": "Chuck Grassley",
+      "member_state": "IA",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 525,
+      "member_name": "John Cornyn",
+      "member_state": "TX",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 467,
+      "member_name": "John Thune",
+      "member_state": "SD",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 472,
+      "member_name": "Tim Scott",
+      "member_state": "SC",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 527,
+      "member_name": "Bill Cassidy",
+      "member_state": "LA",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 497,
+      "member_name": "James Lankford",
+      "member_state": "OK",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 518,
+      "member_name": "Steve Daines",
+      "member_state": "MT",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 455,
+      "member_name": "Todd Young",
+      "member_state": "IN",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 456,
+      "member_name": "Ron Wyden",
+      "member_state": "OR",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 530,
+      "member_name": "Maria Cantwell",
+      "member_state": "WA",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 536,
+      "member_name": "Michael Bennet",
+      "member_state": "CO",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 460,
+      "member_name": "Mark Warner",
+      "member_state": "VA",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 459,
+      "member_name": "Sheldon Whitehouse",
+      "member_state": "RI",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 522,
+      "member_name": "Catherine Cortez Masto",
+      "member_state": "NV",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    },
+    {
+      "member_id": 458,
+      "member_name": "Elizabeth Warren",
+      "member_state": "MA",
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "role": "Member",
+      "source": "Manual Assignment"
+    }
+  ]
+}
