@@ -4,7 +4,8 @@ from typing import List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from ..core.exceptions import NotFoundError
+from ..core.exceptions import NotFoundError, ValidationError
+from ..core.validators import validate_id_parameter, validate_pagination_params, validate_committee_filters
 from ..database.connection import get_db
 from ..database.repositories import CommitteeRepository
 from ..models.base import PaginatedResponse, PaginationParams, PaginationResponse
@@ -44,6 +45,19 @@ async def get_committees(
     db: Session = Depends(get_db),
 ):
     """Get paginated list of committees with filtering and search."""
+    
+    # Validate pagination parameters
+    validate_pagination_params(page, size)
+    
+    # Validate filter parameters
+    validate_committee_filters(
+        chamber=chamber,
+        committee_type=committee_type,
+        is_current=is_current,
+        search=search,
+        sort_by=sort_by,
+        sort_order=sort_order,
+    )
     
     # Create filter parameters
     filters = CommitteeFilterParams(
@@ -93,14 +107,11 @@ async def get_committee(
 ):
     """Get committee details by ID."""
     
-    repo = CommitteeRepository(db)
-    committee = repo.get_by_id(committee_id)
+    # Validate committee ID
+    validate_id_parameter(committee_id, "Committee")
     
-    if not committee:
-        raise NotFoundError(
-            message="Committee not found",
-            detail=f"Committee with ID {committee_id} not found",
-        )
+    repo = CommitteeRepository(db)
+    committee = repo.get_by_id(committee_id)  # Now raises exceptions automatically
     
     return CommitteeDetail.model_validate(committee)
 
@@ -117,17 +128,12 @@ async def get_committee_members(
 ):
     """Get members of a committee."""
     
+    # Validate committee ID
+    validate_id_parameter(committee_id, "Committee")
+    
     repo = CommitteeRepository(db)
     
-    # Check if committee exists
-    committee = repo.get_by_id(committee_id)
-    if not committee:
-        raise NotFoundError(
-            message="Committee not found",
-            detail=f"Committee with ID {committee_id} not found",
-        )
-    
-    # Get members
+    # Get members (repository now handles validation and errors)
     members = repo.get_committee_members(committee_id)
     
     return [MemberSummary.model_validate(member) for member in members]
@@ -145,17 +151,12 @@ async def get_committee_subcommittees(
 ):
     """Get subcommittees of a committee."""
     
+    # Validate committee ID
+    validate_id_parameter(committee_id, "Committee")
+    
     repo = CommitteeRepository(db)
     
-    # Check if committee exists
-    committee = repo.get_by_id(committee_id)
-    if not committee:
-        raise NotFoundError(
-            message="Committee not found",
-            detail=f"Committee with ID {committee_id} not found",
-        )
-    
-    # Get subcommittees
+    # Get subcommittees (repository now handles validation and errors)
     subcommittees = repo.get_subcommittees(committee_id)
     
     return [CommitteeSummary.model_validate(subcommittee) for subcommittee in subcommittees]
@@ -173,14 +174,11 @@ async def get_committee_with_members(
 ):
     """Get committee with its members."""
     
-    repo = CommitteeRepository(db)
-    committee = repo.get_committee_with_members(committee_id)
+    # Validate committee ID
+    validate_id_parameter(committee_id, "Committee")
     
-    if not committee:
-        raise NotFoundError(
-            message="Committee not found",
-            detail=f"Committee with ID {committee_id} not found",
-        )
+    repo = CommitteeRepository(db)
+    committee = repo.get_committee_with_members(committee_id)  # Now raises exceptions automatically
     
     # Create response with members
     committee_data = CommitteeDetail.model_validate(committee)
@@ -191,7 +189,7 @@ async def get_committee_with_members(
     ]
     
     return CommitteeWithMembers(
-        **committee_data.dict(),
+        **committee_data.model_dump(),
         members=members,
     )
 
@@ -207,6 +205,20 @@ async def get_committee_by_code(
     db: Session = Depends(get_db),
 ):
     """Get committee by code."""
+    
+    # Validate committee code
+    if not committee_code or not committee_code.strip():
+        raise ValidationError(
+            message="Invalid committee code",
+            detail="Committee code cannot be empty"
+        )
+    
+    committee_code = committee_code.strip()
+    if len(committee_code) > 20:
+        raise ValidationError(
+            message="Invalid committee code",
+            detail="Committee code cannot exceed 20 characters"
+        )
     
     repo = CommitteeRepository(db)
     committee = repo.get_by_code(committee_code)

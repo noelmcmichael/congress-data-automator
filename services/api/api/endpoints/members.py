@@ -4,7 +4,8 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
-from ..core.exceptions import NotFoundError
+from ..core.exceptions import NotFoundError, ValidationError
+from ..core.validators import validate_id_parameter, validate_pagination_params, validate_member_filters
 from ..database.connection import get_db
 from ..database.repositories import MemberRepository
 from ..models.base import PaginatedResponse, PaginationParams, PaginationResponse
@@ -44,6 +45,20 @@ async def get_members(
     db: Session = Depends(get_db),
 ):
     """Get paginated list of members with filtering and search."""
+    
+    # Validate pagination parameters
+    validate_pagination_params(page, size)
+    
+    # Validate filter parameters
+    validate_member_filters(
+        chamber=chamber,
+        party=party,
+        state=state,
+        is_current=is_current,
+        search=search,
+        sort_by=sort_by,
+        sort_order=sort_order,
+    )
     
     # Create filter parameters
     filters = MemberFilterParams(
@@ -94,14 +109,11 @@ async def get_member(
 ):
     """Get member details by ID."""
     
-    repo = MemberRepository(db)
-    member = repo.get_by_id(member_id)
+    # Validate member ID
+    validate_id_parameter(member_id, "Member")
     
-    if not member:
-        raise NotFoundError(
-            message="Member not found",
-            detail=f"Member with ID {member_id} not found",
-        )
+    repo = MemberRepository(db)
+    member = repo.get_by_id(member_id)  # Now raises exceptions automatically
     
     return MemberDetail.model_validate(member)
 
@@ -118,17 +130,12 @@ async def get_member_committees(
 ):
     """Get committee assignments for a member."""
     
+    # Validate member ID
+    validate_id_parameter(member_id, "Member")
+    
     repo = MemberRepository(db)
     
-    # Check if member exists
-    member = repo.get_by_id(member_id)
-    if not member:
-        raise NotFoundError(
-            message="Member not found",
-            detail=f"Member with ID {member_id} not found",
-        )
-    
-    # Get committees
+    # Get committees (repository now handles validation and errors)
     committees = repo.get_member_committees(member_id)
     
     return [CommitteeSummary.model_validate(committee) for committee in committees]
@@ -146,14 +153,11 @@ async def get_member_with_committees(
 ):
     """Get member with their committee assignments."""
     
-    repo = MemberRepository(db)
-    member = repo.get_member_with_committees(member_id)
+    # Validate member ID
+    validate_id_parameter(member_id, "Member")
     
-    if not member:
-        raise NotFoundError(
-            message="Member not found",
-            detail=f"Member with ID {member_id} not found",
-        )
+    repo = MemberRepository(db)
+    member = repo.get_member_with_committees(member_id)  # Now raises exceptions automatically
     
     # Create response with committees
     member_data = MemberDetail.model_validate(member)
@@ -164,7 +168,7 @@ async def get_member_with_committees(
     ]
     
     return MemberWithCommittees(
-        **member_data.dict(),
+        **member_data.model_dump(),
         committees=committees,
     )
 
@@ -180,6 +184,20 @@ async def get_member_by_bioguide(
     db: Session = Depends(get_db),
 ):
     """Get member by bioguide ID."""
+    
+    # Validate bioguide ID
+    if not bioguide_id or not bioguide_id.strip():
+        raise ValidationError(
+            message="Invalid bioguide ID",
+            detail="Bioguide ID cannot be empty"
+        )
+    
+    bioguide_id = bioguide_id.strip()
+    if len(bioguide_id) > 10:
+        raise ValidationError(
+            message="Invalid bioguide ID",
+            detail="Bioguide ID cannot exceed 10 characters"
+        )
     
     repo = MemberRepository(db)
     member = repo.get_by_bioguide_id(bioguide_id)

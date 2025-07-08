@@ -4,6 +4,7 @@ from typing import List, Optional, Tuple
 from sqlalchemy import and_, func, or_
 from sqlalchemy.orm import Session, joinedload
 
+from ..core.exceptions import NotFoundError, ValidationError
 from ..models.base import PaginationParams
 from ..models.congress import (
     Chamber,
@@ -57,9 +58,22 @@ class BaseRepository:
 class MemberRepository(BaseRepository):
     """Repository for Member operations."""
     
-    def get_by_id(self, member_id: int) -> Optional[Member]:
+    def get_by_id(self, member_id: int) -> Member:
         """Get member by ID."""
-        return self.session.query(Member).filter(Member.id == member_id).first()
+        if member_id < 1:
+            raise ValidationError(
+                message="Invalid member ID",
+                detail="Member ID must be a positive integer"
+            )
+        
+        member = self.session.query(Member).filter(Member.id == member_id).first()
+        if not member:
+            raise NotFoundError(
+                message="Member not found",
+                detail=f"Member with ID {member_id} not found"
+            )
+        
+        return member
     
     def get_by_bioguide_id(self, bioguide_id: str) -> Optional[Member]:
         """Get member by bioguide ID."""
@@ -107,6 +121,20 @@ class MemberRepository(BaseRepository):
     
     def get_member_committees(self, member_id: int) -> List[Committee]:
         """Get committees for a member."""
+        if member_id < 1:
+            raise ValidationError(
+                message="Invalid member ID",
+                detail="Member ID must be a positive integer"
+            )
+        
+        # First verify the member exists
+        member = self.session.query(Member).filter(Member.id == member_id).first()
+        if not member:
+            raise NotFoundError(
+                message="Member not found",
+                detail=f"Member with ID {member_id} not found"
+            )
+        
         return (
             self.session.query(Committee)
             .join(CommitteeMembership)
@@ -119,9 +147,15 @@ class MemberRepository(BaseRepository):
             .all()
         )
     
-    def get_member_with_committees(self, member_id: int) -> Optional[Member]:
+    def get_member_with_committees(self, member_id: int) -> Member:
         """Get member with their committee assignments."""
-        return (
+        if member_id < 1:
+            raise ValidationError(
+                message="Invalid member ID",
+                detail="Member ID must be a positive integer"
+            )
+        
+        member = (
             self.session.query(Member)
             .options(
                 joinedload(Member.committee_memberships).joinedload(
@@ -131,6 +165,14 @@ class MemberRepository(BaseRepository):
             .filter(Member.id == member_id)
             .first()
         )
+        
+        if not member:
+            raise NotFoundError(
+                message="Member not found",
+                detail=f"Member with ID {member_id} not found"
+            )
+        
+        return member
     
     def get_statistics(self) -> dict:
         """Get member statistics."""
@@ -174,9 +216,22 @@ class MemberRepository(BaseRepository):
 class CommitteeRepository(BaseRepository):
     """Repository for Committee operations."""
     
-    def get_by_id(self, committee_id: int) -> Optional[Committee]:
+    def get_by_id(self, committee_id: int) -> Committee:
         """Get committee by ID."""
-        return self.session.query(Committee).filter(Committee.id == committee_id).first()
+        if committee_id < 1:
+            raise ValidationError(
+                message="Invalid committee ID",
+                detail="Committee ID must be a positive integer"
+            )
+        
+        committee = self.session.query(Committee).filter(Committee.id == committee_id).first()
+        if not committee:
+            raise NotFoundError(
+                message="Committee not found",
+                detail=f"Committee with ID {committee_id} not found"
+            )
+        
+        return committee
     
     def get_by_code(self, code: str) -> Optional[Committee]:
         """Get committee by code."""
@@ -221,6 +276,20 @@ class CommitteeRepository(BaseRepository):
     
     def get_committee_members(self, committee_id: int) -> List[Member]:
         """Get members of a committee."""
+        if committee_id < 1:
+            raise ValidationError(
+                message="Invalid committee ID",
+                detail="Committee ID must be a positive integer"
+            )
+        
+        # First verify the committee exists
+        committee = self.session.query(Committee).filter(Committee.id == committee_id).first()
+        if not committee:
+            raise NotFoundError(
+                message="Committee not found",
+                detail=f"Committee with ID {committee_id} not found"
+            )
+        
         return (
             self.session.query(Member)
             .join(CommitteeMembership)
@@ -233,9 +302,15 @@ class CommitteeRepository(BaseRepository):
             .all()
         )
     
-    def get_committee_with_members(self, committee_id: int) -> Optional[Committee]:
+    def get_committee_with_members(self, committee_id: int) -> Committee:
         """Get committee with its members."""
-        return (
+        if committee_id < 1:
+            raise ValidationError(
+                message="Invalid committee ID",
+                detail="Committee ID must be a positive integer"
+            )
+        
+        committee = (
             self.session.query(Committee)
             .options(
                 joinedload(Committee.committee_memberships).joinedload(
@@ -245,9 +320,31 @@ class CommitteeRepository(BaseRepository):
             .filter(Committee.id == committee_id)
             .first()
         )
+        
+        if not committee:
+            raise NotFoundError(
+                message="Committee not found",
+                detail=f"Committee with ID {committee_id} not found"
+            )
+        
+        return committee
     
     def get_subcommittees(self, committee_id: int) -> List[Committee]:
         """Get subcommittees of a committee."""
+        if committee_id < 1:
+            raise ValidationError(
+                message="Invalid committee ID",
+                detail="Committee ID must be a positive integer"
+            )
+        
+        # First verify the committee exists
+        committee = self.session.query(Committee).filter(Committee.id == committee_id).first()
+        if not committee:
+            raise NotFoundError(
+                message="Committee not found",
+                detail=f"Committee with ID {committee_id} not found"
+            )
+        
         return (
             self.session.query(Committee)
             .filter(Committee.parent_committee_id == committee_id)
@@ -286,9 +383,22 @@ class CommitteeRepository(BaseRepository):
 class HearingRepository(BaseRepository):
     """Repository for Hearing operations."""
     
-    def get_by_id(self, hearing_id: int) -> Optional[Hearing]:
+    def get_by_id(self, hearing_id: int) -> Hearing:
         """Get hearing by ID."""
-        return self.session.query(Hearing).filter(Hearing.id == hearing_id).first()
+        if hearing_id < 1:
+            raise ValidationError(
+                message="Invalid hearing ID",
+                detail="Hearing ID must be a positive integer"
+            )
+        
+        hearing = self.session.query(Hearing).filter(Hearing.id == hearing_id).first()
+        if not hearing:
+            raise NotFoundError(
+                message="Hearing not found",
+                detail=f"Hearing with ID {hearing_id} not found"
+            )
+        
+        return hearing
     
     def get_all(
         self,
@@ -330,14 +440,28 @@ class HearingRepository(BaseRepository):
         
         return query.all(), total
     
-    def get_hearing_with_committee(self, hearing_id: int) -> Optional[Hearing]:
+    def get_hearing_with_committee(self, hearing_id: int) -> Hearing:
         """Get hearing with committee information."""
-        return (
+        if hearing_id < 1:
+            raise ValidationError(
+                message="Invalid hearing ID",
+                detail="Hearing ID must be a positive integer"
+            )
+        
+        hearing = (
             self.session.query(Hearing)
             .options(joinedload(Hearing.committee))
             .filter(Hearing.id == hearing_id)
             .first()
         )
+        
+        if not hearing:
+            raise NotFoundError(
+                message="Hearing not found",
+                detail=f"Hearing with ID {hearing_id} not found"
+            )
+        
+        return hearing
     
     def get_statistics(self) -> dict:
         """Get hearing statistics."""

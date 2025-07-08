@@ -5,6 +5,7 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, func
 
+from ..core.exceptions import ValidationError
 from ..database.connection import get_db
 from ..database.models import Member, Committee, Hearing
 from ..database.repositories import MemberRepository, CommitteeRepository, HearingRepository
@@ -12,6 +13,32 @@ from ..models.base import PaginationParams
 from ..models.congress import MemberSummary, CommitteeSummary, HearingSummary
 
 router = APIRouter(prefix="/search", tags=["search"])
+
+
+def validate_search_query(query: str) -> str:
+    """Validate and sanitize search query."""
+    if not query or not query.strip():
+        raise ValidationError(
+            message="Invalid search query",
+            detail="Search query cannot be empty"
+        )
+    
+    query = query.strip()
+    if len(query) > 100:
+        raise ValidationError(
+            message="Invalid search query",
+            detail="Search query cannot exceed 100 characters"
+        )
+    
+    # Check for potentially malicious characters
+    dangerous_chars = ['<', '>', ';', '&', '|', '`', '$']
+    if any(char in query for char in dangerous_chars):
+        raise ValidationError(
+            message="Invalid search query",
+            detail="Search query contains invalid characters"
+        )
+    
+    return query
 
 
 @router.get(
@@ -27,14 +54,14 @@ async def global_search(
 ):
     """Perform global search across all data types."""
     
+    # Validate and sanitize search query
+    query = validate_search_query(query)
+    
     results = {
         "members": [],
         "committees": [],
         "hearings": [],
     }
-    
-    if not query.strip():
-        return results
     
     # Search members
     members = (
@@ -95,6 +122,9 @@ async def search_members(
 ):
     """Search for members by name."""
     
+    # Validate and sanitize search query
+    query = validate_search_query(query)
+    
     members = (
         db.query(Member)
         .filter(
@@ -124,6 +154,9 @@ async def search_committees(
 ):
     """Search for committees by name or description."""
     
+    # Validate and sanitize search query
+    query = validate_search_query(query)
+    
     committees = (
         db.query(Committee)
         .filter(
@@ -151,6 +184,9 @@ async def search_hearings(
     db: Session = Depends(get_db),
 ):
     """Search for hearings by title or description."""
+    
+    # Validate and sanitize search query
+    query = validate_search_query(query)
     
     hearings = (
         db.query(Hearing)
