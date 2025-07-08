@@ -37,8 +37,15 @@ import {
   Star as StarIcon,
   AccountBalance as CapitolIcon,
   Assignment as AssignmentIcon,
+  Schedule as CongressIcon,
 } from '@mui/icons-material';
 import { apiService, Member, Committee, Hearing } from '../services/api';
+import congressionalSessionService, { 
+  getSessionDisplayString, 
+  getRepublicanMajoritySummary,
+  getCommitteeLeadershipContext,
+  getLeadershipPositionInfo 
+} from '../services/congressionalSession';
 
 interface MemberCommitteeMembership {
   committee: Committee;
@@ -328,9 +335,24 @@ const MemberDetail: React.FC = () => {
                       label={member.district ? `${member.state}-${member.district}` : member.state}
                       variant="outlined"
                     />
+                    <Chip
+                      label={getSessionDisplayString()}
+                      variant="outlined"
+                      icon={<CongressIcon />}
+                      sx={{
+                        backgroundColor: '#f5f5f5',
+                        fontWeight: 'bold',
+                        '& .MuiChip-icon': {
+                          fontSize: 16
+                        }
+                      }}
+                    />
                   </Box>
                   <Typography variant="body2" color="text.secondary">
                     {member.is_current ? 'Current Member' : 'Former Member'}
+                  </Typography>
+                  <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold' }}>
+                    {getRepublicanMajoritySummary().displayText}
                   </Typography>
                 </Box>
               </Box>
@@ -440,7 +462,7 @@ const MemberDetail: React.FC = () => {
               <CardContent>
                 <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
                   <GavelIcon sx={{ mr: 1 }} />
-                  Leadership
+                  Leadership ({getSessionDisplayString()})
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <Box sx={{ textAlign: 'center' }}>
@@ -459,6 +481,14 @@ const MemberDetail: React.FC = () => {
                       Current
                     </Typography>
                   </Box>
+                </Box>
+                
+                {/* Republican Leadership Context */}
+                <Box sx={{ mt: 2, p: 1, backgroundColor: '#ffebee', borderRadius: 1 }}>
+                  <Typography variant="caption" color="text.secondary">
+                    Under Republican unified control, all committee chairs are held by Republicans, 
+                    with Democrats serving as ranking members.
+                  </Typography>
                 </Box>
                 
                 {/* Leadership Position List */}
@@ -494,13 +524,36 @@ const MemberDetail: React.FC = () => {
                   Term Information
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  {/* Congressional Session Context */}
+                  <Box>
+                    <Typography variant="body2" color="text.secondary">
+                      Congressional Session
+                    </Typography>
+                    <Typography variant="body1" sx={{ fontWeight: 'bold', color: 'primary.main' }}>
+                      {getSessionDisplayString()}
+                    </Typography>
+                  </Box>
+                  
                   <Box>
                     <Typography variant="body2" color="text.secondary">
                       Current Term
                     </Typography>
                     <Typography variant="body1">
-                      {new Date(displayData.term_information.current_term_start).getFullYear()} - {new Date(displayData.term_information.current_term_end).getFullYear()}
+                      January 3, 2025 - January 3, 2027
                     </Typography>
+                  </Box>
+                  
+                  {/* Republican Majority Context */}
+                  <Box>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.chamber} Control
+                    </Typography>
+                    <Chip
+                      label={getRepublicanMajoritySummary().houseControl === 'Republican' ? 'Republican Majority' : 'Democratic Minority'}
+                      color={getRepublicanMajoritySummary().houseControl === 'Republican' ? 'error' : 'primary'}
+                      size="small"
+                      sx={{ fontWeight: 'bold' }}
+                    />
                   </Box>
                   
                   {member.chamber === 'Senate' && displayData.term_information.senate_class && (
@@ -561,6 +614,13 @@ const MemberDetail: React.FC = () => {
                     size="small"
                     color="secondary"
                     variant="outlined"
+                  />
+                  <Chip
+                    label="Republican Controlled"
+                    size="small"
+                    color="error"
+                    variant="outlined"
+                    sx={{ fontWeight: 'bold' }}
                   />
                   {displayData.statistics.leadership_positions > 0 && (
                     <Chip
@@ -655,6 +715,14 @@ const MemberDetail: React.FC = () => {
                                       size="small"
                                       color={membership.is_current ? 'success' : 'default'}
                                     />
+                                    {membership.is_current && (
+                                      <Chip
+                                        label={getLeadershipPositionInfo(membership.position, membership.committee.chamber as 'House' | 'Senate' | 'Joint').description}
+                                        size="small"
+                                        color={getLeadershipPositionInfo(membership.position, membership.committee.chamber as 'House' | 'Senate' | 'Joint').color}
+                                        variant="outlined"
+                                      />
+                                    )}
                                     {membership.start_date && (
                                       <Typography variant="caption" color="text.secondary">
                                         Since {new Date(membership.start_date).toLocaleDateString()}
@@ -740,6 +808,14 @@ const MemberDetail: React.FC = () => {
                                       size="small"
                                       color={membership.is_current ? 'success' : 'default'}
                                     />
+                                    {membership.is_current && (
+                                      <Chip
+                                        label={getLeadershipPositionInfo(membership.position, membership.committee.chamber as 'House' | 'Senate' | 'Joint').description}
+                                        size="small"
+                                        color={getLeadershipPositionInfo(membership.position, membership.committee.chamber as 'House' | 'Senate' | 'Joint').color}
+                                        variant="outlined"
+                                      />
+                                    )}
                                     {membership.start_date && (
                                       <Typography variant="caption" color="text.secondary">
                                         Since {new Date(membership.start_date).toLocaleDateString()}
