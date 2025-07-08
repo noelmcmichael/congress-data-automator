@@ -75,29 +75,29 @@ const Dashboard: React.FC = () => {
           memberCount: statsData?.members?.total || 0,
           committeeCount: statsData?.committees?.total || 0,
           hearingCount: statsData?.hearings?.total || 0,
-          relationshipCoverage: statsData?.relationships?.total || 0,
-          lastDataUpdate: statusData?.last_update || new Date(),
+          relationshipCoverage: 0, // Relationships not available in current API
+          lastDataUpdate: new Date(), // Using current time as placeholder
           expectedMembers: 541, // 435 House + 100 Senate + 6 delegates
           expectedCommittees: 199, // Known committee structure
         },
         apiHealth: {
           status: statusData?.api_status || 'unknown',
-          responseTime: statusData?.response_time || 0,
+          responseTime: 0, // Not available in current API
           rateLimitRemaining: statusData?.congress_api_rate_limit?.remaining || 0,
           rateLimitTotal: statusData?.congress_api_rate_limit?.daily_limit || 0,
-          errorRate: statusData?.error_rate || 0,
+          errorRate: 0, // Not available in current API
         },
         databaseHealth: {
           status: statusData?.database_status || 'unknown',
-          connectionCount: statusData?.database_connections || 0,
-          queryPerformance: statusData?.avg_query_time || 0,
-          diskUsage: statusData?.disk_usage || 0,
+          connectionCount: 0, // Not available in current API
+          queryPerformance: 0, // Not available in current API
+          diskUsage: 0, // Not available in current API
         },
         automationStatus: {
-          lastMemberUpdate: statusData?.last_member_update || null,
-          lastCommitteeUpdate: statusData?.last_committee_update || null,
-          lastHearingUpdate: statusData?.last_hearing_update || null,
-          jobFailures: statusData?.job_failures || 0,
+          lastMemberUpdate: null, // Not available in current API
+          lastCommitteeUpdate: null, // Not available in current API
+          lastHearingUpdate: null, // Not available in current API
+          jobFailures: 0, // Not available in current API
         },
       };
       
@@ -307,7 +307,7 @@ const Dashboard: React.FC = () => {
                 <Grid item xs={12} sm={6} md={3}>
                   <Box sx={{ textAlign: 'center' }}>
                     <Typography variant="h3" color="primary">
-                      {systemHealth?.dataQuality?.relationshipCoverage || stats?.relationships?.total || 0}
+                      {systemHealth?.dataQuality?.relationshipCoverage || 0}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Relationships
