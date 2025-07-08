@@ -21,6 +21,7 @@ import {
   Schedule as ScheduleIcon,
   AccountTree as HierarchyIcon,
   Category as JurisdictionIcon,
+  Search as SearchIcon,
 } from '@mui/icons-material';
 
 const drawerWidth = 240;
@@ -33,6 +34,7 @@ const navigationItems = [
   { path: '/jurisdiction-mapping', label: 'Jurisdiction Mapping', icon: <JurisdictionIcon /> },
   { path: '/hearings', label: 'Hearings', icon: <EventIcon /> },
   { path: '/senator-timeline', label: 'Senator Timeline', icon: <ScheduleIcon /> },
+  { path: '/search', label: 'Advanced Search', icon: <SearchIcon /> },
   { path: '/settings', label: 'Settings', icon: <SettingsIcon /> },
 ];
 

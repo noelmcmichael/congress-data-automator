@@ -104,13 +104,80 @@ const Dashboard: React.FC = () => {
     <Box>
       <Box sx={{ mb: 3 }}>
         <Typography variant="h4" gutterBottom>
-          Congressional Data Dashboard
+          Congressional Data Platform
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          A central hub for tracking legislative activity.
+          Your authoritative source for congressional data, committee information, and legislative tracking.
         </Typography>
         <UniversalSearch />
       </Box>
+
+      {/* Quick Navigation */}
+      <Card sx={{ mb: 3 }}>
+        <CardContent>
+          <Typography variant="h6" gutterBottom>
+            Quick Access
+          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={3}>
+              <Button 
+                fullWidth 
+                variant="contained" 
+                size="large"
+                onClick={() => window.location.href = '/members'}
+                sx={{ py: 2 }}
+              >
+                <Box sx={{ textAlign: 'center' }}>
+                  <PeopleIcon sx={{ fontSize: 30, mb: 1 }} />
+                  <Typography variant="body2">All Members</Typography>
+                </Box>
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Button 
+                fullWidth 
+                variant="contained" 
+                size="large"
+                onClick={() => window.location.href = '/committees'}
+                sx={{ py: 2 }}
+              >
+                <Box sx={{ textAlign: 'center' }}>
+                  <GroupIcon sx={{ fontSize: 30, mb: 1 }} />
+                  <Typography variant="body2">All Committees</Typography>
+                </Box>
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Button 
+                fullWidth 
+                variant="contained" 
+                size="large"
+                onClick={() => window.location.href = '/hearings'}
+                sx={{ py: 2 }}
+              >
+                <Box sx={{ textAlign: 'center' }}>
+                  <EventIcon sx={{ fontSize: 30, mb: 1 }} />
+                  <Typography variant="body2">All Hearings</Typography>
+                </Box>
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Button 
+                fullWidth 
+                variant="outlined" 
+                size="large"
+                onClick={() => window.location.href = '/search'}
+                sx={{ py: 2 }}
+              >
+                <Box sx={{ textAlign: 'center' }}>
+                  <RefreshIcon sx={{ fontSize: 30, mb: 1 }} />
+                  <Typography variant="body2">Advanced Search</Typography>
+                </Box>
+              </Button>
+            </Grid>
+          </Grid>
+        </CardContent>
+      </Card>
 
       <Grid container spacing={3}>
         {/* Left Column */}

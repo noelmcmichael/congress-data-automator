@@ -15,6 +15,7 @@ import HearingDetail from './components/HearingDetail';
 import SenatorTimeline from './components/SenatorTimeline';
 import CommitteeHierarchy from './components/CommitteeHierarchy';
 import JurisdictionMapping from './components/JurisdictionMapping';
+import AdvancedSearch from './components/AdvancedSearch';
 import './App.css';
 
 const theme = createTheme({
@@ -58,6 +59,7 @@ function App() {
               <Route path="/hearings" element={<Hearings />} />
               <Route path="/hearings/:id" element={<HearingDetail />} />
               <Route path="/senator-timeline" element={<SenatorTimeline />} />
+              <Route path="/search" element={<AdvancedSearch />} />
               <Route path="/settings" element={<Settings />} />
             </Routes>
           </Box>
