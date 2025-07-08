@@ -1,7 +1,7 @@
 """Base models for the API service."""
 
 from datetime import datetime, timezone
-from typing import Dict, List, Optional, Union
+from typing import Dict, List, Optional, Union, Any
 
 from pydantic import BaseModel, Field, field_validator, ConfigDict, ValidationInfo
 
@@ -10,6 +10,7 @@ class BaseResponse(BaseModel):
     """Base response model."""
     
     model_config = ConfigDict(
+        use_enum_values=True,
         json_encoders={
             datetime: lambda v: v.isoformat() if v else None
         }
@@ -86,7 +87,7 @@ class PaginationResponse(BaseModel):
 class PaginatedResponse(BaseResponse):
     """Paginated response model."""
     
-    data: List[BaseModel] = Field(description="Response data")
+    data: List[Any] = Field(description="Response data")
     pagination: PaginationResponse = Field(description="Pagination metadata")
 
 

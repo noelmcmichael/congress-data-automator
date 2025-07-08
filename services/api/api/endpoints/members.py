@@ -21,7 +21,6 @@ router = APIRouter(prefix="/members", tags=["members"])
 
 @router.get(
     "",
-    response_model=PaginatedResponse,
     summary="List members",
     description="Get a paginated list of congressional members with optional filtering and search.",
 )

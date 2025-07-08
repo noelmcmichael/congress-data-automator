@@ -1,0 +1,1674 @@
+[
+  {
+    "endpoint": "/health",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 6.4,
+    "json_valid": true,
+    "data": {
+      "status": "healthy",
+      "service": "congressional_data_api",
+      "version": "1.0.0",
+      "environment": "development"
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/healthz",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.0,
+    "json_valid": true,
+    "data": {
+      "status": "healthy",
+      "service": "congressional_data_api",
+      "version": "1.0.0",
+      "environment": "development",
+      "checks": {
+        "database": {
+          "status": "healthy",
+          "connected": true,
+          "latency_ms": 0
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.54,
+    "json_valid": true,
+    "data": {
+      "message": "Congressional Data API",
+      "version": "1.0.0",
+      "docs_url": "/docs",
+      "health_url": "/health"
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.66,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.635560+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        },
+        {
+          "bioguide_id": "B001318",
+          "name": "Becca Balint",
+          "first_name": "Becca",
+          "last_name": "Balint",
+          "party": "Democratic",
+          "state": "VT",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 24
+        },
+        {
+          "bioguide_id": "B001292",
+          "name": "Donald S. Beyer",
+          "first_name": "Donald",
+          "last_name": "Beyer",
+          "party": "Democratic",
+          "state": "VA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 62
+        },
+        {
+          "bioguide_id": "B001291",
+          "name": "Brian Babin",
+          "first_name": "Brian",
+          "last_name": "Babin",
+          "party": "Republican",
+          "state": "TX",
+          "district": "36",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 63
+        },
+        {
+          "bioguide_id": "B001325",
+          "name": "Sheri Biggs",
+          "first_name": "Sheri",
+          "last_name": "Biggs",
+          "party": "Republican",
+          "state": "SC",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 73
+        },
+        {
+          "bioguide_id": "A000375",
+          "name": "Jodey C. Arrington",
+          "first_name": "Jodey",
+          "last_name": "Arrington",
+          "party": "Republican",
+          "state": "TX",
+          "district": "19",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 95
+        },
+        {
+          "bioguide_id": "B001327",
+          "name": "Robert P. Bresnahan",
+          "first_name": "Robert",
+          "last_name": "Bresnahan",
+          "party": "Republican",
+          "state": "PA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 109
+        },
+        {
+          "bioguide_id": "A000380",
+          "name": "Gabe Amo",
+          "first_name": "Gabe",
+          "last_name": "Amo",
+          "party": "Democratic",
+          "state": "RI",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 111
+        },
+        {
+          "bioguide_id": "B001317",
+          "name": "Josh Brecheen",
+          "first_name": "Josh",
+          "last_name": "Brecheen",
+          "party": "Republican",
+          "state": "OK",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 117
+        },
+        {
+          "bioguide_id": "B000740",
+          "name": "Stephanie I. Bice",
+          "first_name": "Stephanie",
+          "last_name": "Bice",
+          "party": "Republican",
+          "state": "OK",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 119
+        },
+        {
+          "bioguide_id": "B000668",
+          "name": "Cliff Bentz",
+          "first_name": "Cliff",
+          "last_name": "Bentz",
+          "party": "Republican",
+          "state": "OR",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 120
+        },
+        {
+          "bioguide_id": "B001296",
+          "name": "Brendan F. Boyle",
+          "first_name": "Brendan",
+          "last_name": "Boyle",
+          "party": "Democratic",
+          "state": "PA",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 130
+        },
+        {
+          "bioguide_id": "B001278",
+          "name": "Suzanne Bonamici",
+          "first_name": "Suzanne",
+          "last_name": "Bonamici",
+          "party": "Democratic",
+          "state": "OR",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 132
+        },
+        {
+          "bioguide_id": "B001313",
+          "name": "Shontel M. Brown",
+          "first_name": "Shontel",
+          "last_name": "Brown",
+          "party": "Democratic",
+          "state": "OH",
+          "district": "11",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 151
+        },
+        {
+          "bioguide_id": "B001306",
+          "name": "Troy Balderson",
+          "first_name": "Troy",
+          "last_name": "Balderson",
+          "party": "Republican",
+          "state": "OH",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 155
+        },
+        {
+          "bioguide_id": "B001281",
+          "name": "Joyce Beatty",
+          "first_name": "Joyce",
+          "last_name": "Beatty",
+          "party": "Democratic",
+          "state": "OH",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 161
+        },
+        {
+          "bioguide_id": "A000369",
+          "name": "Mark E. Amodei",
+          "first_name": "Mark",
+          "last_name": "Amodei",
+          "party": "Republican",
+          "state": "NV",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 191
+        },
+        {
+          "bioguide_id": "B001298",
+          "name": "Don Bacon",
+          "first_name": "Don",
+          "last_name": "Bacon",
+          "party": "Republican",
+          "state": "NE",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 206
+        },
+        {
+          "bioguide_id": "A000370",
+          "name": "Alma S. Adams",
+          "first_name": "Alma",
+          "last_name": "Adams",
+          "party": "Democratic",
+          "state": "NC",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 208
+        },
+        {
+          "bioguide_id": "B001324",
+          "name": "Wesley Bell",
+          "first_name": "Wesley",
+          "last_name": "Bell",
+          "party": "Democratic",
+          "state": "MO",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 216
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 50,
+        "pages": 3,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members?page=1&size=5",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.13,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.637976+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        },
+        {
+          "bioguide_id": "B001318",
+          "name": "Becca Balint",
+          "first_name": "Becca",
+          "last_name": "Balint",
+          "party": "Democratic",
+          "state": "VT",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 24
+        },
+        {
+          "bioguide_id": "B001292",
+          "name": "Donald S. Beyer",
+          "first_name": "Donald",
+          "last_name": "Beyer",
+          "party": "Democratic",
+          "state": "VA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 62
+        },
+        {
+          "bioguide_id": "B001291",
+          "name": "Brian Babin",
+          "first_name": "Brian",
+          "last_name": "Babin",
+          "party": "Republican",
+          "state": "TX",
+          "district": "36",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 63
+        },
+        {
+          "bioguide_id": "B001325",
+          "name": "Sheri Biggs",
+          "first_name": "Sheri",
+          "last_name": "Biggs",
+          "party": "Republican",
+          "state": "SC",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 73
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 5,
+        "total": 50,
+        "pages": 10,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members?chamber=House",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.45,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.640323+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        },
+        {
+          "bioguide_id": "B001318",
+          "name": "Becca Balint",
+          "first_name": "Becca",
+          "last_name": "Balint",
+          "party": "Democratic",
+          "state": "VT",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 24
+        },
+        {
+          "bioguide_id": "B001292",
+          "name": "Donald S. Beyer",
+          "first_name": "Donald",
+          "last_name": "Beyer",
+          "party": "Democratic",
+          "state": "VA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 62
+        },
+        {
+          "bioguide_id": "B001291",
+          "name": "Brian Babin",
+          "first_name": "Brian",
+          "last_name": "Babin",
+          "party": "Republican",
+          "state": "TX",
+          "district": "36",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 63
+        },
+        {
+          "bioguide_id": "B001325",
+          "name": "Sheri Biggs",
+          "first_name": "Sheri",
+          "last_name": "Biggs",
+          "party": "Republican",
+          "state": "SC",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 73
+        },
+        {
+          "bioguide_id": "A000375",
+          "name": "Jodey C. Arrington",
+          "first_name": "Jodey",
+          "last_name": "Arrington",
+          "party": "Republican",
+          "state": "TX",
+          "district": "19",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 95
+        },
+        {
+          "bioguide_id": "B001327",
+          "name": "Robert P. Bresnahan",
+          "first_name": "Robert",
+          "last_name": "Bresnahan",
+          "party": "Republican",
+          "state": "PA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 109
+        },
+        {
+          "bioguide_id": "A000380",
+          "name": "Gabe Amo",
+          "first_name": "Gabe",
+          "last_name": "Amo",
+          "party": "Democratic",
+          "state": "RI",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 111
+        },
+        {
+          "bioguide_id": "B001317",
+          "name": "Josh Brecheen",
+          "first_name": "Josh",
+          "last_name": "Brecheen",
+          "party": "Republican",
+          "state": "OK",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 117
+        },
+        {
+          "bioguide_id": "B000740",
+          "name": "Stephanie I. Bice",
+          "first_name": "Stephanie",
+          "last_name": "Bice",
+          "party": "Republican",
+          "state": "OK",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 119
+        },
+        {
+          "bioguide_id": "B000668",
+          "name": "Cliff Bentz",
+          "first_name": "Cliff",
+          "last_name": "Bentz",
+          "party": "Republican",
+          "state": "OR",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 120
+        },
+        {
+          "bioguide_id": "B001296",
+          "name": "Brendan F. Boyle",
+          "first_name": "Brendan",
+          "last_name": "Boyle",
+          "party": "Democratic",
+          "state": "PA",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 130
+        },
+        {
+          "bioguide_id": "B001278",
+          "name": "Suzanne Bonamici",
+          "first_name": "Suzanne",
+          "last_name": "Bonamici",
+          "party": "Democratic",
+          "state": "OR",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 132
+        },
+        {
+          "bioguide_id": "B001313",
+          "name": "Shontel M. Brown",
+          "first_name": "Shontel",
+          "last_name": "Brown",
+          "party": "Democratic",
+          "state": "OH",
+          "district": "11",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 151
+        },
+        {
+          "bioguide_id": "B001306",
+          "name": "Troy Balderson",
+          "first_name": "Troy",
+          "last_name": "Balderson",
+          "party": "Republican",
+          "state": "OH",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 155
+        },
+        {
+          "bioguide_id": "B001281",
+          "name": "Joyce Beatty",
+          "first_name": "Joyce",
+          "last_name": "Beatty",
+          "party": "Democratic",
+          "state": "OH",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 161
+        },
+        {
+          "bioguide_id": "A000369",
+          "name": "Mark E. Amodei",
+          "first_name": "Mark",
+          "last_name": "Amodei",
+          "party": "Republican",
+          "state": "NV",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 191
+        },
+        {
+          "bioguide_id": "B001298",
+          "name": "Don Bacon",
+          "first_name": "Don",
+          "last_name": "Bacon",
+          "party": "Republican",
+          "state": "NE",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 206
+        },
+        {
+          "bioguide_id": "A000370",
+          "name": "Alma S. Adams",
+          "first_name": "Alma",
+          "last_name": "Adams",
+          "party": "Democratic",
+          "state": "NC",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 208
+        },
+        {
+          "bioguide_id": "B001324",
+          "name": "Wesley Bell",
+          "first_name": "Wesley",
+          "last_name": "Bell",
+          "party": "Democratic",
+          "state": "MO",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 216
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 39,
+        "pages": 2,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members?party=Republican",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.63,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.642986+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        },
+        {
+          "bioguide_id": "B001291",
+          "name": "Brian Babin",
+          "first_name": "Brian",
+          "last_name": "Babin",
+          "party": "Republican",
+          "state": "TX",
+          "district": "36",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 63
+        },
+        {
+          "bioguide_id": "B001325",
+          "name": "Sheri Biggs",
+          "first_name": "Sheri",
+          "last_name": "Biggs",
+          "party": "Republican",
+          "state": "SC",
+          "district": "3",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 73
+        },
+        {
+          "bioguide_id": "A000375",
+          "name": "Jodey C. Arrington",
+          "first_name": "Jodey",
+          "last_name": "Arrington",
+          "party": "Republican",
+          "state": "TX",
+          "district": "19",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 95
+        },
+        {
+          "bioguide_id": "B001327",
+          "name": "Robert P. Bresnahan",
+          "first_name": "Robert",
+          "last_name": "Bresnahan",
+          "party": "Republican",
+          "state": "PA",
+          "district": "8",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 109
+        },
+        {
+          "bioguide_id": "B001317",
+          "name": "Josh Brecheen",
+          "first_name": "Josh",
+          "last_name": "Brecheen",
+          "party": "Republican",
+          "state": "OK",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 117
+        },
+        {
+          "bioguide_id": "B000740",
+          "name": "Stephanie I. Bice",
+          "first_name": "Stephanie",
+          "last_name": "Bice",
+          "party": "Republican",
+          "state": "OK",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 119
+        },
+        {
+          "bioguide_id": "B000668",
+          "name": "Cliff Bentz",
+          "first_name": "Cliff",
+          "last_name": "Bentz",
+          "party": "Republican",
+          "state": "OR",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 120
+        },
+        {
+          "bioguide_id": "B001306",
+          "name": "Troy Balderson",
+          "first_name": "Troy",
+          "last_name": "Balderson",
+          "party": "Republican",
+          "state": "OH",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 155
+        },
+        {
+          "bioguide_id": "A000369",
+          "name": "Mark E. Amodei",
+          "first_name": "Mark",
+          "last_name": "Amodei",
+          "party": "Republican",
+          "state": "NV",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 191
+        },
+        {
+          "bioguide_id": "B001298",
+          "name": "Don Bacon",
+          "first_name": "Don",
+          "last_name": "Bacon",
+          "party": "Republican",
+          "state": "NE",
+          "district": "2",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 206
+        },
+        {
+          "bioguide_id": "A000379",
+          "name": "Mark Alford",
+          "first_name": "Mark",
+          "last_name": "Alford",
+          "party": "Republican",
+          "state": "MO",
+          "district": "4",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 221
+        },
+        {
+          "bioguide_id": "B001321",
+          "name": "Tom Barrett",
+          "first_name": "Tom",
+          "last_name": "Barrett",
+          "party": "Republican",
+          "state": "MI",
+          "district": "7",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 245
+        },
+        {
+          "bioguide_id": "B001301",
+          "name": "Jack Bergman",
+          "first_name": "Jack",
+          "last_name": "Bergman",
+          "party": "Republican",
+          "state": "MI",
+          "district": "1",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 252
+        },
+        {
+          "bioguide_id": "B001307",
+          "name": "James R. Baird",
+          "first_name": "James",
+          "last_name": "Baird",
+          "party": "Republican",
+          "state": "IN",
+          "district": "4",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 284
+        },
+        {
+          "bioguide_id": "B001295",
+          "name": "Mike Bost",
+          "first_name": "Mike",
+          "last_name": "Bost",
+          "party": "Republican",
+          "state": "IL",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 290
+        },
+        {
+          "bioguide_id": "B001282",
+          "name": "Andy Barr",
+          "first_name": "Andy",
+          "last_name": "Barr",
+          "party": "Republican",
+          "state": "KY",
+          "district": "6",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 291
+        },
+        {
+          "bioguide_id": "A000372",
+          "name": "Rick W. Allen",
+          "first_name": "Rick",
+          "last_name": "Allen",
+          "party": "Republican",
+          "state": "GA",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 317
+        },
+        {
+          "bioguide_id": "B001314",
+          "name": "Aaron Bean",
+          "first_name": "Aaron",
+          "last_name": "Bean",
+          "party": "Republican",
+          "state": "FL",
+          "district": "4",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 337
+        },
+        {
+          "bioguide_id": "B001257",
+          "name": "Gus M. Bilirakis",
+          "first_name": "Gus",
+          "last_name": "Bilirakis",
+          "party": "Republican",
+          "state": "FL",
+          "district": "12",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 355
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 29,
+        "pages": 2,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members?state=WA",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.08,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.645389+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 1,
+        "pages": 1,
+        "has_next": false,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members?search=Michael",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.25,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.647651+00:00",
+      "data": [
+        {
+          "bioguide_id": "B001322",
+          "name": "Michael Baumgartner",
+          "first_name": "Michael",
+          "last_name": "Baumgartner",
+          "party": "Republican",
+          "state": "WA",
+          "district": "5",
+          "chamber": "House",
+          "member_type": "Representative",
+          "is_current": true,
+          "id": 19
+        },
+        {
+          "bioguide_id": "B001267",
+          "name": "Michael F. Bennet",
+          "first_name": "Michael",
+          "last_name": "Bennet",
+          "party": "Democratic",
+          "state": "CO",
+          "district": null,
+          "chamber": "Senate",
+          "member_type": "Senator",
+          "is_current": true,
+          "id": 536
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 2,
+        "pages": 1,
+        "has_next": false,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members/19",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.95,
+    "json_valid": true,
+    "data": {
+      "bioguide_id": "B001322",
+      "name": "Michael Baumgartner",
+      "first_name": "Michael",
+      "last_name": "Baumgartner",
+      "party": "Republican",
+      "state": "WA",
+      "district": "5",
+      "chamber": "House",
+      "member_type": "Representative",
+      "is_current": true,
+      "id": 19,
+      "middle_name": null,
+      "suffix": null,
+      "nickname": null,
+      "photo_url": "https://www.congress.gov/img/member/6774212e0b34857ecc90903a_200.jpg",
+      "website_url": null,
+      "contact_form_url": null,
+      "phone": null,
+      "fax": null,
+      "office": null,
+      "terms_served": null,
+      "date_of_birth": null,
+      "gender": null,
+      "created_at": "2025-07-05T17:48:38.171122+00:00",
+      "updated_at": "2025-07-06T14:41:17.968217+00:00"
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members/19/committees",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.06,
+    "json_valid": true,
+    "data": [],
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members/19/full",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.96,
+    "json_valid": true,
+    "data": {
+      "bioguide_id": "B001322",
+      "name": "Michael Baumgartner",
+      "first_name": "Michael",
+      "last_name": "Baumgartner",
+      "party": "Republican",
+      "state": "WA",
+      "district": "5",
+      "chamber": "House",
+      "member_type": "Representative",
+      "is_current": true,
+      "id": 19,
+      "middle_name": null,
+      "suffix": null,
+      "nickname": null,
+      "photo_url": "https://www.congress.gov/img/member/6774212e0b34857ecc90903a_200.jpg",
+      "website_url": null,
+      "contact_form_url": null,
+      "phone": null,
+      "fax": null,
+      "office": null,
+      "terms_served": null,
+      "date_of_birth": null,
+      "gender": null,
+      "created_at": "2025-07-05T17:48:38.171122+00:00",
+      "updated_at": "2025-07-06T14:41:17.968217+00:00",
+      "committees": []
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/members/statistics",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 6.1,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/committees",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.49,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.662406+00:00",
+      "data": [
+        {
+          "name": "Committee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 1,
+          "member_count": null
+        },
+        {
+          "name": "Biotechnology, Horticulture, and Research Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 2,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Appropriations",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 7,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 8,
+          "member_count": null
+        },
+        {
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 9,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Armed Services",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 20,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Education and the Workforce",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 29,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Energy and Commerce",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 34,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Financial Services",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 41,
+          "member_count": null
+        },
+        {
+          "name": "Capital Markets Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 42,
+          "member_count": null
+        },
+        {
+          "name": "Africa Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 49,
+          "member_count": null
+        },
+        {
+          "name": "Border Security and Enforcement Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 57,
+          "member_count": null
+        },
+        {
+          "name": "Aviation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 96,
+          "member_count": null
+        },
+        {
+          "name": "Coast Guard and Maritime Transportation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 97,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Agriculture, Nutrition, and Forestry",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 115,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Appropriations",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 121,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 122,
+          "member_count": null
+        },
+        {
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 123,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Armed Services",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 134,
+          "member_count": null
+        },
+        {
+          "name": "Airland Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 135,
+          "member_count": null
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 30,
+        "pages": 2,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/committees?page=1&size=5",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.9,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.664444+00:00",
+      "data": [
+        {
+          "name": "Committee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 1,
+          "member_count": null
+        },
+        {
+          "name": "Biotechnology, Horticulture, and Research Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 2,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Appropriations",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 7,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 8,
+          "member_count": null
+        },
+        {
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 9,
+          "member_count": null
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 5,
+        "total": 30,
+        "pages": 6,
+        "has_next": true,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/committees?chamber=House",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.91,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.666388+00:00",
+      "data": [
+        {
+          "name": "Committee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 1,
+          "member_count": null
+        },
+        {
+          "name": "Biotechnology, Horticulture, and Research Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 2,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Appropriations",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 7,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 8,
+          "member_count": null
+        },
+        {
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 9,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Armed Services",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 20,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Education and the Workforce",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 29,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Energy and Commerce",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 34,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Financial Services",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 41,
+          "member_count": null
+        },
+        {
+          "name": "Capital Markets Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 42,
+          "member_count": null
+        },
+        {
+          "name": "Africa Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 49,
+          "member_count": null
+        },
+        {
+          "name": "Border Security and Enforcement Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 57,
+          "member_count": null
+        },
+        {
+          "name": "Aviation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 96,
+          "member_count": null
+        },
+        {
+          "name": "Coast Guard and Maritime Transportation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 97,
+          "member_count": null
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 14,
+        "pages": 1,
+        "has_next": false,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/committees?search=Agriculture",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 2.16,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.668570+00:00",
+      "data": [
+        {
+          "name": "Committee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 1,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "House",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 8,
+          "member_count": null
+        },
+        {
+          "name": "Committee on Agriculture, Nutrition, and Forestry",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 115,
+          "member_count": null
+        },
+        {
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "is_current": true,
+          "id": 122,
+          "member_count": null
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 4,
+        "pages": 1,
+        "has_next": false,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/committees/statistics",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.65,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/hearings",
+    "method": "GET",
+    "status_code": 200,
+    "response_time_ms": 1.86,
+    "json_valid": true,
+    "data": {
+      "success": true,
+      "message": null,
+      "timestamp": "2025-07-08T05:35:41.676137+00:00",
+      "data": [],
+      "pagination": {
+        "page": 1,
+        "size": 20,
+        "total": 0,
+        "pages": 0,
+        "has_next": false,
+        "has_prev": false
+      }
+    },
+    "success": true
+  },
+  {
+    "endpoint": "/api/v1/hearings/statistics",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.63,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/search?q=agriculture",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.77,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/search/members?q=Michael",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.6,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/search/committees?q=Agriculture",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.59,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  },
+  {
+    "endpoint": "/api/v1/search/hearings?q=budget",
+    "method": "GET",
+    "status_code": 500,
+    "response_time_ms": 5.69,
+    "json_valid": false,
+    "data": "Internal Server Error",
+    "success": false
+  }
+]
