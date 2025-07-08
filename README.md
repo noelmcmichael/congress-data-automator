@@ -33,6 +33,10 @@ A comprehensive service for automatically collecting, processing, and serving co
 
 **VALIDATION SERVICE COMPLETE**: Enterprise-grade data validation with Great Expectations and Dagster
 
+### 🔄 Task-C3 In Progress - API Service (January 8, 2025)
+
+**API SERVICE PLANNING**: Comprehensive implementation plan created for read-only FastAPI service
+
 #### 🏗️ **Foundation Components Complete**
 - **Project Structure**: `/services/validation` with proper package organization
 - **Configuration Management**: Pydantic settings with environment validation
@@ -75,11 +79,14 @@ A comprehensive service for automatically collecting, processing, and serving co
 - **Background Processing**: Async data docs generation and cleanup
 - **Resource Optimization**: Connection pooling and proper resource cleanup
 
-#### 📋 **Next Steps (Task-C3)**
-- Create read-only FastAPI service in `/services/api`
-- Integrate with validated production data views
-- Add caching layer and query optimization
-- Implement API versioning and documentation
+#### 📋 **Task-C3 Implementation Plan**
+- **Phase 1**: Project structure and foundation (Steps 1-5)
+- **Phase 2**: Core API endpoints for members, committees, hearings (Steps 6-10)
+- **Phase 3**: Performance optimization and caching (Steps 11-15)
+- **Phase 4**: Testing and quality assurance (Steps 16-20)
+- **Phase 5**: Deployment and integration (Steps 21-25)
+
+**Total**: 25 steps, 30-40 hours estimated, see [TASK_C3_API_SERVICE_PLAN.md](TASK_C3_API_SERVICE_PLAN.md)
 
 ---
 
