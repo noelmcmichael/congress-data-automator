@@ -1,0 +1,149 @@
+{
+  "timestamp": "2025-07-08T13:30:35.843597",
+  "test_results": {
+    "119th Congress Data Access": true,
+    "Pydantic Schema Compatibility": true,
+    "API Endpoint Structure": true,
+    "Session Filtering Logic": true,
+    "119th Congress Context": true
+  },
+  "test_log": [
+    {
+      "timestamp": "2025-07-08T13:30:35.523250",
+      "action": "test_119th_data",
+      "details": "Testing access to 119th Congress database",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526128",
+      "action": "test_119th_data",
+      "details": "\u2705 Data access verified: 32 members, 16 committees, 4 sessions",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526157",
+      "action": "test_schemas",
+      "details": "Testing Pydantic schema compatibility",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526174",
+      "action": "test_schemas",
+      "details": "\u2705 MemberResponse schema compatible: Chuck Grassley",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526183",
+      "action": "test_schemas",
+      "details": "\u2705 CommitteeResponse schema compatible: Committee on the Judiciary",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526213",
+      "action": "test_schemas",
+      "details": "\u2705 CongressionalSession schema compatible: 119th Congress",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526216",
+      "action": "test_schemas",
+      "details": "\u2705 All Pydantic schemas compatible with 119th Congress data",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.526221",
+      "action": "test_endpoints",
+      "details": "Testing API endpoint structure",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.677607",
+      "action": "test_endpoints",
+      "details": "\u2705 API routers imported successfully",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843531",
+      "action": "test_endpoints",
+      "details": "\u2705 Congressional sessions routes found: 8 routes",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843546",
+      "action": "test_endpoints",
+      "details": "\u2705 API endpoint structure verified",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843556",
+      "action": "test_filtering",
+      "details": "Testing session filtering logic",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843561",
+      "action": "test_filtering",
+      "details": "\u2705 PASS Current 119th Congress: Should be included in current data",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843564",
+      "action": "test_filtering",
+      "details": "\u2705 PASS Previous 118th Congress: Should be excluded from current data",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843566",
+      "action": "test_filtering",
+      "details": "\u2705 PASS Future 120th Congress: Should be available for planning",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843568",
+      "action": "test_filtering",
+      "details": "\u2705 Session filtering logic verified",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843572",
+      "action": "test_119th_context",
+      "details": "Testing 119th Congress context validation",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843575",
+      "action": "test_119th_context",
+      "details": "\u2705 Congress number correct (119)",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843577",
+      "action": "test_119th_context",
+      "details": "\u2705 Term years correct (2025-2027)",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843579",
+      "action": "test_119th_context",
+      "details": "\u2705 Republican control verified (unified government)",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843582",
+      "action": "test_119th_context",
+      "details": "\u2705 Key Republican chairs identified (4 chairs)",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:30:35.843584",
+      "action": "test_119th_context",
+      "details": "\u2705 119th Congress context validation complete",
+      "status": "INFO"
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "passed_tests": 5,
+    "failed_tests": 0
+  }
+}
