@@ -25,6 +25,64 @@
 
 A comprehensive service for automatically collecting, processing, and serving congressional data from multiple sources including the Congress.gov API and official congressional websites.
 
+## 🚀 ENTERPRISE REFACTOR - In Progress (January 8, 2025)
+
+**CURRENT STATUS**: Enterprise-grade refactoring in progress - splitting monolith into specialized services
+
+### ✅ Task-C2 Complete - Validation Service (January 8, 2025)
+
+**VALIDATION SERVICE COMPLETE**: Enterprise-grade data validation with Great Expectations and Dagster
+
+#### 🏗️ **Foundation Components Complete**
+- **Project Structure**: `/services/validation` with proper package organization
+- **Configuration Management**: Pydantic settings with environment validation
+- **Database Manager**: Connection pooling, health checks, schema management
+- **Structured Logging**: JSON logging with correlation IDs and service context
+- **Data Models**: Congressional entities (Member, Committee, Hearing) with validation
+- **Result Tracking**: Validation results and data promotion tracking models
+
+#### 🔧 **Great Expectations Implementation**
+- **Expectation Manager**: Full data context initialization and management
+- **Validation Suites**: Comprehensive expectation suites for all congressional tables
+- **Data Quality Rules**: 80+ validation rules covering data types, constraints, relationships
+- **Automated Documentation**: Great Expectations data docs generation
+- **PostgreSQL Integration**: Runtime data connectors for staging table validation
+
+#### 🚀 **Dagster Pipeline Orchestration**
+- **Asset-Based Architecture**: Staging → Validation → Production data flow
+- **Job Definitions**: Validation, promotion, and full pipeline jobs
+- **Automated Scheduling**: Daily validation, hourly freshness checks, weekly cleanup
+- **Sensor-Driven**: Automatic triggers for fresh data and validation success
+- **Resource Management**: Database and expectation resources with proper lifecycle
+
+#### 📊 **FastAPI Service Wrapper**
+- **Health Monitoring**: `/healthz` with database connectivity validation
+- **Validation API**: On-demand table validation with detailed results
+- **Promotion API**: Automated staging → production data promotion
+- **Metrics Export**: Prometheus-compatible metrics endpoint
+- **CLI Tools**: Comprehensive command-line interface for operations
+
+#### 🛠️ **Schema Versioning (v20250708)**
+- **Versioned Tables**: `public.{table}_v20250708` for rollback capability
+- **Current Views**: `public.{table}` pointing to latest validated version
+- **Migration Support**: Automated schema creation and view management
+- **Cleanup Jobs**: Automatic removal of old table versions
+
+#### 📈 **Enterprise Features**
+- **Containerization**: Multi-stage Dockerfile with security best practices
+- **Environment Configuration**: Comprehensive `.env` support
+- **Error Handling**: Graceful failure recovery and detailed error reporting
+- **Background Processing**: Async data docs generation and cleanup
+- **Resource Optimization**: Connection pooling and proper resource cleanup
+
+#### 📋 **Next Steps (Task-C3)**
+- Create read-only FastAPI service in `/services/api`
+- Integrate with validated production data views
+- Add caching layer and query optimization
+- Implement API versioning and documentation
+
+---
+
 ## 🎉 MAJOR MILESTONE - Complete Congressional Data System
 
 ### ✅ Phase 2 Complete - Official Resource Integration (January 7, 2025)

@@ -17,7 +17,7 @@ class Settings(BaseSettings):
 
     # Database Configuration
     database_url: str = Field(
-        ...,
+        default="postgresql://test:test@localhost:5432/test_db",
         description="PostgreSQL database connection URL",
         env="DATABASE_URL",
     )

@@ -4,7 +4,7 @@ from datetime import datetime
 from typing import Optional, List, Dict, Any
 from enum import Enum
 
-from pydantic import Field, validator
+from pydantic import Field, validator, model_validator
 
 from .base import BaseModel
 
@@ -106,15 +106,14 @@ class Committee(BaseModel):
     # Metadata
     source: str = Field(..., description="Data source")
     
-    @validator("parent_committee_id")
-    def validate_parent_committee(cls, v: Optional[str], values: Dict[str, Any]) -> Optional[str]:
+    @model_validator(mode='after')
+    def validate_parent_committee(self) -> 'Committee':
         """Validate parent committee relationship."""
-        is_subcommittee = values.get("is_subcommittee", False)
-        if is_subcommittee and v is None:
+        if self.is_subcommittee and self.parent_committee_id is None:
             raise ValueError("Subcommittees must have a parent committee ID")
-        if not is_subcommittee and v is not None:
+        if not self.is_subcommittee and self.parent_committee_id is not None:
             raise ValueError("Only subcommittees should have parent committee IDs")
-        return v
+        return self
 
 
 class Hearing(BaseModel):
