@@ -1,0 +1,395 @@
+{
+  "error_handling": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "404 Error - Non-existent Member",
+        "status": "passed",
+        "response_time": 3.3,
+        "details": {
+          "success": true,
+          "status_code": 404,
+          "response": {
+            "success": false,
+            "message": "Member not found",
+            "timestamp": "2025-07-08T06:48:05.270607+00:00",
+            "error": "NotFoundError",
+            "detail": "Member with ID 9999 not found",
+            "code": 404
+          },
+          "expected_status": 404
+        }
+      },
+      {
+        "name": "422 Error - Invalid Member ID",
+        "status": "passed",
+        "response_time": 1.19,
+        "details": {
+          "success": true,
+          "status_code": 422,
+          "response": {
+            "success": false,
+            "message": "Invalid member ID",
+            "timestamp": "2025-07-08T06:48:05.271928+00:00",
+            "error": "ValidationError",
+            "detail": "Member ID must be a positive integer",
+            "code": 422
+          },
+          "expected_status": 422
+        }
+      },
+      {
+        "name": "404 Error - Non-existent Committee",
+        "status": "passed",
+        "response_time": 1.66,
+        "details": {
+          "success": true,
+          "status_code": 404,
+          "response": {
+            "success": false,
+            "message": "Committee not found",
+            "timestamp": "2025-07-08T06:48:05.273646+00:00",
+            "error": "NotFoundError",
+            "detail": "Committee with ID 9999 not found",
+            "code": 404
+          },
+          "expected_status": 404
+        }
+      }
+    ]
+  },
+  "validation": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "Pagination Validation",
+        "status": "passed",
+        "response_time": 2.96,
+        "details": {
+          "success": true,
+          "status_code": 422,
+          "response": {
+            "success": false,
+            "message": "Validation error",
+            "timestamp": "2025-07-08T06:48:05.274814+00:00",
+            "error": "ValidationError",
+            "detail": "[{'type': 'greater_than_equal', 'loc': ('query', 'page'), 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}]",
+            "code": 422
+          },
+          "expected_status": 422
+        }
+      },
+      {
+        "name": "State Filter Validation",
+        "status": "passed",
+        "response_time": 1.21,
+        "details": {
+          "success": true,
+          "status_code": 422,
+          "response": {
+            "success": false,
+            "message": "Invalid member filter parameters",
+            "timestamp": "2025-07-08T06:48:05.277819+00:00",
+            "error": "ValidationError",
+            "detail": "1 validation error for MemberFilterValidator\nstate\n  Value error, Invalid state abbreviation: INVALID [type=value_error, input_value='INVALID', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error",
+            "code": 422
+          },
+          "expected_status": 422
+        }
+      },
+      {
+        "name": "Search Query Validation",
+        "status": "passed",
+        "response_time": 1.12,
+        "details": {
+          "success": true,
+          "status_code": 422,
+          "response": {
+            "success": false,
+            "message": "Invalid search query",
+            "timestamp": "2025-07-08T06:48:05.278939+00:00",
+            "error": "ValidationError",
+            "detail": "Search query cannot be empty",
+            "code": 422
+          },
+          "expected_status": 422
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "Member Statistics",
+        "status": "passed",
+        "response_time": 2.08,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": {
+            "total_members": 50,
+            "current_members": 50,
+            "party_breakdown": {
+              "Democratic": 21,
+              "Republican": 29
+            },
+            "chamber_breakdown": {
+              "House": 39,
+              "Senate": 11
+            },
+            "state_breakdown": {
+              "OH": 3,
+              "CA": 3,
+              "TX": 2,
+              "PA": 2,
+              "OR": 2,
+              "OK": 2,
+              "MO": 2,
+              "MI": 2,
+              "IN": 2,
+              "GA": 2,
+              "FL": 2,
+              "CO": 2,
+              "AZ": 2,
+              "AL": 2,
+              "WY": 1,
+              "WI": 1,
+              "WA": 1,
+              "VT": 1,
+              "VA": 1,
+              "TN": 1,
+              "SC": 1,
+              "RI": 1,
+              "NV": 1,
+              "NJ": 1,
+              "NE": 1,
+              "NC": 1,
+              "MD": 1,
+              "MA": 1,
+              "KY": 1,
+              "IL": 1,
+              "DE": 1,
+              "CT": 1,
+              "AR": 1,
+              "AK": 1
+            }
+          },
+          "expected_status": 200
+        }
+      },
+      {
+        "name": "Committee Statistics",
+        "status": "passed",
+        "response_time": 3.9,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": {
+            "total_committees": 30,
+            "current_committees": 30,
+            "chamber_breakdown": {
+              "House": 14,
+              "Senate": 16
+            },
+            "type_breakdown": {
+              "Standing": 30
+            }
+          },
+          "expected_status": 200
+        }
+      },
+      {
+        "name": "Overview Statistics",
+        "status": "passed",
+        "response_time": 4.88,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": {
+            "members": {
+              "total_members": 50,
+              "current_members": 50,
+              "party_breakdown": {
+                "Democratic": 21,
+                "Republican": 29
+              },
+              "chamber_breakdown": {
+                "House": 39,
+                "Senate": 11
+              },
+              "state_breakdown": {
+                "OH": 3,
+                "CA": 3,
+                "TX": 2,
+                "PA": 2,
+                "OR": 2,
+                "OK": 2,
+                "MO": 2,
+                "MI": 2,
+                "IN": 2,
+                "GA": 2,
+                "FL": 2,
+                "CO": 2,
+                "AZ": 2,
+                "AL": 2,
+                "WY": 1,
+                "WI": 1,
+                "WA": 1,
+                "VT": 1,
+                "VA": 1,
+                "TN": 1,
+                "SC": 1,
+                "RI": 1,
+                "NV": 1,
+                "NJ": 1,
+                "NE": 1,
+                "NC": 1,
+                "MD": 1,
+                "MA": 1,
+                "KY": 1,
+                "IL": 1,
+                "DE": 1,
+                "CT": 1,
+                "AR": 1,
+                "AK": 1
+              }
+            },
+            "committees": {
+              "total_committees": 30,
+              "current_committees": 30,
+              "chamber_breakdown": {
+                "House": 14,
+                "Senate": 16
+              },
+              "type_breakdown": {
+                "Standing": 30
+              }
+            },
+            "hearings": {
+              "total_hearings": 0,
+              "status_breakdown": {}
+            },
+            "summary": {
+              "total_members": 50,
+              "current_members": 50,
+              "total_committees": 30,
+              "current_committees": 30,
+              "total_hearings": 0
+            }
+          },
+          "expected_status": 200
+        }
+      }
+    ]
+  },
+  "search": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "Global Search",
+        "status": "passed",
+        "response_time": 1.85,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": {
+            "members": [
+              {
+                "bioguide_id": "B001236",
+                "name": "John Boozman",
+                "first_name": "John",
+                "last_name": "Boozman",
+                "party": "Republican",
+                "state": "AR",
+                "district": null,
+                "chamber": "Senate",
+                "member_type": "Senator",
+                "is_current": true,
+                "id": 534
+              },
+              {
+                "bioguide_id": "B001261",
+                "name": "John Barrasso",
+                "first_name": "John",
+                "last_name": "Barrasso",
+                "party": "Republican",
+                "state": "WY",
+                "district": null,
+                "chamber": "Senate",
+                "member_type": "Senator",
+                "is_current": true,
+                "id": 535
+              }
+            ],
+            "committees": [],
+            "hearings": []
+          },
+          "expected_status": 200
+        }
+      },
+      {
+        "name": "Member Search",
+        "status": "passed",
+        "response_time": 1.43,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": [
+            {
+              "bioguide_id": "B001236",
+              "name": "John Boozman",
+              "first_name": "John",
+              "last_name": "Boozman",
+              "party": "Republican",
+              "state": "AR",
+              "district": null,
+              "chamber": "Senate",
+              "member_type": "Senator",
+              "is_current": true,
+              "id": 534
+            },
+            {
+              "bioguide_id": "B001261",
+              "name": "John Barrasso",
+              "first_name": "John",
+              "last_name": "Barrasso",
+              "party": "Republican",
+              "state": "WY",
+              "district": null,
+              "chamber": "Senate",
+              "member_type": "Senator",
+              "is_current": true,
+              "id": 535
+            }
+          ],
+          "expected_status": 200
+        }
+      },
+      {
+        "name": "Committee Search",
+        "status": "passed",
+        "response_time": 1.38,
+        "details": {
+          "success": true,
+          "status_code": 200,
+          "response": [],
+          "expected_status": 200
+        }
+      }
+    ]
+  },
+  "overall": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0
+  }
+}

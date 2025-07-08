@@ -146,14 +146,12 @@ class HealthCheckResponse(BaseResponse):
 class ErrorResponse(BaseResponse):
     """Error response model."""
     
-    success: bool = Field(default=False, description="Request success status")
-    error: str = Field(description="Error type")
-    detail: Optional[str] = Field(default=None, description="Error details")
-    code: Optional[int] = Field(default=None, description="Error code")
-    
-    class Config:
-        """Pydantic configuration."""
-        schema_extra = {
+    model_config = ConfigDict(
+        use_enum_values=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        },
+        json_schema_extra={
             "example": {
                 "success": False,
                 "message": "Resource not found",
@@ -163,3 +161,9 @@ class ErrorResponse(BaseResponse):
                 "code": 404
             }
         }
+    )
+    
+    success: bool = Field(default=False, description="Request success status")
+    error: str = Field(description="Error type")
+    detail: Optional[str] = Field(default=None, description="Error details")
+    code: Optional[int] = Field(default=None, description="Error code")

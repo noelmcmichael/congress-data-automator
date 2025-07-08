@@ -42,7 +42,7 @@ class MemberFilterValidator(BaseModel):
     is_current: Optional[bool] = None
     search: Optional[str] = None
     sort_by: Optional[str] = None
-    sort_order: Optional[str] = Field("asc", regex="^(asc|desc)$")
+    sort_order: Optional[str] = Field("asc", pattern="^(asc|desc)$")
     
     @validator('state')
     def validate_state(cls, v):
@@ -104,7 +104,7 @@ class CommitteeFilterValidator(BaseModel):
     is_current: Optional[bool] = None
     search: Optional[str] = None
     sort_by: Optional[str] = None
-    sort_order: Optional[str] = Field("asc", regex="^(asc|desc)$")
+    sort_order: Optional[str] = Field("asc", pattern="^(asc|desc)$")
     
     @validator('search')
     def validate_search(cls, v):
@@ -146,7 +146,7 @@ class HearingFilterValidator(BaseModel):
     end_date: Optional[str] = None
     search: Optional[str] = None
     sort_by: Optional[str] = None
-    sort_order: Optional[str] = Field("asc", regex="^(asc|desc)$")
+    sort_order: Optional[str] = Field("asc", pattern="^(asc|desc)$")
     
     @validator('committee_id')
     def validate_committee_id(cls, v):

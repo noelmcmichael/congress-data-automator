@@ -28,6 +28,22 @@ class CustomJSONEncoder(json.JSONEncoder):
         return super().default(obj)
 
 
+def create_error_response(message: str, error_type: str, detail: str = None, code: int = 500) -> Dict[str, Any]:
+    """Create error response dictionary with proper datetime serialization."""
+    from datetime import datetime, timezone
+    
+    response = {
+        "success": False,
+        "message": message,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "error": error_type,
+        "detail": detail,
+        "code": code,
+    }
+    
+    return response
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan manager."""
@@ -89,12 +105,12 @@ def create_app() -> FastAPI:
         
         return JSONResponse(
             status_code=exc.status_code,
-            content=ErrorResponse(
+            content=create_error_response(
                 message=exc.message,
-                error=exc.__class__.__name__,
+                error_type=exc.__class__.__name__,
                 detail=exc.detail,
                 code=exc.status_code,
-            ).dict(),
+            ),
             headers=exc.headers,
         )
     
@@ -110,12 +126,12 @@ def create_app() -> FastAPI:
         
         return JSONResponse(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-            content=ErrorResponse(
+            content=create_error_response(
                 message="Validation error",
-                error="ValidationError",
+                error_type="ValidationError",
                 detail=str(exc.errors()),
                 code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-            ).model_dump(),
+            ),
         )
     
     @app.exception_handler(Exception)
@@ -131,12 +147,12 @@ def create_app() -> FastAPI:
         
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content=ErrorResponse(
+            content=create_error_response(
                 message="Internal server error",
-                error="InternalServerError",
+                error_type="InternalServerError",
                 detail="An unexpected error occurred" if settings.is_production else str(exc),
                 code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            ).model_dump(),
+            ),
         )
     
     # Health check endpoint
