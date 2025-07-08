@@ -1,0 +1,21 @@
+{
+  "update_time": "2025-07-08T15:54:19.627769",
+  "target": "119th Congress Republican Leadership",
+  "committees_updated": 2,
+  "updates": [
+    {
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "new_chair": "Chuck Grassley (R)",
+      "new_ranking": "Richard Durbin (D)",
+      "status": "updated"
+    },
+    {
+      "committee_id": 149,
+      "committee_name": "Committee on Commerce, Science, and Transportation",
+      "new_chair": "Ted Cruz (R)",
+      "new_ranking": "Maria Cantwell (D)",
+      "status": "updated"
+    }
+  ]
+}
