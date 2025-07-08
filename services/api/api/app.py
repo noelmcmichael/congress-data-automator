@@ -17,6 +17,7 @@ from .core.security import SecurityHeadersMiddleware, RateLimitMiddleware, Reque
 from .core.exceptions import APIException
 from .database.connection import db_manager
 from .models.base import ErrorResponse
+from .monitoring import MetricsMiddleware
 
 
 class CustomJSONEncoder(json.JSONEncoder):
@@ -78,6 +79,10 @@ def create_app() -> FastAPI:
         docs_url="/docs" if not settings.is_production else None,
         redoc_url="/redoc" if not settings.is_production else None,
     )
+    
+    # Add metrics middleware (first to capture all requests)
+    if settings.metrics_enabled:
+        app.add_middleware(MetricsMiddleware)
     
     # Add security middleware (order matters!)
     if settings.is_production or settings.is_staging:

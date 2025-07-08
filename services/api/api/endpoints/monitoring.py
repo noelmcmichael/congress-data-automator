@@ -14,6 +14,13 @@ from ..core.logging import logger
 from ..database.connection import db_manager
 from ..models.base import BaseResponse
 
+# Import prometheus metrics if available
+try:
+    from ..monitoring import get_metrics, update_congressional_data_metrics
+    PROMETHEUS_AVAILABLE = True
+except ImportError:
+    PROMETHEUS_AVAILABLE = False
+
 router = APIRouter(tags=["monitoring"])
 
 
@@ -195,3 +202,19 @@ async def service_status():
 async def ping():
     """Simple ping endpoint for load balancer health checks."""
     return {"ping": "pong", "timestamp": datetime.now(timezone.utc).isoformat()}
+
+
+@router.get("/prometheus")
+async def prometheus_metrics():
+    """Prometheus metrics endpoint in standard format."""
+    if not PROMETHEUS_AVAILABLE:
+        return {"error": "Prometheus metrics not available"}
+    
+    # Update congressional data metrics
+    try:
+        async with db_manager.get_session() as session:
+            await update_congressional_data_metrics(session)
+    except Exception as e:
+        logger.error("Failed to update congressional data metrics", error=str(e))
+    
+    return get_metrics()
