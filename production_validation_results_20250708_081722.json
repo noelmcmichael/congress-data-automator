@@ -1,0 +1,139 @@
+{
+  "timestamp": "2025-07-08T08:17:20.753022",
+  "api_url": "https://congressional-data-api-v3-1066017671167.us-central1.run.app",
+  "frontend_url": "https://storage.googleapis.com/congressional-data-frontend/index.html",
+  "tests": [
+    {
+      "category": "api_health",
+      "test": "health_endpoint",
+      "status": "PASSED",
+      "response_time": 0.152537,
+      "data": {
+        "status": "healthy",
+        "timestamp": "2025-01-04T23:35:19Z"
+      }
+    },
+    {
+      "category": "api_health",
+      "test": "root_endpoint",
+      "status": "PASSED",
+      "response_time": 0.079938
+    },
+    {
+      "category": "api_endpoints",
+      "test": "/api/v1/members",
+      "status": "PASSED",
+      "response_time": 0.122952,
+      "count": 5
+    },
+    {
+      "category": "api_endpoints",
+      "test": "/api/v1/committees",
+      "status": "PASSED",
+      "response_time": 0.09505,
+      "count": 5
+    },
+    {
+      "category": "api_endpoints",
+      "test": "/api/v1/hearings",
+      "status": "PASSED",
+      "response_time": 0.073282,
+      "count": 5
+    },
+    {
+      "category": "data_quality",
+      "test": "member_data_structure",
+      "status": "PASSED",
+      "validated_records": 10
+    },
+    {
+      "category": "data_quality",
+      "test": "committee_data_structure",
+      "status": "PASSED",
+      "validated_records": 10
+    },
+    {
+      "category": "performance",
+      "test": "concurrent_requests",
+      "status": "PASSED",
+      "concurrent_requests": 10,
+      "avg_response_time": 0.026088404655456542,
+      "total_time": 0.26088404655456543
+    },
+    {
+      "category": "congressional_data",
+      "test": "member_completeness",
+      "status": "PASSED",
+      "total_members": 50,
+      "party_distribution": {
+        "Democratic": 21,
+        "Republican": 29
+      },
+      "chamber_distribution": {
+        "House": 39,
+        "Senate": 11
+      }
+    },
+    {
+      "category": "congressional_data",
+      "test": "committee_completeness",
+      "status": "PASSED",
+      "total_committees": 50
+    },
+    {
+      "category": "search_functionality",
+      "test": "member_search",
+      "status": "PASSED",
+      "search_term": "John",
+      "results_count": 25
+    },
+    {
+      "category": "search_functionality",
+      "test": "party_filter",
+      "status": "PASSED",
+      "filter": "party=Republican",
+      "results_count": 10
+    },
+    {
+      "category": "pagination",
+      "test": "limit_5",
+      "status": "PASSED",
+      "requested_limit": 5,
+      "actual_count": 5
+    },
+    {
+      "category": "pagination",
+      "test": "limit_10",
+      "status": "PASSED",
+      "requested_limit": 10,
+      "actual_count": 10
+    },
+    {
+      "category": "pagination",
+      "test": "limit_20",
+      "status": "PASSED",
+      "requested_limit": 20,
+      "actual_count": 20
+    },
+    {
+      "category": "error_handling",
+      "test": "invalid_endpoint",
+      "status": "PASSED",
+      "status_code": 404
+    },
+    {
+      "category": "error_handling",
+      "test": "invalid_parameter",
+      "status": "PASSED",
+      "status_code": 422
+    }
+  ],
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 17,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "avg_response_time": 0.10475179999999999,
+    "validation_status": "PASSED"
+  }
+}
