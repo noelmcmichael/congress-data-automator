@@ -19,6 +19,7 @@ class MemberResponse(BaseModel):
     state: str
     district: Optional[int] = None
     is_current: bool
+    congress_session: int
     official_photo_url: Optional[str] = None
     created_at: datetime
     updated_at: Optional[datetime] = None

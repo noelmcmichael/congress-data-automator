@@ -51,6 +51,9 @@ class Committee(Base):
     # Activity status
     is_active = Column(Boolean, default=True)
     
+    # Congressional session tracking
+    congress_session = Column(Integer, nullable=False, default=119)
+    
     # Metadata
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())

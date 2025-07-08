@@ -1,0 +1,157 @@
+{
+  "timestamp": "2025-07-08T13:28:07.964591",
+  "migration_file": "phase1_migration_data_20250708_131923.json",
+  "success": true,
+  "test_log": [
+    {
+      "timestamp": "2025-07-08T13:28:07.924887",
+      "action": "setup_test_database",
+      "details": "Creating local SQLite test database",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.940179",
+      "action": "setup_test_database",
+      "details": "Test database created successfully",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.940200",
+      "action": "load_migration",
+      "details": "Loading phase1_migration_data_20250708_131923.json",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.940470",
+      "action": "test_sessions",
+      "details": "Testing 4 sessions",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.953291",
+      "action": "test_sessions",
+      "details": "Added session 117",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.953376",
+      "action": "test_sessions",
+      "details": "Added session 118",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.953414",
+      "action": "test_sessions",
+      "details": "Added session 119",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.953442",
+      "action": "test_sessions",
+      "details": "Added session 120",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.958880",
+      "action": "test_sessions",
+      "details": "\u2705 Sessions test passed: 4 sessions, current: 119",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.958948",
+      "action": "test_members",
+      "details": "Testing 32 members",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.959088",
+      "action": "test_members",
+      "details": "Added member Adam Smith",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.959223",
+      "action": "test_members",
+      "details": "Added member Amy Klobuchar",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.959293",
+      "action": "test_members",
+      "details": "Added member Bernie Sanders",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.959348",
+      "action": "test_members",
+      "details": "Added member Bill Cassidy",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.959397",
+      "action": "test_members",
+      "details": "Added member Brett Guthrie",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960598",
+      "action": "test_members",
+      "details": "Failed: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.\n[SQL: INSERT INTO members (bioguide_id, congress_gov_id, first_name, last_name, middle_name, suffix, nickname, party, chamber, state, district, term_start, term_end, is_current, congress_session, phone, email, website, birth_date, birth_state, birth_city, official_photo_url, created_at, updated_at, last_scraped_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: [{'state': 'WA', 'updated_at': '2025-07-08T13:19:23.847209', 'last_name': 'Smith', 'party': 'Democratic', 'chamber': 'House', 'term_end': datetime.date ... (293 characters truncated) ... e, 'nickname': None, 'official_photo_url': None, 'email': None, 'birth_state': None, 'congress_gov_id': None, 'middle_name': None, 'birth_city': None}, {'state': 'MN', 'updated_at': '2025-07-08T13:19:23.847217', 'last_name': 'Klobuchar', 'party': 'Democratic', 'chamber': 'Senate', 'term_end': datetime ... (297 characters truncated) ... e, 'nickname': None, 'official_photo_url': None, 'email': None, 'birth_state': None, 'congress_gov_id': None, 'middle_name': None, 'birth_city': None}, {'state': 'VT', 'updated_at': '2025-07-08T13:19:23.847220', 'last_name': 'Sanders', 'party': 'Independent', 'chamber': 'Senate', 'term_end': datetime. ... (299 characters truncated) ... e, 'nickname': None, 'official_photo_url': None, 'email': None, 'birth_state': None, 'congress_gov_id': None, 'middle_name': None, 'birth_city': None}, {'state': 'LA', 'updated_at': '2025-07-08T13:19:23.847223', 'last_name': 'Cassidy', 'party': 'Republican', 'chamber': 'Senate', 'term_end': datetime.d ... (296 characters truncated) ... e, 'nickname': None, 'official_photo_url': None, 'email': None, 'birth_state': None, 'congress_gov_id': None, 'middle_name': None, 'birth_city': None}, {'state': 'KY', 'updated_at': '2025-07-08T13:19:23.847226', 'last_name': 'Guthrie', 'party': 'Republican', 'chamber': 'House', 'term_end': datetime.da ... (296 characters truncated) ... e, 'nickname': None, 'official_photo_url': None, 'email': None, 'birth_state': None, 'congress_gov_id': None, 'middle_name': None, 'birth_city': None}]]",
+      "status": "ERROR"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960637",
+      "action": "test_committees",
+      "details": "Testing 16 committees",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960733",
+      "action": "test_committees",
+      "details": "Added committee Judiciary",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960792",
+      "action": "test_committees",
+      "details": "Added committee Commerce, Science, and Transportation",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960840",
+      "action": "test_committees",
+      "details": "Added committee Finance",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960892",
+      "action": "test_committees",
+      "details": "Added committee Armed Services",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.960938",
+      "action": "test_committees",
+      "details": "Added committee Appropriations",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.962009",
+      "action": "test_committees",
+      "details": "Failed: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.\n[SQL: INSERT INTO committees (congress_gov_id, committee_code, name, chamber, committee_type, parent_committee_id, is_subcommittee, description, jurisdiction, chair_member_id, ranking_member_id, phone, email, website, office_location, hearings_url, members_url, official_website_url, last_url_update, is_active, congress_session, created_at, updated_at, last_scraped_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]\n[parameters: [{'ranking_member_id': 7, 'updated_at': '2025-07-08T13:19:23.847572', 'chamber': 'Senate', 'is_subcommittee': False, 'created_at': '2025-07-08 19:56:13 ... (285 characters truncated) ... l': None, 'parent_committee_id': None, 'email': None, 'congress_gov_id': None, 'last_url_update': None, 'hearings_url': None, 'last_scraped_at': None}, {'ranking_member_id': 16, 'updated_at': '2025-07-08T13:19:23.847576', 'chamber': 'Senate', 'is_subcommittee': False, 'created_at': '2025-07-08 19:56:1 ... (315 characters truncated) ... l': None, 'parent_committee_id': None, 'email': None, 'congress_gov_id': None, 'last_url_update': None, 'hearings_url': None, 'last_scraped_at': None}, {'ranking_member_id': 25, 'updated_at': '2025-07-08T13:19:23.847578', 'chamber': 'Senate', 'is_subcommittee': False, 'created_at': '2025-07-08 19:56:1 ... (285 characters truncated) ... l': None, 'parent_committee_id': None, 'email': None, 'congress_gov_id': None, 'last_url_update': None, 'hearings_url': None, 'last_scraped_at': None}, {'ranking_member_id': 11, 'updated_at': '2025-07-08T13:19:23.847581', 'chamber': 'Senate', 'is_subcommittee': False, 'created_at': '2025-07-08 19:56:1 ... (292 characters truncated) ... l': None, 'parent_committee_id': None, 'email': None, 'congress_gov_id': None, 'last_url_update': None, 'hearings_url': None, 'last_scraped_at': None}, {'ranking_member_id': 21, 'updated_at': '2025-07-08T13:19:23.847583', 'chamber': 'Senate', 'is_subcommittee': False, 'created_at': '2025-07-08 19:56:1 ... (292 characters truncated) ... l': None, 'parent_committee_id': None, 'email': None, 'congress_gov_id': None, 'last_url_update': None, 'hearings_url': None, 'last_scraped_at': None}]]",
+      "status": "ERROR"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.962037",
+      "action": "test_api_compatibility",
+      "details": "Testing API schemas with migrated data",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:28:07.964546",
+      "action": "test_api_compatibility",
+      "details": "\u2705 Congressional session API compatibility verified: 119th Congress (2025-2027)",
+      "status": "INFO"
+    }
+  ]
+}

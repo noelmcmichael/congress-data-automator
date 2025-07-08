@@ -37,6 +37,9 @@ class Member(Base):
     term_end = Column(Date)
     is_current = Column(Boolean, default=True)
     
+    # Congressional session tracking
+    congress_session = Column(Integer, nullable=False, default=119)
+    
     # Contact information
     phone = Column(String(20))
     email = Column(String(255))

@@ -15,6 +15,7 @@ class CommitteeResponse(BaseModel):
     congress_gov_id: Optional[str] = None
     is_active: bool
     is_subcommittee: bool
+    congress_session: int
     parent_committee_id: Optional[int] = None
     website: Optional[str] = None
     

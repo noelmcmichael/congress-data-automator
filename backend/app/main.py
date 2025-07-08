@@ -49,7 +49,7 @@ app.add_middleware(
 )
 
 # Import models to ensure they're registered with Base
-from .models import Member, Committee, CommitteeMembership, Hearing, Witness, HearingDocument
+from .models import Member, Committee, CommitteeMembership, Hearing, Witness, HearingDocument, CongressionalSession
 
 # Create database tables (commented out for deployment - tables already exist)
 # Base.metadata.create_all(bind=engine)
@@ -110,10 +110,11 @@ async def global_exception_handler(request, exc):
 
 
 # Include API routers
-from .api.v1 import data_updates, data_retrieval, relationships
+from .api.v1 import data_updates, data_retrieval, relationships, congressional_sessions
 app.include_router(data_updates.router, prefix=settings.api_v1_prefix, tags=["data-updates"])
 app.include_router(data_retrieval.router, prefix=settings.api_v1_prefix, tags=["data-retrieval"])
 app.include_router(relationships.router, prefix=settings.api_v1_prefix, tags=["relationships"])
+app.include_router(congressional_sessions.router, prefix=settings.api_v1_prefix + "/congress", tags=["congressional-sessions"])
 
 
 if __name__ == "__main__":

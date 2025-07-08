@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-07-08T13:26:41.750682",
+  "migration_file": "phase1_migration_data_20250708_131923.json",
+  "phases": {
+    "database_connection": "FAILED"
+  },
+  "final_verification": {},
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-08T13:26:41.750672",
+      "action": "run_deployment",
+      "details": "Starting 119th Congress deployment to production",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:26:41.750683",
+      "action": "setup_database_connection",
+      "details": "Connecting to production database",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-07-08T13:26:41.751785",
+      "action": "setup_database_connection",
+      "details": "Failed: (psycopg2.OperationalError) connection to server at \"127.0.0.1\", port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n\n(Background on this error at: https://sqlalche.me/e/20/e3q8)",
+      "status": "ERROR"
+    }
+  ],
+  "success": false
+}
