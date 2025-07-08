@@ -166,10 +166,16 @@ def create_app() -> FastAPI:
             "health_url": "/health",
         }
     
-    # Include API routers (will be added in next steps)
-    # app.include_router(members_router, prefix=settings.api_version_prefix)
-    # app.include_router(committees_router, prefix=settings.api_version_prefix)
-    # app.include_router(hearings_router, prefix=settings.api_version_prefix)
+    # Include API routers
+    from .endpoints.members import router as members_router
+    from .endpoints.committees import router as committees_router
+    from .endpoints.hearings import router as hearings_router
+    from .endpoints.search import router as search_router
+    
+    app.include_router(members_router, prefix=settings.api_version_prefix)
+    app.include_router(committees_router, prefix=settings.api_version_prefix)
+    app.include_router(hearings_router, prefix=settings.api_version_prefix)
+    app.include_router(search_router, prefix=settings.api_version_prefix)
     
     return app
 
