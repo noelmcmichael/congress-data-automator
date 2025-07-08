@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Box,
   Typography,
@@ -12,11 +12,16 @@ import {
   TextField,
   Switch,
   FormControlLabel,
+  Chip,
+  Stack,
 } from '@mui/material';
 import { 
   Settings as SettingsIcon,
   Api as ApiIcon,
   Storage as StorageIcon,
+  CheckCircle as CheckCircleIcon,
+  Error as ErrorIcon,
+  Info as InfoIcon,
 } from '@mui/icons-material';
 import { apiService } from '../services/api';
 
@@ -24,6 +29,30 @@ const Settings: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [testResults, setTestResults] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+  const [apiStatus, setApiStatus] = useState<any>(null);
+  const [systemInfo, setSystemInfo] = useState<any>(null);
+
+  useEffect(() => {
+    fetchSystemInfo();
+  }, []);
+
+  const fetchSystemInfo = async () => {
+    try {
+      const status = await apiService.getStatus();
+      setApiStatus(status);
+      
+      // Get system information
+      const info = {
+        apiBaseUrl: process.env.REACT_APP_API_URL || 'https://congressional-data-api-v2-1066017671167.us-central1.run.app',
+        environment: process.env.NODE_ENV || 'development',
+        buildTime: new Date().toISOString(),
+        version: '1.0.0',
+      };
+      setSystemInfo(info);
+    } catch (err) {
+      console.error('Failed to fetch system info:', err);
+    }
+  };
 
   const handleTestCongressApi = async () => {
     try {
@@ -51,10 +80,27 @@ const Settings: React.FC = () => {
     }
   };
 
+  const handleTestApiConnection = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const result = await apiService.getStatus();
+      setTestResults({ type: 'api-connection', result });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to test API connection');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Box>
       <Typography variant="h4" gutterBottom>
-        Settings & Configuration
+        System Configuration & Testing
+      </Typography>
+
+      <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
+        Monitor system health, test API connections, and view platform configuration.
       </Typography>
 
       {error && (
@@ -64,6 +110,52 @@ const Settings: React.FC = () => {
       )}
 
       <Grid container spacing={3}>
+        {/* System Status */}
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardContent>
+              <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <InfoIcon />
+                System Status
+              </Typography>
+              
+              <Stack spacing={2}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  {apiStatus?.api_status === 'active' ? 
+                    <CheckCircleIcon color="success" /> : 
+                    <ErrorIcon color="error" />
+                  }
+                  <Typography>
+                    API Service: <strong>{apiStatus?.api_status || 'Unknown'}</strong>
+                  </Typography>
+                </Box>
+                
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  {apiStatus?.database_status === 'connected' ? 
+                    <CheckCircleIcon color="success" /> : 
+                    <ErrorIcon color="error" />
+                  }
+                  <Typography>
+                    Database: <strong>{apiStatus?.database_status || 'Unknown'}</strong>
+                  </Typography>
+                </Box>
+                
+                <Box>
+                  <Typography color="text.secondary">
+                    Congress.gov API Rate Limit: <strong>{apiStatus?.congress_api_rate_limit?.remaining || 0} / {apiStatus?.congress_api_rate_limit?.daily_limit || 0}</strong>
+                  </Typography>
+                </Box>
+                
+                <Box>
+                  <Typography color="text.secondary">
+                    Last Status Check: <strong>{new Date().toLocaleString()}</strong>
+                  </Typography>
+                </Box>
+              </Stack>
+            </CardContent>
+          </Card>
+        </Grid>
+
         {/* API Testing */}
         <Grid item xs={12} md={6}>
           <Card>
@@ -73,98 +165,60 @@ const Settings: React.FC = () => {
                 API Testing
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                Test the various data sources and API endpoints.
+                Test various API endpoints and data sources.
               </Typography>
               
-              <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
-                <Button
-                  variant="outlined"
-                  onClick={handleTestCongressApi}
-                  disabled={loading}
-                  size="small"
-                >
-                  Test Congress API
-                </Button>
-                <Button
-                  variant="outlined"
-                  onClick={handleTestScrapers}
-                  disabled={loading}
-                  size="small"
-                >
-                  Test Scrapers
-                </Button>
-              </Box>
-
-              {loading && <LinearProgress sx={{ mb: 2 }} />}
-
-              {testResults && (
-                <Box sx={{ mt: 2 }}>
-                  <Typography variant="subtitle2" gutterBottom>
-                    Test Results ({testResults.type}):
-                  </Typography>
-                  <Box
-                    sx={{
-                      backgroundColor: '#f5f5f5',
-                      p: 2,
-                      borderRadius: 1,
-                      fontFamily: 'monospace',
-                      fontSize: '0.8rem',
-                      overflow: 'auto',
-                      maxHeight: '200px',
-                    }}
+              <Stack spacing={2}>
+                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+                  <Button
+                    variant="outlined"
+                    onClick={handleTestApiConnection}
+                    disabled={loading}
+                    size="small"
                   >
-                    <pre>{JSON.stringify(testResults.result, null, 2)}</pre>
-                  </Box>
+                    Test API Connection
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={handleTestCongressApi}
+                    disabled={loading}
+                    size="small"
+                  >
+                    Test Congress API
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={handleTestScrapers}
+                    disabled={loading}
+                    size="small"
+                  >
+                    Test Scrapers
+                  </Button>
                 </Box>
-              )}
-            </CardContent>
-          </Card>
-        </Grid>
-
-        {/* Data Management */}
-        <Grid item xs={12} md={6}>
-          <Card>
-            <CardContent>
-              <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <StorageIcon />
-                Data Management
-              </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                Manage data collection settings and preferences.
-              </Typography>
-              
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                <FormControlLabel
-                  control={<Switch defaultChecked />}
-                  label="Auto-update data"
-                />
-                <FormControlLabel
-                  control={<Switch defaultChecked />}
-                  label="Enable web scraping"
-                />
-                <FormControlLabel
-                  control={<Switch />}
-                  label="Force refresh on update"
-                />
                 
-                <Divider sx={{ my: 1 }} />
+                {loading && <LinearProgress />}
                 
-                <TextField
-                  label="Update frequency (minutes)"
-                  type="number"
-                  defaultValue="60"
-                  size="small"
-                  helperText="How often to check for new data"
-                />
-                
-                <TextField
-                  label="Max items per request"
-                  type="number"
-                  defaultValue="50"
-                  size="small"
-                  helperText="Maximum items to fetch in one request"
-                />
-              </Box>
+                {testResults && (
+                  <Box>
+                    <Typography variant="subtitle2" gutterBottom>
+                      Test Results ({testResults.type}):
+                    </Typography>
+                    <Box
+                      sx={{
+                        backgroundColor: '#f5f5f5',
+                        p: 2,
+                        borderRadius: 1,
+                        fontFamily: 'monospace',
+                        fontSize: '0.8rem',
+                        overflow: 'auto',
+                        maxHeight: '200px',
+                      }}
+                    >
+                      <pre>{JSON.stringify(testResults.result, null, 2)}</pre>
+                    </Box>
+                  </Box>
+                )}
+              </Stack>
             </CardContent>
           </Card>
         </Grid>
@@ -177,38 +231,71 @@ const Settings: React.FC = () => {
                 <SettingsIcon />
                 System Information
               </Typography>
-              <Grid container spacing={2}>
+              
+              <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} md={3}>
                   <Typography variant="body2" color="text.secondary">
                     Frontend Version
                   </Typography>
                   <Typography variant="body1">
-                    1.0.0
+                    {systemInfo?.version || '1.0.0'}
                   </Typography>
+                  <Chip label="Current" size="small" color="primary" />
                 </Grid>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Typography variant="body2" color="text.secondary">
-                    API Base URL
-                  </Typography>
-                  <Typography variant="body1" sx={{ wordBreak: 'break-all' }}>
-                    {process.env.REACT_APP_API_URL || 'https://congressional-data-api-1066017671167.us-central1.run.app'}
-                  </Typography>
-                </Grid>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Typography variant="body2" color="text.secondary">
-                    Build Time
-                  </Typography>
-                  <Typography variant="body1">
-                    {new Date().toLocaleString()}
-                  </Typography>
-                </Grid>
+                
                 <Grid item xs={12} sm={6} md={3}>
                   <Typography variant="body2" color="text.secondary">
                     Environment
                   </Typography>
                   <Typography variant="body1">
-                    {process.env.NODE_ENV || 'development'}
+                    {systemInfo?.environment || 'development'}
                   </Typography>
+                  <Chip 
+                    label={systemInfo?.environment === 'production' ? 'PROD' : 'DEV'} 
+                    size="small" 
+                    color={systemInfo?.environment === 'production' ? 'success' : 'warning'} 
+                  />
+                </Grid>
+                
+                <Grid item xs={12} sm={6} md={3}>
+                  <Typography variant="body2" color="text.secondary">
+                    Build Time
+                  </Typography>
+                  <Typography variant="body1">
+                    {systemInfo?.buildTime ? new Date(systemInfo.buildTime).toLocaleString() : 'Unknown'}
+                  </Typography>
+                </Grid>
+                
+                <Grid item xs={12} sm={6} md={3}>
+                  <Typography variant="body2" color="text.secondary">
+                    API Base URL
+                  </Typography>
+                  <Typography variant="body1" sx={{ wordBreak: 'break-all', fontSize: '0.9rem' }}>
+                    {systemInfo?.apiBaseUrl || 'Not configured'}
+                  </Typography>
+                </Grid>
+                
+                <Grid item xs={12} md={6}>
+                  <Typography variant="body2" color="text.secondary">
+                    Database Information
+                  </Typography>
+                  <Typography variant="body1">
+                    PostgreSQL on Google Cloud SQL
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Connection: {apiStatus?.database_status || 'Unknown'}
+                  </Typography>
+                </Grid>
+                
+                <Grid item xs={12} md={6}>
+                  <Typography variant="body2" color="text.secondary">
+                    Data Sources
+                  </Typography>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Congress.gov API" size="small" color="primary" />
+                    <Chip label="House.gov" size="small" color="secondary" />
+                    <Chip label="Senate.gov" size="small" color="secondary" />
+                  </Stack>
                 </Grid>
               </Grid>
             </CardContent>
