@@ -4,7 +4,7 @@ from datetime import datetime
 from typing import List, Optional
 from enum import Enum
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, validator, ConfigDict
 
 from .base import FilterParams
 
@@ -51,6 +51,13 @@ class HearingStatus(str, Enum):
 # Member Models
 class MemberBase(BaseModel):
     """Base member model."""
+    
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        }
+    )
     
     bioguide_id: str = Field(description="Bioguide ID")
     name: str = Field(description="Full name")
@@ -135,6 +142,13 @@ class MemberFilterParams(FilterParams):
 class CommitteeBase(BaseModel):
     """Base committee model."""
     
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        }
+    )
+    
     name: str = Field(description="Committee name")
     chamber: Chamber = Field(description="Committee chamber")
     committee_type: CommitteeType = Field(description="Committee type")
@@ -182,6 +196,13 @@ class CommitteeFilterParams(FilterParams):
 # Hearing Models
 class HearingBase(BaseModel):
     """Base hearing model."""
+    
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        }
+    )
     
     title: str = Field(description="Hearing title")
     date: datetime = Field(description="Hearing date")
@@ -236,16 +257,19 @@ class HearingFilterParams(FilterParams):
 class CommitteeMembership(BaseModel):
     """Committee membership model."""
     
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        }
+    )
+    
     member_id: int = Field(description="Member ID")
     committee_id: int = Field(description="Committee ID")
     position: Optional[str] = Field(default=None, description="Position on committee")
     is_chair: bool = Field(default=False, description="Whether member is chair")
     is_ranking_member: bool = Field(default=False, description="Whether member is ranking member")
     is_current: bool = Field(default=True, description="Whether membership is current")
-    
-    class Config:
-        """Pydantic configuration."""
-        from_attributes = True
 
 
 class MemberWithCommittees(MemberDetail):

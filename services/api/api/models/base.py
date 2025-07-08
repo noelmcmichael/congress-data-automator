@@ -3,21 +3,21 @@
 from datetime import datetime
 from typing import Dict, List, Optional, Union
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, validator, ConfigDict
 
 
 class BaseResponse(BaseModel):
     """Base response model."""
     
+    model_config = ConfigDict(
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        }
+    )
+    
     success: bool = Field(default=True, description="Request success status")
     message: Optional[str] = Field(default=None, description="Response message")
     timestamp: datetime = Field(default_factory=datetime.utcnow, description="Response timestamp")
-    
-    class Config:
-        """Pydantic configuration."""
-        json_encoders = {
-            datetime: lambda v: v.isoformat()
-        }
 
 
 class PaginationParams(BaseModel):
