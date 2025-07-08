@@ -21,6 +21,7 @@ import {
   Home as HomeIcon 
 } from '@mui/icons-material';
 import { apiService, Committee } from '../services/api';
+import { getSessionDisplayString } from '../services/congressionalSession';
 import SearchFilter from './SearchFilter';
 
 const Committees: React.FC = () => {
@@ -262,6 +263,26 @@ const Committees: React.FC = () => {
                         sx={{ backgroundColor: 'rgba(0, 123, 255, 0.1)' }}
                       />
                     )}
+                    {/* Republican Control Indicator */}
+                    {!committee.is_subcommittee && (
+                      <Chip
+                        label="Republican Controlled"
+                        size="small"
+                        color="error"
+                        sx={{ 
+                          fontWeight: 'bold',
+                          background: 'linear-gradient(45deg, #d32f2f 30%, #f44336 90%)',
+                          color: 'white'
+                        }}
+                      />
+                    )}
+                    {/* Congressional Session */}
+                    <Chip
+                      label={getSessionDisplayString()}
+                      size="small"
+                      variant="outlined"
+                      color="primary"
+                    />
                   </Box>
 
                   {committee.committee_code && (

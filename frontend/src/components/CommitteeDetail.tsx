@@ -236,14 +236,16 @@ const CommitteeDetail: React.FC = () => {
                       color={committee.is_active ? 'success' : 'default'}
                     />
                     <Chip
-                      label={getRepublicanMajoritySummary().committeeMajority + ' Controlled'}
+                      label="Republican Controlled"
                       color="error"
                       size="small"
+                      sx={{ fontWeight: 'bold' }}
                     />
                     <Chip
                       label={getSessionDisplayString()}
                       variant="outlined"
                       size="small"
+                      color="primary"
                     />
                   </Box>
                   <Typography variant="body2" color="text.secondary">
@@ -463,25 +465,43 @@ const CommitteeDetail: React.FC = () => {
                       <ListItemText
                         primary={`${membership.member.first_name} ${membership.member.last_name}`}
                         secondary={
-                          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
+                          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1, flexWrap: 'wrap' }}>
+                            {/* Leadership Position */}
                             <Chip
                               label={getPositionDisplayInfo(membership.position, committee.chamber).displayName}
                               size="small"
                               color={getPositionColor(membership.position, committee.chamber)}
+                              sx={{ 
+                                fontWeight: 'bold',
+                                ...(membership.position.toLowerCase().includes('chair') && {
+                                  background: 'linear-gradient(45deg, #d32f2f 30%, #f44336 90%)',
+                                  color: 'white'
+                                })
+                              }}
                             />
-                            <Chip
-                              label={getPositionDisplayInfo(membership.position, committee.chamber).description}
-                              size="small"
-                              variant="outlined"
-                            />
+                            
+                            {/* Party with enhanced styling */}
                             <Chip
                               label={membership.member.party}
                               size="small"
                               sx={{
                                 backgroundColor: getPartyColor(membership.member.party),
                                 color: 'white',
+                                fontWeight: 'bold'
                               }}
                             />
+                            
+                            {/* Position description with party context */}
+                            <Chip
+                              label={getPositionDisplayInfo(membership.position, committee.chamber).description}
+                              size="small"
+                              variant="outlined"
+                              color={
+                                membership.position.toLowerCase().includes('chair') ? 'error' : 
+                                membership.position.toLowerCase().includes('ranking') ? 'primary' : 'default'
+                              }
+                            />
+                            
                             <Chip
                               label={membership.member.chamber}
                               size="small"
