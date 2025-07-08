@@ -29,6 +29,11 @@ import {
   NavigateNext as NavigateNextIcon,
 } from '@mui/icons-material';
 import { apiService, Member, Committee, Hearing } from '../services/api';
+import { 
+  getLeadershipPositionInfo, 
+  getRepublicanMajoritySummary,
+  getSessionDisplayString 
+} from '../services/congressionalSession';
 
 interface CommitteeMembership {
   member: Member;
@@ -143,15 +148,13 @@ const CommitteeDetail: React.FC = () => {
     }
   };
 
-  const getPositionColor = (position: string) => {
-    switch (position.toLowerCase()) {
-      case 'chair':
-        return 'primary';
-      case 'ranking member':
-        return 'secondary';
-      default:
-        return 'default';
-    }
+  const getPositionColor = (position: string, chamber: string) => {
+    const positionInfo = getLeadershipPositionInfo(position, chamber as 'House' | 'Senate' | 'Joint');
+    return positionInfo.color;
+  };
+
+  const getPositionDisplayInfo = (position: string, chamber: string) => {
+    return getLeadershipPositionInfo(position, chamber as 'House' | 'Senate' | 'Joint');
   };
 
   const getChamberColor = (chamber: string) => {
@@ -219,7 +222,7 @@ const CommitteeDetail: React.FC = () => {
                   <Typography variant="h4" component="h1" gutterBottom>
                     {committee.name}
                   </Typography>
-                  <Box sx={{ display: 'flex', gap: 1, mb: 1 }}>
+                  <Box sx={{ display: 'flex', gap: 1, mb: 1, flexWrap: 'wrap' }}>
                     <Chip
                       label={committee.chamber}
                       color={getChamberColor(committee.chamber)}
@@ -231,6 +234,16 @@ const CommitteeDetail: React.FC = () => {
                     <Chip
                       label={committee.is_active ? 'Active' : 'Inactive'}
                       color={committee.is_active ? 'success' : 'default'}
+                    />
+                    <Chip
+                      label={getRepublicanMajoritySummary().committeeMajority + ' Controlled'}
+                      color="error"
+                      size="small"
+                    />
+                    <Chip
+                      label={getSessionDisplayString()}
+                      variant="outlined"
+                      size="small"
                     />
                   </Box>
                   <Typography variant="body2" color="text.secondary">
@@ -452,9 +465,14 @@ const CommitteeDetail: React.FC = () => {
                         secondary={
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
                             <Chip
-                              label={membership.position}
+                              label={getPositionDisplayInfo(membership.position, committee.chamber).displayName}
                               size="small"
-                              color={getPositionColor(membership.position)}
+                              color={getPositionColor(membership.position, committee.chamber)}
+                            />
+                            <Chip
+                              label={getPositionDisplayInfo(membership.position, committee.chamber).description}
+                              size="small"
+                              variant="outlined"
                             />
                             <Chip
                               label={membership.member.party}

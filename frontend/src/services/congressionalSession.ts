@@ -82,12 +82,85 @@ export const getLeadershipContext = () => {
   };
 };
 
+// Get committee leadership context
+export const getCommitteeLeadershipContext = (chamber: 'House' | 'Senate' | 'Joint') => {
+  const session = CURRENT_CONGRESSIONAL_SESSION;
+  const majorityParty = chamber === 'House' ? session.partyControlHouse : session.partyControlSenate;
+  const minorityParty = majorityParty === 'Republican' ? 'Democratic' : 'Republican';
+  
+  return {
+    chairParty: majorityParty || 'Republican',
+    rankingMemberParty: minorityParty,
+    majorityParty: majorityParty || 'Republican',
+    minorityParty,
+    isRepublicanControlled: (majorityParty || 'Republican') === 'Republican',
+    isDemocraticControlled: (majorityParty || 'Republican') === 'Democratic'
+  };
+};
+
+// Get leadership position display info
+export const getLeadershipPositionInfo = (position: string, chamber: 'House' | 'Senate' | 'Joint'): {
+  party: string;
+  isMajority: boolean | null;
+  displayName: string;
+  color: 'default' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
+  description: string;
+} => {
+  const context = getCommitteeLeadershipContext(chamber);
+  const normalizedPosition = position.toLowerCase();
+  
+  if (normalizedPosition.includes('chair') || normalizedPosition.includes('chairman')) {
+    return {
+      party: context.chairParty,
+      isMajority: true,
+      displayName: 'Chair',
+      color: context.isRepublicanControlled ? 'error' : 'primary', // Red for Republican, Blue for Democratic
+      description: `${context.chairParty} (Majority)`
+    };
+  } else if (normalizedPosition.includes('ranking')) {
+    return {
+      party: context.rankingMemberParty,
+      isMajority: false,
+      displayName: 'Ranking Member',
+      color: context.isRepublicanControlled ? 'primary' : 'error', // Blue for Democratic when R majority
+      description: `${context.rankingMemberParty} (Minority)`
+    };
+  } else {
+    return {
+      party: 'Unknown',
+      isMajority: null,
+      displayName: position,
+      color: 'default',
+      description: position
+    };
+  }
+};
+
+// Get Republican majority summary
+export const getRepublicanMajoritySummary = () => {
+  const session = CURRENT_CONGRESSIONAL_SESSION;
+  const isUnified = session.partyControlHouse === session.partyControlSenate;
+  
+  return {
+    hasUnifiedControl: isUnified && session.partyControlHouse === 'Republican',
+    houseControl: session.partyControlHouse,
+    senateControl: session.partyControlSenate,
+    displayText: isUnified && session.partyControlHouse === 'Republican' 
+      ? 'Republican Unified Control' 
+      : `${session.partyControlHouse} House, ${session.partyControlSenate} Senate`,
+    committeeMajority: 'Republican' // Both chambers
+  };
+};
+
 const congressionalSessionService = {
   getCurrentSessionContext,
   getSessionDisplayString,
   getPartyControlSummary,
   isCurrentSession,
   getLeadershipContext,
+  getCommitteeLeadershipContext,
+  getLeadershipPositionInfo,
+  getRepublicanMajoritySummary,
   CURRENT_CONGRESSIONAL_SESSION
 };
 
