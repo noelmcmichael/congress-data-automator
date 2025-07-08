@@ -166,68 +166,160 @@ const Dashboard: React.FC = () => {
       </Box>
 
       {/* System Health Overview */}
-      <Grid container spacing={3} sx={{ mb: 3 }}>
+      <Grid container spacing={3} sx={{ mb: 4 }}>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 1 }}>
+          <Paper sx={{ 
+            p: 3, 
+            textAlign: 'center',
+            background: status?.api_status === 'active' 
+              ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' 
+              : 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+            color: 'white',
+            position: 'relative',
+            overflow: 'hidden',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '& > *': {
+              position: 'relative',
+              zIndex: 1,
+            },
+          }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
               {status?.api_status === 'active' ? 
-                <CheckCircleIcon color="success" sx={{ mr: 1 }} /> : 
-                <ErrorIcon color="error" sx={{ mr: 1 }} />
+                <CheckCircleIcon sx={{ mr: 1, fontSize: 28 }} /> : 
+                <ErrorIcon sx={{ mr: 1, fontSize: 28 }} />
               }
-              <Typography variant="h6">API Status</Typography>
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>API Status</Typography>
             </Box>
-            <Typography variant="h4" color={status?.api_status === 'active' ? 'success.main' : 'error.main'}>
+            <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
               {status?.api_status === 'active' ? 'HEALTHY' : 'ERROR'}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ opacity: 0.9 }}>
               Service Operational
             </Typography>
           </Paper>
         </Grid>
         
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 1 }}>
+          <Paper sx={{ 
+            p: 3, 
+            textAlign: 'center',
+            background: status?.database_status === 'connected' 
+              ? 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)' 
+              : 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+            color: 'white',
+            position: 'relative',
+            overflow: 'hidden',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '& > *': {
+              position: 'relative',
+              zIndex: 1,
+            },
+          }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
               {status?.database_status === 'connected' ? 
-                <StorageIcon color="success" sx={{ mr: 1 }} /> : 
-                <ErrorIcon color="error" sx={{ mr: 1 }} />
+                <StorageIcon sx={{ mr: 1, fontSize: 28 }} /> : 
+                <ErrorIcon sx={{ mr: 1, fontSize: 28 }} />
               }
-              <Typography variant="h6">Database</Typography>
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>Database</Typography>
             </Box>
-            <Typography variant="h4" color={status?.database_status === 'connected' ? 'success.main' : 'error.main'}>
+            <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
               {status?.database_status === 'connected' ? 'CONNECTED' : 'ERROR'}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ opacity: 0.9 }}>
               PostgreSQL Status
             </Typography>
           </Paper>
         </Grid>
         
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 1 }}>
-              <SyncIcon color="primary" sx={{ mr: 1 }} />
-              <Typography variant="h6">API Rate Limit</Typography>
+          <Paper sx={{ 
+            p: 3, 
+            textAlign: 'center',
+            background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+            color: 'white',
+            position: 'relative',
+            overflow: 'hidden',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '& > *': {
+              position: 'relative',
+              zIndex: 1,
+            },
+          }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
+              <SyncIcon sx={{ mr: 1, fontSize: 28 }} />
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>API Rate Limit</Typography>
             </Box>
-            <Typography variant="h4" color="primary">
+            <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
               {status?.congress_api_rate_limit?.remaining || 0}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ opacity: 0.9 }}>
               of {status?.congress_api_rate_limit?.daily_limit || 0} remaining
             </Typography>
           </Paper>
         </Grid>
         
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 1 }}>
-              <ScheduleIcon color="primary" sx={{ mr: 1 }} />
-              <Typography variant="h6">Last Update</Typography>
+          <Paper sx={{ 
+            p: 3, 
+            textAlign: 'center',
+            background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+            color: 'white',
+            position: 'relative',
+            overflow: 'hidden',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '& > *': {
+              position: 'relative',
+              zIndex: 1,
+            },
+          }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
+              <ScheduleIcon sx={{ mr: 1, fontSize: 28 }} />
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>Last Update</Typography>
             </Box>
-            <Typography variant="h6" color="primary">
+            <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
               {lastUpdated ? format(lastUpdated, 'MMM d') : 'Never'}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ opacity: 0.9 }}>
               {lastUpdated ? format(lastUpdated, 'h:mm a') : 'No updates'}
             </Typography>
           </Paper>
@@ -238,29 +330,65 @@ const Dashboard: React.FC = () => {
         {/* Left Column - Data Quality */}
         <Grid item xs={12} md={8}>
           {/* Data Quality Metrics */}
-          <Card sx={{ mb: 3 }}>
-            <CardContent>
-              <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
-                <TrendingUpIcon sx={{ mr: 1 }} />
+          <Card sx={{ 
+            mb: 3,
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%)',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+          }}>
+            <CardContent sx={{ p: 4 }}>
+              <Typography variant="h5" gutterBottom sx={{ 
+                display: 'flex', 
+                alignItems: 'center',
+                fontWeight: 700,
+                mb: 3,
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>
+                <TrendingUpIcon sx={{ mr: 2, color: '#667eea' }} />
                 Data Quality Metrics
               </Typography>
               
-              <Grid container spacing={2}>
+              <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ textAlign: 'center' }}>
-                    <Typography variant="h3" color={
-                      systemHealth?.dataQuality?.memberCount >= 500 ? 'success.main' : 
-                      systemHealth?.dataQuality?.memberCount >= 400 ? 'warning.main' : 'error.main'
-                    }>
+                  <Box sx={{ 
+                    textAlign: 'center',
+                    p: 3,
+                    borderRadius: 3,
+                    background: systemHealth?.dataQuality?.memberCount >= 500 
+                      ? 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)'
+                      : systemHealth?.dataQuality?.memberCount >= 400 
+                      ? 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)'
+                      : 'linear-gradient(135deg, #fecaca 0%, #fca5a5 100%)',
+                    transition: 'transform 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}>
+                    <Typography variant="h2" sx={{ 
+                      fontWeight: 800,
+                      background: systemHealth?.dataQuality?.memberCount >= 500 
+                        ? 'linear-gradient(135deg, #065f46 0%, #047857 100%)'
+                        : systemHealth?.dataQuality?.memberCount >= 400 
+                        ? 'linear-gradient(135deg, #92400e 0%, #b45309 100%)'
+                        : 'linear-gradient(135deg, #991b1b 0%, #dc2626 100%)',
+                      backgroundClip: 'text',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      mb: 1,
+                    }}>
                       {systemHealth?.dataQuality?.memberCount || stats?.members?.total || 0}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
                       Members (Expected: 541)
                     </Typography>
-                    <Typography variant="caption" color={
-                      systemHealth?.dataQuality?.memberCount >= 500 ? 'success.main' : 
-                      systemHealth?.dataQuality?.memberCount >= 400 ? 'warning.main' : 'error.main'
-                    }>
+                    <Typography variant="body2" sx={{ 
+                      fontWeight: 600,
+                      color: systemHealth?.dataQuality?.memberCount >= 500 ? '#065f46' : 
+                             systemHealth?.dataQuality?.memberCount >= 400 ? '#92400e' : '#991b1b'
+                    }}>
                       {systemHealth?.dataQuality?.memberCount ? 
                         `${Math.round((systemHealth.dataQuality.memberCount / 541) * 100)}%` : '0%'
                       } Complete
@@ -269,20 +397,42 @@ const Dashboard: React.FC = () => {
                 </Grid>
                 
                 <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ textAlign: 'center' }}>
-                    <Typography variant="h3" color={
-                      systemHealth?.dataQuality?.committeeCount >= 180 ? 'success.main' : 
-                      systemHealth?.dataQuality?.committeeCount >= 150 ? 'warning.main' : 'error.main'
-                    }>
+                  <Box sx={{ 
+                    textAlign: 'center',
+                    p: 3,
+                    borderRadius: 3,
+                    background: systemHealth?.dataQuality?.committeeCount >= 180 
+                      ? 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)'
+                      : systemHealth?.dataQuality?.committeeCount >= 150 
+                      ? 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)'
+                      : 'linear-gradient(135deg, #fecaca 0%, #fca5a5 100%)',
+                    transition: 'transform 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}>
+                    <Typography variant="h2" sx={{ 
+                      fontWeight: 800,
+                      background: systemHealth?.dataQuality?.committeeCount >= 180 
+                        ? 'linear-gradient(135deg, #065f46 0%, #047857 100%)'
+                        : systemHealth?.dataQuality?.committeeCount >= 150 
+                        ? 'linear-gradient(135deg, #92400e 0%, #b45309 100%)'
+                        : 'linear-gradient(135deg, #991b1b 0%, #dc2626 100%)',
+                      backgroundClip: 'text',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      mb: 1,
+                    }}>
                       {systemHealth?.dataQuality?.committeeCount || stats?.committees?.total || 0}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
                       Committees (Expected: 199)
                     </Typography>
-                    <Typography variant="caption" color={
-                      systemHealth?.dataQuality?.committeeCount >= 180 ? 'success.main' : 
-                      systemHealth?.dataQuality?.committeeCount >= 150 ? 'warning.main' : 'error.main'
-                    }>
+                    <Typography variant="body2" sx={{ 
+                      fontWeight: 600,
+                      color: systemHealth?.dataQuality?.committeeCount >= 180 ? '#065f46' : 
+                             systemHealth?.dataQuality?.committeeCount >= 150 ? '#92400e' : '#991b1b'
+                    }}>
                       {systemHealth?.dataQuality?.committeeCount ? 
                         `${Math.round((systemHealth.dataQuality.committeeCount / 199) * 100)}%` : '0%'
                       } Complete
@@ -291,28 +441,60 @@ const Dashboard: React.FC = () => {
                 </Grid>
                 
                 <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ textAlign: 'center' }}>
-                    <Typography variant="h3" color="primary">
+                  <Box sx={{ 
+                    textAlign: 'center',
+                    p: 3,
+                    borderRadius: 3,
+                    background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
+                    transition: 'transform 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}>
+                    <Typography variant="h2" sx={{ 
+                      fontWeight: 800,
+                      background: 'linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%)',
+                      backgroundClip: 'text',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      mb: 1,
+                    }}>
                       {systemHealth?.dataQuality?.hearingCount || stats?.hearings?.total || 0}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
                       Hearings
                     </Typography>
-                    <Typography variant="caption" color="primary">
+                    <Typography variant="body2" sx={{ fontWeight: 600, color: '#1e40af' }}>
                       Active Collection
                     </Typography>
                   </Box>
                 </Grid>
                 
                 <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ textAlign: 'center' }}>
-                    <Typography variant="h3" color="primary">
+                  <Box sx={{ 
+                    textAlign: 'center',
+                    p: 3,
+                    borderRadius: 3,
+                    background: 'linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)',
+                    transition: 'transform 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}>
+                    <Typography variant="h2" sx={{ 
+                      fontWeight: 800,
+                      background: 'linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%)',
+                      backgroundClip: 'text',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      mb: 1,
+                    }}>
                       {systemHealth?.dataQuality?.relationshipCoverage || 0}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
                       Relationships
                     </Typography>
-                    <Typography variant="caption" color="primary">
+                    <Typography variant="body2" sx={{ fontWeight: 600, color: '#7c3aed' }}>
                       Member-Committee
                     </Typography>
                   </Box>
