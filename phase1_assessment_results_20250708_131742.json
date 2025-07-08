@@ -1,0 +1,736 @@
+{
+  "timestamp": "2025-07-08T13:17:42.559395",
+  "database_path": "congress_119th.db",
+  "tables": {
+    "found": [
+      "congressional_sessions",
+      "committees_119th",
+      "sqlite_sequence",
+      "members_119th",
+      "committee_memberships_119th",
+      "migration_log"
+    ],
+    "congressional_sessions": {
+      "columns": [
+        {
+          "name": "session_id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 1
+        },
+        {
+          "name": "congress_number",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "start_date",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "end_date",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "is_current",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "party_control_house",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "party_control_senate",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    },
+    "committees_119th": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 1
+        },
+        {
+          "name": "congress_session",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "chamber",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "committee_type",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "chair_name",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "chair_party",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "chair_state",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "ranking_member_name",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "ranking_member_party",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "ranking_member_state",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    },
+    "sqlite_sequence": {
+      "columns": [
+        {
+          "name": "name",
+          "type": "",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "seq",
+          "type": "",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    },
+    "members_119th": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 1
+        },
+        {
+          "name": "congress_session",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "bioguide_id",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "party",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "state",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "chamber",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "district",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "term_start",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "term_end",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "is_current",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    },
+    "committee_memberships_119th": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 1
+        },
+        {
+          "name": "congress_session",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "member_id",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "committee_id",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "position",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "subcommittee",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "is_current",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    },
+    "migration_log": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 1
+        },
+        {
+          "name": "migration_type",
+          "type": "TEXT",
+          "nullable": false,
+          "primary_key": 0
+        },
+        {
+          "name": "from_congress",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "to_congress",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "records_migrated",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "migration_timestamp",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        },
+        {
+          "name": "notes",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": 0
+        }
+      ]
+    }
+  },
+  "data_summary": {
+    "congressional_sessions": {
+      "sessions": [
+        [
+          1,
+          117,
+          "2021-01-03",
+          "2023-01-03",
+          0,
+          null,
+          null,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          2,
+          118,
+          "2023-01-03",
+          "2025-01-03",
+          0,
+          null,
+          null,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          3,
+          119,
+          "2025-01-03",
+          "2027-01-03",
+          1,
+          "Republican",
+          "Republican",
+          "2025-07-08 19:56:13"
+        ],
+        [
+          4,
+          120,
+          "2027-01-03",
+          "2029-01-03",
+          0,
+          null,
+          null,
+          "2025-07-08 19:56:13"
+        ]
+      ]
+    },
+    "committees_119th": {
+      "row_count": 16,
+      "sample_data": [
+        [
+          1,
+          119,
+          "Judiciary",
+          "Senate",
+          "Standing",
+          "Chuck Grassley",
+          "Republican",
+          "IA",
+          "Dick Durbin",
+          "Democratic",
+          "IL",
+          "2025-07-08 19:56:13"
+        ],
+        [
+          2,
+          119,
+          "Commerce, Science, and Transportation",
+          "Senate",
+          "Standing",
+          "Ted Cruz",
+          "Republican",
+          "TX",
+          "Maria Cantwell",
+          "Democratic",
+          "WA",
+          "2025-07-08 19:56:13"
+        ],
+        [
+          3,
+          119,
+          "Finance",
+          "Senate",
+          "Standing",
+          "Mike Crapo",
+          "Republican",
+          "ID",
+          "Ron Wyden",
+          "Democratic",
+          "OR",
+          "2025-07-08 19:56:13"
+        ]
+      ],
+      "chamber_breakdown": {
+        "House": 4,
+        "Senate": 12
+      },
+      "leadership_sample": [
+        [
+          "Judiciary",
+          "Chuck Grassley",
+          "Dick Durbin"
+        ],
+        [
+          "Commerce, Science, and Transportation",
+          "Ted Cruz",
+          "Maria Cantwell"
+        ],
+        [
+          "Finance",
+          "Mike Crapo",
+          "Ron Wyden"
+        ],
+        [
+          "Armed Services",
+          "Roger Wicker",
+          "Jack Reed"
+        ],
+        [
+          "Appropriations",
+          "Susan Collins",
+          "Patty Murray"
+        ]
+      ]
+    },
+    "sqlite_sequence": {
+      "row_count": 4,
+      "sample_data": [
+        [
+          "committees_119th",
+          16
+        ],
+        [
+          "members_119th",
+          32
+        ],
+        [
+          "committee_memberships_119th",
+          32
+        ]
+      ]
+    },
+    "members_119th": {
+      "row_count": 32,
+      "sample_data": [
+        [
+          1,
+          119,
+          null,
+          "Adam Smith",
+          "Democratic",
+          "WA",
+          "House",
+          null,
+          "2025-01-03",
+          "2027-01-03",
+          1,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          2,
+          119,
+          null,
+          "Amy Klobuchar",
+          "Democratic",
+          "MN",
+          "Senate",
+          null,
+          "2025-01-03",
+          "2027-01-03",
+          1,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          3,
+          119,
+          null,
+          "Bernie Sanders",
+          "Independent",
+          "VT",
+          "Senate",
+          null,
+          "2025-01-03",
+          "2027-01-03",
+          1,
+          "2025-07-08 19:56:13"
+        ]
+      ],
+      "party_breakdown": {
+        "Democratic": 15,
+        "Independent": 1,
+        "Republican": 16
+      },
+      "chamber_breakdown": {
+        "House": 8,
+        "Senate": 24
+      }
+    },
+    "committee_memberships_119th": {
+      "row_count": 32,
+      "sample_data": [
+        [
+          1,
+          119,
+          15,
+          12,
+          "Chair",
+          null,
+          1,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          2,
+          119,
+          32,
+          15,
+          "Chair",
+          null,
+          1,
+          "2025-07-08 19:56:13"
+        ],
+        [
+          3,
+          119,
+          29,
+          5,
+          "Chair",
+          null,
+          1,
+          "2025-07-08 19:56:13"
+        ]
+      ]
+    },
+    "migration_log": {
+      "row_count": 1,
+      "sample_data": [
+        [
+          1,
+          "118th_to_119th_migration",
+          118,
+          119,
+          3,
+          "2025-07-08 19:56:13",
+          "Committees migrated: 16; Members created: 32; Memberships created: 32"
+        ]
+      ]
+    }
+  },
+  "schema_compatibility": {
+    "members": {
+      "119th_fields": [
+        "id",
+        "congress_session",
+        "bioguide_id",
+        "name",
+        "party",
+        "state",
+        "chamber",
+        "district",
+        "term_start",
+        "term_end",
+        "is_current"
+      ],
+      "api_fields": [
+        "id",
+        "bioguide_id",
+        "congress_gov_id",
+        "first_name",
+        "last_name",
+        "middle_name",
+        "suffix",
+        "nickname",
+        "party",
+        "chamber",
+        "state",
+        "district",
+        "term_start",
+        "term_end",
+        "is_current"
+      ],
+      "missing_in_119th": [
+        "congress_gov_id",
+        "first_name",
+        "last_name",
+        "middle_name",
+        "suffix",
+        "nickname",
+        "phone",
+        "email",
+        "website",
+        "birth_date",
+        "birth_state",
+        "birth_city",
+        "official_photo_url"
+      ],
+      "extra_in_119th": [
+        "congress_session"
+      ],
+      "name_differences": {
+        "119th_name_field": "Single 'name' field",
+        "api_name_fields": "Separate first_name, last_name, middle_name, suffix, nickname fields"
+      }
+    },
+    "committees": {
+      "119th_fields": [
+        "id",
+        "congress_session",
+        "name",
+        "chamber",
+        "committee_type",
+        "chair_name",
+        "chair_party",
+        "chair_state",
+        "ranking_member_name",
+        "ranking_member_party",
+        "ranking_member_state"
+      ],
+      "api_fields": [
+        "id",
+        "congress_gov_id",
+        "committee_code",
+        "name",
+        "chamber",
+        "committee_type",
+        "parent_committee_id",
+        "is_subcommittee",
+        "description",
+        "jurisdiction",
+        "chair_member_id",
+        "ranking_member_id"
+      ],
+      "missing_in_119th": [
+        "congress_gov_id",
+        "committee_code",
+        "parent_committee_id",
+        "is_subcommittee",
+        "description",
+        "jurisdiction",
+        "chair_member_id",
+        "ranking_member_id"
+      ],
+      "extra_in_119th": [
+        "congress_session",
+        "chair_name",
+        "chair_party",
+        "chair_state",
+        "ranking_member_name",
+        "ranking_member_party",
+        "ranking_member_state"
+      ],
+      "leadership_differences": {
+        "119th_leadership": "Text fields with names, parties, states",
+        "api_leadership": "Foreign key references to member IDs"
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "category": "Data Migration",
+      "priority": "HIGH",
+      "title": "Create Migration Script",
+      "description": "Create a migration script to transform 119th Congress data to API schema format",
+      "actions": [
+        "Parse 'name' field in members_119th into first_name, last_name components",
+        "Map chair_name/ranking_member_name to member IDs in committees",
+        "Add missing fields with default values or derive from existing data",
+        "Handle congress_session field for tracking Congressional sessions"
+      ]
+    },
+    {
+      "category": "Schema Enhancement",
+      "priority": "MEDIUM",
+      "title": "Add Congressional Session Support",
+      "description": "Enhance API models to support Congressional session tracking",
+      "actions": [
+        "Add congress_session field to Member and Committee models",
+        "Create CongressionalSession model for session metadata",
+        "Add session-aware filtering to API endpoints",
+        "Implement session transition handling"
+      ]
+    },
+    {
+      "category": "API Enhancement",
+      "priority": "MEDIUM",
+      "title": "Congressional Session Endpoints",
+      "description": "Add new endpoints for Congressional session information",
+      "actions": [
+        "Add /congress/session endpoint for current session info",
+        "Add /congress/history endpoint for session tracking",
+        "Add session filters to existing member/committee endpoints",
+        "Add 119th Congress context to all responses"
+      ]
+    },
+    {
+      "category": "Data Quality",
+      "priority": "HIGH",
+      "title": "Validate 119th Congress Data",
+      "description": "Ensure data quality and completeness before integration",
+      "actions": [
+        "Verify all committee chairs are Republicans (119th Congress)",
+        "Verify all ranking members are Democrats",
+        "Check member counts match expected Congressional size",
+        "Validate party affiliations and state representations"
+      ]
+    }
+  ]
+}
