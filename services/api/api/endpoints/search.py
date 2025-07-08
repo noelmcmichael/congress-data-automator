@@ -49,7 +49,7 @@ async def global_search(
         .limit(limit)
         .all()
     )
-    results["members"] = [MemberSummary.from_orm(member) for member in members]
+    results["members"] = [MemberSummary.model_validate(member) for member in members]
     
     # Search committees
     committees = (
@@ -63,7 +63,7 @@ async def global_search(
         .limit(limit)
         .all()
     )
-    results["committees"] = [CommitteeSummary.from_orm(committee) for committee in committees]
+    results["committees"] = [CommitteeSummary.model_validate(committee) for committee in committees]
     
     # Search hearings
     hearings = (
@@ -77,7 +77,7 @@ async def global_search(
         .limit(limit)
         .all()
     )
-    results["hearings"] = [HearingSummary.from_orm(hearing) for hearing in hearings]
+    results["hearings"] = [HearingSummary.model_validate(hearing) for hearing in hearings]
     
     return results
 
@@ -108,7 +108,7 @@ async def search_members(
         .all()
     )
     
-    return [MemberSummary.from_orm(member) for member in members]
+    return [MemberSummary.model_validate(member) for member in members]
 
 
 @router.get(
@@ -136,7 +136,7 @@ async def search_committees(
         .all()
     )
     
-    return [CommitteeSummary.from_orm(committee) for committee in committees]
+    return [CommitteeSummary.model_validate(committee) for committee in committees]
 
 
 @router.get(
@@ -164,7 +164,7 @@ async def search_hearings(
         .all()
     )
     
-    return [HearingSummary.from_orm(hearing) for hearing in hearings]
+    return [HearingSummary.model_validate(hearing) for hearing in hearings]
 
 
 # Analytics endpoints

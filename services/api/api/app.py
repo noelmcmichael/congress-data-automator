@@ -1,18 +1,31 @@
 """FastAPI application for the Congressional Data API."""
 
+import json
 from contextlib import asynccontextmanager
+from datetime import datetime
 from typing import Dict, Any
 
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.encoders import jsonable_encoder
 
 from .core.config import settings
 from .core.logging import logger, LoggingMiddleware
 from .core.exceptions import APIException
 from .database.connection import db_manager
 from .models.base import ErrorResponse
+
+
+class CustomJSONEncoder(json.JSONEncoder):
+    """Custom JSON encoder for datetime objects."""
+    
+    def default(self, obj):
+        """Handle datetime serialization."""
+        if isinstance(obj, datetime):
+            return obj.isoformat()
+        return super().default(obj)
 
 
 @asynccontextmanager

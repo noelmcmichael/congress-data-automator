@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 from typing import List, Optional
 
-from pydantic import Field, validator
+from pydantic import Field, field_validator, ValidationInfo
 from pydantic_settings import BaseSettings
 
 
@@ -94,7 +94,8 @@ class Settings(BaseSettings):
         default=30, description="Access token expire minutes"
     )
 
-    @validator("database_url")
+    @field_validator("database_url")
+    @classmethod
     def validate_database_url(cls, v: str) -> str:
         """Validate database URL."""
         valid_prefixes = ("postgresql://", "postgres://", "sqlite://", "sqlite:///")
@@ -102,7 +103,8 @@ class Settings(BaseSettings):
             raise ValueError("Database URL must be a PostgreSQL or SQLite connection string")
         return v
 
-    @validator("log_level")
+    @field_validator("log_level")
+    @classmethod
     def validate_log_level(cls, v: str) -> str:
         """Validate log level."""
         valid_levels = ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
@@ -110,7 +112,8 @@ class Settings(BaseSettings):
             raise ValueError(f"Log level must be one of: {valid_levels}")
         return v.upper()
 
-    @validator("environment")
+    @field_validator("environment")
+    @classmethod
     def validate_environment(cls, v: str) -> str:
         """Validate environment."""
         valid_environments = ["development", "staging", "production"]
@@ -118,24 +121,27 @@ class Settings(BaseSettings):
             raise ValueError(f"Environment must be one of: {valid_environments}")
         return v.lower()
 
-    @validator("api_port")
+    @field_validator("api_port")
+    @classmethod
     def validate_api_port(cls, v: int) -> int:
         """Validate API port."""
         if not (1024 <= v <= 65535):
             raise ValueError("API port must be between 1024 and 65535")
         return v
 
-    @validator("default_page_size", "max_page_size")
+    @field_validator("default_page_size", "max_page_size")
+    @classmethod
     def validate_page_size(cls, v: int) -> int:
         """Validate page size."""
         if v <= 0:
             raise ValueError("Page size must be positive")
         return v
 
-    @validator("max_page_size")
-    def validate_max_page_size_limit(cls, v: int, values: dict) -> int:
+    @field_validator("max_page_size")
+    @classmethod
+    def validate_max_page_size_limit(cls, v: int, info: ValidationInfo) -> int:
         """Validate max page size is greater than default."""
-        if "default_page_size" in values and v < values["default_page_size"]:
+        if info.data and "default_page_size" in info.data and v < info.data["default_page_size"]:
             raise ValueError("Max page size must be greater than default page size")
         return v
 

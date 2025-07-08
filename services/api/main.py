@@ -26,6 +26,25 @@ def initialize_service():
     logger.info("API service initialized successfully")
 
 
+# Initialize and expose app for uvicorn
+initialize_service()
+from api.app import app
+
+
+def initialize_service():
+    """Initialize the API service."""
+    logger.info("Initializing API service")
+    
+    # Initialize database
+    db_manager.initialize()
+    
+    # Create tables if they don't exist (for development)
+    if settings.is_development:
+        db_manager.create_tables()
+    
+    logger.info("API service initialized successfully")
+
+
 def run_api_server():
     """Run the FastAPI server."""
     import uvicorn

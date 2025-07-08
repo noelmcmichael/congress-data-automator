@@ -4,7 +4,7 @@ from datetime import datetime
 from typing import List, Optional
 from enum import Enum
 
-from pydantic import BaseModel, Field, validator, ConfigDict
+from pydantic import BaseModel, Field, field_validator, ConfigDict, ValidationInfo
 
 from .base import FilterParams
 
@@ -70,21 +70,24 @@ class MemberBase(BaseModel):
     member_type: MemberType = Field(description="Member type")
     is_current: bool = Field(description="Whether member is currently serving")
     
-    @validator("state")
+    @field_validator("state")
+    @classmethod
     def validate_state(cls, v: str) -> str:
         """Validate state abbreviation."""
         if len(v) != 2:
             raise ValueError("State must be a 2-letter abbreviation")
         return v.upper()
     
-    @validator("district")
-    def validate_district(cls, v: Optional[str], values: dict) -> Optional[str]:
+    @field_validator("district")
+    @classmethod
+    def validate_district(cls, v: Optional[str], info: ValidationInfo) -> Optional[str]:
         """Validate district for House members."""
-        chamber = values.get("chamber")
-        if chamber == Chamber.HOUSE and v is None:
-            raise ValueError("House members must have a district")
-        if chamber == Chamber.SENATE and v is not None:
-            raise ValueError("Senate members cannot have a district")
+        if info.data:
+            chamber = info.data.get("chamber")
+            if chamber == Chamber.HOUSE and v is None:
+                raise ValueError("House members must have a district")
+            if chamber == Chamber.SENATE and v is not None:
+                raise ValueError("Senate members cannot have a district")
         return v
 
 
@@ -106,20 +109,12 @@ class MemberDetail(MemberBase):
     gender: Optional[str] = Field(default=None, description="Gender")
     created_at: datetime = Field(description="Creation timestamp")
     updated_at: datetime = Field(description="Last update timestamp")
-    
-    class Config:
-        """Pydantic configuration."""
-        from_attributes = True
 
 
 class MemberSummary(MemberBase):
     """Summary member model."""
     
     id: int = Field(description="Database ID")
-    
-    class Config:
-        """Pydantic configuration."""
-        from_attributes = True
 
 
 class MemberFilterParams(FilterParams):
@@ -130,7 +125,8 @@ class MemberFilterParams(FilterParams):
     state: Optional[str] = Field(default=None, description="Filter by state")
     is_current: Optional[bool] = Field(default=None, description="Filter by current status")
     
-    @validator("state")
+    @field_validator("state")
+    @classmethod
     def validate_state(cls, v: Optional[str]) -> Optional[str]:
         """Validate state abbreviation."""
         if v and len(v) != 2:
@@ -247,7 +243,8 @@ class HearingFilterParams(FilterParams):
     date_from: Optional[datetime] = Field(default=None, description="Filter by start date")
     date_to: Optional[datetime] = Field(default=None, description="Filter by end date")
     
-    @validator("date_from", "date_to")
+    @field_validator("date_from", "date_to")
+    @classmethod
     def validate_dates(cls, v: Optional[datetime]) -> Optional[datetime]:
         """Validate date format."""
         return v

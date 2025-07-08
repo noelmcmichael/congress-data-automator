@@ -65,7 +65,7 @@ async def get_members(
     members, total = repo.get_all(filters, pagination)
     
     # Convert to response models
-    member_summaries = [MemberSummary.from_orm(member) for member in members]
+    member_summaries = [MemberSummary.model_validate(member) for member in members]
     
     # Create pagination response
     pagination_response = PaginationResponse(
@@ -104,7 +104,7 @@ async def get_member(
             detail=f"Member with ID {member_id} not found",
         )
     
-    return MemberDetail.from_orm(member)
+    return MemberDetail.model_validate(member)
 
 
 @router.get(
@@ -132,7 +132,7 @@ async def get_member_committees(
     # Get committees
     committees = repo.get_member_committees(member_id)
     
-    return [CommitteeSummary.from_orm(committee) for committee in committees]
+    return [CommitteeSummary.model_validate(committee) for committee in committees]
 
 
 @router.get(
@@ -157,9 +157,9 @@ async def get_member_with_committees(
         )
     
     # Create response with committees
-    member_data = MemberDetail.from_orm(member)
+    member_data = MemberDetail.model_validate(member)
     committees = [
-        CommitteeSummary.from_orm(membership.committee)
+        CommitteeSummary.model_validate(membership.committee)
         for membership in member.committee_memberships
         if membership.is_current
     ]
@@ -191,7 +191,7 @@ async def get_member_by_bioguide(
             detail=f"Member with bioguide ID {bioguide_id} not found",
         )
     
-    return MemberDetail.from_orm(member)
+    return MemberDetail.model_validate(member)
 
 
 @router.get(

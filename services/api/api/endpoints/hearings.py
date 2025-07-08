@@ -66,7 +66,7 @@ async def get_hearings(
     hearings, total = repo.get_all(filters, pagination)
     
     # Convert to response models
-    hearing_summaries = [HearingSummary.from_orm(hearing) for hearing in hearings]
+    hearing_summaries = [HearingSummary.model_validate(hearing) for hearing in hearings]
     
     # Create pagination response
     pagination_response = PaginationResponse(
@@ -105,7 +105,7 @@ async def get_hearing(
             detail=f"Hearing with ID {hearing_id} not found",
         )
     
-    return HearingDetail.from_orm(hearing)
+    return HearingDetail.model_validate(hearing)
 
 
 @router.get(
@@ -130,8 +130,8 @@ async def get_hearing_with_details(
         )
     
     # Create response with committee and witnesses
-    hearing_data = HearingDetail.from_orm(hearing)
-    committee_data = CommitteeSummary.from_orm(hearing.committee)
+    hearing_data = HearingDetail.model_validate(hearing)
+    committee_data = CommitteeSummary.model_validate(hearing.committee)
     
     # Get witnesses (simplified for now)
     witnesses = [witness.name for witness in hearing.witnesses]
@@ -174,7 +174,7 @@ async def get_upcoming_hearings(
     repo = HearingRepository(db)
     hearings, _ = repo.get_all(filters, pagination)
     
-    return [HearingSummary.from_orm(hearing) for hearing in hearings]
+    return [HearingSummary.model_validate(hearing) for hearing in hearings]
 
 
 @router.get(
@@ -207,7 +207,7 @@ async def get_recent_hearings(
     repo = HearingRepository(db)
     hearings, _ = repo.get_all(filters, pagination)
     
-    return [HearingSummary.from_orm(hearing) for hearing in hearings]
+    return [HearingSummary.model_validate(hearing) for hearing in hearings]
 
 
 @router.get(
@@ -235,7 +235,7 @@ async def get_committee_hearings(
     repo = HearingRepository(db)
     hearings, _ = repo.get_all(filters, pagination)
     
-    return [HearingSummary.from_orm(hearing) for hearing in hearings]
+    return [HearingSummary.model_validate(hearing) for hearing in hearings]
 
 
 @router.get(

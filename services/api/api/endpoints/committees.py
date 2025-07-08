@@ -63,7 +63,7 @@ async def get_committees(
     committees, total = repo.get_all(filters, pagination)
     
     # Convert to response models
-    committee_summaries = [CommitteeSummary.from_orm(committee) for committee in committees]
+    committee_summaries = [CommitteeSummary.model_validate(committee) for committee in committees]
     
     # Create pagination response
     pagination_response = PaginationResponse(
@@ -102,7 +102,7 @@ async def get_committee(
             detail=f"Committee with ID {committee_id} not found",
         )
     
-    return CommitteeDetail.from_orm(committee)
+    return CommitteeDetail.model_validate(committee)
 
 
 @router.get(
@@ -130,7 +130,7 @@ async def get_committee_members(
     # Get members
     members = repo.get_committee_members(committee_id)
     
-    return [MemberSummary.from_orm(member) for member in members]
+    return [MemberSummary.model_validate(member) for member in members]
 
 
 @router.get(
@@ -158,7 +158,7 @@ async def get_committee_subcommittees(
     # Get subcommittees
     subcommittees = repo.get_subcommittees(committee_id)
     
-    return [CommitteeSummary.from_orm(subcommittee) for subcommittee in subcommittees]
+    return [CommitteeSummary.model_validate(subcommittee) for subcommittee in subcommittees]
 
 
 @router.get(
@@ -183,9 +183,9 @@ async def get_committee_with_members(
         )
     
     # Create response with members
-    committee_data = CommitteeDetail.from_orm(committee)
+    committee_data = CommitteeDetail.model_validate(committee)
     members = [
-        MemberSummary.from_orm(membership.member)
+        MemberSummary.model_validate(membership.member)
         for membership in committee.committee_memberships
         if membership.is_current
     ]
@@ -217,7 +217,7 @@ async def get_committee_by_code(
             detail=f"Committee with code {committee_code} not found",
         )
     
-    return CommitteeDetail.from_orm(committee)
+    return CommitteeDetail.model_validate(committee)
 
 
 @router.get(

@@ -1,9 +1,9 @@
 """Base models for the API service."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional, Union
 
-from pydantic import BaseModel, Field, validator, ConfigDict
+from pydantic import BaseModel, Field, field_validator, ConfigDict, ValidationInfo
 
 
 class BaseResponse(BaseModel):
@@ -17,7 +17,7 @@ class BaseResponse(BaseModel):
     
     success: bool = Field(default=True, description="Request success status")
     message: Optional[str] = Field(default=None, description="Response message")
-    timestamp: datetime = Field(default_factory=datetime.utcnow, description="Response timestamp")
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc), description="Response timestamp")
 
 
 class PaginationParams(BaseModel):
@@ -47,31 +47,40 @@ class PaginationResponse(BaseModel):
     has_next: bool = Field(description="Whether there is a next page")
     has_prev: bool = Field(description="Whether there is a previous page")
     
-    @validator("pages", pre=True, always=True)
-    def calculate_pages(cls, v: Optional[int], values: Dict) -> int:
+    @field_validator("pages", mode="before")
+    @classmethod
+    def calculate_pages(cls, v: Optional[int], info: ValidationInfo) -> int:
         """Calculate total pages."""
         if v is not None:
             return v
-        total = values.get("total", 0)
-        size = values.get("size", 1)
-        return (total + size - 1) // size
+        if info.data:
+            total = info.data.get("total", 0)
+            size = info.data.get("size", 1)
+            return (total + size - 1) // size
+        return 1
     
-    @validator("has_next", pre=True, always=True)
-    def calculate_has_next(cls, v: Optional[bool], values: Dict) -> bool:
+    @field_validator("has_next", mode="before")
+    @classmethod
+    def calculate_has_next(cls, v: Optional[bool], info: ValidationInfo) -> bool:
         """Calculate has next page."""
         if v is not None:
             return v
-        page = values.get("page", 1)
-        pages = values.get("pages", 1)
-        return page < pages
+        if info.data:
+            page = info.data.get("page", 1)
+            pages = info.data.get("pages", 1)
+            return page < pages
+        return False
     
-    @validator("has_prev", pre=True, always=True)
-    def calculate_has_prev(cls, v: Optional[bool], values: Dict) -> bool:
+    @field_validator("has_prev", mode="before")
+    @classmethod
+    def calculate_has_prev(cls, v: Optional[bool], info: ValidationInfo) -> bool:
         """Calculate has previous page."""
         if v is not None:
             return v
-        page = values.get("page", 1)
-        return page > 1
+        if info.data:
+            page = info.data.get("page", 1)
+            return page > 1
+        return False
 
 
 class PaginatedResponse(BaseResponse):
@@ -88,7 +97,8 @@ class FilterParams(BaseModel):
     sort_by: Optional[str] = Field(default=None, description="Sort field")
     sort_order: Optional[str] = Field(default="asc", description="Sort order")
     
-    @validator("sort_order")
+    @field_validator("sort_order")
+    @classmethod
     def validate_sort_order(cls, v: Optional[str]) -> Optional[str]:
         """Validate sort order."""
         if v and v.lower() not in ["asc", "desc"]:
