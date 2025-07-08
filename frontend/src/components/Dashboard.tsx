@@ -23,8 +23,10 @@ import { apiService, ApiStatus } from '../services/api';
 import { fullCongressApiService } from '../services/fullCongressApi';
 import UniversalSearch from './UniversalSearch';
 import { format } from 'date-fns';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard: React.FC = () => {
+  const navigate = useNavigate();
   const [stats, setStats] = useState<any>(null);
   const [status, setStatus] = useState<ApiStatus | null>(null);
   const [loading, setLoading] = useState(true);
@@ -124,7 +126,7 @@ const Dashboard: React.FC = () => {
                 fullWidth 
                 variant="contained" 
                 size="large"
-                onClick={() => window.location.href = '/members'}
+                onClick={() => navigate('/members')}
                 sx={{ py: 2 }}
               >
                 <Box sx={{ textAlign: 'center' }}>
@@ -138,7 +140,7 @@ const Dashboard: React.FC = () => {
                 fullWidth 
                 variant="contained" 
                 size="large"
-                onClick={() => window.location.href = '/committees'}
+                onClick={() => navigate('/committees')}
                 sx={{ py: 2 }}
               >
                 <Box sx={{ textAlign: 'center' }}>
@@ -152,7 +154,7 @@ const Dashboard: React.FC = () => {
                 fullWidth 
                 variant="contained" 
                 size="large"
-                onClick={() => window.location.href = '/hearings'}
+                onClick={() => navigate('/hearings')}
                 sx={{ py: 2 }}
               >
                 <Box sx={{ textAlign: 'center' }}>
@@ -166,7 +168,7 @@ const Dashboard: React.FC = () => {
                 fullWidth 
                 variant="outlined" 
                 size="large"
-                onClick={() => window.location.href = '/search'}
+                onClick={() => navigate('/search')}
                 sx={{ py: 2 }}
               >
                 <Box sx={{ textAlign: 'center' }}>
