@@ -1,0 +1,28 @@
+{
+  "deployment_id": "phase1_step5_20250708_150456",
+  "start_time": "2025-07-08T15:04:56.482135",
+  "steps": {
+    "1.5.1": {
+      "description": "Production Database Preparation",
+      "start_time": "2025-07-08T15:04:56.482207",
+      "status": "completed",
+      "end_time": "2025-07-08T15:04:57.104139",
+      "details": {
+        "members_congress_session_added": false,
+        "committees_congress_session_added": false,
+        "congressional_sessions_table_created": false,
+        "119th_congress_session_added": true
+      }
+    },
+    "1.5.2": {
+      "description": "119th Congress Data Migration",
+      "start_time": "2025-07-08T15:04:57.104429",
+      "status": "error",
+      "end_time": "2025-07-08T15:05:00.819714",
+      "error": "duplicate key value violates unique constraint \"committees_pkey\"\nDETAIL:  Key (id)=(43) already exists.\n"
+    }
+  },
+  "success": false,
+  "end_time": "2025-07-08T15:05:00.819981",
+  "total_duration": 4.337846
+}

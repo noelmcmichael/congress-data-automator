@@ -1,0 +1,28 @@
+{
+  "deployment_id": "phase1_step5_20250708_150421",
+  "start_time": "2025-07-08T15:04:21.269767",
+  "steps": {
+    "1.5.1": {
+      "description": "Production Database Preparation",
+      "start_time": "2025-07-08T15:04:21.269826",
+      "status": "completed",
+      "end_time": "2025-07-08T15:04:22.199425",
+      "details": {
+        "members_congress_session_added": true,
+        "committees_congress_session_added": true,
+        "congressional_sessions_table_created": true,
+        "119th_congress_session_added": true
+      }
+    },
+    "1.5.2": {
+      "description": "119th Congress Data Migration",
+      "start_time": "2025-07-08T15:04:22.199654",
+      "status": "error",
+      "end_time": "2025-07-08T15:04:22.201559",
+      "error": "'migrated_data'"
+    }
+  },
+  "success": false,
+  "end_time": "2025-07-08T15:04:22.201615",
+  "total_duration": 0.931848
+}

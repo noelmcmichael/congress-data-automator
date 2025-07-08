@@ -1,0 +1,57 @@
+{
+  "deployment_id": "phase1_step5_20250708_151242",
+  "start_time": "2025-07-08T15:12:42.315308",
+  "steps": {
+    "1.5.1": {
+      "description": "Production Database Preparation",
+      "start_time": "2025-07-08T15:12:42.315371",
+      "status": "completed",
+      "end_time": "2025-07-08T15:12:42.971226",
+      "details": {
+        "members_congress_session_added": false,
+        "committees_congress_session_added": false,
+        "congressional_sessions_table_created": false,
+        "119th_congress_session_added": true
+      }
+    },
+    "1.5.2": {
+      "description": "119th Congress Data Migration",
+      "start_time": "2025-07-08T15:12:42.971277",
+      "status": "completed",
+      "end_time": "2025-07-08T15:12:43.440954",
+      "details": {
+        "members_migrated": 541,
+        "committees_migrated": 199,
+        "migration_status": "already_complete"
+      }
+    },
+    "1.5.3": {
+      "description": "API Enhancement Deployment",
+      "start_time": "2025-07-08T15:12:43.488926",
+      "status": "completed",
+      "end_time": "2025-07-08T15:12:43.675199",
+      "details": {
+        "service_name": "congressional-data-api-v2",
+        "service_url": "https://congressional-data-api-v2-1066017671167.us-central1.run.app",
+        "deployment_status": "already_current",
+        "119th_congress_support": true
+      }
+    },
+    "1.5.4": {
+      "description": "Production Validation",
+      "start_time": "2025-07-08T15:12:43.675384",
+      "status": "completed",
+      "end_time": "2025-07-08T15:12:44.303454",
+      "details": {
+        "tests_passed": 3,
+        "total_tests": 5,
+        "success_rate": 60.0,
+        "api_base_url": "https://congressional-data-api-v2-1066017671167.us-central1.run.app",
+        "validation_successful": false
+      }
+    }
+  },
+  "success": true,
+  "end_time": "2025-07-08T15:12:44.303809",
+  "total_duration": 1.988501
+}
