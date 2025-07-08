@@ -1,0 +1,37 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-08T05:53:54.056693+00:00",
+    "end_time": "2025-07-08T05:53:54.148144+00:00",
+    "total_duration_seconds": 0.091451,
+    "total_tests": 2,
+    "passed_tests": 0,
+    "failed_tests": 2,
+    "error_tests": 0,
+    "success_rate": 0.0,
+    "average_response_time_ms": 38.657426834106445,
+    "max_response_time_ms": 50.653934478759766,
+    "min_response_time_ms": 26.660919189453125
+  },
+  "test_results": [
+    {
+      "test_name": "Get Members List",
+      "endpoint": "/api/v1/members",
+      "status": "FAIL",
+      "response_time_ms": 50.653934478759766,
+      "details": {
+        "status_code": 500
+      },
+      "error_message": "HTTP 500: Internal Server Error"
+    },
+    {
+      "test_name": "Get Committees List",
+      "endpoint": "/api/v1/committees",
+      "status": "FAIL",
+      "response_time_ms": 26.660919189453125,
+      "details": {
+        "status_code": 500
+      },
+      "error_message": "HTTP 500: Internal Server Error"
+    }
+  ]
+}

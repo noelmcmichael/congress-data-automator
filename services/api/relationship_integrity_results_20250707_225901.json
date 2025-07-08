@@ -1,0 +1,171 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-08T05:59:00.908486+00:00",
+    "end_time": "2025-07-08T05:59:01.008648+00:00",
+    "total_duration_seconds": 0.100162,
+    "total_tests": 14,
+    "passed_tests": 14,
+    "failed_tests": 0,
+    "error_tests": 0,
+    "success_rate": 100.0,
+    "average_response_time_ms": 4.253336361476353,
+    "max_response_time_ms": 9.212970733642578,
+    "min_response_time_ms": 2.529144287109375
+  },
+  "test_results": [
+    {
+      "test_name": "Get Members List",
+      "endpoint": "/api/v1/members",
+      "status": "PASS",
+      "response_time_ms": 9.212970733642578,
+      "details": {
+        "response_size": 4979,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Unknown Committees",
+      "endpoint": "/api/v1/members/19/committees",
+      "status": "PASS",
+      "response_time_ms": 4.72712516784668,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Unknown Committees",
+      "endpoint": "/api/v1/members/24/committees",
+      "status": "PASS",
+      "response_time_ms": 2.6390552520751953,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Unknown Committees",
+      "endpoint": "/api/v1/members/62/committees",
+      "status": "PASS",
+      "response_time_ms": 2.766132354736328,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Unknown Committees",
+      "endpoint": "/api/v1/members/63/committees",
+      "status": "PASS",
+      "response_time_ms": 2.8586387634277344,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Unknown Committees",
+      "endpoint": "/api/v1/members/73/committees",
+      "status": "PASS",
+      "response_time_ms": 2.682924270629883,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Get Committees List",
+      "endpoint": "/api/v1/committees",
+      "status": "PASS",
+      "response_time_ms": 4.836797714233398,
+      "details": {
+        "response_size": 3311,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Committee on Agriculture Members",
+      "endpoint": "/api/v1/committees/1/members",
+      "status": "PASS",
+      "response_time_ms": 4.227876663208008,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Biotechnology, Horticulture, and Research Subcommittee Members",
+      "endpoint": "/api/v1/committees/2/members",
+      "status": "PASS",
+      "response_time_ms": 2.8228759765625,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Committee on Appropriations Members",
+      "endpoint": "/api/v1/committees/7/members",
+      "status": "PASS",
+      "response_time_ms": 2.529144287109375,
+      "details": {
+        "response_size": 2,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Large Member List Performance",
+      "endpoint": "/api/v1/members?size=50",
+      "status": "PASS",
+      "response_time_ms": 4.3811798095703125,
+      "details": {
+        "response_size": 12127,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Complex Filter Performance",
+      "endpoint": "/api/v1/members?chamber=House&party=Republican",
+      "status": "PASS",
+      "response_time_ms": 5.508899688720703,
+      "details": {
+        "response_size": 4957,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Search Performance",
+      "endpoint": "/api/v1/members?search=John",
+      "status": "PASS",
+      "response_time_ms": 5.792140960693359,
+      "details": {
+        "response_size": 660,
+        "status_code": 200
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Filter Performance",
+      "endpoint": "/api/v1/committees?chamber=House",
+      "status": "PASS",
+      "response_time_ms": 4.560947418212891,
+      "details": {
+        "response_size": 2347,
+        "status_code": 200
+      },
+      "error_message": null
+    }
+  ]
+}

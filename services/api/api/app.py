@@ -115,7 +115,7 @@ def create_app() -> FastAPI:
                 error="ValidationError",
                 detail=str(exc.errors()),
                 code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-            ).dict(),
+            ).model_dump(),
         )
     
     @app.exception_handler(Exception)
@@ -136,7 +136,7 @@ def create_app() -> FastAPI:
                 error="InternalServerError",
                 detail="An unexpected error occurred" if settings.is_production else str(exc),
                 code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            ).dict(),
+            ).model_dump(),
         )
     
     # Health check endpoint

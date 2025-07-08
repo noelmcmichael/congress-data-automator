@@ -1,0 +1,814 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-08T06:00:42.382605+00:00",
+    "end_time": "2025-07-08T06:00:42.626279+00:00",
+    "total_duration_seconds": 0.243674,
+    "total_tests": 56,
+    "passed_tests": 37,
+    "failed_tests": 19,
+    "error_tests": 0,
+    "success_rate": 66.07142857142857,
+    "average_response_time_ms": 4.277748720986502,
+    "max_response_time_ms": 18.230915069580078,
+    "min_response_time_ms": 1.7478466033935547
+  },
+  "category_results": {
+    "health": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0
+    },
+    "members": {
+      "total": 22,
+      "passed": 19,
+      "failed": 3,
+      "errors": 0
+    },
+    "committees": {
+      "total": 14,
+      "passed": 13,
+      "failed": 1,
+      "errors": 0
+    },
+    "hearings": {
+      "total": 4,
+      "passed": 2,
+      "failed": 2,
+      "errors": 0
+    },
+    "statistics": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0
+    },
+    "search": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0
+    },
+    "errors": {
+      "total": 7,
+      "passed": 0,
+      "failed": 7,
+      "errors": 0
+    }
+  },
+  "test_results": [
+    {
+      "test_name": "Health Check",
+      "endpoint": "/health",
+      "category": "health",
+      "status": "PASS",
+      "response_time_ms": 10.740280151367188,
+      "details": {
+        "status_code": 200,
+        "response_size": 108,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Health Check Z",
+      "endpoint": "/healthz",
+      "category": "health",
+      "status": "PASS",
+      "response_time_ms": 2.851724624633789,
+      "details": {
+        "status_code": 200,
+        "response_size": 191,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Root Endpoint",
+      "endpoint": "/",
+      "category": "health",
+      "status": "PASS",
+      "response_time_ms": 1.7478466033935547,
+      "details": {
+        "status_code": 200,
+        "response_size": 103,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members List",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 15.13981819152832,
+      "details": {
+        "status_code": 200,
+        "response_size": 4979,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Pagination",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 3.052949905395508,
+      "details": {
+        "status_code": 200,
+        "response_size": 1388,
+        "data_count": 5,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Large Page",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 5.06281852722168,
+      "details": {
+        "status_code": 200,
+        "response_size": 12137,
+        "data_count": 50,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by Chamber House",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 18.230915069580078,
+      "details": {
+        "status_code": 200,
+        "response_size": 4979,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by Chamber Senate",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 3.2308101654052734,
+      "details": {
+        "status_code": 200,
+        "response_size": 2805,
+        "data_count": 11,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by Party Republican",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 5.35130500793457,
+      "details": {
+        "status_code": 200,
+        "response_size": 4957,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by Party Democrat",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "FAIL",
+      "response_time_ms": 17.173051834106445,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Members by State CA",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 5.32984733581543,
+      "details": {
+        "status_code": 200,
+        "response_size": 922,
+        "data_count": 3,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by State TX",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 3.325939178466797,
+      "details": {
+        "status_code": 200,
+        "response_size": 675,
+        "data_count": 2,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members by State WA",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 2.851724624633789,
+      "details": {
+        "status_code": 200,
+        "response_size": 444,
+        "data_count": 1,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Search John",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 4.795312881469727,
+      "details": {
+        "status_code": 200,
+        "response_size": 660,
+        "data_count": 2,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Search Michael",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 2.830982208251953,
+      "details": {
+        "status_code": 200,
+        "response_size": 683,
+        "data_count": 2,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Search Smith",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 2.9230117797851562,
+      "details": {
+        "status_code": 200,
+        "response_size": 196,
+        "data_count": 0,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members House Republican",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 5.282163619995117,
+      "details": {
+        "status_code": 200,
+        "response_size": 4957,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Members Senate Democrat",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "FAIL",
+      "response_time_ms": 3.1507015228271484,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Members CA House",
+      "endpoint": "/api/v1/members",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 5.211114883422852,
+      "details": {
+        "status_code": 200,
+        "response_size": 922,
+        "data_count": 3,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Detail ID 19",
+      "endpoint": "/api/v1/members/19",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 3.4110546112060547,
+      "details": {
+        "status_code": 200,
+        "response_size": 628,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Detail ID 24",
+      "endpoint": "/api/v1/members/24",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 2.5441646575927734,
+      "details": {
+        "status_code": 200,
+        "response_size": 597,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Detail ID 29",
+      "endpoint": "/api/v1/members/29",
+      "category": "members",
+      "status": "FAIL",
+      "response_time_ms": 3.206968307495117,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Member Committees ID 19",
+      "endpoint": "/api/v1/members/19/committees",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 3.6771297454833984,
+      "details": {
+        "status_code": 200,
+        "response_size": 2,
+        "response_type": "non_dict"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Committees ID 24",
+      "endpoint": "/api/v1/members/24/committees",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 2.507925033569336,
+      "details": {
+        "status_code": 200,
+        "response_size": 2,
+        "response_type": "non_dict"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Member Full Detail ID 19",
+      "endpoint": "/api/v1/members/19/full",
+      "category": "members",
+      "status": "PASS",
+      "response_time_ms": 6.027936935424805,
+      "details": {
+        "status_code": 200,
+        "response_size": 646,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees List",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 4.698991775512695,
+      "details": {
+        "status_code": 200,
+        "response_size": 3311,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees Pagination",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 2.7709007263183594,
+      "details": {
+        "status_code": 200,
+        "response_size": 1007,
+        "data_count": 5,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees Large Page",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 3.1948089599609375,
+      "details": {
+        "status_code": 200,
+        "response_size": 4972,
+        "data_count": 30,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees by Chamber House",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 4.635810852050781,
+      "details": {
+        "status_code": 200,
+        "response_size": 2347,
+        "data_count": 14,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees by Chamber Senate",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 3.6728382110595703,
+      "details": {
+        "status_code": 200,
+        "response_size": 2820,
+        "data_count": 16,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees by Type Standing",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 5.227088928222656,
+      "details": {
+        "status_code": 200,
+        "response_size": 3311,
+        "data_count": 20,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees Search Agriculture",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 5.011796951293945,
+      "details": {
+        "status_code": 200,
+        "response_size": 879,
+        "data_count": 4,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees Search Judiciary",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 3.200054168701172,
+      "details": {
+        "status_code": 200,
+        "response_size": 196,
+        "data_count": 0,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committees Search Armed",
+      "endpoint": "/api/v1/committees",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 2.8738975524902344,
+      "details": {
+        "status_code": 200,
+        "response_size": 482,
+        "data_count": 2,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Detail ID 1",
+      "endpoint": "/api/v1/committees/1",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 2.918243408203125,
+      "details": {
+        "status_code": 200,
+        "response_size": 341,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Detail ID 2",
+      "endpoint": "/api/v1/committees/2",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 2.5789737701416016,
+      "details": {
+        "status_code": 200,
+        "response_size": 371,
+        "response_type": "simple"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Members ID 1",
+      "endpoint": "/api/v1/committees/1/members",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 3.4308433532714844,
+      "details": {
+        "status_code": 200,
+        "response_size": 2,
+        "response_type": "non_dict"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Members ID 2",
+      "endpoint": "/api/v1/committees/2/members",
+      "category": "committees",
+      "status": "PASS",
+      "response_time_ms": 2.8181076049804688,
+      "details": {
+        "status_code": 200,
+        "response_size": 2,
+        "response_type": "non_dict"
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Committee Hearings ID 1",
+      "endpoint": "/api/v1/committees/1/hearings",
+      "category": "committees",
+      "status": "FAIL",
+      "response_time_ms": 1.9211769104003906,
+      "details": {
+        "status_code": 404,
+        "expected_status": 200,
+        "response_size": 23
+      },
+      "error_message": "Expected 200, got 404"
+    },
+    {
+      "test_name": "Hearings List",
+      "endpoint": "/api/v1/hearings",
+      "category": "hearings",
+      "status": "PASS",
+      "response_time_ms": 4.758119583129883,
+      "details": {
+        "status_code": 200,
+        "response_size": 196,
+        "data_count": 0,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Hearings Pagination",
+      "endpoint": "/api/v1/hearings",
+      "category": "hearings",
+      "status": "PASS",
+      "response_time_ms": 3.072023391723633,
+      "details": {
+        "status_code": 200,
+        "response_size": 195,
+        "data_count": 0,
+        "has_pagination": true
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Hearing Detail ID 1",
+      "endpoint": "/api/v1/hearings/1",
+      "category": "hearings",
+      "status": "FAIL",
+      "response_time_ms": 3.780841827392578,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Hearing Witnesses ID 1",
+      "endpoint": "/api/v1/hearings/1/witnesses",
+      "category": "hearings",
+      "status": "FAIL",
+      "response_time_ms": 1.8570423126220703,
+      "details": {
+        "status_code": 404,
+        "expected_status": 200,
+        "response_size": 23
+      },
+      "error_message": "Expected 200, got 404"
+    },
+    {
+      "test_name": "Member Statistics",
+      "endpoint": "/api/v1/statistics/members",
+      "category": "statistics",
+      "status": "FAIL",
+      "response_time_ms": 1.8641948699951172,
+      "details": {
+        "status_code": 404,
+        "expected_status": 200,
+        "response_size": 23
+      },
+      "error_message": "Expected 200, got 404"
+    },
+    {
+      "test_name": "Committee Statistics",
+      "endpoint": "/api/v1/statistics/committees",
+      "category": "statistics",
+      "status": "FAIL",
+      "response_time_ms": 2.012968063354492,
+      "details": {
+        "status_code": 404,
+        "expected_status": 200,
+        "response_size": 23
+      },
+      "error_message": "Expected 200, got 404"
+    },
+    {
+      "test_name": "Hearing Statistics",
+      "endpoint": "/api/v1/statistics/hearings",
+      "category": "statistics",
+      "status": "FAIL",
+      "response_time_ms": 1.7521381378173828,
+      "details": {
+        "status_code": 404,
+        "expected_status": 200,
+        "response_size": 23
+      },
+      "error_message": "Expected 200, got 404"
+    },
+    {
+      "test_name": "Global Search",
+      "endpoint": "/api/v1/search",
+      "category": "search",
+      "status": "FAIL",
+      "response_time_ms": 3.226041793823242,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Search Members",
+      "endpoint": "/api/v1/search/members",
+      "category": "search",
+      "status": "FAIL",
+      "response_time_ms": 2.9168128967285156,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Search Committees",
+      "endpoint": "/api/v1/search/committees",
+      "category": "search",
+      "status": "FAIL",
+      "response_time_ms": 3.1430721282958984,
+      "details": {
+        "status_code": 500,
+        "expected_status": 200,
+        "response_size": 21
+      },
+      "error_message": "Expected 200, got 500"
+    },
+    {
+      "test_name": "Invalid Member ID",
+      "endpoint": "/api/v1/members/999999",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 3.3538341522216797,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21
+      },
+      "error_message": "Expected 404, got 500"
+    },
+    {
+      "test_name": "Invalid Committee ID",
+      "endpoint": "/api/v1/committees/999999",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 3.6122798919677734,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21
+      },
+      "error_message": "Expected 404, got 500"
+    },
+    {
+      "test_name": "Invalid Hearing ID",
+      "endpoint": "/api/v1/hearings/999999",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 3.4210681915283203,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21
+      },
+      "error_message": "Expected 404, got 500"
+    },
+    {
+      "test_name": "Invalid Pagination",
+      "endpoint": "/api/v1/members",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 2.9449462890625,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21
+      },
+      "error_message": "Expected 422, got 500"
+    },
+    {
+      "test_name": "Invalid Size",
+      "endpoint": "/api/v1/members",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 2.889871597290039,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21
+      },
+      "error_message": "Expected 422, got 500"
+    },
+    {
+      "test_name": "Invalid Chamber",
+      "endpoint": "/api/v1/members",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 3.0426979064941406,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21
+      },
+      "error_message": "Expected 422, got 500"
+    },
+    {
+      "test_name": "Invalid Party",
+      "endpoint": "/api/v1/members",
+      "category": "errors",
+      "status": "FAIL",
+      "response_time_ms": 3.2949447631835938,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21
+      },
+      "error_message": "Expected 422, got 500"
+    }
+  ]
+}

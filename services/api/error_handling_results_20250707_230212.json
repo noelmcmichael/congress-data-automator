@@ -1,0 +1,1077 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-08T06:02:12.354726+00:00",
+    "end_time": "2025-07-08T06:02:12.533678+00:00",
+    "total_duration_seconds": 0.178952,
+    "total_tests": 37,
+    "passed_tests": 7,
+    "failed_tests": 30,
+    "error_tests": 0,
+    "success_rate": 18.91891891891892,
+    "average_response_time_ms": 4.771135948799752,
+    "max_response_time_ms": 35.748958587646484,
+    "min_response_time_ms": 1.8787384033203125
+  },
+  "category_results": {
+    "invalid_id": {
+      "total": 7,
+      "passed": 0,
+      "failed": 7,
+      "errors": 0
+    },
+    "pagination": {
+      "total": 7,
+      "passed": 0,
+      "failed": 7,
+      "errors": 0
+    },
+    "filters": {
+      "total": 6,
+      "passed": 0,
+      "failed": 6,
+      "errors": 0
+    },
+    "search": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0
+    },
+    "methods": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0
+    },
+    "content": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0
+    },
+    "endpoints": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0
+    },
+    "combinations": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0
+    },
+    "edge_cases": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0
+    }
+  },
+  "test_results": [
+    {
+      "test_name": "Non-existent Member ID",
+      "endpoint": "/api/v1/members/999999",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 35.748958587646484,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Non-existent Committee ID",
+      "endpoint": "/api/v1/committees/999999",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 5.322933197021484,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Non-existent Hearing ID",
+      "endpoint": "/api/v1/hearings/999999",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 4.957914352416992,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Zero Member ID",
+      "endpoint": "/api/v1/members/0",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 4.793882369995117,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Negative Member ID",
+      "endpoint": "/api/v1/members/-1",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 3.785848617553711,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "String Member ID",
+      "endpoint": "/api/v1/members/abc",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 3.400087356567383,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Float Member ID",
+      "endpoint": "/api/v1/members/1.5",
+      "method": "GET",
+      "category": "invalid_id",
+      "status": "FAIL",
+      "response_time_ms": 17.048120498657227,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Negative Page",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.280162811279297,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Zero Page",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.2761096954345703,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Negative Size",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.2477378845214844,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Zero Size",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.200054168701172,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Oversized Page",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.1447410583496094,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "String Page",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 3.158092498779297,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Float Page",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "pagination",
+      "status": "FAIL",
+      "response_time_ms": 2.845287322998047,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Invalid Chamber",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 5.5408477783203125,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Invalid Party",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 3.551006317138672,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Invalid State",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 3.615856170654297,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Invalid Committee Type",
+      "endpoint": "/api/v1/committees",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 4.081010818481445,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Empty String Filter",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 3.1981468200683594,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Null Filter",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "filters",
+      "status": "FAIL",
+      "response_time_ms": 3.283977508544922,
+      "details": {
+        "status_code": 500,
+        "expected_status": 422,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 422, got 500"
+    },
+    {
+      "test_name": "Empty Search",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "search",
+      "status": "PASS",
+      "response_time_ms": 6.093025207519531,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 4979,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.481325+00:00",
+          "data": [
+            {
+              "bioguide_id": "B001322",
+              "name": "Michael Baumgartner",
+              "first_name": "Michael",
+              "last_name": "Baumgartner",
+              "party": "Republican",
+              "state": "WA",
+              "district": "5",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 19
+            },
+            {
+              "bioguide_id": "B001318",
+              "name": "Becca Balint",
+              "first_name": "Becca",
+              "last_name": "Balint",
+              "party": "Democratic",
+              "state": "VT",
+              "district": "1",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 24
+            },
+            {
+              "bioguide_id": "B001292",
+              "name": "Donald S. Beyer",
+              "first_name": "Donald",
+              "last_name": "Beyer",
+              "party": "Democratic",
+              "state": "VA",
+              "district": "8",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 62
+            },
+            {
+              "bioguide_id": "B001291",
+              "name": "Brian Babin",
+              "first_name": "Brian",
+              "last_name": "Babin",
+              "party": "Republican",
+              "state": "TX",
+              "district": "36",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 63
+            },
+            {
+              "bioguide_id": "B001325",
+              "name": "Sheri Biggs",
+              "first_name": "Sheri",
+              "last_name": "Biggs",
+              "party": "Republican",
+              "state": "SC",
+              "district": "3",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 73
+            },
+            {
+              "bioguide_id": "A000375",
+              "name": "Jodey C. Arrington",
+              "first_name": "Jodey",
+              "last_name": "Arrington",
+              "party": "Republican",
+              "state": "TX",
+              "district": "19",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 95
+            },
+            {
+              "bioguide_id": "B001327",
+              "name": "Robert P. Bresnahan",
+              "first_name": "Robert",
+              "last_name": "Bresnahan",
+              "party": "Republican",
+              "state": "PA",
+              "district": "8",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 109
+            },
+            {
+              "bioguide_id": "A000380",
+              "name": "Gabe Amo",
+              "first_name": "Gabe",
+              "last_name": "Amo",
+              "party": "Democratic",
+              "state": "RI",
+              "district": "1",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 111
+            },
+            {
+              "bioguide_id": "B001317",
+              "name": "Josh Brecheen",
+              "first_name": "Josh",
+              "last_name": "Brecheen",
+              "party": "Republican",
+              "state": "OK",
+              "district": "2",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 117
+            },
+            {
+              "bioguide_id": "B000740",
+              "name": "Stephanie I. Bice",
+              "first_name": "Stephanie",
+              "last_name": "Bice",
+              "party": "Republican",
+              "state": "OK",
+              "district": "5",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 119
+            },
+            {
+              "bioguide_id": "B000668",
+              "name": "Cliff Bentz",
+              "first_name": "Cliff",
+              "last_name": "Bentz",
+              "party": "Republican",
+              "state": "OR",
+              "district": "2",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 120
+            },
+            {
+              "bioguide_id": "B001296",
+              "name": "Brendan F. Boyle",
+              "first_name": "Brendan",
+              "last_name": "Boyle",
+              "party": "Democratic",
+              "state": "PA",
+              "district": "2",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 130
+            },
+            {
+              "bioguide_id": "B001278",
+              "name": "Suzanne Bonamici",
+              "first_name": "Suzanne",
+              "last_name": "Bonamici",
+              "party": "Democratic",
+              "state": "OR",
+              "district": "1",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 132
+            },
+            {
+              "bioguide_id": "B001313",
+              "name": "Shontel M. Brown",
+              "first_name": "Shontel",
+              "last_name": "Brown",
+              "party": "Democratic",
+              "state": "OH",
+              "district": "11",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 151
+            },
+            {
+              "bioguide_id": "B001306",
+              "name": "Troy Balderson",
+              "first_name": "Troy",
+              "last_name": "Balderson",
+              "party": "Republican",
+              "state": "OH",
+              "district": "12",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 155
+            },
+            {
+              "bioguide_id": "B001281",
+              "name": "Joyce Beatty",
+              "first_name": "Joyce",
+              "last_name": "Beatty",
+              "party": "Democratic",
+              "state": "OH",
+              "district": "3",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 161
+            },
+            {
+              "bioguide_id": "A000369",
+              "name": "Mark E. Amodei",
+              "first_name": "Mark",
+              "last_name": "Amodei",
+              "party": "Republican",
+              "state": "NV",
+              "district": "2",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 191
+            },
+            {
+              "bioguide_id": "B001298",
+              "name": "Don Bacon",
+              "first_name": "Don",
+              "last_name": "Bacon",
+              "party": "Republican",
+              "state": "NE",
+              "district": "2",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 206
+            },
+            {
+              "bioguide_id": "A000370",
+              "name": "Alma S. Adams",
+              "first_name": "Alma",
+              "last_name": "Adams",
+              "party": "Democratic",
+              "state": "NC",
+              "district": "12",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 208
+            },
+            {
+              "bioguide_id": "B001324",
+              "name": "Wesley Bell",
+              "first_name": "Wesley",
+              "last_name": "Bell",
+              "party": "Democratic",
+              "state": "MO",
+              "district": "1",
+              "chamber": "House",
+              "member_type": "Representative",
+              "is_current": true,
+              "id": 216
+            }
+          ],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 50,
+            "pages": 3,
+            "has_next": true,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Very Long Search",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "search",
+      "status": "PASS",
+      "response_time_ms": 5.90205192565918,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 196,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.487903+00:00",
+          "data": [],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 0,
+            "pages": 0,
+            "has_next": false,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Special Character Search",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "search",
+      "status": "PASS",
+      "response_time_ms": 3.0519962310791016,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 196,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.491108+00:00",
+          "data": [],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 0,
+            "pages": 0,
+            "has_next": false,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "SQL Injection Search",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "search",
+      "status": "PASS",
+      "response_time_ms": 3.4530162811279297,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 196,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.494530+00:00",
+          "data": [],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 0,
+            "pages": 0,
+            "has_next": false,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "POST to GET endpoint",
+      "endpoint": "/api/v1/members",
+      "method": "POST",
+      "category": "methods",
+      "status": "FAIL",
+      "response_time_ms": 1.9888877868652344,
+      "details": {
+        "status_code": 405,
+        "expected_status": 405,
+        "response_size": 32,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Method Not Allowed"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "PUT to GET endpoint",
+      "endpoint": "/api/v1/members",
+      "method": "PUT",
+      "category": "methods",
+      "status": "FAIL",
+      "response_time_ms": 1.909017562866211,
+      "details": {
+        "status_code": 405,
+        "expected_status": 405,
+        "response_size": 32,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Method Not Allowed"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "DELETE to GET endpoint",
+      "endpoint": "/api/v1/members",
+      "method": "DELETE",
+      "category": "methods",
+      "status": "FAIL",
+      "response_time_ms": 1.9462108612060547,
+      "details": {
+        "status_code": 405,
+        "expected_status": 405,
+        "response_size": 32,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Method Not Allowed"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Invalid JSON",
+      "endpoint": "/api/v1/members",
+      "method": "POST",
+      "category": "content",
+      "status": "FAIL",
+      "response_time_ms": 1.9659996032714844,
+      "details": {
+        "status_code": 405,
+        "expected_status": 405,
+        "response_size": 32,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Method Not Allowed"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Non-existent Endpoint",
+      "endpoint": "/api/v1/nonexistent",
+      "method": "GET",
+      "category": "endpoints",
+      "status": "FAIL",
+      "response_time_ms": 2.0041465759277344,
+      "details": {
+        "status_code": 404,
+        "expected_status": 404,
+        "response_size": 23,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Not Found"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Invalid API Version",
+      "endpoint": "/api/v2/members",
+      "method": "GET",
+      "category": "endpoints",
+      "status": "FAIL",
+      "response_time_ms": 1.8787384033203125,
+      "details": {
+        "status_code": 404,
+        "expected_status": 404,
+        "response_size": 23,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Not Found"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Misspelled Endpoint",
+      "endpoint": "/api/v1/member",
+      "method": "GET",
+      "category": "endpoints",
+      "status": "FAIL",
+      "response_time_ms": 2.1708011627197266,
+      "details": {
+        "status_code": 404,
+        "expected_status": 404,
+        "response_size": 23,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Not Found"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Invalid Member + Committee",
+      "endpoint": "/api/v1/members/999999/committees",
+      "method": "GET",
+      "category": "combinations",
+      "status": "FAIL",
+      "response_time_ms": 4.509925842285156,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Invalid Committee + Members",
+      "endpoint": "/api/v1/committees/999999/members",
+      "method": "GET",
+      "category": "combinations",
+      "status": "FAIL",
+      "response_time_ms": 4.070758819580078,
+      "details": {
+        "status_code": 500,
+        "expected_status": 404,
+        "response_size": 21,
+        "error_structure_valid": false,
+        "response_data": {
+          "raw_response": "Internal Server Error"
+        }
+      },
+      "error_message": "Expected status 404, got 500"
+    },
+    {
+      "test_name": "Invalid Hearing + Witnesses",
+      "endpoint": "/api/v1/hearings/999999/witnesses",
+      "method": "GET",
+      "category": "combinations",
+      "status": "FAIL",
+      "response_time_ms": 2.3980140686035156,
+      "details": {
+        "status_code": 404,
+        "expected_status": 404,
+        "response_size": 23,
+        "error_structure_valid": false,
+        "response_data": {
+          "detail": "Not Found"
+        }
+      },
+      "error_message": "Invalid error response structure"
+    },
+    {
+      "test_name": "Very Large Page Number",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "edge_cases",
+      "status": "PASS",
+      "response_time_ms": 3.275632858276367,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 201,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.523433+00:00",
+          "data": [],
+          "pagination": {
+            "page": 999999,
+            "size": 20,
+            "total": 50,
+            "pages": 3,
+            "has_next": false,
+            "has_prev": true
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Unicode in Search",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "edge_cases",
+      "status": "PASS",
+      "response_time_ms": 3.2570362091064453,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 196,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.526707+00:00",
+          "data": [],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 0,
+            "pages": 0,
+            "has_next": false,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    },
+    {
+      "test_name": "Multiple Filters",
+      "endpoint": "/api/v1/members",
+      "method": "GET",
+      "category": "edge_cases",
+      "status": "PASS",
+      "response_time_ms": 6.175994873046875,
+      "details": {
+        "status_code": 200,
+        "expected_status": 200,
+        "response_size": 196,
+        "error_structure_valid": true,
+        "response_data": {
+          "success": true,
+          "message": null,
+          "timestamp": "2025-07-08T06:02:12.532726+00:00",
+          "data": [],
+          "pagination": {
+            "page": 1,
+            "size": 20,
+            "total": 0,
+            "pages": 0,
+            "has_next": false,
+            "has_prev": false
+          }
+        }
+      },
+      "error_message": null
+    }
+  ]
+}
