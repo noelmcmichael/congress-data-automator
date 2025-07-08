@@ -1,0 +1,76 @@
+# Render Blueprint for Congressional Data API Service
+services:
+  # Web service (API)
+  - type: web
+    name: congressional-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile.optimized
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: ""
+    startCommand: "python main.py api"
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DEBUG
+        value: false
+      - key: API_HOST
+        value: 0.0.0.0
+      - key: API_PORT
+        value: 8003
+      - key: UVICORN_WORKERS
+        value: 4
+      - key: DATABASE_POOL_SIZE
+        value: 20
+      - key: DATABASE_MAX_OVERFLOW
+        value: 10
+      - key: RATE_LIMIT_REQUESTS
+        value: 100
+      - key: RATE_LIMIT_PERIOD
+        value: 60
+      - key: CACHE_TTL
+        value: 1800
+      - key: CACHE_ENABLED
+        value: true
+      - key: METRICS_ENABLED
+        value: true
+      - key: SECURITY_HEADERS_ENABLED
+        value: true
+      - key: LOG_FORMAT
+        value: json
+      - key: CORS_ORIGINS
+        value: '["https://storage.googleapis.com"]'
+      - key: DATABASE_URL
+        fromDatabase:
+          name: congressional-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          name: congressional-redis
+          type: redis
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+        type: string
+
+  # PostgreSQL Database
+  - type: pserv
+    name: congressional-db
+    runtime: postgresql
+    plan: starter
+    databaseName: congress_data
+    databaseUser: congress_user
+    region: oregon
+    ipAllowList: []
+    
+  # Redis Cache
+  - type: redis
+    name: congressional-redis
+    plan: starter
+    region: oregon
+    ipAllowList: []
+    maxmemoryPolicy: allkeys-lru

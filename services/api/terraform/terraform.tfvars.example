@@ -1,0 +1,20 @@
+# Terraform variables for Congressional Data API Service deployment
+# Copy this file to terraform.tfvars and fill in your values
+
+# Required: Your Google Cloud Project ID
+project_id = "your-gcp-project-id"
+
+# Optional: Region for deployment (default: us-central1)
+region = "us-central1"
+
+# Optional: Environment name (default: production)
+environment = "production"
+
+# Optional: Service name (default: congressional-api)
+service_name = "congressional-api"
+
+# Required: Database password (generate a secure password)
+database_password = "your-secure-database-password"
+
+# Required: Secret key for API (generate a secure key)
+secret_key = "your-super-secure-secret-key-at-least-32-characters"

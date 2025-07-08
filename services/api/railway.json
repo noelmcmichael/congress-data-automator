@@ -1,0 +1,87 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile.optimized"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10,
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 30
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "ENVIRONMENT": "production",
+        "LOG_LEVEL": "INFO",
+        "DEBUG": "false",
+        "API_HOST": "0.0.0.0",
+        "API_PORT": "8003",
+        "UVICORN_WORKERS": "4",
+        "DATABASE_POOL_SIZE": "20",
+        "DATABASE_MAX_OVERFLOW": "10",
+        "RATE_LIMIT_REQUESTS": "100",
+        "RATE_LIMIT_PERIOD": "60",
+        "CACHE_TTL": "1800",
+        "CACHE_ENABLED": "true",
+        "METRICS_ENABLED": "true",
+        "SECURITY_HEADERS_ENABLED": "true",
+        "LOG_FORMAT": "json",
+        "CORS_ORIGINS": "[\"https://storage.googleapis.com\"]"
+      },
+      "secrets": [
+        "DATABASE_URL",
+        "SECRET_KEY",
+        "REDIS_URL"
+      ]
+    },
+    "staging": {
+      "variables": {
+        "ENVIRONMENT": "staging",
+        "LOG_LEVEL": "DEBUG",
+        "DEBUG": "true",
+        "API_HOST": "0.0.0.0",
+        "API_PORT": "8003",
+        "UVICORN_WORKERS": "2",
+        "DATABASE_POOL_SIZE": "10",
+        "DATABASE_MAX_OVERFLOW": "5",
+        "RATE_LIMIT_REQUESTS": "200",
+        "RATE_LIMIT_PERIOD": "60"
+      },
+      "secrets": [
+        "DATABASE_URL",
+        "SECRET_KEY"
+      ]
+    }
+  },
+  "services": [
+    {
+      "name": "congressional-api",
+      "source": {
+        "type": "image",
+        "image": "congressional-api:latest"
+      },
+      "variables": {
+        "PORT": "8003"
+      }
+    },
+    {
+      "name": "postgresql",
+      "source": {
+        "type": "postgresql"
+      },
+      "variables": {
+        "POSTGRES_DB": "congress_data",
+        "POSTGRES_USER": "congress_user"
+      }
+    },
+    {
+      "name": "redis",
+      "source": {
+        "type": "redis"
+      }
+    }
+  ]
+}
