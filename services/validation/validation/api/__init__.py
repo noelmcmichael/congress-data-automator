@@ -1,0 +1,1 @@
+"""FastAPI service wrapper for validation service."""
