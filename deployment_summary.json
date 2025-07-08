@@ -1,0 +1,25 @@
+{
+  "deployment_date": "2025-07-08T10:38:14.965892",
+  "deployment_type": "data_quality_improvements",
+  "scope": {
+    "member_committee_coverage": "Already deployed (100%)",
+    "hearing_committee_coverage": "To be deployed (0% \u2192 48.5%)",
+    "total_hearing_updates": 97
+  },
+  "files_created": [
+    "deploy_data_quality.sh",
+    "data_quality_migration.sql",
+    "hearing_committee_deployment_20250708_103421.sql"
+  ],
+  "deployment_steps": [
+    "1. Execute data_quality_migration.sql against production database",
+    "2. Restart API service to pick up changes",
+    "3. Validate hearing committee coverage improved to ~48.5%",
+    "4. Test API endpoints for hearing committee filtering"
+  ],
+  "expected_improvements": {
+    "hearing_committee_coverage": "48.5%",
+    "total_relationships": 97,
+    "api_functionality": "Hearing committee filtering enabled"
+  }
+}
