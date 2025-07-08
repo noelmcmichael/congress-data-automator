@@ -1,0 +1,5 @@
+ total_committee_memberships 
+-----------------------------
+                         881
+(1 row)
+

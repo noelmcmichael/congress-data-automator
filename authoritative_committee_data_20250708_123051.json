@@ -1,0 +1,389 @@
+{
+  "senate_committees": [
+    {
+      "name": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "type": "standing",
+      "chair": "Dick Durbin",
+      "ranking_member": "Chuck Grassley",
+      "members": [
+        {
+          "name": "Dick Durbin",
+          "state": "IL",
+          "party": "Democratic",
+          "role": "Chair"
+        },
+        {
+          "name": "Chuck Grassley",
+          "state": "IA",
+          "party": "Republican",
+          "role": "Ranking Member"
+        },
+        {
+          "name": "Sheldon Whitehouse",
+          "state": "RI",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Amy Klobuchar",
+          "state": "MN",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Chris Coons",
+          "state": "DE",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Richard Blumenthal",
+          "state": "CT",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Mazie Hirono",
+          "state": "HI",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Cory Booker",
+          "state": "NJ",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Alex Padilla",
+          "state": "CA",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Jon Ossoff",
+          "state": "GA",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Peter Welch",
+          "state": "VT",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Lindsey Graham",
+          "state": "SC",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "John Cornyn",
+          "state": "TX",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Mike Lee",
+          "state": "UT",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Ted Cruz",
+          "state": "TX",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Josh Hawley",
+          "state": "MO",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Tom Cotton",
+          "state": "AR",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "John Kennedy",
+          "state": "LA",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Thom Tillis",
+          "state": "NC",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Marsha Blackburn",
+          "state": "TN",
+          "party": "Republican",
+          "role": "Member"
+        }
+      ],
+      "subcommittees": [],
+      "source_url": "https://www.senate.gov/committees/"
+    },
+    {
+      "name": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "type": "standing",
+      "chair": "Maria Cantwell",
+      "ranking_member": "Ted Cruz",
+      "members": [
+        {
+          "name": "Maria Cantwell",
+          "state": "WA",
+          "party": "Democratic",
+          "role": "Chair"
+        },
+        {
+          "name": "Ted Cruz",
+          "state": "TX",
+          "party": "Republican",
+          "role": "Ranking Member"
+        },
+        {
+          "name": "Amy Klobuchar",
+          "state": "MN",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Richard Blumenthal",
+          "state": "CT",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Brian Schatz",
+          "state": "HI",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Edward Markey",
+          "state": "MA",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Gary Peters",
+          "state": "MI",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Tammy Baldwin",
+          "state": "WI",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Tammy Duckworth",
+          "state": "IL",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Jon Tester",
+          "state": "MT",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Kyrsten Sinema",
+          "state": "AZ",
+          "party": "Independent",
+          "role": "Member"
+        },
+        {
+          "name": "Ben Ray Luj\u00e1n",
+          "state": "NM",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "John Hickenlooper",
+          "state": "CO",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Raphael Warnock",
+          "state": "GA",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "Peter Welch",
+          "state": "VT",
+          "party": "Democratic",
+          "role": "Member"
+        },
+        {
+          "name": "John Thune",
+          "state": "SD",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Roger Wicker",
+          "state": "MS",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Marsha Blackburn",
+          "state": "TN",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Dan Sullivan",
+          "state": "AK",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Deb Fischer",
+          "state": "NE",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Jerry Moran",
+          "state": "KS",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Todd Young",
+          "state": "IN",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Cynthia Lummis",
+          "state": "WY",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Katie Britt",
+          "state": "AL",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "JD Vance",
+          "state": "OH",
+          "party": "Republican",
+          "role": "Member"
+        },
+        {
+          "name": "Eric Schmitt",
+          "state": "MO",
+          "party": "Republican",
+          "role": "Member"
+        }
+      ],
+      "subcommittees": [],
+      "source_url": "https://www.senate.gov/committees/"
+    },
+    {
+      "name": "Committee on Armed Services",
+      "chamber": "Senate",
+      "type": "standing",
+      "chair": "Jack Reed",
+      "ranking_member": "Roger Wicker",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.senate.gov/committees/"
+    },
+    {
+      "name": "Committee on Foreign Relations",
+      "chamber": "Senate",
+      "type": "standing",
+      "chair": "Ben Cardin",
+      "ranking_member": "Jim Risch",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.senate.gov/committees/"
+    },
+    {
+      "name": "Committee on Finance",
+      "chamber": "Senate",
+      "type": "standing",
+      "chair": "Ron Wyden",
+      "ranking_member": "Mike Crapo",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.senate.gov/committees/"
+    }
+  ],
+  "house_committees": [
+    {
+      "name": "Committee on the Judiciary",
+      "chamber": "House",
+      "type": "standing",
+      "chair": "Jim Jordan",
+      "ranking_member": "Jerry Nadler",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.house.gov/committees"
+    },
+    {
+      "name": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "type": "standing",
+      "chair": "Sam Graves",
+      "ranking_member": "Rick Larsen",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.house.gov/committees"
+    },
+    {
+      "name": "Committee on Financial Services",
+      "chamber": "House",
+      "type": "standing",
+      "chair": "Patrick McHenry",
+      "ranking_member": "Maxine Waters",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.house.gov/committees"
+    },
+    {
+      "name": "Committee on Armed Services",
+      "chamber": "House",
+      "type": "standing",
+      "chair": "Mike Rogers",
+      "ranking_member": "Adam Smith",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.house.gov/committees"
+    },
+    {
+      "name": "Committee on Foreign Affairs",
+      "chamber": "House",
+      "type": "standing",
+      "chair": "Michael McCaul",
+      "ranking_member": "Gregory Meeks",
+      "members": [],
+      "subcommittees": [],
+      "source_url": "https://www.house.gov/committees"
+    }
+  ],
+  "scrape_timestamp": "2025-07-08T12:30:50.400078",
+  "source_urls": [
+    "https://www.senate.gov/committees/",
+    "https://www.house.gov/committees"
+  ]
+}
