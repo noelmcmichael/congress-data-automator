@@ -71,16 +71,21 @@ def add_request_context(logger: logging.Logger, method_name: str, event_dict: Di
     return event_dict
 
 
-class LoggingMiddleware:
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import Response
+
+class LoggingMiddleware(BaseHTTPMiddleware):
     """Middleware for logging HTTP requests."""
     
-    def __init__(self, logger: Optional[structlog.stdlib.BoundLogger] = None):
+    def __init__(self, app, logger: Optional[structlog.stdlib.BoundLogger] = None):
+        super().__init__(app)
         self.logger = logger or structlog.get_logger("congressional_data_api")
     
-    async def __call__(self, request, call_next):
+    async def dispatch(self, request: Request, call_next):
         """Process request and log details."""
         # Log request
-        start_time = structlog.get_logger().info(
+        self.logger.info(
             "Request started",
             method=request.method,
             path=request.url.path,

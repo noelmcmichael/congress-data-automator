@@ -46,24 +46,31 @@ class DatabaseManager:
                 autoflush=False,
             )
             
-            # Create async engine for async operations
-            async_url = settings.database_url.replace("postgresql://", "postgresql+asyncpg://")
-            self.async_engine = create_async_engine(
-                async_url,
-                pool_size=settings.database_pool_size,
-                max_overflow=settings.database_max_overflow,
-                pool_timeout=settings.database_pool_timeout,
-                pool_pre_ping=True,
-                echo=settings.debug,
-            )
+            # Create async engine for async operations (if not using sqlite)
+            if not settings.database_url.startswith("sqlite"):
+                async_url = settings.database_url.replace("postgresql://", "postgresql+asyncpg://")
+                self.async_engine = create_async_engine(
+                    async_url,
+                    pool_size=settings.database_pool_size,
+                    max_overflow=settings.database_max_overflow,
+                    pool_timeout=settings.database_pool_timeout,
+                    pool_pre_ping=True,
+                    echo=settings.debug,
+                )
+            else:
+                # For SQLite, we'll skip async for now
+                self.async_engine = None
             
             # Create async session factory
-            self.async_session_factory = async_sessionmaker(
-                bind=self.async_engine,
-                class_=AsyncSession,
-                autocommit=False,
-                autoflush=False,
-            )
+            if self.async_engine:
+                self.async_session_factory = async_sessionmaker(
+                    bind=self.async_engine,
+                    class_=AsyncSession,
+                    autocommit=False,
+                    autoflush=False,
+                )
+            else:
+                self.async_session_factory = None
             
             self._initialized = True
             logger.info("Database manager initialized successfully")
@@ -96,6 +103,9 @@ class DatabaseManager:
         """Get an async database session."""
         if not self._initialized:
             self.initialize()
+        
+        if not self.async_session_factory:
+            raise NotImplementedError("Async sessions not available for this database type")
         
         async with self.async_session_factory() as session:
             try:

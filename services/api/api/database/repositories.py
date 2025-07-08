@@ -4,13 +4,13 @@ from typing import List, Optional, Tuple
 from sqlalchemy import and_, func, or_
 from sqlalchemy.orm import Session, joinedload
 
+from ..models.base import PaginationParams
 from ..models.congress import (
     Chamber,
     Party,
     MemberFilterParams,
     CommitteeFilterParams,
     HearingFilterParams,
-    PaginationParams,
 )
 from .models import Member, Committee, Hearing, CommitteeMembership
 
