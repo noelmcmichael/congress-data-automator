@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-07-09T01:07:41.129877",
+  "gcp_config": {
+    "account": "ropak9@gmail.com",
+    "project": "chefgavin",
+    "region": "us-central1",
+    "zone": ""
+  },
+  "existing_resources": {},
+  "cloud_run_services": [
+    {
+      "name": "congressional-data-api",
+      "url": "https://congressional-data-api-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    },
+    {
+      "name": "congressional-data-api-phase2",
+      "url": "https://congressional-data-api-phase2-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    },
+    {
+      "name": "congressional-data-api-production",
+      "url": "https://congressional-data-api-production-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    },
+    {
+      "name": "congressional-data-api-v2",
+      "url": "https://congressional-data-api-v2-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    },
+    {
+      "name": "congressional-data-api-v3",
+      "url": "https://congressional-data-api-v3-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    },
+    {
+      "name": "senate-hearing-processor",
+      "url": "https://senate-hearing-processor-1066017671167.us-central1.run.app",
+      "region": "us-central1"
+    }
+  ],
+  "storage_buckets": [
+    "chefgavin_cloudbuild",
+    "congressional-data-frontend"
+  ],
+  "recommendations": [],
+  "frontend_bucket_status": "active",
+  "api_service_url": "https://congressional-data-api-v2-yovvxn4y7q-uc.a.run.app",
+  "readiness_score": 10,
+  "implementation_strategy": "direct_implementation"
+}

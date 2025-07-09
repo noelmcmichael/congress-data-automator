@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-09T00:51:46.850699",
+  "deployment_type": "frontend_branding_update",
+  "changes": [
+    "Custom polequity-ico.png favicon",
+    "Updated HTML title: 'Political Equity - Congressional Data'",
+    "Enhanced meta description",
+    "Brand-consistent touch icons"
+  ],
+  "status": "failed"
+}

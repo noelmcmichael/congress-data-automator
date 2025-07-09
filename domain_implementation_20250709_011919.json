@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-07-09T01:19:09.100279",
+  "domain": "politicalequity.io",
+  "steps": {
+    "static_ip": "UNKNOWN",
+    "ssl_cert": false,
+    "backend_services": true,
+    "url_map": true,
+    "load_balancer": true,
+    "cors": true
+  }
+}
