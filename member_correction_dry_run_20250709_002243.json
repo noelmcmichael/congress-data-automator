@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-09T00:22:43.748461",
+  "operation": "Member Count Correction",
+  "target": {
+    "house": 441,
+    "senate": 101,
+    "total": 542
+  },
+  "territorial_delegates_moved": 6,
+  "senator_duplicates_removed": 0,
+  "vp_added": true,
+  "final_counts": {
+    "House": 429,
+    "Senate": 119
+  },
+  "breakdown": {
+    "House Voting": 429,
+    "House Non-Voting": 0,
+    "Senate Regular": 119,
+    "Senate VP": 0
+  },
+  "success": false
+}

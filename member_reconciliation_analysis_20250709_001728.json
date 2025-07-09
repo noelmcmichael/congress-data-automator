@@ -1,0 +1,633 @@
+{
+  "timestamp": "2025-07-09T00:17:13.968527",
+  "analysis": "Member Count Reconciliation",
+  "target_counts": {
+    "house_total": 441,
+    "house_voting": 435,
+    "house_nonvoting": 6,
+    "senate_total": 101,
+    "senate_members": 100,
+    "senate_vp": 1,
+    "grand_total": 542
+  },
+  "current_database": {
+    "chamber_analysis": [
+      {
+        "chamber": "House",
+        "total_count": 434,
+        "current_count": 434,
+        "inactive_count": 0
+      },
+      {
+        "chamber": "Senate",
+        "total_count": 136,
+        "current_count": 136,
+        "inactive_count": 0
+      }
+    ],
+    "recent_additions": [
+      {
+        "creation_date": "2025-07-08",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "creation_date": "2025-07-08",
+        "chamber": "Senate",
+        "count": 24
+      },
+      {
+        "creation_date": "2025-07-09",
+        "chamber": "House",
+        "count": 426
+      },
+      {
+        "creation_date": "2025-07-09",
+        "chamber": "Senate",
+        "count": 112
+      }
+    ],
+    "unusual_state_counts": [
+      {
+        "state": "CA",
+        "chamber": "House",
+        "count": 52
+      },
+      {
+        "state": "TX",
+        "chamber": "House",
+        "count": 37
+      },
+      {
+        "state": "FL",
+        "chamber": "House",
+        "count": 28
+      },
+      {
+        "state": "NY",
+        "chamber": "House",
+        "count": 26
+      },
+      {
+        "state": "IL",
+        "chamber": "House",
+        "count": 17
+      },
+      {
+        "state": "PA",
+        "chamber": "House",
+        "count": 17
+      },
+      {
+        "state": "OH",
+        "chamber": "House",
+        "count": 15
+      },
+      {
+        "state": "GA",
+        "chamber": "House",
+        "count": 14
+      },
+      {
+        "state": "NC",
+        "chamber": "House",
+        "count": 14
+      },
+      {
+        "state": "MI",
+        "chamber": "House",
+        "count": 13
+      },
+      {
+        "state": "NJ",
+        "chamber": "House",
+        "count": 13
+      },
+      {
+        "state": "WA",
+        "chamber": "House",
+        "count": 11
+      },
+      {
+        "state": "MA",
+        "chamber": "House",
+        "count": 10
+      },
+      {
+        "state": "VA",
+        "chamber": "House",
+        "count": 10
+      },
+      {
+        "state": "IN",
+        "chamber": "House",
+        "count": 9
+      },
+      {
+        "state": "MO",
+        "chamber": "House",
+        "count": 9
+      },
+      {
+        "state": "TN",
+        "chamber": "House",
+        "count": 9
+      },
+      {
+        "state": "AL",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "AZ",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "CO",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "MD",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "MN",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "WI",
+        "chamber": "House",
+        "count": 8
+      },
+      {
+        "state": "KY",
+        "chamber": "House",
+        "count": 7
+      },
+      {
+        "state": "SC",
+        "chamber": "House",
+        "count": 7
+      },
+      {
+        "state": "CT",
+        "chamber": "House",
+        "count": 6
+      },
+      {
+        "state": "LA",
+        "chamber": "House",
+        "count": 6
+      },
+      {
+        "state": "OK",
+        "chamber": "House",
+        "count": 6
+      },
+      {
+        "state": "OR",
+        "chamber": "House",
+        "count": 6
+      },
+      {
+        "state": "AR",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "IA",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "ID",
+        "chamber": "Senate",
+        "count": 4
+      },
+      {
+        "state": "KS",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "MS",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "NV",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "RI",
+        "chamber": "Senate",
+        "count": 4
+      },
+      {
+        "state": "UT",
+        "chamber": "House",
+        "count": 4
+      },
+      {
+        "state": "VT",
+        "chamber": "Senate",
+        "count": 4
+      },
+      {
+        "state": "WA",
+        "chamber": "Senate",
+        "count": 4
+      },
+      {
+        "state": "AK",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "AR",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "DE",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "IA",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "IL",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "KY",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "LA",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "MA",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "ME",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "MI",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "MN",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "MS",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "ND",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "NE",
+        "chamber": "House",
+        "count": 3
+      },
+      {
+        "state": "NH",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "NM",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "NM",
+        "chamber": "House",
+        "count": 3
+      },
+      {
+        "state": "OR",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "SC",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "SD",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "TX",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "UT",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "WV",
+        "chamber": "Senate",
+        "count": 3
+      },
+      {
+        "state": "WY",
+        "chamber": "Senate",
+        "count": 3
+      }
+    ]
+  },
+  "duplicates": {
+    "name_duplicates": [
+      {
+        "first_name": "Adam",
+        "last_name": "Smith",
+        "state": "WA",
+        "chamber": "House",
+        "count": 2,
+        "bioguide_ids": "S000510, TMP1",
+        "db_ids": "69, 1"
+      },
+      {
+        "first_name": "Amy",
+        "last_name": "Klobuchar",
+        "state": "MN",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP2, K000367",
+        "db_ids": "2, 527"
+      },
+      {
+        "first_name": "Bill",
+        "last_name": "Cassidy",
+        "state": "LA",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP4, C001075",
+        "db_ids": "4, 559"
+      },
+      {
+        "first_name": "Brett",
+        "last_name": "Guthrie",
+        "state": "KY",
+        "chamber": "House",
+        "count": 2,
+        "bioguide_ids": "TMP5, G000558",
+        "db_ids": "5, 326"
+      },
+      {
+        "first_name": "Chuck",
+        "last_name": "Grassley",
+        "state": "IA",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "G000386, TMP6",
+        "db_ids": "542, 6"
+      },
+      {
+        "first_name": "Elizabeth",
+        "last_name": "Warren",
+        "state": "MA",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP8, W000817",
+        "db_ids": "8, 490"
+      },
+      {
+        "first_name": "Frank",
+        "last_name": "Pallone",
+        "state": "NJ",
+        "chamber": "House",
+        "count": 2,
+        "bioguide_ids": "P000034, TMP9",
+        "db_ids": "226, 9"
+      },
+      {
+        "first_name": "Jack",
+        "last_name": "Reed",
+        "state": "RI",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "R000122, TMP11",
+        "db_ids": "512, 11"
+      },
+      {
+        "first_name": "Jason",
+        "last_name": "Smith",
+        "state": "MO",
+        "chamber": "House",
+        "count": 2,
+        "bioguide_ids": "S001195, TMP12",
+        "db_ids": "268, 12"
+      },
+      {
+        "first_name": "Jeanne",
+        "last_name": "Shaheen",
+        "state": "NH",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "S001181, TMP13",
+        "db_ids": "501, 13"
+      },
+      {
+        "first_name": "John",
+        "last_name": "Boozman",
+        "state": "AR",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "B001236, TMP15",
+        "db_ids": "566, 15"
+      },
+      {
+        "first_name": "Maria",
+        "last_name": "Cantwell",
+        "state": "WA",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "C000127, TMP16",
+        "db_ids": "562, 16"
+      },
+      {
+        "first_name": "Martin",
+        "last_name": "Heinrich",
+        "state": "NM",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP17, H001046",
+        "db_ids": "17, 541"
+      },
+      {
+        "first_name": "Mike",
+        "last_name": "Crapo",
+        "state": "ID",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "C000880, TMP18",
+        "db_ids": "553, 18"
+      },
+      {
+        "first_name": "Mike",
+        "last_name": "Lee",
+        "state": "UT",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP19, L000577",
+        "db_ids": "19, 528"
+      },
+      {
+        "first_name": "Patty",
+        "last_name": "Murray",
+        "state": "WA",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "TMP21, M001111",
+        "db_ids": "21, 516"
+      },
+      {
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "state": "KY",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "P000603, TMP22",
+        "db_ids": "515, 22"
+      },
+      {
+        "first_name": "Ron",
+        "last_name": "Wyden",
+        "state": "OR",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "W000779, TMP25",
+        "db_ids": "488, 25"
+      },
+      {
+        "first_name": "Sheldon",
+        "last_name": "Whitehouse",
+        "state": "RI",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "W000802, TMP27",
+        "db_ids": "491, 27"
+      },
+      {
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "state": "TX",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "C001098, TMP30",
+        "db_ids": "549, 30"
+      },
+      {
+        "first_name": "Tim",
+        "last_name": "Scott",
+        "state": "SC",
+        "chamber": "Senate",
+        "count": 2,
+        "bioguide_ids": "S001184, TMP31",
+        "db_ids": "504, 31"
+      },
+      {
+        "first_name": "Tom",
+        "last_name": "Cole",
+        "state": "OK",
+        "chamber": "House",
+        "count": 2,
+        "bioguide_ids": "C001053, TMP32",
+        "db_ids": "168, 32"
+      }
+    ],
+    "bioguide_duplicates": [],
+    "district_duplicates": []
+  },
+  "historical_analysis": {
+    "current_status_analysis": [
+      {
+        "chamber": "House",
+        "null_current": 0,
+        "false_current": 0,
+        "past_term": 0,
+        "pre_phase2": 0
+      },
+      {
+        "chamber": "Senate",
+        "null_current": 0,
+        "false_current": 0,
+        "past_term": 0,
+        "pre_phase2": 0
+      }
+    ],
+    "sample_historical": []
+  },
+  "chamber_specifics": {
+    "error": "function string_agg(character varying) does not exist\nLINE 5:                             STRING_AGG(DISTINCT district ORD...\n                                    ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n"
+  },
+  "official_sources": {
+    "congress_api": {
+      "current_members": {
+        "count": 250,
+        "status": "success"
+      },
+      "house_current": {
+        "count": 250,
+        "status": "success"
+      },
+      "senate_current": {
+        "count": 250,
+        "status": "success"
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "chamber": "House",
+      "issue": "7 missing members",
+      "action": "Add 7 missing House members",
+      "sql_investigation": "Check for representatives missing from database"
+    },
+    {
+      "priority": "HIGH",
+      "chamber": "Senate",
+      "issue": "35 excess members",
+      "action": "Remove 35 duplicate or inactive Senate members",
+      "sql_investigation": "\n                        SELECT * FROM members \n                        WHERE chamber = 'Senate' AND is_current = true\n                        ORDER BY created_at DESC, bioguide_id\n                    "
+    },
+    {
+      "priority": "MEDIUM",
+      "chamber": "Both",
+      "issue": "22 name-based duplicates",
+      "action": "Review and merge duplicate member records",
+      "sql_investigation": "Manual review of name duplicates required"
+    }
+  ]
+}

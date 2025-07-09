@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-07-09T00:19:29.519862",
+  "operation": "Member Count Cleanup",
+  "target": {
+    "house": 441,
+    "senate": 101,
+    "total": 542
+  },
+  "before_cleanup": {
+    "chamber": "count"
+  },
+  "duplicates_removed": 22,
+  "post_duplicate_counts": {
+    "chamber": "count"
+  },
+  "final_counts": {
+    "House": 434,
+    "Senate": 136
+  },
+  "success": false
+}
