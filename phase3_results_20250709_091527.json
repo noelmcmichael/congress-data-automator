@@ -1,0 +1,126 @@
+{
+  "execution_time": "20250709_091527",
+  "total_committees_collected": 815,
+  "congress_119_committees": 0,
+  "processed_committees": 0,
+  "analysis": {
+    "total_count": 815,
+    "by_chamber": {
+      "Senate": 327,
+      "Joint": 35,
+      "House": 453
+    },
+    "by_congress": {
+      "Unknown": 815
+    },
+    "sample_committees": [
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Standing",
+        "name": "Indian Affairs Committee",
+        "systemCode": "n79043125",
+        "updateDate": "2025-06-20T19:17:19Z",
+        "url": "https://api.congress.gov/v3/committee/senate/n79043125?format=json"
+      },
+      {
+        "chamber": "Joint",
+        "committeeTypeCode": "Joint",
+        "name": "Joint Economic Committee",
+        "systemCode": "jhje00",
+        "updateDate": "2025-05-16T20:39:59Z",
+        "url": "https://api.congress.gov/v3/committee/joint/jhje00?format=json"
+      },
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Standing",
+        "name": "Territories and Insular Affairs Committee",
+        "systemCode": "n79043126",
+        "updateDate": "2025-04-23T11:10:37Z",
+        "url": "https://api.congress.gov/v3/committee/senate/n79043126?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Select",
+        "name": "Select Committee on the Modernization of Congress",
+        "systemCode": "hlmh00",
+        "updateDate": "2025-04-03T19:10:56Z",
+        "url": "https://api.congress.gov/v3/committee/house/hlmh00?format=json"
+      },
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Subcommittee",
+        "name": "Digital Assets Subcommittee",
+        "parent": {
+          "name": "Banking, Housing, and Urban Affairs Committee",
+          "systemCode": "ssbk00",
+          "url": "https://api.congress.gov/v3/committee/senate/ssbk00?format=json"
+        },
+        "systemCode": "ssbk13",
+        "updateDate": "2025-02-25T15:27:44Z",
+        "url": "https://api.congress.gov/v3/committee/senate/ssbk13?format=json"
+      },
+      {
+        "chamber": "Joint",
+        "committeeTypeCode": "Commission or Caucus",
+        "name": "Congressional-Executive Commission on China",
+        "systemCode": "jcpk00",
+        "updateDate": "2025-02-24T16:33:20Z",
+        "url": "https://api.congress.gov/v3/committee/joint/jcpk00?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Subcommittee",
+        "name": "Open Source Subcommittee",
+        "parent": {
+          "name": "Intelligence (Permanent Select) Committee",
+          "systemCode": "hlig00",
+          "url": "https://api.congress.gov/v3/committee/house/hlig00?format=json"
+        },
+        "systemCode": "hlig11",
+        "updateDate": "2025-02-07T19:37:59Z",
+        "url": "https://api.congress.gov/v3/committee/house/hlig11?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Subcommittee",
+        "name": "South and Central Asia  Subcommittee",
+        "parent": {
+          "name": "Foreign Affairs Committee",
+          "systemCode": "hsfa00",
+          "url": "https://api.congress.gov/v3/committee/house/hsfa00?format=json"
+        },
+        "systemCode": "hsfa19",
+        "updateDate": "2025-01-23T13:41:12Z",
+        "url": "https://api.congress.gov/v3/committee/house/hsfa19?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Subcommittee",
+        "name": "Federal Law Enforcement Subcommittee",
+        "parent": {
+          "name": "Oversight and Government Reform Committee",
+          "systemCode": "hsgo00",
+          "url": "https://api.congress.gov/v3/committee/house/hsgo00?format=json"
+        },
+        "systemCode": "hsgo33",
+        "updateDate": "2025-01-16T13:13:07Z",
+        "url": "https://api.congress.gov/v3/committee/house/hsgo33?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Standing",
+        "name": "Delivering on Government Efficiency Subcommittee",
+        "parent": {
+          "name": "Oversight and Government Reform Committee",
+          "systemCode": "hsgo00",
+          "url": "https://api.congress.gov/v3/committee/house/hsgo00?format=json"
+        },
+        "systemCode": "hsgo16",
+        "updateDate": "2025-01-16T12:41:04Z",
+        "url": "https://api.congress.gov/v3/committee/house/hsgo16?format=json"
+      }
+    ]
+  },
+  "sql_file": "phase3_committee_updates_20250709_091527.sql",
+  "status": "completed"
+}

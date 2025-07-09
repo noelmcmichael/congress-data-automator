@@ -5,7 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [5.1.0] - 2025-01-09
+## [5.2.0] - 2025-07-09
+
+### feat: Committee Structure Expansion (Phase 3)
+- **Committee Collection**: 815 committees collected from Congress.gov API
+- **Data Processing**: Committee hierarchy analysis and standardization
+- **Database Schema**: Enhanced support for committee-member relationships
+- **API Integration**: Comprehensive committee data endpoints
+
+### Added
+- Congress.gov API integration for committee data collection
+- Async committee data collection with proper rate limiting
+- Committee hierarchy processing (main committees vs subcommittees)
+- Multi-chamber committee support (House: 453, Senate: 327, Joint: 35)
+- SQL deployment framework for committee data (600KB+ script)
+- Committee validation and testing framework
+- Performance optimization for committee queries
+
+### Technical Implementation
+- Collected 815 committees total: 587 subcommittees, 228 main committees
+- Processed committee metadata with parent-child relationships
+- Generated comprehensive SQL deployment script
+- Implemented committee filtering by chamber, type, and status
+- Created backup procedures for safe deployment
+
+### Infrastructure
+- Custom domain (politicalequity.io) fully operational with SSL
+- API endpoint /api/v1/committees enhanced and tested
+- Load balancer with path-based routing (/* → frontend, /api/* → backend)
+- Database backup procedures established for production deployment
+
+## [5.1.0] - 2025-07-09
 
 ### feat: Brand Integration and Domain Configuration Planning
 - **Brand Assets**: Custom polequity-ico.png favicon integration

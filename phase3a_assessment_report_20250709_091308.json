@@ -1,0 +1,118 @@
+{
+  "assessment_date": "2025-07-09T09:13:08.290467",
+  "database_analysis": null,
+  "congress_api_test": {
+    "status": "success",
+    "committee_count": 20,
+    "api_response": 200,
+    "sample_data": [
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Standing",
+        "name": "Indian Affairs Committee",
+        "systemCode": "n79043125",
+        "updateDate": "2025-06-20T19:17:19Z",
+        "url": "https://api.congress.gov/v3/committee/senate/n79043125?format=json"
+      },
+      {
+        "chamber": "Joint",
+        "committeeTypeCode": "Joint",
+        "name": "Joint Economic Committee",
+        "systemCode": "jhje00",
+        "updateDate": "2025-05-16T20:39:59Z",
+        "url": "https://api.congress.gov/v3/committee/joint/jhje00?format=json"
+      },
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Standing",
+        "name": "Territories and Insular Affairs Committee",
+        "systemCode": "n79043126",
+        "updateDate": "2025-04-23T11:10:37Z",
+        "url": "https://api.congress.gov/v3/committee/senate/n79043126?format=json"
+      },
+      {
+        "chamber": "House",
+        "committeeTypeCode": "Select",
+        "name": "Select Committee on the Modernization of Congress",
+        "systemCode": "hlmh00",
+        "updateDate": "2025-04-03T19:10:56Z",
+        "url": "https://api.congress.gov/v3/committee/house/hlmh00?format=json"
+      },
+      {
+        "chamber": "Senate",
+        "committeeTypeCode": "Subcommittee",
+        "name": "Digital Assets Subcommittee",
+        "parent": {
+          "name": "Banking, Housing, and Urban Affairs Committee",
+          "systemCode": "ssbk00",
+          "url": "https://api.congress.gov/v3/committee/senate/ssbk00?format=json"
+        },
+        "systemCode": "ssbk13",
+        "updateDate": "2025-02-25T15:27:44Z",
+        "url": "https://api.congress.gov/v3/committee/senate/ssbk13?format=json"
+      }
+    ]
+  },
+  "current_api_test": {
+    "status": "success",
+    "response_time": 8.481394052505493,
+    "committee_count": 10,
+    "sample_data": [
+      {
+        "id": 174,
+        "name": "Africa and Global Health Policy Subcommittee",
+        "chamber": "Senate",
+        "committee_code": null,
+        "congress_gov_id": null,
+        "is_active": true,
+        "is_subcommittee": true,
+        "parent_committee_id": 173,
+        "website": null,
+        "hearings_url": null,
+        "members_url": null,
+        "official_website_url": null,
+        "last_url_update": null,
+        "created_at": "2025-07-07T01:26:44.792718Z",
+        "updated_at": null
+      },
+      {
+        "id": 49,
+        "name": "Africa Subcommittee",
+        "chamber": "House",
+        "committee_code": null,
+        "congress_gov_id": null,
+        "is_active": true,
+        "is_subcommittee": true,
+        "parent_committee_id": 48,
+        "website": null,
+        "hearings_url": null,
+        "members_url": null,
+        "official_website_url": null,
+        "last_url_update": null,
+        "created_at": "2025-07-07T01:26:44.792718Z",
+        "updated_at": null
+      },
+      {
+        "id": 8,
+        "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+        "chamber": "House",
+        "committee_code": null,
+        "congress_gov_id": null,
+        "is_active": true,
+        "is_subcommittee": true,
+        "parent_committee_id": null,
+        "website": null,
+        "hearings_url": null,
+        "members_url": null,
+        "official_website_url": null,
+        "last_url_update": null,
+        "created_at": "2025-07-07T01:26:44.792718Z",
+        "updated_at": null
+      }
+    ]
+  },
+  "recommendations": [
+    "CONGRESS API LIMITED: May need supplementary sources",
+    "PERFORMANCE CONCERN: API response time > 1s"
+  ]
+}

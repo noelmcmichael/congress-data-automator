@@ -1,0 +1,16 @@
+name: politicalequity-url-map-v2
+defaultService: https://www.googleapis.com/compute/v1/projects/chefgavin/global/backendBuckets/congressional-data-frontend-bucket
+hostRules:
+- hosts:
+  - '*'
+  pathMatcher: api-matcher
+- hosts:
+  - politicalequity.io
+  pathMatcher: api-matcher
+pathMatchers:
+- name: api-matcher
+  defaultService: https://www.googleapis.com/compute/v1/projects/chefgavin/global/backendBuckets/congressional-data-frontend-bucket
+  pathRules:
+  - paths:
+    - /api/*
+    service: https://www.googleapis.com/compute/v1/projects/chefgavin/global/backendServices/api-backend-service-v3
