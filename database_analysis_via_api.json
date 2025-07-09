@@ -1,0 +1,105 @@
+{
+  "timestamp": "2025-07-08T22:02:20.364323",
+  "database_stats": {
+    "committees_count": 0,
+    "standing_committees": 0,
+    "subcommittees": 0,
+    "members_count": 0,
+    "chamber_distribution": {},
+    "party_distribution": {}
+  },
+  "key_leaders_found": [
+    {
+      "name": "Chuck Grassley",
+      "party": "Republican",
+      "chamber": "Senate",
+      "state": "IA",
+      "expected_role": "Senate Judiciary Chair",
+      "member_id": 510
+    },
+    {
+      "name": "Ted Cruz",
+      "party": "Republican",
+      "chamber": "Senate",
+      "state": "TX",
+      "expected_role": "Senate Commerce Chair",
+      "member_id": 517
+    },
+    {
+      "name": "Susan Collins",
+      "party": "Republican",
+      "chamber": "Senate",
+      "state": "ME",
+      "expected_role": "Senate Appropriations Chair",
+      "member_id": 528
+    },
+    {
+      "name": "Richard Durbin",
+      "party": "Democratic",
+      "chamber": "Senate",
+      "state": "IL",
+      "expected_role": "Senate Judiciary Ranking Member",
+      "member_id": 520
+    },
+    {
+      "name": "Jim Jordan",
+      "party": "Republican",
+      "chamber": "House",
+      "state": "OH",
+      "expected_role": "House Judiciary Chair",
+      "member_id": 163
+    },
+    {
+      "name": "Tom Cole",
+      "party": "Republican",
+      "chamber": "House",
+      "state": "OK",
+      "expected_role": "House Appropriations Chair",
+      "member_id": 136
+    }
+  ],
+  "committee_leadership": [
+    {
+      "committee_id": 189,
+      "name": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "has_leadership_api": false
+    },
+    {
+      "committee_id": 64,
+      "name": "Committee on the Judiciary",
+      "chamber": "House",
+      "has_leadership_api": false
+    },
+    {
+      "committee_id": 121,
+      "name": "Committee on Appropriations",
+      "chamber": "Senate",
+      "has_leadership_api": false
+    },
+    {
+      "committee_id": 7,
+      "name": "Committee on Appropriations",
+      "chamber": "House",
+      "has_leadership_api": false
+    },
+    {
+      "committee_id": 149,
+      "name": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "has_leadership_api": false
+    },
+    {
+      "committee_id": 134,
+      "name": "Committee on Armed Services",
+      "chamber": "Senate",
+      "has_leadership_api": false
+    }
+  ],
+  "api_structure": {
+    "committees_endpoint": "https://congressional-data-api-v2-1066017671167.us-central1.run.app/api/v1/committees",
+    "members_endpoint": "https://congressional-data-api-v2-1066017671167.us-central1.run.app/api/v1/members",
+    "leadership_exposed": false,
+    "reconciliation_approach": "API-based member and committee matching"
+  }
+}
