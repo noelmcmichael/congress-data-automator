@@ -1,0 +1,227 @@
+{
+  "analysis_timestamp": "2025-07-09 13:44:24",
+  "executive_summary": {
+    "total_committees": 43,
+    "duplicate_committees": 0,
+    "empty_committees": 12,
+    "leadership_errors": 0,
+    "hierarchy_issues": 0
+  },
+  "detailed_analysis": {
+    "committee_duplicates": {
+      "total_committees": 43,
+      "duplicate_groups": 0,
+      "total_duplicates": 0,
+      "duplicate_details": []
+    },
+    "member_assignments": {
+      "empty_committees": 12,
+      "empty_committee_details": [
+        {
+          "id": 2,
+          "name": "Biotechnology, Horticulture, and Research Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 217,
+          "name": "Committee on Science, Space, and Technology",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 214,
+          "name": "Committee on the Judiciary",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 219,
+          "name": "Committee on Transportation and Infrastructure",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 220,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 221,
+          "name": "Committee on Ways and Means",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 174,
+          "name": "Africa and Global Health Policy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 163,
+          "name": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 228,
+          "name": "Committee on Finance",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 229,
+          "name": "Committee on Foreign Relations",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 230,
+          "name": "Committee on Health, Education, Labor and Pensions",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 231,
+          "name": "Committee on Homeland Security and Governmental Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        }
+      ],
+      "total_members": 541,
+      "assigned_members": 419,
+      "total_assignments": 1006,
+      "coverage_percentage": 77.44916820702403,
+      "distribution": [
+        {
+          "chamber": "House",
+          "committee_type": "Standing",
+          "member_count": 319,
+          "assignment_count": 530
+        },
+        {
+          "chamber": "House",
+          "committee_type": "Subcommittee",
+          "member_count": 0,
+          "assignment_count": 1
+        },
+        {
+          "chamber": "Joint",
+          "committee_type": "Standing",
+          "member_count": 47,
+          "assignment_count": 60
+        },
+        {
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "member_count": 98,
+          "assignment_count": 303
+        },
+        {
+          "chamber": "Senate",
+          "committee_type": "Subcommittee",
+          "member_count": 0,
+          "assignment_count": 2
+        }
+      ]
+    },
+    "leadership_assignments": {
+      "total_leadership_roles": 79,
+      "party_distribution": {
+        "Democratic": {
+          "Chair": 0,
+          "Ranking Member": 39
+        },
+        "Republican": {
+          "Chair": 40,
+          "Ranking Member": 0
+        }
+      },
+      "multiple_roles_count": 22,
+      "missing_chairs": 0,
+      "missing_ranking_members": 1,
+      "incorrect_party_assignments": 0,
+      "incorrect_assignment_details": []
+    },
+    "committee_hierarchy": {
+      "total_committees": 43,
+      "top_level_committees": 40,
+      "subcommittees": 3,
+      "orphaned_subcommittees": 0,
+      "hierarchy_errors": 0,
+      "orphaned_details": [],
+      "hierarchy_error_details": []
+    },
+    "congress_accuracy": {
+      "expected_structure": {
+        "House": {
+          "Standing": 20,
+          "Subcommittee": 80,
+          "Joint": 4
+        },
+        "Senate": {
+          "Standing": 16,
+          "Subcommittee": 70,
+          "Joint": 4
+        }
+      },
+      "current_structure": {
+        "House": {
+          "Standing": 20,
+          "Subcommittee": 1
+        },
+        "Joint": {
+          "Standing": 4
+        },
+        "Senate": {
+          "Standing": 16,
+          "Subcommittee": 2
+        }
+      },
+      "accuracy_analysis": {
+        "House": {
+          "Standing": {
+            "expected": 20,
+            "actual": 20,
+            "difference": 0,
+            "percentage": 100.0
+          },
+          "Subcommittee": {
+            "expected": 80,
+            "actual": 1,
+            "difference": -79,
+            "percentage": 1.25
+          },
+          "Joint": {
+            "expected": 4,
+            "actual": 0,
+            "difference": -4,
+            "percentage": 0.0
+          }
+        },
+        "Senate": {
+          "Standing": {
+            "expected": 16,
+            "actual": 16,
+            "difference": 0,
+            "percentage": 100.0
+          },
+          "Subcommittee": {
+            "expected": 70,
+            "actual": 2,
+            "difference": -68,
+            "percentage": 2.857142857142857
+          },
+          "Joint": {
+            "expected": 4,
+            "actual": 0,
+            "difference": -4,
+            "percentage": 0.0
+          }
+        }
+      }
+    }
+  }
+}

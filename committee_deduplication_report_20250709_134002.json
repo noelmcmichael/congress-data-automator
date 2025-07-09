@@ -1,0 +1,45 @@
+{
+  "timestamp": "20250709_134002",
+  "operation": "committee_deduplication",
+  "results": {
+    "id_mapping": {},
+    "remove_ids": [],
+    "keep_ids": [],
+    "empty_removed": 637,
+    "committees_with_data": 88,
+    "validation": {
+      "total_committees": 88,
+      "committees_with_members": 72,
+      "empty_committees": 16,
+      "committee_structure": [
+        [
+          "House",
+          "Standing",
+          51
+        ],
+        [
+          "House",
+          "Subcommittee",
+          1
+        ],
+        [
+          "Joint",
+          "Standing",
+          16
+        ],
+        [
+          "Senate",
+          "Standing",
+          18
+        ],
+        [
+          "Senate",
+          "Subcommittee",
+          2
+        ]
+      ],
+      "remaining_duplicates": 0,
+      "duplicate_details": []
+    }
+  }
+}

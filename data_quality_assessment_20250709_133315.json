@@ -1,0 +1,4841 @@
+{
+  "analysis_timestamp": "2025-07-09 13:33:15",
+  "executive_summary": {
+    "total_committees": 815,
+    "duplicate_committees": 90,
+    "empty_committees": 730,
+    "leadership_errors": 32,
+    "hierarchy_issues": 0
+  },
+  "detailed_analysis": {
+    "committee_duplicates": {
+      "total_committees": 815,
+      "duplicate_groups": 83,
+      "total_duplicates": 90,
+      "duplicate_details": [
+        {
+          "normalized_key": [
+            "committee on agriculture, nutrition, and forestry",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 115,
+              "name": "Committee on Agriculture, Nutrition, and Forestry",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            },
+            {
+              "id": 247,
+              "name": "Committee on Agriculture, Nutrition, and Forestry",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "ssag00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 19:02:03.655164+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on appropriations",
+            "House",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 7,
+              "name": "Committee on Appropriations",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            },
+            {
+              "id": 207,
+              "name": "Committee on Appropriations",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": "hsap00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on appropriations",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 222,
+              "name": "Committee on Appropriations",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "ssap00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            },
+            {
+              "id": 121,
+              "name": "Committee on Appropriations",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on armed services",
+            "House",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 208,
+              "name": "Committee on Armed Services",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": "hsas00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            },
+            {
+              "id": 20,
+              "name": "Committee on Armed Services",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on armed services",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 223,
+              "name": "Committee on Armed Services",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "ssas00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            },
+            {
+              "id": 134,
+              "name": "Committee on Armed Services",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on banking, housing, and urban affairs",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 142,
+              "name": "Committee on Banking, Housing, and Urban Affairs",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            },
+            {
+              "id": 224,
+              "name": "Committee on Banking, Housing, and Urban Affairs",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "ssbk00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on commerce, science, and transportation",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 225,
+              "name": "Committee on Commerce, Science, and Transportation",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "sscm00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            },
+            {
+              "id": 149,
+              "name": "Committee on Commerce, Science, and Transportation",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on education and the workforce",
+            "House",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 29,
+              "name": "Committee on Education and the Workforce",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            },
+            {
+              "id": 209,
+              "name": "Committee on Education and the Workforce",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": "hsed00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on energy and commerce",
+            "House",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 34,
+              "name": "Committee on Energy and Commerce",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            },
+            {
+              "id": 210,
+              "name": "Committee on Energy and Commerce",
+              "chamber": "House",
+              "committee_type": "Standing",
+              "congress_gov_id": "hsif00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            }
+          ]
+        },
+        {
+          "normalized_key": [
+            "committee on energy and natural resources",
+            "Senate",
+            "Standing"
+          ],
+          "count": 2,
+          "committees": [
+            {
+              "id": 226,
+              "name": "Committee on Energy and Natural Resources",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": "sseg00",
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-09 18:37:07.401908+00:00"
+            },
+            {
+              "id": 157,
+              "name": "Committee on Energy and Natural Resources",
+              "chamber": "Senate",
+              "committee_type": "Standing",
+              "congress_gov_id": null,
+              "parent_committee_id": NaN,
+              "created_at": "2025-07-07 01:26:44.792718+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "member_assignments": {
+      "empty_committees": 730,
+      "empty_committee_details": [
+        {
+          "id": 49,
+          "name": "Africa Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 8,
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 96,
+          "name": "Aviation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 2,
+          "name": "Biotechnology, Horticulture, and Research Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 57,
+          "name": "Border Security and Enforcement Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 42,
+          "name": "Capital Markets Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 97,
+          "name": "Coast Guard and Maritime Transportation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 9,
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 56,
+          "name": "Committee on Homeland Security",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 63,
+          "name": "Committee on House Administration",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 243,
+          "name": "Committee on House Administration",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 383,
+          "name": "Committee on Housing Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 429,
+          "name": "Committee on Implementation Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 433,
+          "name": "Committee on Infrastructure Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 411,
+          "name": "Committee on Innovation Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 392,
+          "name": "Committee on Intelligence Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 586,
+          "name": "Committee on Management",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 593,
+          "name": "Committee on Management Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 426,
+          "name": "Committee on Modernization and Governance",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 215,
+          "name": "Committee on Natural Resources",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 70,
+          "name": "Committee on Natural Resources",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 419,
+          "name": "Committee on Operations Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 216,
+          "name": "Committee on Oversight and Accountability",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 76,
+          "name": "Committee on Oversight and Accountability",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 591,
+          "name": "Committee on Oversight Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 579,
+          "name": "Committee on Performance Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 436,
+          "name": "Committee on Performance Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 578,
+          "name": "Committee on Planning",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 404,
+          "name": "Committee on Planning",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 439,
+          "name": "Committee on Planning Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 416,
+          "name": "Committee on Policy Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 408,
+          "name": "Committee on Policy Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 388,
+          "name": "Committee on Quality and Transportation",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 390,
+          "name": "Committee on Reform",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 440,
+          "name": "Committee on Reform Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 391,
+          "name": "Committee on Reform Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 575,
+          "name": "Committee on Reform Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 406,
+          "name": "Committee on Research",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 584,
+          "name": "Committee on Research Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 412,
+          "name": "Committee on Research Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 589,
+          "name": "Committee on Resources",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 244,
+          "name": "Committee on Rules",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 82,
+          "name": "Committee on Rules",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 588,
+          "name": "Committee on Rural Development Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 418,
+          "name": "Committee on Rural Development Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 217,
+          "name": "Committee on Science, Space, and Technology",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 83,
+          "name": "Committee on Science, Space, and Technology",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 441,
+          "name": "Committee on Security Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 583,
+          "name": "Committee on Security and Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 218,
+          "name": "Committee on Small Business",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 89,
+          "name": "Committee on Small Business",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 580,
+          "name": "Committee on Small Business Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 576,
+          "name": "Committee on Social Policy and Finance",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 387,
+          "name": "Committee on Social Policy Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 428,
+          "name": "Committee on Standards",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 407,
+          "name": "Committee on Standards",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 245,
+          "name": "Committee on Standards of Official Conduct",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 417,
+          "name": "Committee on Standards Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 592,
+          "name": "Committee on Strategy Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 423,
+          "name": "Committee on Strategy Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 437,
+          "name": "Committee on Sustainability",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 403,
+          "name": "Committee on Sustainability Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 381,
+          "name": "Committee on Sustainability Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 438,
+          "name": "Committee on Sustainability Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 425,
+          "name": "Committee on Sustainability Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 397,
+          "name": "Committee on Technology and Innovation",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 585,
+          "name": "Committee on Technology and Rural Development",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 28,
+          "name": "Committee on the Budget",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 242,
+          "name": "Committee on the Budget",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 214,
+          "name": "Committee on the Judiciary",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 64,
+          "name": "Committee on the Judiciary",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 402,
+          "name": "Committee on Transportation",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 435,
+          "name": "Committee on Transportation and Implementation",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 219,
+          "name": "Committee on Transportation and Infrastructure",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 95,
+          "name": "Committee on Transportation and Infrastructure",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 434,
+          "name": "Committee on Urban Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 378,
+          "name": "Committee on Urban Affairs Policy",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 389,
+          "name": "Committee on Veterans Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 220,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 102,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 108,
+          "name": "Committee on Ways and Means",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 221,
+          "name": "Committee on Ways and Means",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 3,
+          "name": "Commodity Exchanges, Energy, and Credit Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 35,
+          "name": "Communications and Technology Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 4,
+          "name": "Conservation and Forestry Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 58,
+          "name": "Counterterrorism, Law Enforcement, and Intelligence Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 65,
+          "name": "Courts, Intellectual Property, and the Internet Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 66,
+          "name": "Crime and Federal Government Surveillance Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 21,
+          "name": "Cyber, Information Technologies, and Innovation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 59,
+          "name": "Cybersecurity and Infrastructure Protection Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 77,
+          "name": "Cybersecurity, Information Technology, and Government Innovation Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 10,
+          "name": "Defense Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 43,
+          "name": "Digital Assets, Financial Technology and Inclusion Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 103,
+          "name": "Disability Assistance and Memorial Affairs Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 30,
+          "name": "Early Childhood, Elementary, and Secondary Education Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 98,
+          "name": "Economic Development, Public Buildings, and Emergency Management Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 78,
+          "name": "Economic Growth, Energy Policy, and Regulatory Affairs Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 90,
+          "name": "Economic Growth, Tax, and Capital Access Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 104,
+          "name": "Economic Opportunity Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 60,
+          "name": "Emergency Management and Technology Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 71,
+          "name": "Energy and Mineral Resources Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 11,
+          "name": "Energy and Water Development Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 36,
+          "name": "Energy, Climate, and Grid Security Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 84,
+          "name": "Energy Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 37,
+          "name": "Environment, Manufacturing, and Critical Materials Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 85,
+          "name": "Environment Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 50,
+          "name": "Europe Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 72,
+          "name": "Federal Lands Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 44,
+          "name": "Financial Institutions and Monetary Policy Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 12,
+          "name": "Financial Services and General Government Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 5,
+          "name": "General Farm Commodities, Risk Management, and Credit Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 54,
+          "name": "Global Health, Global Human Rights, and International Organizations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 79,
+          "name": "Government Operations and the Federal Workforce Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 80,
+          "name": "Health Care and Financial Services Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 31,
+          "name": "Health, Employment, Labor, and Pensions Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 109,
+          "name": "Health Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 38,
+          "name": "Health Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 105,
+          "name": "Health Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 32,
+          "name": "Higher Education and Workforce Development Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 99,
+          "name": "Highways and Transit Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 13,
+          "name": "Homeland Security Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 201,
+          "name": "House Committee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 45,
+          "name": "Housing and Insurance Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 67,
+          "name": "Immigration Integrity, Security, and Enforcement Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 73,
+          "name": "Indigenous Peoples of the United States Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 51,
+          "name": "Indo-Pacific Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 39,
+          "name": "Innovation, Data, and Commerce Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 91,
+          "name": "Innovation, Entrepreneurship, and Workforce Development Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 22,
+          "name": "Intelligence and Special Operations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 14,
+          "name": "Interior, Environment, and Related Agencies Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 86,
+          "name": "Investigations and Oversight Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 15,
+          "name": "Labor, Health and Human Services, Education Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 16,
+          "name": "Legislative Branch Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 6,
+          "name": "Livestock and Foreign Agriculture Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 52,
+          "name": "Middle East, North Africa and Central Asia Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 17,
+          "name": "Military Construction, Veterans Affairs Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 23,
+          "name": "Military Personnel Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 46,
+          "name": "National Security, Illicit Finance, and International Financial Institutions Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 81,
+          "name": "National Security, the Border, and Foreign Affairs Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 53,
+          "name": "Oversight and Accountability Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 47,
+          "name": "Oversight and Investigations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 106,
+          "name": "Oversight and Investigations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 74,
+          "name": "Oversight and Investigations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 40,
+          "name": "Oversight and Investigations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 61,
+          "name": "Oversight, Investigations, and Accountability Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 92,
+          "name": "Oversight, Investigations, and Regulations Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 110,
+          "name": "Oversight Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 100,
+          "name": "Railroads, Pipelines, and Hazardous Materials Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 24,
+          "name": "Readiness Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 87,
+          "name": "Research and Technology Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 68,
+          "name": "Responsiveness and Accountability to Oversight Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 93,
+          "name": "Rural Development, Energy, and Supply Chains Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 25,
+          "name": "Seapower and Projection Forces Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 111,
+          "name": "Select Revenue Measures Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 112,
+          "name": "Social Security Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 88,
+          "name": "Space and Aeronautics Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 18,
+          "name": "State, Foreign Operations, and Related Programs Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 26,
+          "name": "Strategic Forces Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 482,
+          "name": "Subcommittee on Accountability",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 548,
+          "name": "Subcommittee on Accountability Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 558,
+          "name": "Subcommittee on Administration and Strategy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 487,
+          "name": "Subcommittee on Administration Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 571,
+          "name": "Subcommittee on Agriculture",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 573,
+          "name": "Subcommittee on Agriculture Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 249,
+          "name": "Subcommittee on Agriculture, Rural Development, Food and Drug Administration, and Related Agencies",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 461,
+          "name": "Subcommittee on Analysis",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 276,
+          "name": "Subcommittee on Antitrust, Commercial, and Administrative Law",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 322,
+          "name": "Subcommittee on Aviation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 317,
+          "name": "Subcommittee on Biotechnology, Horticulture, and Research",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 338,
+          "name": "Subcommittee on Border Security and Enforcement",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 305,
+          "name": "Subcommittee on Capital Markets",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 517,
+          "name": "Subcommittee on Climate Change",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 512,
+          "name": "Subcommittee on Climate Change",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 472,
+          "name": "Subcommittee on Climate Change Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 323,
+          "name": "Subcommittee on Coast Guard and Maritime Transportation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 318,
+          "name": "Subcommittee on Commodity Exchanges, Energy, and Credit",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 290,
+          "name": "Subcommittee on Communications and Technology",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 473,
+          "name": "Subcommittee on Competitiveness",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 478,
+          "name": "Subcommittee on Competitiveness",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 572,
+          "name": "Subcommittee on Competitiveness Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 502,
+          "name": "Subcommittee on Competitiveness Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 319,
+          "name": "Subcommittee on Conservation and Forestry",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 277,
+          "name": "Subcommittee on Constitution, Civil Rights, and Civil Liberties",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 484,
+          "name": "Subcommittee on Coordination Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 339,
+          "name": "Subcommittee on Counterterrorism, Law Enforcement, and Intelligence",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 273,
+          "name": "Subcommittee on Courts, Intellectual Property, and the Internet",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 274,
+          "name": "Subcommittee on Crime, Terrorism, and Homeland Security",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 291,
+          "name": "Subcommittee on Cyber, Information Technologies, and Innovation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 459,
+          "name": "Subcommittee on Cybersecurity",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 501,
+          "name": "Subcommittee on Cybersecurity and Compliance",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 340,
+          "name": "Subcommittee on Cybersecurity and Infrastructure Protection",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 506,
+          "name": "Subcommittee on Cybersecurity Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 466,
+          "name": "Subcommittee on Cybersecurity Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 486,
+          "name": "Subcommittee on Cybersecurity Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 476,
+          "name": "Subcommittee on Cybersecurity Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 236,
+          "name": "Subcommittee on Defense",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 546,
+          "name": "Subcommittee on Defense Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 531,
+          "name": "Subcommittee on Defense Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 493,
+          "name": "Subcommittee on Defense Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 560,
+          "name": "Subcommittee on Defense Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 468,
+          "name": "Subcommittee on Development and Growth",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 511,
+          "name": "Subcommittee on Development Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 467,
+          "name": "Subcommittee on Development Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 526,
+          "name": "Subcommittee on Development Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 306,
+          "name": "Subcommittee on Digital Assets, Financial Technology and Inclusion",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 499,
+          "name": "Subcommittee on Digital Innovation and Operations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 553,
+          "name": "Subcommittee on Digital Innovation Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 475,
+          "name": "Subcommittee on Digital Innovation Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 460,
+          "name": "Subcommittee on Digital Innovation Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 562,
+          "name": "Subcommittee on Digital Innovation Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 477,
+          "name": "Subcommittee on Economic Development and Excellence",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 465,
+          "name": "Subcommittee on Economic Development and International Relations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 324,
+          "name": "Subcommittee on Economic Development, Public Buildings, and Emergency Management",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 500,
+          "name": "Subcommittee on Education",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 457,
+          "name": "Subcommittee on Education and Planning",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 529,
+          "name": "Subcommittee on Education Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 542,
+          "name": "Subcommittee on Efficiency",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 481,
+          "name": "Subcommittee on Efficiency Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 341,
+          "name": "Subcommittee on Emergency Management and Technology",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 285,
+          "name": "Subcommittee on Energy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 333,
+          "name": "Subcommittee on Energy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 328,
+          "name": "Subcommittee on Energy and Mineral Resources",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 563,
+          "name": "Subcommittee on Energy and Workforce Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 470,
+          "name": "Subcommittee on Entrepreneurship",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 462,
+          "name": "Subcommittee on Entrepreneurship and Transparency",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 334,
+          "name": "Subcommittee on Environment",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 286,
+          "name": "Subcommittee on Environment and Climate Change",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 535,
+          "name": "Subcommittee on Excellence Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 329,
+          "name": "Subcommittee on Federal Lands",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 471,
+          "name": "Subcommittee on Finance",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 518,
+          "name": "Subcommittee on Finance and Healthcare",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 554,
+          "name": "Subcommittee on Finance Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 455,
+          "name": "Subcommittee on Finance Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 540,
+          "name": "Subcommittee on Finance Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 307,
+          "name": "Subcommittee on Financial Institutions and Monetary Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 250,
+          "name": "Subcommittee on Financial Services and General Government",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 320,
+          "name": "Subcommittee on General Farm Commodities and Risk Management",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 543,
+          "name": "Subcommittee on Governance",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 521,
+          "name": "Subcommittee on Governance and Rural Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 565,
+          "name": "Subcommittee on Governance Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 568,
+          "name": "Subcommittee on Growth and Transportation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 267,
+          "name": "Subcommittee on Health",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 287,
+          "name": "Subcommittee on Health",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 448,
+          "name": "Subcommittee on Healthcare Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 325,
+          "name": "Subcommittee on Highways and Transit",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 251,
+          "name": "Subcommittee on Homeland Security",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 550,
+          "name": "Subcommittee on Housing",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 308,
+          "name": "Subcommittee on Housing and Insurance",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 503,
+          "name": "Subcommittee on Housing Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 275,
+          "name": "Subcommittee on Immigration and Citizenship",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 509,
+          "name": "Subcommittee on Implementation and Research",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 533,
+          "name": "Subcommittee on Implementation and Technology",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 480,
+          "name": "Subcommittee on Implementation Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 564,
+          "name": "Subcommittee on Implementation Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 330,
+          "name": "Subcommittee on Indigenous Peoples of the United States",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 557,
+          "name": "Subcommittee on Infrastructure Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 532,
+          "name": "Subcommittee on Infrastructure Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 508,
+          "name": "Subcommittee on Innovation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 453,
+          "name": "Subcommittee on Innovation and Energy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 497,
+          "name": "Subcommittee on Innovation and Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 288,
+          "name": "Subcommittee on Innovation, Data, and Commerce",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 525,
+          "name": "Subcommittee on Innovation Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 463,
+          "name": "Subcommittee on Intelligence",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 541,
+          "name": "Subcommittee on Intelligence and Excellence",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 544,
+          "name": "Subcommittee on Intelligence and Research",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 292,
+          "name": "Subcommittee on Intelligence and Special Operations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 545,
+          "name": "Subcommittee on Intelligence Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 523,
+          "name": "Subcommittee on Intelligence Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 252,
+          "name": "Subcommittee on Interior, Environment, and Related Agencies",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 495,
+          "name": "Subcommittee on International Relations and Competitiveness",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 522,
+          "name": "Subcommittee on International Relations Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 335,
+          "name": "Subcommittee on Investigations and Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 451,
+          "name": "Subcommittee on Investment Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 549,
+          "name": "Subcommittee on Investment Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 443,
+          "name": "Subcommittee on Investment Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 237,
+          "name": "Subcommittee on Labor, Health and Human Services, Education",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 253,
+          "name": "Subcommittee on Labor, Health and Human Services, Education, and Related Agencies",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 254,
+          "name": "Subcommittee on Legislative Branch",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 321,
+          "name": "Subcommittee on Livestock and Foreign Agriculture",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 485,
+          "name": "Subcommittee on Management and Growth",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 255,
+          "name": "Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 293,
+          "name": "Subcommittee on Military Personnel",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 445,
+          "name": "Subcommittee on Modernization Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 309,
+          "name": "Subcommittee on National Security, Illicit Finance, and International Financial Institutions",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 272,
+          "name": "Subcommittee on Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 310,
+          "name": "Subcommittee on Oversight and Investigations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 289,
+          "name": "Subcommittee on Oversight and Investigations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 331,
+          "name": "Subcommittee on Oversight and Investigations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 530,
+          "name": "Subcommittee on Oversight Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 446,
+          "name": "Subcommittee on Performance and Workforce Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 536,
+          "name": "Subcommittee on Performance Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 538,
+          "name": "Subcommittee on Planning Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 520,
+          "name": "Subcommittee on Planning Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 488,
+          "name": "Subcommittee on Planning Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 452,
+          "name": "Subcommittee on Policy and Coordination",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 489,
+          "name": "Subcommittee on Policy and Growth",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 494,
+          "name": "Subcommittee on Policy Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 447,
+          "name": "Subcommittee on Policy Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 483,
+          "name": "Subcommittee on Policy Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 574,
+          "name": "Subcommittee on Quality Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 561,
+          "name": "Subcommittee on Quality Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 326,
+          "name": "Subcommittee on Railroads, Pipelines, and Hazardous Materials",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 294,
+          "name": "Subcommittee on Readiness",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 559,
+          "name": "Subcommittee on Reform and Leadership",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 498,
+          "name": "Subcommittee on Reform Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 454,
+          "name": "Subcommittee on Regulation",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 567,
+          "name": "Subcommittee on Regulation Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 547,
+          "name": "Subcommittee on Regulation Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 534,
+          "name": "Subcommittee on Regulation Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 336,
+          "name": "Subcommittee on Research and Technology",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 505,
+          "name": "Subcommittee on Research Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 507,
+          "name": "Subcommittee on Resources",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 458,
+          "name": "Subcommittee on Resources and Leadership",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 474,
+          "name": "Subcommittee on Resources Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 528,
+          "name": "Subcommittee on Resources Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 515,
+          "name": "Subcommittee on Rural Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 555,
+          "name": "Subcommittee on Rural Development Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 295,
+          "name": "Subcommittee on Seapower and Projection Forces",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 556,
+          "name": "Subcommittee on Security",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 569,
+          "name": "Subcommittee on Security and Excellence",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 551,
+          "name": "Subcommittee on Security Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 516,
+          "name": "Subcommittee on Security Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 271,
+          "name": "Subcommittee on Select Revenue Measures",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 492,
+          "name": "Subcommittee on Small Business",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 519,
+          "name": "Subcommittee on Small Business and Sustainability",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 570,
+          "name": "Subcommittee on Social Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 479,
+          "name": "Subcommittee on Social Policy and Investment",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 527,
+          "name": "Subcommittee on Social Policy and Management",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 524,
+          "name": "Subcommittee on Social Policy and Operations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 268,
+          "name": "Subcommittee on Social Security",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 337,
+          "name": "Subcommittee on Space and Aeronautics",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 552,
+          "name": "Subcommittee on Standards",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 491,
+          "name": "Subcommittee on Standards",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 496,
+          "name": "Subcommittee on Standards and Planning",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 238,
+          "name": "Subcommittee on State, Foreign Operations",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 256,
+          "name": "Subcommittee on State, Foreign Operations, and Related Programs",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 296,
+          "name": "Subcommittee on Strategic Forces",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 514,
+          "name": "Subcommittee on Strategy Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 510,
+          "name": "Subcommittee on Sustainability and Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 464,
+          "name": "Subcommittee on Sustainability Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 297,
+          "name": "Subcommittee on Tactical Air and Land Forces",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 450,
+          "name": "Subcommittee on Technology Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 269,
+          "name": "Subcommittee on Trade",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 456,
+          "name": "Subcommittee on Trade",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 342,
+          "name": "Subcommittee on Transportation and Maritime Security",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 257,
+          "name": "Subcommittee on Transportation, Housing and Urban Development, and Related Agencies",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 469,
+          "name": "Subcommittee on Transportation Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 490,
+          "name": "Subcommittee on Urban Affairs",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 566,
+          "name": "Subcommittee on Urban Affairs Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 504,
+          "name": "Subcommittee on Veterans Affairs Oversight",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 539,
+          "name": "Subcommittee on Veterans Affairs Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 327,
+          "name": "Subcommittee on Water Resources and Environment",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 332,
+          "name": "Subcommittee on Water, Wildlife and Fisheries",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 270,
+          "name": "Subcommittee on Worker and Family Support",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 449,
+          "name": "Subcommittee on Workforce Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 513,
+          "name": "Subcommittee on Workforce Development",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 537,
+          "name": "Subcommittee on Workforce Development Policy",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 444,
+          "name": "Subcommittee on Workforce Development Reform",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 27,
+          "name": "Tactical Air and Land Forces Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 107,
+          "name": "Technology Modernization Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 69,
+          "name": "the Constitution and Limited Government Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 113,
+          "name": "Trade Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 62,
+          "name": "Transportation and Maritime Security Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 19,
+          "name": "Transportation, Housing and Urban Development Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 94,
+          "name": "Underserved, Agricultural, and Rural Business Development Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 101,
+          "name": "Water Resources and Environment Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 75,
+          "name": "Water, Wildlife, and Fisheries Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 55,
+          "name": "Western Hemisphere Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 114,
+          "name": "Worker and Family Support Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 33,
+          "name": "Workforce Protections Subcommittee",
+          "chamber": "House",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 816,
+          "name": "Joint Committee on Coordination and Operations",
+          "chamber": "Joint",
+          "committee_type": "Joint"
+        },
+        {
+          "id": 815,
+          "name": "Joint Committee on Development Coordination",
+          "chamber": "Joint",
+          "committee_type": "Joint"
+        },
+        {
+          "id": 814,
+          "name": "Joint Committee on Housing",
+          "chamber": "Joint",
+          "committee_type": "Joint"
+        },
+        {
+          "id": 813,
+          "name": "Joint Committee on Workforce Development",
+          "chamber": "Joint",
+          "committee_type": "Joint"
+        },
+        {
+          "id": 811,
+          "name": "Subcommittee on Climate Change and Administration",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 808,
+          "name": "Subcommittee on Competitiveness and International Relations",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 796,
+          "name": "Subcommittee on Compliance Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 794,
+          "name": "Subcommittee on Coordination Policy",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 809,
+          "name": "Subcommittee on Development and Small Business",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 812,
+          "name": "Subcommittee on Efficiency Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 795,
+          "name": "Subcommittee on Entrepreneurship Policy",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 805,
+          "name": "Subcommittee on Excellence Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 798,
+          "name": "Subcommittee on Governance and Finance",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 806,
+          "name": "Subcommittee on Healthcare",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 803,
+          "name": "Subcommittee on Housing Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 792,
+          "name": "Subcommittee on Housing Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 800,
+          "name": "Subcommittee on Management Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 810,
+          "name": "Subcommittee on Planning",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 791,
+          "name": "Subcommittee on Policy Reform",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 790,
+          "name": "Subcommittee on Reform",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 799,
+          "name": "Subcommittee on Resources",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 802,
+          "name": "Subcommittee on Rural Development Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 804,
+          "name": "Subcommittee on Rural Development Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 793,
+          "name": "Subcommittee on Standards Oversight",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 807,
+          "name": "Subcommittee on Transportation",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 801,
+          "name": "Subcommittee on Transportation Reform",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 797,
+          "name": "Subcommittee on Urban Affairs Policy",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 789,
+          "name": "Subcommittee on Workforce Development Reform",
+          "chamber": "Joint",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 174,
+          "name": "Africa and Global Health Policy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 122,
+          "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 135,
+          "name": "Airland Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 150,
+          "name": "Aviation Safety, Operations, and Innovation Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 163,
+          "name": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 182,
+          "name": "Children and Families Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 164,
+          "name": "Clean Air, Climate, and Nuclear Safety Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 123,
+          "name": "Commerce, Justice, Science, and Related Agencies Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 631,
+          "name": "Committee on Defense",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 619,
+          "name": "Committee on Digital Innovation",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 768,
+          "name": "Committee on Education",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 605,
+          "name": "Committee on Education Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 614,
+          "name": "Committee on Education Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 606,
+          "name": "Committee on Efficiency and Accountability",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 772,
+          "name": "Committee on Energy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 157,
+          "name": "Committee on Energy and Natural Resources",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 226,
+          "name": "Committee on Energy and Natural Resources",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 628,
+          "name": "Committee on Energy Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 599,
+          "name": "Committee on Entrepreneurship Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 613,
+          "name": "Committee on Environment",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 227,
+          "name": "Committee on Environment and Public Works",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 162,
+          "name": "Committee on Environment and Public Works",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 601,
+          "name": "Committee on Environment Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 623,
+          "name": "Committee on Excellence Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 627,
+          "name": "Committee on Excellence Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 228,
+          "name": "Committee on Finance",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 167,
+          "name": "Committee on Finance",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 766,
+          "name": "Committee on Finance and Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 173,
+          "name": "Committee on Foreign Relations",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 229,
+          "name": "Committee on Foreign Relations",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 771,
+          "name": "Committee on Governance Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 643,
+          "name": "Committee on Growth Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 632,
+          "name": "Committee on Growth Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 600,
+          "name": "Committee on Healthcare",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 230,
+          "name": "Committee on Health, Education, Labor and Pensions",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 181,
+          "name": "Committee on Health, Education, Labor and Pensions",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 185,
+          "name": "Committee on Homeland Security and Governmental Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 231,
+          "name": "Committee on Homeland Security and Governmental Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 767,
+          "name": "Committee on Housing",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 617,
+          "name": "Committee on Implementation Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 248,
+          "name": "Committee on Indian Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 611,
+          "name": "Committee on Infrastructure Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 763,
+          "name": "Committee on Innovation Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 618,
+          "name": "Committee on International Relations Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 640,
+          "name": "Committee on Investment",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 650,
+          "name": "Committee on Investment and Social Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 603,
+          "name": "Committee on Leadership Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 621,
+          "name": "Committee on Management and Reform",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 775,
+          "name": "Committee on Management Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 637,
+          "name": "Committee on Modernization Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 645,
+          "name": "Committee on Operations Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 634,
+          "name": "Committee on Operations Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 642,
+          "name": "Committee on Operations Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 644,
+          "name": "Committee on Oversight and Education",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 633,
+          "name": "Committee on Performance Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 636,
+          "name": "Committee on Policy Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 649,
+          "name": "Committee on Policy Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 769,
+          "name": "Committee on Policy Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 774,
+          "name": "Committee on Policy Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 612,
+          "name": "Committee on Quality Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 764,
+          "name": "Committee on Reform and Excellence",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 607,
+          "name": "Committee on Regulation",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 626,
+          "name": "Committee on Regulation Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 610,
+          "name": "Committee on Research",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 609,
+          "name": "Committee on Research and Veterans Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 620,
+          "name": "Committee on Resources Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 641,
+          "name": "Committee on Resources and Education",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 624,
+          "name": "Committee on Resources Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 197,
+          "name": "Committee on Rules and Administration",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 233,
+          "name": "Committee on Rules and Administration",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 608,
+          "name": "Committee on Security",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 765,
+          "name": "Committee on Small Business",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 198,
+          "name": "Committee on Small Business and Entrepreneurship",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 234,
+          "name": "Committee on Small Business and Entrepreneurship",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 646,
+          "name": "Committee on Social Policy Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 598,
+          "name": "Committee on Social Policy Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 616,
+          "name": "Committee on Standards Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 759,
+          "name": "Committee on Strategy Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 615,
+          "name": "Committee on Sustainability and Cybersecurity",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 762,
+          "name": "Committee on Technology Development",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 776,
+          "name": "Committee on Technology Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 246,
+          "name": "Committee on the Budget",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 148,
+          "name": "Committee on the Budget",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 232,
+          "name": "Committee on the Judiciary",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 189,
+          "name": "Committee on the Judiciary",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 625,
+          "name": "Committee on Trade",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 622,
+          "name": "Committee on Trade Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 597,
+          "name": "Committee on Transparency",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 638,
+          "name": "Committee on Urban Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 602,
+          "name": "Committee on Urban Affairs Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 770,
+          "name": "Committee on Urban Affairs Policy",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 235,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 199,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 761,
+          "name": "Committee on Veterans Affairs and Finance",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 647,
+          "name": "Committee on Workforce Development Affairs",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 635,
+          "name": "Committee on Workforce Development and Implementation",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 116,
+          "name": "Commodities, Risk Management, and Trade Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 151,
+          "name": "Communications, Media, and Broadband Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 190,
+          "name": "Competition Policy, Antitrust, and Consumer Rights Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 117,
+          "name": "Conservation, Climate, Forestry, and Natural Resources Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 152,
+          "name": "Consumer Protection, Product Safety, and Data Security Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 191,
+          "name": "Criminal Justice and Counterterrorism Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 136,
+          "name": "Cybersecurity Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 124,
+          "name": "Defense Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 175,
+          "name": "East Asia, the Pacific, and International Cybersecurity Policy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 143,
+          "name": "Economic Policy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 137,
+          "name": "Emerging Threats and Capabilities Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 186,
+          "name": "Emerging Threats and Spending Oversight Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 183,
+          "name": "Employment and Workplace Safety Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 125,
+          "name": "Energy and Water Development Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 168,
+          "name": "Energy, Natural Resources, and Infrastructure Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 158,
+          "name": "Energy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 176,
+          "name": "Europe and Regional Security Cooperation Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 192,
+          "name": "Federal Courts, Oversight, Agency Action, and Federal Rights Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 144,
+          "name": "Financial Institutions and Consumer Protection Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 126,
+          "name": "Financial Services and General Government Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 169,
+          "name": "Fiscal Responsibility and Economic Growth Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 165,
+          "name": "Fisheries, Water, and Wildlife Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 118,
+          "name": "Food and Nutrition, Specialty Crops, Organics, and Research Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 187,
+          "name": "Government Operations and Border Management Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 170,
+          "name": "Health Care Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 127,
+          "name": "Homeland Security Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 145,
+          "name": "Housing, Transportation, and Community Development Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 193,
+          "name": "Human Rights and the Law Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 194,
+          "name": "Immigration, Citizenship, and Border Safety Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 195,
+          "name": "Intellectual Property Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 128,
+          "name": "Interior, Environment, and Related Agencies Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 177,
+          "name": "International Development and Multilateral Institutions Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 171,
+          "name": "International Trade, Customs, and Global Competitiveness Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 188,
+          "name": "Investigations Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 129,
+          "name": "Labor, Health and Human Services, Education Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 130,
+          "name": "Legislative Branch Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 119,
+          "name": "Livestock, Dairy, Poultry, Local Food Systems, and Food Safety and Security Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 131,
+          "name": "Military Construction, Veterans Affairs Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 159,
+          "name": "National Parks Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 146,
+          "name": "National Security and International Trade and Finance Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 178,
+          "name": "Near East, South Asia, Central Asia, and Counterterrorism Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 153,
+          "name": "Oceans, Fisheries, Climate Change, and Manufacturing Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 138,
+          "name": "Personnel Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 184,
+          "name": "Primary Health and Retirement Security Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 196,
+          "name": "Privacy, Technology, and the Law Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 160,
+          "name": "Public Lands, Forests, and Mining Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 139,
+          "name": "Readiness and Management Support Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 120,
+          "name": "Rural Development and Energy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 140,
+          "name": "Seapower Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 147,
+          "name": "Securities, Insurance, and Investment Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 202,
+          "name": "Senate Committee on Agriculture, Nutrition, and Forestry",
+          "chamber": "Senate",
+          "committee_type": "Standing"
+        },
+        {
+          "id": 172,
+          "name": "Social Security, Pensions, and Family Policy Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 154,
+          "name": "Space and Science Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 179,
+          "name": "State Department and USAID Management, International Operations, and Bilateral International Development Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 132,
+          "name": "State, Foreign Operations, and Related Programs Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 141,
+          "name": "Strategic Forces Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 738,
+          "name": "Subcommittee on Accountability",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 699,
+          "name": "Subcommittee on Accountability Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 681,
+          "name": "Subcommittee on Accountability Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 674,
+          "name": "Subcommittee on Accountability Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 751,
+          "name": "Subcommittee on Administration and Economic Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 724,
+          "name": "Subcommittee on Administration Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 658,
+          "name": "Subcommittee on Administration Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 365,
+          "name": "Subcommittee on Africa and Global Health Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 694,
+          "name": "Subcommittee on Agriculture",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 725,
+          "name": "Subcommittee on Agriculture Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 298,
+          "name": "Subcommittee on Airland",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 689,
+          "name": "Subcommittee on Analysis Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 311,
+          "name": "Subcommittee on Aviation Safety, Operations, and Innovation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 355,
+          "name": "Subcommittee on Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 371,
+          "name": "Subcommittee on Children and Families",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 356,
+          "name": "Subcommittee on Clean Air, Climate, and Nuclear Safety",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 691,
+          "name": "Subcommittee on Climate Change Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 343,
+          "name": "Subcommittee on Commodities, Risk Management, and Trade",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 312,
+          "name": "Subcommittee on Communications, Media, and Broadband",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 279,
+          "name": "Subcommittee on Competition Policy, Antitrust, and Consumer Rights",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 730,
+          "name": "Subcommittee on Competitiveness Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 723,
+          "name": "Subcommittee on Compliance",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 697,
+          "name": "Subcommittee on Compliance and Growth",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 665,
+          "name": "Subcommittee on Compliance Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 344,
+          "name": "Subcommittee on Conservation, Climate, Forestry, and Natural Resources",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 313,
+          "name": "Subcommittee on Consumer Protection, Product Safety, and Data Security",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 720,
+          "name": "Subcommittee on Coordination",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 732,
+          "name": "Subcommittee on Coordination and Cybersecurity",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 758,
+          "name": "Subcommittee on Coordination Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 280,
+          "name": "Subcommittee on Criminal Justice and Counterterrorism",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 299,
+          "name": "Subcommittee on Cybersecurity",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 707,
+          "name": "Subcommittee on Cybersecurity",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 739,
+          "name": "Subcommittee on Cybersecurity",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 240,
+          "name": "Subcommittee on Defense",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 743,
+          "name": "Subcommittee on Development Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 690,
+          "name": "Subcommittee on Development Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 685,
+          "name": "Subcommittee on Digital Innovation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 742,
+          "name": "Subcommittee on Digital Innovation Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 366,
+          "name": "Subcommittee on East Asia, the Pacific, and International Cybersecurity Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 747,
+          "name": "Subcommittee on Economic Development Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 757,
+          "name": "Subcommittee on Economic Development Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 351,
+          "name": "Subcommittee on Economic Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 668,
+          "name": "Subcommittee on Education Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 748,
+          "name": "Subcommittee on Efficiency",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 703,
+          "name": "Subcommittee on Efficiency Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 671,
+          "name": "Subcommittee on Efficiency Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 744,
+          "name": "Subcommittee on Efficiency Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 300,
+          "name": "Subcommittee on Emerging Threats and Capabilities",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 374,
+          "name": "Subcommittee on Emerging Threats and Spending Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 372,
+          "name": "Subcommittee on Employment and Workplace Safety",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 347,
+          "name": "Subcommittee on Energy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 258,
+          "name": "Subcommittee on Energy and Water Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 239,
+          "name": "Subcommittee on Energy and Water Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 359,
+          "name": "Subcommittee on Energy, Natural Resources, and Infrastructure",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 677,
+          "name": "Subcommittee on Energy Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 722,
+          "name": "Subcommittee on Entrepreneurship",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 653,
+          "name": "Subcommittee on Entrepreneurship",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 661,
+          "name": "Subcommittee on Entrepreneurship Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 657,
+          "name": "Subcommittee on Entrepreneurship Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 755,
+          "name": "Subcommittee on Entrepreneurship Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 712,
+          "name": "Subcommittee on Entrepreneurship Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 655,
+          "name": "Subcommittee on Environment Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 367,
+          "name": "Subcommittee on Europe and Regional Security Cooperation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 278,
+          "name": "Subcommittee on Federal Courts, Oversight, Agency Action, and Federal Rights",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 695,
+          "name": "Subcommittee on Finance Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 711,
+          "name": "Subcommittee on Finance Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 352,
+          "name": "Subcommittee on Financial Institutions and Consumer Protection",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 259,
+          "name": "Subcommittee on Financial Services and General Government",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 360,
+          "name": "Subcommittee on Fiscal Responsibility and Economic Growth",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 357,
+          "name": "Subcommittee on Fisheries, Water, and Wildlife",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 345,
+          "name": "Subcommittee on Food and Nutrition, Specialty Crops, Organics, and Research",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 375,
+          "name": "Subcommittee on Government Operations and Border Management",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 651,
+          "name": "Subcommittee on Growth Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 361,
+          "name": "Subcommittee on Health Care",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 660,
+          "name": "Subcommittee on Healthcare Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 745,
+          "name": "Subcommittee on Healthcare Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 704,
+          "name": "Subcommittee on Healthcare Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 692,
+          "name": "Subcommittee on Healthcare Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 260,
+          "name": "Subcommittee on Homeland Security",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 737,
+          "name": "Subcommittee on Housing Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 353,
+          "name": "Subcommittee on Housing, Transportation, and Community Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 281,
+          "name": "Subcommittee on Human Rights and the Law",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 282,
+          "name": "Subcommittee on Immigration, Citizenship, and Border Safety",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 693,
+          "name": "Subcommittee on Implementation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 750,
+          "name": "Subcommittee on Implementation Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 683,
+          "name": "Subcommittee on Implementation Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 740,
+          "name": "Subcommittee on Implementation Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 659,
+          "name": "Subcommittee on Infrastructure",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 721,
+          "name": "Subcommittee on Innovation and Regulation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 710,
+          "name": "Subcommittee on Innovation Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 688,
+          "name": "Subcommittee on Innovation Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 283,
+          "name": "Subcommittee on Intellectual Property",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 656,
+          "name": "Subcommittee on Intelligence and Leadership",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 718,
+          "name": "Subcommittee on Intelligence Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 261,
+          "name": "Subcommittee on Interior, Environment, and Related Agencies",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 368,
+          "name": "Subcommittee on International Development and Multilateral Institutions",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 731,
+          "name": "Subcommittee on International Relations and Small Business",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 362,
+          "name": "Subcommittee on International Trade, Customs, and Global Competitiveness",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 376,
+          "name": "Subcommittee on Investigations",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 670,
+          "name": "Subcommittee on Investment Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 706,
+          "name": "Subcommittee on Investment Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 241,
+          "name": "Subcommittee on Labor, Health and Human Services, Education",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 262,
+          "name": "Subcommittee on Labor, Health and Human Services, Education, and Related Agencies",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 713,
+          "name": "Subcommittee on Leadership",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 263,
+          "name": "Subcommittee on Legislative Branch",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 346,
+          "name": "Subcommittee on Livestock, Dairy, Poultry, Local Food Systems, and Food Safety",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 753,
+          "name": "Subcommittee on Management Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 686,
+          "name": "Subcommittee on Management Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 264,
+          "name": "Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 726,
+          "name": "Subcommittee on Modernization and Competitiveness",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 669,
+          "name": "Subcommittee on Modernization and Social Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 754,
+          "name": "Subcommittee on Modernization Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 348,
+          "name": "Subcommittee on National Parks",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 354,
+          "name": "Subcommittee on National Security and International Trade and Finance",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 369,
+          "name": "Subcommittee on Near East, South Asia, Central Asia, and Counterterrorism",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 314,
+          "name": "Subcommittee on Oceans, Fisheries, Climate Change, and Manufacturing",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 682,
+          "name": "Subcommittee on Operations Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 667,
+          "name": "Subcommittee on Performance Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 666,
+          "name": "Subcommittee on Performance Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 301,
+          "name": "Subcommittee on Personnel",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 701,
+          "name": "Subcommittee on Planning Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 676,
+          "name": "Subcommittee on Policy and Coordination",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 716,
+          "name": "Subcommittee on Policy Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 373,
+          "name": "Subcommittee on Primary Health and Retirement Security",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 284,
+          "name": "Subcommittee on Privacy, Technology, and the Law",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 349,
+          "name": "Subcommittee on Public Lands, Forests, and Mining",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 727,
+          "name": "Subcommittee on Quality Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 302,
+          "name": "Subcommittee on Readiness and Management Support",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 664,
+          "name": "Subcommittee on Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 709,
+          "name": "Subcommittee on Reform Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 675,
+          "name": "Subcommittee on Regulation Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 756,
+          "name": "Subcommittee on Research",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 696,
+          "name": "Subcommittee on Resources and Digital Innovation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 652,
+          "name": "Subcommittee on Resources Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 700,
+          "name": "Subcommittee on Resources Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 705,
+          "name": "Subcommittee on Rural Development and Infrastructure",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 687,
+          "name": "Subcommittee on Rural Development Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 680,
+          "name": "Subcommittee on Rural Development Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 303,
+          "name": "Subcommittee on Seapower",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 662,
+          "name": "Subcommittee on Social Policy Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 663,
+          "name": "Subcommittee on Social Policy Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 363,
+          "name": "Subcommittee on Social Security, Pensions, and Family Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 315,
+          "name": "Subcommittee on Space, Science, and Competitiveness",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 714,
+          "name": "Subcommittee on Standards",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 678,
+          "name": "Subcommittee on Standards",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 698,
+          "name": "Subcommittee on Standards Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 370,
+          "name": "Subcommittee on State Department and USAID Management, International Operations, and Bilateral International Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 265,
+          "name": "Subcommittee on State, Foreign Operations, and Related Programs",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 304,
+          "name": "Subcommittee on Strategic Forces",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 316,
+          "name": "Subcommittee on Surface Transportation, Maritime, Freight, and Ports",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 672,
+          "name": "Subcommittee on Sustainability",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 364,
+          "name": "Subcommittee on Taxation and IRS Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 715,
+          "name": "Subcommittee on Technology and Transportation",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 734,
+          "name": "Subcommittee on Technology Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 729,
+          "name": "Subcommittee on Technology Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 679,
+          "name": "Subcommittee on Technology Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 752,
+          "name": "Subcommittee on Trade Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 736,
+          "name": "Subcommittee on Transparency",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 746,
+          "name": "Subcommittee on Transparency Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 719,
+          "name": "Subcommittee on Transparency Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 358,
+          "name": "Subcommittee on Transportation and Infrastructure",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 266,
+          "name": "Subcommittee on Transportation, Housing and Urban Development, and Related Agencies",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 708,
+          "name": "Subcommittee on Transportation Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 741,
+          "name": "Subcommittee on Transportation Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 684,
+          "name": "Subcommittee on Urban Affairs Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 717,
+          "name": "Subcommittee on Urban Affairs Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 735,
+          "name": "Subcommittee on Veterans Affairs Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 749,
+          "name": "Subcommittee on Veterans Affairs Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 728,
+          "name": "Subcommittee on Veterans Affairs Policy",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 733,
+          "name": "Subcommittee on Veterans Affairs Reform",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 350,
+          "name": "Subcommittee on Water and Power",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 702,
+          "name": "Subcommittee on Workforce Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 673,
+          "name": "Subcommittee on Workforce Development",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 654,
+          "name": "Subcommittee on Workforce Development Oversight",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 155,
+          "name": "Surface Transportation, Maritime, Freight, and Ports Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 156,
+          "name": "Tourism, Trade, and Export Promotion Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 166,
+          "name": "Transportation and Infrastructure Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 133,
+          "name": "Transportation, Housing and Urban Development Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 161,
+          "name": "Water and Power Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        },
+        {
+          "id": 180,
+          "name": "Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues Subcommittee",
+          "chamber": "Senate",
+          "committee_type": "Subcommittee"
+        }
+      ],
+      "total_members": 541,
+      "assigned_members": 541,
+      "total_assignments": 2264,
+      "coverage_percentage": 100.0,
+      "distribution": [
+        {
+          "chamber": "House",
+          "committee_type": "Standing",
+          "member_count": 441,
+          "assignment_count": 1839
+        },
+        {
+          "chamber": "House",
+          "committee_type": "Subcommittee",
+          "member_count": 0,
+          "assignment_count": 295
+        },
+        {
+          "chamber": "Joint",
+          "committee_type": "Joint",
+          "member_count": 0,
+          "assignment_count": 4
+        },
+        {
+          "chamber": "Joint",
+          "committee_type": "Standing",
+          "member_count": 89,
+          "assignment_count": 220
+        },
+        {
+          "chamber": "Joint",
+          "committee_type": "Subcommittee",
+          "member_count": 0,
+          "assignment_count": 24
+        },
+        {
+          "chamber": "Senate",
+          "committee_type": "Standing",
+          "member_count": 94,
+          "assignment_count": 369
+        },
+        {
+          "chamber": "Senate",
+          "committee_type": "Subcommittee",
+          "member_count": 0,
+          "assignment_count": 243
+        }
+      ]
+    },
+    "leadership_assignments": {
+      "total_leadership_roles": 168,
+      "party_distribution": {
+        "Democratic": {
+          "Chair": 15,
+          "Ranking Member": 68
+        },
+        "Republican": {
+          "Chair": 68,
+          "Ranking Member": 17
+        }
+      },
+      "multiple_roles_count": 0,
+      "missing_chairs": 2,
+      "missing_ranking_members": 0,
+      "incorrect_party_assignments": 32,
+      "incorrect_assignment_details": [
+        "Chair Jacky Rosen is Democratic (should be Republican)",
+        "Ranking Member Josh Hawley is Republican (should be Democratic)",
+        "Chair Margaret Hassan is Democratic (should be Republican)",
+        "Chair Charles Schumer is Democratic (should be Republican)",
+        "Ranking Member Shelley Capito is Republican (should be Democratic)",
+        "Ranking Member Steve Daines is Republican (should be Democratic)",
+        "Chair Cory Booker is Democratic (should be Republican)",
+        "Ranking Member Bernie Moreno is Republican (should be Democratic)",
+        "Chair Cory Booker is Democratic (should be Republican)",
+        "Chair Jeanne Shaheen is Democratic (should be Republican)"
+      ]
+    },
+    "committee_hierarchy": {
+      "total_committees": 815,
+      "top_level_committees": 706,
+      "subcommittees": 109,
+      "orphaned_subcommittees": 0,
+      "hierarchy_errors": 0,
+      "orphaned_details": [],
+      "hierarchy_error_details": []
+    },
+    "congress_accuracy": {
+      "expected_structure": {
+        "House": {
+          "Standing": 20,
+          "Subcommittee": 80,
+          "Joint": 4
+        },
+        "Senate": {
+          "Standing": 16,
+          "Subcommittee": 70,
+          "Joint": 4
+        }
+      },
+      "current_structure": {
+        "House": {
+          "Standing": 127,
+          "Subcommittee": 295
+        },
+        "Joint": {
+          "Joint": 4,
+          "Standing": 16,
+          "Subcommittee": 24
+        },
+        "Senate": {
+          "Standing": 106,
+          "Subcommittee": 243
+        }
+      },
+      "accuracy_analysis": {
+        "House": {
+          "Standing": {
+            "expected": 20,
+            "actual": 127,
+            "difference": 107,
+            "percentage": 635.0
+          },
+          "Subcommittee": {
+            "expected": 80,
+            "actual": 295,
+            "difference": 215,
+            "percentage": 368.75
+          },
+          "Joint": {
+            "expected": 4,
+            "actual": 0,
+            "difference": -4,
+            "percentage": 0.0
+          }
+        },
+        "Senate": {
+          "Standing": {
+            "expected": 16,
+            "actual": 106,
+            "difference": 90,
+            "percentage": 662.5
+          },
+          "Subcommittee": {
+            "expected": 70,
+            "actual": 243,
+            "difference": 173,
+            "percentage": 347.14285714285717
+          },
+          "Joint": {
+            "expected": 4,
+            "actual": 0,
+            "difference": -4,
+            "percentage": 0.0
+          }
+        }
+      }
+    }
+  }
+}

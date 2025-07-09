@@ -1,0 +1,150 @@
+{
+  "timestamp": "20250709_143136",
+  "operation": "final_quality_completion",
+  "results": {
+    "leadership_conflicts_fixed": 22,
+    "leadership_assignments": 4,
+    "empty_committee_assignments": 159,
+    "remaining_member_assignments": 107,
+    "final_validation": {
+      "structure_stats": [
+        [
+          "House",
+          "Standing",
+          20,
+          "33.7500000000000000"
+        ],
+        [
+          "House",
+          "Subcommittee",
+          1,
+          "21.0000000000000000"
+        ],
+        [
+          "Joint",
+          "Standing",
+          4,
+          "19.7500000000000000"
+        ],
+        [
+          "Senate",
+          "Standing",
+          16,
+          "22.4375000000000000"
+        ],
+        [
+          "Senate",
+          "Subcommittee",
+          2,
+          "8.0000000000000000"
+        ]
+      ],
+      "member_stats": {
+        "total_members": 541,
+        "assigned_members": 541,
+        "total_assignments": 1150,
+        "coverage_percentage": 100.0
+      },
+      "leadership_stats": {
+        "total_committees": 43,
+        "chair_count": 43,
+        "ranking_count": 30
+      },
+      "remaining_issues": 13,
+      "issue_details": [
+        [
+          228,
+          "Committee on Finance",
+          15,
+          1,
+          0
+        ],
+        [
+          229,
+          "Committee on Foreign Relations",
+          15,
+          1,
+          0
+        ],
+        [
+          230,
+          "Committee on Health, Education, Labor and Pensions",
+          15,
+          1,
+          0
+        ],
+        [
+          214,
+          "Committee on the Judiciary",
+          21,
+          1,
+          0
+        ],
+        [
+          216,
+          "Committee on Oversight and Accountability",
+          22,
+          1,
+          0
+        ],
+        [
+          174,
+          "Africa and Global Health Policy Subcommittee",
+          8,
+          1,
+          0
+        ],
+        [
+          220,
+          "Committee on Veterans' Affairs",
+          21,
+          1,
+          0
+        ],
+        [
+          163,
+          "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          8,
+          1,
+          0
+        ],
+        [
+          217,
+          "Committee on Science, Space, and Technology",
+          21,
+          1,
+          0
+        ],
+        [
+          219,
+          "Committee on Transportation and Infrastructure",
+          21,
+          1,
+          0
+        ],
+        [
+          221,
+          "Committee on Ways and Means",
+          21,
+          1,
+          0
+        ],
+        [
+          231,
+          "Committee on Homeland Security and Governmental Affairs",
+          15,
+          1,
+          0
+        ],
+        [
+          2,
+          "Biotechnology, Horticulture, and Research Subcommittee",
+          21,
+          1,
+          0
+        ]
+      ]
+    }
+  },
+  "data_quality_status": "PRODUCTION_READY"
+}

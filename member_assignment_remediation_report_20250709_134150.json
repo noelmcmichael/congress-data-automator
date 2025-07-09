@@ -1,0 +1,1083 @@
+{
+  "timestamp": "20250709_134150",
+  "operation": "member_assignment_remediation",
+  "results": {
+    "current_analysis": {
+      "total_committees": 88,
+      "empty_committees": 16,
+      "understaffed_committees": 3,
+      "leadership_issues": 31,
+      "party_distribution": [
+        [
+          "Republican",
+          276
+        ],
+        [
+          "Democratic",
+          263
+        ],
+        [
+          "Independent",
+          2
+        ]
+      ],
+      "empty_committee_details": [
+        [
+          215,
+          "Committee on Natural Resources",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          216,
+          "Committee on Oversight and Accountability",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          217,
+          "Committee on Science, Space, and Technology",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          214,
+          "Committee on the Judiciary",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          219,
+          "Committee on Transportation and Infrastructure",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          220,
+          "Committee on Veterans' Affairs",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          221,
+          "Committee on Ways and Means",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          "Biotechnology, Horticulture, and Research Subcommittee",
+          "House",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ],
+        [
+          226,
+          "Committee on Energy and Natural Resources",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          227,
+          "Committee on Environment and Public Works",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          228,
+          "Committee on Finance",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          229,
+          "Committee on Foreign Relations",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          230,
+          "Committee on Health, Education, Labor and Pensions",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          231,
+          "Committee on Homeland Security and Governmental Affairs",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          174,
+          "Africa and Global Health Policy Subcommittee",
+          "Senate",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ],
+        [
+          163,
+          "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          "Senate",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ]
+      ],
+      "leadership_issue_details": [
+        [
+          207,
+          "Committee on Appropriations",
+          "House",
+          "Standing",
+          56,
+          2,
+          2
+        ],
+        [
+          208,
+          "Committee on Armed Services",
+          "House",
+          "Standing",
+          81,
+          2,
+          2
+        ],
+        [
+          209,
+          "Committee on Education and the Workforce",
+          "House",
+          "Standing",
+          62,
+          2,
+          2
+        ],
+        [
+          210,
+          "Committee on Energy and Commerce",
+          "House",
+          "Standing",
+          44,
+          2,
+          2
+        ],
+        [
+          401,
+          "Committee on Environment Policy",
+          "House",
+          "Standing",
+          91,
+          2,
+          2
+        ],
+        [
+          211,
+          "Committee on Financial Services",
+          "House",
+          "Standing",
+          53,
+          2,
+          2
+        ],
+        [
+          212,
+          "Committee on Foreign Affairs",
+          "House",
+          "Standing",
+          57,
+          2,
+          2
+        ],
+        [
+          398,
+          "Committee on Governance",
+          "House",
+          "Standing",
+          50,
+          2,
+          2
+        ],
+        [
+          215,
+          "Committee on Natural Resources",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          216,
+          "Committee on Oversight and Accountability",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          217,
+          "Committee on Science, Space, and Technology",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          214,
+          "Committee on the Judiciary",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          219,
+          "Committee on Transportation and Infrastructure",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          220,
+          "Committee on Veterans' Affairs",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          221,
+          "Committee on Ways and Means",
+          "House",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          "Biotechnology, Horticulture, and Research Subcommittee",
+          "House",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ],
+        [
+          247,
+          "Committee on Agriculture, Nutrition, and Forestry",
+          "Senate",
+          "Standing",
+          38,
+          2,
+          2
+        ],
+        [
+          222,
+          "Committee on Appropriations",
+          "Senate",
+          "Standing",
+          30,
+          2,
+          2
+        ],
+        [
+          223,
+          "Committee on Armed Services",
+          "Senate",
+          "Standing",
+          41,
+          2,
+          2
+        ],
+        [
+          224,
+          "Committee on Banking, Housing, and Urban Affairs",
+          "Senate",
+          "Standing",
+          36,
+          2,
+          2
+        ],
+        [
+          225,
+          "Committee on Commerce, Science, and Transportation",
+          "Senate",
+          "Standing",
+          33,
+          2,
+          2
+        ],
+        [
+          760,
+          "Committee on Cybersecurity and Digital Innovation",
+          "Senate",
+          "Standing",
+          3,
+          0,
+          1
+        ],
+        [
+          630,
+          "Committee on Cybersecurity and Social Policy",
+          "Senate",
+          "Standing",
+          1,
+          0,
+          1
+        ],
+        [
+          226,
+          "Committee on Energy and Natural Resources",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          227,
+          "Committee on Environment and Public Works",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          228,
+          "Committee on Finance",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          229,
+          "Committee on Foreign Relations",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          230,
+          "Committee on Health, Education, Labor and Pensions",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          231,
+          "Committee on Homeland Security and Governmental Affairs",
+          "Senate",
+          "Standing",
+          0,
+          0,
+          0
+        ],
+        [
+          174,
+          "Africa and Global Health Policy Subcommittee",
+          "Senate",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ],
+        [
+          163,
+          "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          "Senate",
+          "Subcommittee",
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "available_members": {
+      "house": [
+        {
+          "id": 171,
+          "name": "Herbert Conaway",
+          "party": "Democratic",
+          "state": "NJ",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 409,
+          "name": "Jim Costa",
+          "party": "Democratic",
+          "state": "CA",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 254,
+          "name": "Debbie Dingell",
+          "party": "Democratic",
+          "state": "MI",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 313,
+          "name": "Jes\u00fas Garc\u00eda",
+          "party": "Democratic",
+          "state": "IL",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0,
+          "position": "Ranking Member"
+        },
+        {
+          "id": 104,
+          "name": "Al Green",
+          "party": "Democratic",
+          "state": "TX",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 246,
+          "name": "Glenn Ivey",
+          "party": "Democratic",
+          "state": "MD",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 38,
+          "name": "Gwen Moore",
+          "party": "Democratic",
+          "state": "WI",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 398,
+          "name": "Jimmy Panetta",
+          "party": "Democratic",
+          "state": "CA",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 1,
+          "name": "Delia Ramirez",
+          "party": "Democratic",
+          "state": "IL",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 351,
+          "name": "Frederica Wilson",
+          "party": "Democratic",
+          "state": "FL",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 136,
+          "name": "Tom Cole",
+          "party": "Republican",
+          "state": "OK",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 365,
+          "name": "Young Kim",
+          "party": "Republican",
+          "state": "CA",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 173,
+          "name": "Nick LaLota",
+          "party": "Republican",
+          "state": "NY",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 162,
+          "name": "Robert Latta",
+          "party": "Republican",
+          "state": "OH",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 13,
+          "name": "Jimmy Patronis",
+          "party": "Republican",
+          "state": "FL",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 131,
+          "name": "Scott Perry",
+          "party": "Republican",
+          "state": "PA",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 207,
+          "name": "David Rouzer",
+          "party": "Republican",
+          "state": "NC",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 142,
+          "name": "Michael Rulli",
+          "party": "Republican",
+          "state": "OH",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 227,
+          "name": "Pete Stauber",
+          "party": "Republican",
+          "state": "MN",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0
+        },
+        {
+          "id": 138,
+          "name": "David Taylor",
+          "party": "Republican",
+          "state": "OH",
+          "chamber": "House",
+          "current_assignments": 3,
+          "available_slots": 0,
+          "position": "Chair"
+        }
+      ],
+      "senate": [
+        {
+          "id": 537,
+          "name": "Tammy Baldwin",
+          "party": "Democratic",
+          "state": "WI",
+          "chamber": "Senate",
+          "current_assignments": 3,
+          "available_slots": 0,
+          "position": "Ranking Member"
+        },
+        {
+          "id": 490,
+          "name": "Cynthia Lummis",
+          "party": "Republican",
+          "state": "WY",
+          "chamber": "Senate",
+          "current_assignments": 3,
+          "available_slots": 0,
+          "position": "Chair"
+        },
+        {
+          "id": 448,
+          "name": "Angela Alsobrooks",
+          "party": "Democratic",
+          "state": "MD",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 505,
+          "name": "Mazie Hirono",
+          "party": "Democratic",
+          "state": "HI",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 3,
+          "name": "Ben Luj\u00e1n",
+          "party": "Democratic",
+          "state": "NM",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 491,
+          "name": "Jeff Merkley",
+          "party": "Democratic",
+          "state": "OR",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 484,
+          "name": "Patty Murray",
+          "party": "Democratic",
+          "state": "WA",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 451,
+          "name": "Elissa Slotkin",
+          "party": "Democratic",
+          "state": "MI",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 454,
+          "name": "Jim Banks",
+          "party": "Republican",
+          "state": "IN",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 538,
+          "name": "Marsha Blackburn",
+          "party": "Republican",
+          "state": "TN",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 534,
+          "name": "John Boozman",
+          "party": "Republican",
+          "state": "AR",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 525,
+          "name": "John Cornyn",
+          "party": "Republican",
+          "state": "TX",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 445,
+          "name": "John Curtis",
+          "party": "Republican",
+          "state": "UT",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 496,
+          "name": "Mike Lee",
+          "party": "Republican",
+          "state": "UT",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 9,
+          "name": "Ashley Moody",
+          "party": "Republican",
+          "state": "FL",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 485,
+          "name": "Markwayne Mullin",
+          "party": "Republican",
+          "state": "OK",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 470,
+          "name": "Mike Rounds",
+          "party": "Republican",
+          "state": "SD",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 465,
+          "name": "Thomas Tillis",
+          "party": "Republican",
+          "state": "NC",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        },
+        {
+          "id": 461,
+          "name": "Roger Wicker",
+          "party": "Republican",
+          "state": "MS",
+          "chamber": "Senate",
+          "current_assignments": 4,
+          "available_slots": 0
+        }
+      ]
+    },
+    "validation": {
+      "coverage_stats": [
+        [
+          "House",
+          "Standing",
+          1769,
+          1764,
+          "45.4523809523809524"
+        ],
+        [
+          "House",
+          "Subcommittee",
+          1,
+          0,
+          null
+        ],
+        [
+          "Joint",
+          "Standing",
+          220,
+          220,
+          "14.3090909090909091"
+        ],
+        [
+          "Senate",
+          "Standing",
+          284,
+          280,
+          "29.3857142857142857"
+        ],
+        [
+          "Senate",
+          "Subcommittee",
+          2,
+          0,
+          null
+        ]
+      ],
+      "leadership_stats": [
+        [
+          "Chair",
+          "Republican",
+          85
+        ],
+        [
+          "Ranking Member",
+          "Democratic",
+          84
+        ],
+        [
+          "Ranking Member",
+          "Republican",
+          2
+        ]
+      ],
+      "leadership_gaps": 30,
+      "leadership_gap_details": [
+        [
+          228,
+          "Committee on Finance",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          209,
+          "Committee on Education and the Workforce",
+          "House",
+          2,
+          2
+        ],
+        [
+          229,
+          "Committee on Foreign Relations",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          225,
+          "Committee on Commerce, Science, and Transportation",
+          "Senate",
+          2,
+          2
+        ],
+        [
+          174,
+          "Africa and Global Health Policy Subcommittee",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          216,
+          "Committee on Oversight and Accountability",
+          "House",
+          1,
+          0
+        ],
+        [
+          220,
+          "Committee on Veterans' Affairs",
+          "House",
+          0,
+          0
+        ],
+        [
+          163,
+          "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          223,
+          "Committee on Armed Services",
+          "Senate",
+          2,
+          2
+        ],
+        [
+          219,
+          "Committee on Transportation and Infrastructure",
+          "House",
+          0,
+          0
+        ],
+        [
+          221,
+          "Committee on Ways and Means",
+          "House",
+          0,
+          0
+        ],
+        [
+          231,
+          "Committee on Homeland Security and Governmental Affairs",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          2,
+          "Biotechnology, Horticulture, and Research Subcommittee",
+          "House",
+          0,
+          0
+        ],
+        [
+          207,
+          "Committee on Appropriations",
+          "House",
+          2,
+          2
+        ],
+        [
+          227,
+          "Committee on Environment and Public Works",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          630,
+          "Committee on Cybersecurity and Social Policy",
+          "Senate",
+          0,
+          1
+        ],
+        [
+          401,
+          "Committee on Environment Policy",
+          "House",
+          2,
+          2
+        ],
+        [
+          224,
+          "Committee on Banking, Housing, and Urban Affairs",
+          "Senate",
+          2,
+          2
+        ],
+        [
+          230,
+          "Committee on Health, Education, Labor and Pensions",
+          "Senate",
+          0,
+          0
+        ],
+        [
+          214,
+          "Committee on the Judiciary",
+          "House",
+          0,
+          0
+        ],
+        [
+          222,
+          "Committee on Appropriations",
+          "Senate",
+          2,
+          2
+        ],
+        [
+          247,
+          "Committee on Agriculture, Nutrition, and Forestry",
+          "Senate",
+          2,
+          2
+        ],
+        [
+          210,
+          "Committee on Energy and Commerce",
+          "House",
+          2,
+          2
+        ],
+        [
+          208,
+          "Committee on Armed Services",
+          "House",
+          2,
+          2
+        ],
+        [
+          217,
+          "Committee on Science, Space, and Technology",
+          "House",
+          0,
+          0
+        ],
+        [
+          760,
+          "Committee on Cybersecurity and Digital Innovation",
+          "Senate",
+          0,
+          1
+        ],
+        [
+          211,
+          "Committee on Financial Services",
+          "House",
+          2,
+          2
+        ],
+        [
+          212,
+          "Committee on Foreign Affairs",
+          "House",
+          2,
+          2
+        ],
+        [
+          215,
+          "Committee on Natural Resources",
+          "House",
+          0,
+          0
+        ],
+        [
+          398,
+          "Committee on Governance",
+          "House",
+          2,
+          2
+        ]
+      ]
+    }
+  }
+}

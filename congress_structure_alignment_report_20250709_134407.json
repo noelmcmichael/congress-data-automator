@@ -1,0 +1,838 @@
+{
+  "timestamp": "20250709_134407",
+  "operation": "119th_congress_structure_alignment",
+  "results": {
+    "structure_analysis": {
+      "current_structure": {
+        "House": [
+          {
+            "id": 413,
+            "name": "Committee on Accountability Affairs"
+          },
+          {
+            "id": 430,
+            "name": "Committee on Accountability Policy"
+          },
+          {
+            "id": 422,
+            "name": "Committee on Administration Affairs"
+          },
+          {
+            "id": 1,
+            "name": "Committee on Agriculture"
+          },
+          {
+            "id": 394,
+            "name": "Committee on Agriculture Affairs"
+          },
+          {
+            "id": 424,
+            "name": "Committee on Analysis Affairs"
+          },
+          {
+            "id": 396,
+            "name": "Committee on Analysis and Digital Innovation"
+          },
+          {
+            "id": 207,
+            "name": "Committee on Appropriations"
+          },
+          {
+            "id": 208,
+            "name": "Committee on Armed Services"
+          },
+          {
+            "id": 405,
+            "name": "Committee on Climate Change and Oversight"
+          },
+          {
+            "id": 410,
+            "name": "Committee on Climate Change Policy"
+          },
+          {
+            "id": 395,
+            "name": "Committee on Competitiveness"
+          },
+          {
+            "id": 587,
+            "name": "Committee on Compliance Development"
+          },
+          {
+            "id": 386,
+            "name": "Committee on Coordination Affairs"
+          },
+          {
+            "id": 442,
+            "name": "Committee on Coordination and Implementation"
+          },
+          {
+            "id": 420,
+            "name": "Committee on Cybersecurity Development"
+          },
+          {
+            "id": 414,
+            "name": "Committee on Defense"
+          },
+          {
+            "id": 595,
+            "name": "Committee on Defense Development"
+          },
+          {
+            "id": 393,
+            "name": "Committee on Development Development"
+          },
+          {
+            "id": 384,
+            "name": "Committee on Digital Innovation Development"
+          },
+          {
+            "id": 577,
+            "name": "Committee on Economic Development Policy"
+          },
+          {
+            "id": 427,
+            "name": "Committee on Education Affairs"
+          },
+          {
+            "id": 209,
+            "name": "Committee on Education and the Workforce"
+          },
+          {
+            "id": 399,
+            "name": "Committee on Education Development"
+          },
+          {
+            "id": 432,
+            "name": "Committee on Efficiency"
+          },
+          {
+            "id": 581,
+            "name": "Committee on Efficiency Affairs"
+          },
+          {
+            "id": 210,
+            "name": "Committee on Energy and Commerce"
+          },
+          {
+            "id": 377,
+            "name": "Committee on Entrepreneurship and Competitiveness"
+          },
+          {
+            "id": 431,
+            "name": "Committee on Entrepreneurship Development"
+          },
+          {
+            "id": 400,
+            "name": "Committee on Environment"
+          },
+          {
+            "id": 380,
+            "name": "Committee on Environment Affairs"
+          },
+          {
+            "id": 596,
+            "name": "Committee on Environment and Efficiency"
+          },
+          {
+            "id": 401,
+            "name": "Committee on Environment Policy"
+          },
+          {
+            "id": 594,
+            "name": "Committee on Excellence Affairs"
+          },
+          {
+            "id": 385,
+            "name": "Committee on Excellence Development"
+          },
+          {
+            "id": 421,
+            "name": "Committee on Finance Development"
+          },
+          {
+            "id": 211,
+            "name": "Committee on Financial Services"
+          },
+          {
+            "id": 212,
+            "name": "Committee on Foreign Affairs"
+          },
+          {
+            "id": 398,
+            "name": "Committee on Governance"
+          },
+          {
+            "id": 415,
+            "name": "Committee on Governance Affairs"
+          },
+          {
+            "id": 590,
+            "name": "Committee on Governance Policy"
+          },
+          {
+            "id": 582,
+            "name": "Committee on Growth and Security"
+          },
+          {
+            "id": 382,
+            "name": "Committee on Growth and Technology"
+          },
+          {
+            "id": 213,
+            "name": "Committee on Homeland Security"
+          },
+          {
+            "id": 215,
+            "name": "Committee on Natural Resources"
+          },
+          {
+            "id": 216,
+            "name": "Committee on Oversight and Accountability"
+          },
+          {
+            "id": 217,
+            "name": "Committee on Science, Space, and Technology"
+          },
+          {
+            "id": 214,
+            "name": "Committee on the Judiciary"
+          },
+          {
+            "id": 219,
+            "name": "Committee on Transportation and Infrastructure"
+          },
+          {
+            "id": 220,
+            "name": "Committee on Veterans' Affairs"
+          },
+          {
+            "id": 221,
+            "name": "Committee on Ways and Means"
+          }
+        ],
+        "Senate": [
+          {
+            "id": 639,
+            "name": "Committee on Accountability Development"
+          },
+          {
+            "id": 247,
+            "name": "Committee on Agriculture, Nutrition, and Forestry"
+          },
+          {
+            "id": 629,
+            "name": "Committee on Analysis Policy"
+          },
+          {
+            "id": 222,
+            "name": "Committee on Appropriations"
+          },
+          {
+            "id": 223,
+            "name": "Committee on Armed Services"
+          },
+          {
+            "id": 224,
+            "name": "Committee on Banking, Housing, and Urban Affairs"
+          },
+          {
+            "id": 225,
+            "name": "Committee on Commerce, Science, and Transportation"
+          },
+          {
+            "id": 773,
+            "name": "Committee on Competitiveness"
+          },
+          {
+            "id": 648,
+            "name": "Committee on Compliance Affairs"
+          },
+          {
+            "id": 604,
+            "name": "Committee on Compliance Development"
+          },
+          {
+            "id": 760,
+            "name": "Committee on Cybersecurity and Digital Innovation"
+          },
+          {
+            "id": 630,
+            "name": "Committee on Cybersecurity and Social Policy"
+          },
+          {
+            "id": 226,
+            "name": "Committee on Energy and Natural Resources"
+          },
+          {
+            "id": 227,
+            "name": "Committee on Environment and Public Works"
+          },
+          {
+            "id": 228,
+            "name": "Committee on Finance"
+          },
+          {
+            "id": 229,
+            "name": "Committee on Foreign Relations"
+          },
+          {
+            "id": 230,
+            "name": "Committee on Health, Education, Labor and Pensions"
+          },
+          {
+            "id": 231,
+            "name": "Committee on Homeland Security and Governmental Affairs"
+          }
+        ],
+        "Joint": [
+          {
+            "id": 782,
+            "name": "Committee on Administration Development"
+          },
+          {
+            "id": 788,
+            "name": "Committee on Economic Development Policy"
+          },
+          {
+            "id": 781,
+            "name": "Committee on Efficiency Development"
+          },
+          {
+            "id": 777,
+            "name": "Committee on Governance Policy"
+          },
+          {
+            "id": 785,
+            "name": "Committee on Growth Affairs"
+          },
+          {
+            "id": 786,
+            "name": "Committee on Healthcare Development"
+          },
+          {
+            "id": 784,
+            "name": "Committee on Intelligence Policy"
+          },
+          {
+            "id": 780,
+            "name": "Committee on Management"
+          },
+          {
+            "id": 779,
+            "name": "Committee on Strategy Policy"
+          },
+          {
+            "id": 778,
+            "name": "Committee on Trade and Finance"
+          },
+          {
+            "id": 783,
+            "name": "Committee on Transportation Policy"
+          },
+          {
+            "id": 787,
+            "name": "Committee on Urban Affairs"
+          },
+          {
+            "id": 206,
+            "name": "Joint Committee on Printing"
+          },
+          {
+            "id": 204,
+            "name": "Joint Committee on Taxation"
+          },
+          {
+            "id": 205,
+            "name": "Joint Committee on the Library"
+          },
+          {
+            "id": 200,
+            "name": "Joint Economic Committee"
+          }
+        ]
+      },
+      "real_structure": {
+        "House": {
+          "Standing": [
+            "Committee on Agriculture",
+            "Committee on Appropriations",
+            "Committee on Armed Services",
+            "Committee on Budget",
+            "Committee on Education and the Workforce",
+            "Committee on Energy and Commerce",
+            "Committee on Ethics",
+            "Committee on Financial Services",
+            "Committee on Foreign Affairs",
+            "Committee on Homeland Security",
+            "Committee on House Administration",
+            "Committee on the Judiciary",
+            "Committee on Natural Resources",
+            "Committee on Oversight and Accountability",
+            "Committee on Rules",
+            "Committee on Science, Space, and Technology",
+            "Committee on Small Business",
+            "Committee on Transportation and Infrastructure",
+            "Committee on Veterans' Affairs",
+            "Committee on Ways and Means"
+          ]
+        },
+        "Senate": {
+          "Standing": [
+            "Committee on Agriculture, Nutrition, and Forestry",
+            "Committee on Appropriations",
+            "Committee on Armed Services",
+            "Committee on Banking, Housing, and Urban Affairs",
+            "Committee on Budget",
+            "Committee on Commerce, Science, and Transportation",
+            "Committee on Energy and Natural Resources",
+            "Committee on Environment and Public Works",
+            "Committee on Finance",
+            "Committee on Foreign Relations",
+            "Committee on Health, Education, Labor and Pensions",
+            "Committee on Homeland Security and Governmental Affairs",
+            "Committee on the Judiciary",
+            "Committee on Rules and Administration",
+            "Committee on Small Business and Entrepreneurship",
+            "Committee on Veterans' Affairs"
+          ]
+        },
+        "Joint": [
+          "Joint Committee on the Library",
+          "Joint Committee on Printing",
+          "Joint Committee on Taxation",
+          "Joint Economic Committee"
+        ]
+      },
+      "comparison": {
+        "House": {
+          "current_count": 51,
+          "real_count": 20,
+          "matches": [
+            {
+              "real_name": "Committee on Agriculture",
+              "current_name": "Committee on Agriculture",
+              "committee_id": 1
+            },
+            {
+              "real_name": "Committee on Appropriations",
+              "current_name": "Committee on Appropriations",
+              "committee_id": 207
+            },
+            {
+              "real_name": "Committee on Armed Services",
+              "current_name": "Committee on Armed Services",
+              "committee_id": 208
+            },
+            {
+              "real_name": "Committee on Education and the Workforce",
+              "current_name": "Committee on Education and the Workforce",
+              "committee_id": 209
+            },
+            {
+              "real_name": "Committee on Energy and Commerce",
+              "current_name": "Committee on Energy and Commerce",
+              "committee_id": 210
+            },
+            {
+              "real_name": "Committee on Financial Services",
+              "current_name": "Committee on Financial Services",
+              "committee_id": 211
+            },
+            {
+              "real_name": "Committee on Foreign Affairs",
+              "current_name": "Committee on Foreign Affairs",
+              "committee_id": 212
+            },
+            {
+              "real_name": "Committee on Homeland Security",
+              "current_name": "Committee on Homeland Security",
+              "committee_id": 213
+            },
+            {
+              "real_name": "Committee on the Judiciary",
+              "current_name": "Committee on the Judiciary",
+              "committee_id": 214
+            },
+            {
+              "real_name": "Committee on Natural Resources",
+              "current_name": "Committee on Natural Resources",
+              "committee_id": 215
+            },
+            {
+              "real_name": "Committee on Oversight and Accountability",
+              "current_name": "Committee on Oversight and Accountability",
+              "committee_id": 216
+            },
+            {
+              "real_name": "Committee on Science, Space, and Technology",
+              "current_name": "Committee on Science, Space, and Technology",
+              "committee_id": 217
+            },
+            {
+              "real_name": "Committee on Transportation and Infrastructure",
+              "current_name": "Committee on Transportation and Infrastructure",
+              "committee_id": 219
+            },
+            {
+              "real_name": "Committee on Veterans' Affairs",
+              "current_name": "Committee on Veterans' Affairs",
+              "committee_id": 220
+            },
+            {
+              "real_name": "Committee on Ways and Means",
+              "current_name": "Committee on Ways and Means",
+              "committee_id": 221
+            }
+          ],
+          "missing_in_current": [
+            "Committee on Budget",
+            "Committee on Ethics",
+            "Committee on House Administration",
+            "Committee on Rules",
+            "Committee on Small Business"
+          ],
+          "extra_in_current": [
+            {
+              "id": 413,
+              "name": "Committee on Accountability Affairs"
+            },
+            {
+              "id": 430,
+              "name": "Committee on Accountability Policy"
+            },
+            {
+              "id": 422,
+              "name": "Committee on Administration Affairs"
+            },
+            {
+              "id": 394,
+              "name": "Committee on Agriculture Affairs"
+            },
+            {
+              "id": 424,
+              "name": "Committee on Analysis Affairs"
+            },
+            {
+              "id": 396,
+              "name": "Committee on Analysis and Digital Innovation"
+            },
+            {
+              "id": 405,
+              "name": "Committee on Climate Change and Oversight"
+            },
+            {
+              "id": 410,
+              "name": "Committee on Climate Change Policy"
+            },
+            {
+              "id": 395,
+              "name": "Committee on Competitiveness"
+            },
+            {
+              "id": 587,
+              "name": "Committee on Compliance Development"
+            },
+            {
+              "id": 386,
+              "name": "Committee on Coordination Affairs"
+            },
+            {
+              "id": 442,
+              "name": "Committee on Coordination and Implementation"
+            },
+            {
+              "id": 420,
+              "name": "Committee on Cybersecurity Development"
+            },
+            {
+              "id": 414,
+              "name": "Committee on Defense"
+            },
+            {
+              "id": 595,
+              "name": "Committee on Defense Development"
+            },
+            {
+              "id": 393,
+              "name": "Committee on Development Development"
+            },
+            {
+              "id": 384,
+              "name": "Committee on Digital Innovation Development"
+            },
+            {
+              "id": 577,
+              "name": "Committee on Economic Development Policy"
+            },
+            {
+              "id": 427,
+              "name": "Committee on Education Affairs"
+            },
+            {
+              "id": 399,
+              "name": "Committee on Education Development"
+            },
+            {
+              "id": 432,
+              "name": "Committee on Efficiency"
+            },
+            {
+              "id": 581,
+              "name": "Committee on Efficiency Affairs"
+            },
+            {
+              "id": 377,
+              "name": "Committee on Entrepreneurship and Competitiveness"
+            },
+            {
+              "id": 431,
+              "name": "Committee on Entrepreneurship Development"
+            },
+            {
+              "id": 400,
+              "name": "Committee on Environment"
+            },
+            {
+              "id": 380,
+              "name": "Committee on Environment Affairs"
+            },
+            {
+              "id": 596,
+              "name": "Committee on Environment and Efficiency"
+            },
+            {
+              "id": 401,
+              "name": "Committee on Environment Policy"
+            },
+            {
+              "id": 594,
+              "name": "Committee on Excellence Affairs"
+            },
+            {
+              "id": 385,
+              "name": "Committee on Excellence Development"
+            },
+            {
+              "id": 421,
+              "name": "Committee on Finance Development"
+            },
+            {
+              "id": 398,
+              "name": "Committee on Governance"
+            },
+            {
+              "id": 415,
+              "name": "Committee on Governance Affairs"
+            },
+            {
+              "id": 590,
+              "name": "Committee on Governance Policy"
+            },
+            {
+              "id": 582,
+              "name": "Committee on Growth and Security"
+            },
+            {
+              "id": 382,
+              "name": "Committee on Growth and Technology"
+            }
+          ]
+        },
+        "Senate": {
+          "current_count": 18,
+          "real_count": 16,
+          "matches": [
+            {
+              "real_name": "Committee on Agriculture, Nutrition, and Forestry",
+              "current_name": "Committee on Agriculture, Nutrition, and Forestry",
+              "committee_id": 247
+            },
+            {
+              "real_name": "Committee on Appropriations",
+              "current_name": "Committee on Appropriations",
+              "committee_id": 222
+            },
+            {
+              "real_name": "Committee on Armed Services",
+              "current_name": "Committee on Armed Services",
+              "committee_id": 223
+            },
+            {
+              "real_name": "Committee on Banking, Housing, and Urban Affairs",
+              "current_name": "Committee on Banking, Housing, and Urban Affairs",
+              "committee_id": 224
+            },
+            {
+              "real_name": "Committee on Commerce, Science, and Transportation",
+              "current_name": "Committee on Commerce, Science, and Transportation",
+              "committee_id": 225
+            },
+            {
+              "real_name": "Committee on Energy and Natural Resources",
+              "current_name": "Committee on Energy and Natural Resources",
+              "committee_id": 226
+            },
+            {
+              "real_name": "Committee on Environment and Public Works",
+              "current_name": "Committee on Environment and Public Works",
+              "committee_id": 227
+            },
+            {
+              "real_name": "Committee on Finance",
+              "current_name": "Committee on Finance",
+              "committee_id": 228
+            },
+            {
+              "real_name": "Committee on Foreign Relations",
+              "current_name": "Committee on Foreign Relations",
+              "committee_id": 229
+            },
+            {
+              "real_name": "Committee on Health, Education, Labor and Pensions",
+              "current_name": "Committee on Health, Education, Labor and Pensions",
+              "committee_id": 230
+            },
+            {
+              "real_name": "Committee on Homeland Security and Governmental Affairs",
+              "current_name": "Committee on Homeland Security and Governmental Affairs",
+              "committee_id": 231
+            }
+          ],
+          "missing_in_current": [
+            "Committee on Budget",
+            "Committee on the Judiciary",
+            "Committee on Rules and Administration",
+            "Committee on Small Business and Entrepreneurship",
+            "Committee on Veterans' Affairs"
+          ],
+          "extra_in_current": [
+            {
+              "id": 639,
+              "name": "Committee on Accountability Development"
+            },
+            {
+              "id": 629,
+              "name": "Committee on Analysis Policy"
+            },
+            {
+              "id": 773,
+              "name": "Committee on Competitiveness"
+            },
+            {
+              "id": 648,
+              "name": "Committee on Compliance Affairs"
+            },
+            {
+              "id": 604,
+              "name": "Committee on Compliance Development"
+            },
+            {
+              "id": 760,
+              "name": "Committee on Cybersecurity and Digital Innovation"
+            },
+            {
+              "id": 630,
+              "name": "Committee on Cybersecurity and Social Policy"
+            }
+          ]
+        },
+        "Joint": {
+          "current_count": 16,
+          "real_count": 4,
+          "missing": []
+        }
+      }
+    },
+    "created_committees": [
+      {
+        "id": 817,
+        "name": "Committee on Budget",
+        "chamber": "House"
+      },
+      {
+        "id": 818,
+        "name": "Committee on Ethics",
+        "chamber": "House"
+      },
+      {
+        "id": 819,
+        "name": "Committee on House Administration",
+        "chamber": "House"
+      },
+      {
+        "id": 820,
+        "name": "Committee on Rules",
+        "chamber": "House"
+      },
+      {
+        "id": 821,
+        "name": "Committee on Small Business",
+        "chamber": "House"
+      },
+      {
+        "id": 822,
+        "name": "Committee on Budget",
+        "chamber": "Senate"
+      },
+      {
+        "id": 823,
+        "name": "Committee on the Judiciary",
+        "chamber": "Senate"
+      },
+      {
+        "id": 824,
+        "name": "Committee on Rules and Administration",
+        "chamber": "Senate"
+      },
+      {
+        "id": 825,
+        "name": "Committee on Small Business and Entrepreneurship",
+        "chamber": "Senate"
+      },
+      {
+        "id": 826,
+        "name": "Committee on Veterans' Affairs",
+        "chamber": "Senate"
+      }
+    ],
+    "final_validation": {
+      "final_structure": [
+        [
+          "House",
+          "Standing",
+          20,
+          "35.0000000000000000"
+        ],
+        [
+          "House",
+          "Subcommittee",
+          1,
+          null
+        ],
+        [
+          "Joint",
+          "Standing",
+          4,
+          "15.0000000000000000"
+        ],
+        [
+          "Senate",
+          "Standing",
+          16,
+          "24.9166666666666667"
+        ],
+        [
+          "Senate",
+          "Subcommittee",
+          2,
+          null
+        ]
+      ],
+      "leadership_validation": {
+        "total_committees": 43,
+        "committees_with_chair": 18,
+        "committees_with_ranking": 17
+      }
+    }
+  }
+}
