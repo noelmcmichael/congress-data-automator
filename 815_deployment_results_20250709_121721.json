@@ -1,0 +1,16 @@
+{
+  "deployment_timestamp": "20250709_121721",
+  "sql_file": "815_committee_deployment_20250709_121516.sql",
+  "start_time": "2025-07-09T12:16:41.484964",
+  "end_time": null,
+  "deployment_metrics": {},
+  "deployment_log": [
+    "[12:16:41] INFO: Initialized Phase C Deployment Executor",
+    "[12:16:41] INFO: Starting Phase C: Production Deployment",
+    "[12:16:41] INFO: Checking Cloud SQL Proxy status",
+    "[12:16:41] INFO: Cloud SQL Proxy executable found",
+    "[12:16:41] INFO: Cloud SQL Proxy not running, need to start it",
+    "[12:16:41] INFO: Starting Cloud SQL Proxy...",
+    "[12:17:21] ERROR: Cloud SQL Proxy failed to start within 30 seconds"
+  ]
+}

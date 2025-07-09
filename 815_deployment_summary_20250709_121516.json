@@ -1,0 +1,26 @@
+{
+  "generation_timestamp": "2025-07-09 12:15:16",
+  "total_committees": 440,
+  "target_total": 815,
+  "existing_committees": 375,
+  "batch_size": 50,
+  "total_batches": 9,
+  "chamber_distribution": {
+    "House": 220,
+    "Senate": 180,
+    "Joint": 40
+  },
+  "type_distribution": {
+    "Standing": 172,
+    "Subcommittee": 264,
+    "Joint": 4
+  },
+  "committees_with_parents": 264,
+  "sql_size_characters": 102696,
+  "validation": {
+    "all_have_codes": true,
+    "all_have_names": true,
+    "all_have_chambers": true,
+    "all_have_types": true
+  }
+}

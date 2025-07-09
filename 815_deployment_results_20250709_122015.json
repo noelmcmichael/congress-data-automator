@@ -1,0 +1,45 @@
+{
+  "deployment_timestamp": "20250709_122015",
+  "sql_file": "815_committee_deployment_20250709_121516.sql",
+  "start_time": "2025-07-09T12:20:13.425200",
+  "end_time": null,
+  "deployment_metrics": {
+    "baseline": {
+      "timestamp": "2025-07-09T12:20:14.260148",
+      "database_metrics": {
+        "total_committees": 375,
+        "chamber_distribution": {
+          "House": 202,
+          "Senate": 169,
+          "Joint": 4
+        },
+        "type_distribution": {
+          "Subcommittee": 298,
+          "Standing": 77
+        }
+      },
+      "api_metrics": {
+        "response_time_ms": 179.19,
+        "status": "operational"
+      }
+    }
+  },
+  "deployment_log": [
+    "[12:20:13] INFO: Initialized Phase C Deployment Executor",
+    "[12:20:13] INFO: Starting Phase C: Production Deployment",
+    "[12:20:13] INFO: Checking Cloud SQL Proxy status",
+    "[12:20:13] INFO: Cloud SQL Proxy executable found",
+    "[12:20:13] SUCCESS: Cloud SQL Proxy already running and accessible",
+    "[12:20:13] INFO: Testing database connection",
+    "[12:20:14] INFO: Current committee count: 375",
+    "[12:20:14] INFO: Table schema verified: 25 columns",
+    "[12:20:14] SUCCESS: Database connection test successful",
+    "[12:20:14] INFO: Collecting pre-deployment baseline metrics",
+    "[12:20:14] SUCCESS: Baseline metrics collected",
+    "[12:20:14] INFO: Starting SQL deployment from 815_committee_deployment_20250709_121516.sql",
+    "[12:20:14] INFO: SQL file size: 102,674 characters",
+    "[12:20:15] INFO: Executing SQL deployment...",
+    "[12:20:15] ERROR: SQL deployment failed: column \"parent_committee_code\" of relation \"committees\" does not exist\nLINE 28: ... (congress_gov_id, name, chamber, committee_type, parent_com...\n                                                              ^\n",
+    "[12:20:15] ERROR: Deployment failed, stopping"
+  ]
+}

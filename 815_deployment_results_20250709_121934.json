@@ -1,0 +1,45 @@
+{
+  "deployment_timestamp": "20250709_121934",
+  "sql_file": "815_committee_deployment_20250709_121516.sql",
+  "start_time": "2025-07-09T12:19:32.398664",
+  "end_time": null,
+  "deployment_metrics": {
+    "baseline": {
+      "timestamp": "2025-07-09T12:19:33.291445",
+      "database_metrics": {
+        "total_committees": 375,
+        "chamber_distribution": {
+          "House": 202,
+          "Senate": 169,
+          "Joint": 4
+        },
+        "type_distribution": {
+          "Subcommittee": 298,
+          "Standing": 77
+        }
+      },
+      "api_metrics": {
+        "response_time_ms": 264.73,
+        "status": "operational"
+      }
+    }
+  },
+  "deployment_log": [
+    "[12:19:32] INFO: Initialized Phase C Deployment Executor",
+    "[12:19:32] INFO: Starting Phase C: Production Deployment",
+    "[12:19:32] INFO: Checking Cloud SQL Proxy status",
+    "[12:19:32] INFO: Cloud SQL Proxy executable found",
+    "[12:19:32] SUCCESS: Cloud SQL Proxy already running and accessible",
+    "[12:19:32] INFO: Testing database connection",
+    "[12:19:33] INFO: Current committee count: 375",
+    "[12:19:33] INFO: Table schema verified: 25 columns",
+    "[12:19:33] SUCCESS: Database connection test successful",
+    "[12:19:33] INFO: Collecting pre-deployment baseline metrics",
+    "[12:19:34] SUCCESS: Baseline metrics collected",
+    "[12:19:34] INFO: Starting SQL deployment from 815_committee_deployment_20250709_121516.sql",
+    "[12:19:34] INFO: SQL file size: 102,696 characters",
+    "[12:19:34] INFO: Executing SQL deployment...",
+    "[12:19:34] ERROR: SQL deployment failed: unrecognized configuration parameter \"autocommit\"\n",
+    "[12:19:34] ERROR: Deployment failed, stopping"
+  ]
+}

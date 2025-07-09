@@ -1,0 +1,81 @@
+{
+  "deployment_timestamp": "20250709_122210",
+  "sql_file": "815_committee_deployment_corrected_20250709_122135.sql",
+  "start_time": "2025-07-09T12:22:05.681092",
+  "end_time": "2025-07-09T12:22:10.122961",
+  "deployment_metrics": {
+    "baseline": {
+      "timestamp": "2025-07-09T12:22:06.500934",
+      "database_metrics": {
+        "total_committees": 375,
+        "chamber_distribution": {
+          "House": 202,
+          "Senate": 169,
+          "Joint": 4
+        },
+        "type_distribution": {
+          "Subcommittee": 298,
+          "Standing": 77
+        }
+      },
+      "api_metrics": {
+        "response_time_ms": 183.39,
+        "status": "operational"
+      }
+    },
+    "sql_execution_time": 0.35073113441467285,
+    "final_committee_count": 815,
+    "validation": {
+      "timestamp": "2025-07-09T12:22:07.959394",
+      "database_validation": {
+        "total_committees": 815,
+        "target_achieved": true,
+        "chamber_distribution": {
+          "House": 422,
+          "Joint": 44,
+          "Senate": 349
+        },
+        "type_distribution": {
+          "Joint": 4,
+          "Standing": 249,
+          "Subcommittee": 562
+        },
+        "committees_without_codes": 199,
+        "committees_without_names": 0
+      },
+      "api_validation": {
+        "response_time_ms": 253.6,
+        "status_code": 200,
+        "operational": true,
+        "total_committees_via_api": 615,
+        "pagination_working": true
+      },
+      "performance_validation": {}
+    },
+    "total_duration_seconds": 4.441869
+  },
+  "deployment_log": [
+    "[12:22:05] INFO: Initialized Phase C Deployment Executor",
+    "[12:22:05] INFO: Starting Phase C: Production Deployment",
+    "[12:22:05] INFO: Checking Cloud SQL Proxy status",
+    "[12:22:05] INFO: Cloud SQL Proxy executable found",
+    "[12:22:06] SUCCESS: Cloud SQL Proxy already running and accessible",
+    "[12:22:06] INFO: Testing database connection",
+    "[12:22:06] INFO: Current committee count: 375",
+    "[12:22:06] INFO: Table schema verified: 25 columns",
+    "[12:22:06] SUCCESS: Database connection test successful",
+    "[12:22:06] INFO: Collecting pre-deployment baseline metrics",
+    "[12:22:07] SUCCESS: Baseline metrics collected",
+    "[12:22:07] INFO: Starting SQL deployment from 815_committee_deployment_corrected_20250709_122135.sql",
+    "[12:22:07] INFO: SQL file size: 185,884 characters",
+    "[12:22:07] INFO: Executing SQL deployment...",
+    "[12:22:07] SUCCESS: SQL deployment completed in 0.35 seconds",
+    "[12:22:07] INFO: Final committee count: 815",
+    "[12:22:07] SUCCESS: SUCCESS: Exact target count achieved!",
+    "[12:22:07] INFO: Running post-deployment validation",
+    "[12:22:08] SUCCESS: Database validation completed",
+    "[12:22:10] SUCCESS: API validation completed",
+    "[12:22:10] SUCCESS: Phase C completed in 4.44 seconds",
+    "[12:22:10] SUCCESS: DEPLOYMENT SUCCESS: All validation checks passed!"
+  ]
+}
