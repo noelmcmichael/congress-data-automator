@@ -1,0 +1,10 @@
+embedding:
+  excludes:
+    - "docs/archive/**/*"
+    - "*.log"
+    - "*.pid"
+    - ".git/**/*"
+    - ".venv/**/*"
+    - "node_modules/**/*"
+    - "__pycache__/**/*"
+    - "*.pyc"
