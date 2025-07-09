@@ -1,0 +1,57 @@
+{
+  "deployment_timestamp": "20250709_130938",
+  "deployment_duration_seconds": 121.690582,
+  "data_file": "member_committee_relationships_20250709_130622.json",
+  "validation_results": {
+    "timestamp": "2025-07-09T13:09:37.736304",
+    "membership_validation": {
+      "total_deployed": 2264,
+      "expected": 2264,
+      "match": true,
+      "position_distribution": {
+        "Chair": 83,
+        "Ranking Member": 85,
+        "Member": 2096
+      },
+      "chamber_distribution": {
+        "House": 1764,
+        "Senate": 280,
+        "Joint": 220
+      }
+    },
+    "leadership_validation": {
+      "committees_with_chairs": 83,
+      "committees_with_ranking": 83
+    },
+    "data_integrity": {
+      "member_assignment_distribution": {
+        "4": 441,
+        "5": 100
+      },
+      "members_with_assignments": 541,
+      "total_members": 541,
+      "average_assignments_per_member": 4.18
+    }
+  },
+  "deployment_log": [
+    "[13:07:36] INFO: Initialized Relationship Deployment Generator",
+    "[13:07:36] INFO: Starting full member-committee relationship deployment",
+    "[13:07:36] INFO: Loading relationship data from member_committee_relationships_20250709_130622.json",
+    "[13:07:36] SUCCESS: Loaded 2264 memberships and 83 leadership assignments",
+    "[13:07:36] INFO: Clearing existing committee relationships",
+    "[13:07:37] SUCCESS: Existing relationships cleared successfully",
+    "[13:07:37] INFO: Deploying committee memberships",
+    "[13:08:28] INFO: Deployed 1000 memberships...",
+    "[13:09:19] INFO: Deployed 2000 memberships...",
+    "[13:09:33] SUCCESS: Successfully deployed 2264 committee memberships",
+    "[13:09:33] INFO: Deploying committee leadership assignments",
+    "[13:09:37] SUCCESS: Successfully deployed 83 leadership assignments",
+    "[13:09:37] INFO: Validating deployed relationships",
+    "[13:09:38] SUCCESS: Validation completed successfully",
+    "[13:09:38] INFO: === DEPLOYMENT RESULTS ===",
+    "[13:09:38] INFO: Deployment duration: 121.69 seconds",
+    "[13:09:38] INFO: \u2705 Memberships: 2264 deployed successfully",
+    "[13:09:38] INFO: \u2705 Leadership: 83 chairs, 83 ranking members",
+    "[13:09:38] INFO: \u2705 Coverage: 4.18 avg assignments per member"
+  ]
+}
