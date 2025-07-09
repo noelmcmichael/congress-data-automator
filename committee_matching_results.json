@@ -1,0 +1,1200 @@
+{
+  "timestamp": "2025-07-08T22:06:24.964740",
+  "total_committees_processed": 48,
+  "successful_matches": 34,
+  "failed_matches": 14,
+  "matches": [
+    {
+      "wikipedia_committee": {
+        "name": "Agriculture, Nutrition and Forestry",
+        "chamber": "Senate",
+        "chair": "John Boozman (R-AR)",
+        "ranking_member": "Amy Klobuchar (D-MN)"
+      },
+      "match_result": {
+        "committee_id": 115,
+        "database_name": "Committee on Agriculture, Nutrition, and Forestry",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 115,
+          "name": "Committee on Agriculture, Nutrition, and Forestry",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Appropriations",
+        "chamber": "Senate",
+        "chair": "Susan Collins (R-ME)",
+        "ranking_member": "Patty Murray (D-WA)"
+      },
+      "match_result": {
+        "committee_id": 121,
+        "database_name": "Committee on Appropriations",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 121,
+          "name": "Committee on Appropriations",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Armed Services",
+        "chamber": "Senate",
+        "chair": "Roger Wicker (R-MS)",
+        "ranking_member": "Jack Reed (D-RI)"
+      },
+      "match_result": {
+        "committee_id": 134,
+        "database_name": "Committee on Armed Services",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 134,
+          "name": "Committee on Armed Services",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Banking, Housing and Urban Affairs",
+        "chamber": "Senate",
+        "chair": "Tim Scott (R-SC)",
+        "ranking_member": "Elizabeth Warren (D-MA)"
+      },
+      "match_result": {
+        "committee_id": 142,
+        "database_name": "Committee on Banking, Housing, and Urban Affairs",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 142,
+          "name": "Committee on Banking, Housing, and Urban Affairs",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Budget",
+        "chamber": "Senate",
+        "chair": "Lindsey Graham (R-SC)",
+        "ranking_member": "Jeff Merkley (D-OR)"
+      },
+      "match_result": {
+        "committee_id": 148,
+        "database_name": "Committee on the Budget",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 148,
+          "name": "Committee on the Budget",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Commerce, Science and Transportation",
+        "chamber": "Senate",
+        "chair": "Ted Cruz (R-TX)",
+        "ranking_member": "Maria Cantwell (D-WA)"
+      },
+      "match_result": {
+        "committee_id": 149,
+        "database_name": "Committee on Commerce, Science, and Transportation",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 149,
+          "name": "Committee on Commerce, Science, and Transportation",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Energy and Natural Resources",
+        "chamber": "Senate",
+        "chair": "Mike Lee (R-UT)",
+        "ranking_member": "Martin Heinrich (D-NM)"
+      },
+      "match_result": {
+        "committee_id": 157,
+        "database_name": "Committee on Energy and Natural Resources",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 157,
+          "name": "Committee on Energy and Natural Resources",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Environment and Public Works",
+        "chamber": "Senate",
+        "chair": "Shelley Moore Capito (R-WV)",
+        "ranking_member": "Sheldon Whitehouse (D-RI)"
+      },
+      "match_result": {
+        "committee_id": 162,
+        "database_name": "Committee on Environment and Public Works",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 162,
+          "name": "Committee on Environment and Public Works",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Finance",
+        "chamber": "Senate",
+        "chair": "Mike Crapo (R-ID)",
+        "ranking_member": "Ron Wyden (D-OR)"
+      },
+      "match_result": {
+        "committee_id": 167,
+        "database_name": "Committee on Finance",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 167,
+          "name": "Committee on Finance",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Foreign Relations",
+        "chamber": "Senate",
+        "chair": "Jim Risch (R-ID)",
+        "ranking_member": "Jeanne Shaheen (D-NH)"
+      },
+      "match_result": {
+        "committee_id": 173,
+        "database_name": "Committee on Foreign Relations",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 173,
+          "name": "Committee on Foreign Relations",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Health, Education, Labor and Pensions",
+        "chamber": "Senate",
+        "chair": "Bill Cassidy (R-LA)",
+        "ranking_member": "Bernie Sanders (I-VT)"
+      },
+      "match_result": {
+        "committee_id": 181,
+        "database_name": "Committee on Health, Education, Labor and Pensions",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 181,
+          "name": "Committee on Health, Education, Labor and Pensions",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Homeland Security and Governmental Affairs",
+        "chamber": "Senate",
+        "chair": "Rand Paul (R-KY)",
+        "ranking_member": "Gary Peters (D-MI)"
+      },
+      "match_result": {
+        "committee_id": 185,
+        "database_name": "Committee on Homeland Security and Governmental Affairs",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 185,
+          "name": "Committee on Homeland Security and Governmental Affairs",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Indian Affairs (Permanent Select)",
+        "chamber": "Senate",
+        "chair": "Lisa Murkowski (R-AK)",
+        "ranking_member": "Brian Schatz (D-HI)"
+      },
+      "match_result": {
+        "committee_id": 199,
+        "database_name": "Committee on Veterans' Affairs",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 97,
+        "name_similarity": 67,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 199,
+          "name": "Committee on Veterans' Affairs",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Judiciary",
+        "chamber": "Senate",
+        "chair": "Chuck Grassley (R-IA)",
+        "ranking_member": "Dick Durbin (D-IL)"
+      },
+      "match_result": {
+        "committee_id": 189,
+        "database_name": "Committee on the Judiciary",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 189,
+          "name": "Committee on the Judiciary",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Rules and Administration",
+        "chamber": "Senate",
+        "chair": "Mitch McConnell (R-KY)",
+        "ranking_member": "Alex Padilla (D-CA)"
+      },
+      "match_result": {
+        "committee_id": 197,
+        "database_name": "Committee on Rules and Administration",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 197,
+          "name": "Committee on Rules and Administration",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Small Business and Entrepreneurship",
+        "chamber": "Senate",
+        "chair": "Joni Ernst (R-IA)",
+        "ranking_member": "Ed Markey (D-MA)"
+      },
+      "match_result": {
+        "committee_id": 198,
+        "database_name": "Committee on Small Business and Entrepreneurship",
+        "database_chamber": "Senate",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 198,
+          "name": "Committee on Small Business and Entrepreneurship",
+          "chamber": "Senate",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Agriculture",
+        "chamber": "House",
+        "chair": "Glenn Thompson (R-PA)",
+        "ranking_member": "Angie Craig (D-MN)"
+      },
+      "match_result": {
+        "committee_id": 1,
+        "database_name": "Committee on Agriculture",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 1,
+          "name": "Committee on Agriculture",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Appropriations",
+        "chamber": "House",
+        "chair": "Tom Cole (R-OK)",
+        "ranking_member": "Rosa DeLauro (D-CT)"
+      },
+      "match_result": {
+        "committee_id": 7,
+        "database_name": "Committee on Appropriations",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 7,
+          "name": "Committee on Appropriations",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Armed Services",
+        "chamber": "House",
+        "chair": "Mike Rogers (R-AL)",
+        "ranking_member": "Adam Smith (D-WA)"
+      },
+      "match_result": {
+        "committee_id": 20,
+        "database_name": "Committee on Armed Services",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 20,
+          "name": "Committee on Armed Services",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Budget",
+        "chamber": "House",
+        "chair": "Jodey Arrington (R-TX)",
+        "ranking_member": "Brendan Boyle (D-PA)"
+      },
+      "match_result": {
+        "committee_id": 28,
+        "database_name": "Committee on the Budget",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 28,
+          "name": "Committee on the Budget",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Education and Workforce",
+        "chamber": "House",
+        "chair": "Tim Walberg (R-MI)",
+        "ranking_member": "Bobby Scott (D-VA)"
+      },
+      "match_result": {
+        "committee_id": 32,
+        "database_name": "Higher Education and Workforce Development Subcommittee",
+        "database_chamber": "House",
+        "is_subcommittee": true,
+        "match_score": 71,
+        "name_similarity": 71,
+        "chamber_match": true,
+        "is_standing": false,
+        "candidate_data": {
+          "id": 32,
+          "name": "Higher Education and Workforce Development Subcommittee",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": true,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Energy and Commerce",
+        "chamber": "House",
+        "chair": "Brett Guthrie (R-KY)",
+        "ranking_member": "Frank Pallone (D-NJ)"
+      },
+      "match_result": {
+        "committee_id": 34,
+        "database_name": "Committee on Energy and Commerce",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 34,
+          "name": "Committee on Energy and Commerce",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Financial Services",
+        "chamber": "House",
+        "chair": "French Hill (R-AR)",
+        "ranking_member": "Maxine Waters (D-CA)"
+      },
+      "match_result": {
+        "committee_id": 41,
+        "database_name": "Committee on Financial Services",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 41,
+          "name": "Committee on Financial Services",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Foreign Affairs",
+        "chamber": "House",
+        "chair": "Brian Mast (R-FL)",
+        "ranking_member": "Gregory Meeks (D-NY)"
+      },
+      "match_result": {
+        "committee_id": 48,
+        "database_name": "Committee on Foreign Affairs",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 48,
+          "name": "Committee on Foreign Affairs",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Homeland Security",
+        "chamber": "House",
+        "chair": "Mark Green (R-TN)",
+        "ranking_member": "Bennie Thompson (D-MS)"
+      },
+      "match_result": {
+        "committee_id": 56,
+        "database_name": "Committee on Homeland Security",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 56,
+          "name": "Committee on Homeland Security",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "House Administration",
+        "chamber": "House",
+        "chair": "Bryan Steil (R-WI)",
+        "ranking_member": "Joe Morelle (R-NY)"
+      },
+      "match_result": {
+        "committee_id": 63,
+        "database_name": "Committee on House Administration",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 63,
+          "name": "Committee on House Administration",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Judiciary",
+        "chamber": "House",
+        "chair": "Jim Jordan (R-OH)",
+        "ranking_member": "Jamie Raskin (D-MD)"
+      },
+      "match_result": {
+        "committee_id": 64,
+        "database_name": "Committee on the Judiciary",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 64,
+          "name": "Committee on the Judiciary",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Natural Resources",
+        "chamber": "House",
+        "chair": "Bruce Westerman (R-AR)",
+        "ranking_member": "Jared Huffman (D-CA)"
+      },
+      "match_result": {
+        "committee_id": 70,
+        "database_name": "Committee on Natural Resources",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 70,
+          "name": "Committee on Natural Resources",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Oversight and Government Reform",
+        "chamber": "House",
+        "chair": "James Comer (R-KY)",
+        "ranking_member": "Gerry Connolly (D-VA) *Until April 28, 2025 Robert Garcia (D-CA) *Since June 24, 2025"
+      },
+      "match_result": {
+        "committee_id": 76,
+        "database_name": "Committee on Oversight and Accountability",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 76,
+          "name": "Committee on Oversight and Accountability",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Rules",
+        "chamber": "House",
+        "chair": "Virginia Foxx (R-NC)",
+        "ranking_member": "Jim McGovern (D-MA)"
+      },
+      "match_result": {
+        "committee_id": 82,
+        "database_name": "Committee on Rules",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 82,
+          "name": "Committee on Rules",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Science, Space and Technology",
+        "chamber": "House",
+        "chair": "Brian Babin (R-TX)",
+        "ranking_member": "Zoe Lofgren (D-CA)"
+      },
+      "match_result": {
+        "committee_id": 83,
+        "database_name": "Committee on Science, Space, and Technology",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 83,
+          "name": "Committee on Science, Space, and Technology",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Small Business",
+        "chamber": "House",
+        "chair": "Roger Williams (R-TX)",
+        "ranking_member": "Nydia Vel\u00e1zquez (D-NY)"
+      },
+      "match_result": {
+        "committee_id": 89,
+        "database_name": "Committee on Small Business",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 89,
+          "name": "Committee on Small Business",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Transportation and Infrastructure",
+        "chamber": "House",
+        "chair": "Sam Graves (R-MO)",
+        "ranking_member": "Rick Larsen (D-WA)"
+      },
+      "match_result": {
+        "committee_id": 95,
+        "database_name": "Committee on Transportation and Infrastructure",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 95,
+          "name": "Committee on Transportation and Infrastructure",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Ways and Means",
+        "chamber": "House",
+        "chair": "Jason Smith (R-MO)",
+        "ranking_member": "Richard Neal (D-MA)"
+      },
+      "match_result": {
+        "committee_id": 108,
+        "database_name": "Committee on Ways and Means",
+        "database_chamber": "House",
+        "is_subcommittee": false,
+        "match_score": 130,
+        "name_similarity": 100,
+        "chamber_match": true,
+        "is_standing": true,
+        "candidate_data": {
+          "id": 108,
+          "name": "Committee on Ways and Means",
+          "chamber": "House",
+          "committee_code": null,
+          "congress_gov_id": null,
+          "is_active": true,
+          "is_subcommittee": false,
+          "parent_committee_id": null,
+          "website_url": null,
+          "created_at": "2025-07-07T01:26:44.792718Z",
+          "updated_at": null
+        }
+      }
+    }
+  ],
+  "failures": [
+    {
+      "wikipedia_committee": {
+        "name": "Aging (Special)",
+        "chamber": "Senate",
+        "chair": "Rick Scott (R-FL)",
+        "ranking_member": "Kirsten Gillibrand (D-NY)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Ethics (Select)",
+        "chamber": "Senate",
+        "chair": "James Lankford (R-OK)",
+        "ranking_member": "Chris Coons (D-DE)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Intelligence (Select)",
+        "chamber": "Senate",
+        "chair": "Tom Cotton (R-AR)",
+        "ranking_member": "Mark Warner (D-VA)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "International Narcotics Control (Permanent Caucus)",
+        "chamber": "Senate",
+        "chair": "John Cornyn (R-TX)",
+        "ranking_member": "Sheldon Whitehouse (D-RI)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Veterans' Affairs",
+        "chamber": "Senate",
+        "chair": "Jerry Moran (R-KS)",
+        "ranking_member": "Richard Blumenthal (D-CT)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Ethics",
+        "chamber": "House",
+        "chair": "Michael Guest (R-MS)",
+        "ranking_member": "Mark DeSaulnier (D-CA)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Intelligence (Permanent Select)",
+        "chamber": "House",
+        "chair": "Rick Crawford (R-AR)",
+        "ranking_member": "Jim Himes (D-CT)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Strategic Competition between the United Statesand the Chinese Communist Party (Select)",
+        "chamber": "House",
+        "chair": "John Moolenaar (R-MI)",
+        "ranking_member": "Raja Krishnamoorthi (D-IL)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Veterans' Affairs",
+        "chamber": "House",
+        "chair": "Mike Bost (R-IL)",
+        "ranking_member": "Mark Takano (D-CA)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Economic",
+        "chamber": "Joint",
+        "chair": "Rep. David Schweikert (R-AZ)",
+        "ranking_member": "Sen. Eric Schmitt (R-MO)",
+        "vice_chair": "Sen. Eric Schmitt (R-MO)",
+        "vice_ranking_member": "Rep. Don Beyer (D-VA)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Inaugural Ceremonies (Special)Until January 20, 2025",
+        "chamber": "Joint",
+        "chair": "Sen. Amy Klobuchar (D-MN)",
+        "ranking_member": "Rep. Mike Johnson (R-LA)",
+        "vice_chair": "Rep. Mike Johnson (R-LA)",
+        "vice_ranking_member": "Sen. Deb Fischer (R-NE)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Library",
+        "chamber": "Joint",
+        "chair": "Rep. Bryan Steil (R-WI)",
+        "ranking_member": "Sen. Mitch McConnell (R-KY)",
+        "vice_chair": "Sen. Mitch McConnell (R-KY)",
+        "vice_ranking_member": "Rep. Joe Morelle (D-NY)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Printing",
+        "chamber": "Joint",
+        "chair": "Sen. Mitch McConnell (R-KY)",
+        "ranking_member": "Rep. Bryan Steil (R-WI)",
+        "vice_chair": "Rep. Bryan Steil (R-WI)",
+        "vice_ranking_member": "Sen. Alex Padilla (D-CA)"
+      },
+      "reason": "No suitable match found"
+    },
+    {
+      "wikipedia_committee": {
+        "name": "Taxation[s]",
+        "chamber": "Joint",
+        "chair": "Rep. Jason Smith (R-MO)",
+        "ranking_member": "Sen. Mike Crapo (R-ID)",
+        "vice_chair": "Sen. Mike Crapo (R-ID)",
+        "vice_ranking_member": "Rep. Richard Neal (D-MA)"
+      },
+      "reason": "No suitable match found"
+    }
+  ]
+}

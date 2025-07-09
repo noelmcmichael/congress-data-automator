@@ -1,0 +1,171 @@
+{
+  "timestamp": "2025-07-08T22:09:00.665587",
+  "member_validation": {
+    "total_matches": 83,
+    "high_confidence_matches": 73,
+    "medium_confidence_matches": 7,
+    "low_confidence_matches": 3,
+    "validation_errors": [
+      {
+        "type": "party_mismatch",
+        "wikipedia_name": "Joe Morelle (R-NY)",
+        "expected_party": "Republican",
+        "database_party": "Democratic"
+      }
+    ]
+  },
+  "committee_validation": {
+    "total_matches": 34,
+    "perfect_matches": 32,
+    "good_matches": 0,
+    "acceptable_matches": 2,
+    "chamber_mismatches": []
+  },
+  "leadership_validation": {
+    "total_updates": 34,
+    "high_confidence_updates": 31,
+    "medium_confidence_updates": 3,
+    "low_confidence_updates": 0,
+    "critical_committees_updated": 11,
+    "critical_committees": [
+      {
+        "committee": "Appropriations",
+        "chamber": "Senate",
+        "chair_id": 528,
+        "ranking_id": 484,
+        "confidence": 100
+      },
+      {
+        "committee": "Armed Services",
+        "chamber": "Senate",
+        "chair_id": 461,
+        "ranking_id": 480,
+        "confidence": 100
+      },
+      {
+        "committee": "Commerce, Science and Transportation",
+        "chamber": "Senate",
+        "chair_id": 517,
+        "ranking_id": 530,
+        "confidence": 100
+      },
+      {
+        "committee": "Finance",
+        "chamber": "Senate",
+        "chair_id": 521,
+        "ranking_id": 456,
+        "confidence": 100
+      },
+      {
+        "committee": "Foreign Relations",
+        "chamber": "Senate",
+        "chair_id": 479,
+        "ranking_id": 469,
+        "confidence": 100
+      },
+      {
+        "committee": "Judiciary",
+        "chamber": "Senate",
+        "chair_id": 510,
+        "ranking_id": null,
+        "confidence": 85
+      },
+      {
+        "committee": "Appropriations",
+        "chamber": "House",
+        "chair_id": 136,
+        "ranking_id": 385,
+        "confidence": 100
+      },
+      {
+        "committee": "Armed Services",
+        "chamber": "House",
+        "chair_id": 444,
+        "ranking_id": 37,
+        "confidence": 100
+      },
+      {
+        "committee": "Energy and Commerce",
+        "chamber": "House",
+        "chair_id": 294,
+        "ranking_id": 194,
+        "confidence": 100
+      },
+      {
+        "committee": "Judiciary",
+        "chamber": "House",
+        "chair_id": 163,
+        "ranking_id": 253,
+        "confidence": 100
+      },
+      {
+        "committee": "Ways and Means",
+        "chamber": "House",
+        "chair_id": 236,
+        "ranking_id": 264,
+        "confidence": 100
+      }
+    ]
+  },
+  "sql_validation": {
+    "total_statements": 34,
+    "syntax_valid": 34,
+    "syntax_errors": [],
+    "sample_validations": [
+      {
+        "committee": "Committee on Agriculture, Nutrition, and Forestry",
+        "sql": "UPDATE committees SET chair_member_id = 534, ranking_member_id = 495 WHERE id = 115;",
+        "confidence": 100,
+        "status": "\u2705 Valid"
+      },
+      {
+        "committee": "Committee on Appropriations",
+        "sql": "UPDATE committees SET chair_member_id = 528, ranking_member_id = 484 WHERE id = 121;",
+        "confidence": 100,
+        "status": "\u2705 Valid"
+      },
+      {
+        "committee": "Committee on Armed Services",
+        "sql": "UPDATE committees SET chair_member_id = 461, ranking_member_id = 480 WHERE id = 134;",
+        "confidence": 100,
+        "status": "\u2705 Valid"
+      },
+      {
+        "committee": "Committee on Banking, Housing, and Urban Affairs",
+        "sql": "UPDATE committees SET chair_member_id = 472, ranking_member_id = 458 WHERE id = 142;",
+        "confidence": 100,
+        "status": "\u2705 Valid"
+      },
+      {
+        "committee": "Committee on the Budget",
+        "sql": "UPDATE committees SET chair_member_id = 515, ranking_member_id = 491 WHERE id = 148;",
+        "confidence": 100,
+        "status": "\u2705 Valid"
+      }
+    ]
+  },
+  "dry_run_validation": {
+    "wikipedia_committees": 48,
+    "member_matches": 83,
+    "committee_matches": 34,
+    "leadership_updates": 34,
+    "sql_statements": 34,
+    "pipeline_integrity": true,
+    "pipeline_errors": [],
+    "verified_key_positions": [
+      {
+        "name": "Ted Cruz",
+        "role": "Senate Commerce Chair",
+        "committee": "Commerce, Science and Transportation",
+        "confidence": 100
+      },
+      {
+        "name": "Susan Collins",
+        "role": "Senate Appropriations Chair",
+        "committee": "Appropriations",
+        "confidence": 100
+      }
+    ]
+  },
+  "overall_success": true
+}

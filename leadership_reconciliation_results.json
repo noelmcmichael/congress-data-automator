@@ -1,0 +1,728 @@
+{
+  "timestamp": "2025-07-08T22:07:38.001760",
+  "total_committees_processed": 48,
+  "successful_reconciliations": 34,
+  "failed_reconciliations": 14,
+  "leadership_updates": [
+    {
+      "committee_id": 115,
+      "committee_name": "Agriculture, Nutrition and Forestry",
+      "database_committee_name": "Committee on Agriculture, Nutrition, and Forestry",
+      "chamber": "Senate",
+      "chair_member_id": 534,
+      "ranking_member_id": 495,
+      "wikipedia_chair": "John Boozman (R-AR)",
+      "wikipedia_ranking": "Amy Klobuchar (D-MN)",
+      "chair_update_status": "Chair: John Boozman (ID: 534)",
+      "ranking_update_status": "Ranking: Amy Klobuchar (ID: 495)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 121,
+      "committee_name": "Appropriations",
+      "database_committee_name": "Committee on Appropriations",
+      "chamber": "Senate",
+      "chair_member_id": 528,
+      "ranking_member_id": 484,
+      "wikipedia_chair": "Susan Collins (R-ME)",
+      "wikipedia_ranking": "Patty Murray (D-WA)",
+      "chair_update_status": "Chair: Susan Collins (ID: 528)",
+      "ranking_update_status": "Ranking: Patty Murray (ID: 484)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 134,
+      "committee_name": "Armed Services",
+      "database_committee_name": "Committee on Armed Services",
+      "chamber": "Senate",
+      "chair_member_id": 461,
+      "ranking_member_id": 480,
+      "wikipedia_chair": "Roger Wicker (R-MS)",
+      "wikipedia_ranking": "Jack Reed (D-RI)",
+      "chair_update_status": "Chair: Roger Wicker (ID: 461)",
+      "ranking_update_status": "Ranking: Jack Reed (ID: 480)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 142,
+      "committee_name": "Banking, Housing and Urban Affairs",
+      "database_committee_name": "Committee on Banking, Housing, and Urban Affairs",
+      "chamber": "Senate",
+      "chair_member_id": 472,
+      "ranking_member_id": 458,
+      "wikipedia_chair": "Tim Scott (R-SC)",
+      "wikipedia_ranking": "Elizabeth Warren (D-MA)",
+      "chair_update_status": "Chair: Tim Scott (ID: 472)",
+      "ranking_update_status": "Ranking: Elizabeth Warren (ID: 458)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 148,
+      "committee_name": "Budget",
+      "database_committee_name": "Committee on the Budget",
+      "chamber": "Senate",
+      "chair_member_id": 515,
+      "ranking_member_id": 491,
+      "wikipedia_chair": "Lindsey Graham (R-SC)",
+      "wikipedia_ranking": "Jeff Merkley (D-OR)",
+      "chair_update_status": "Chair: Lindsey Graham (ID: 515)",
+      "ranking_update_status": "Ranking: Jeff Merkley (ID: 491)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 149,
+      "committee_name": "Commerce, Science and Transportation",
+      "database_committee_name": "Committee on Commerce, Science, and Transportation",
+      "chamber": "Senate",
+      "chair_member_id": 517,
+      "ranking_member_id": 530,
+      "wikipedia_chair": "Ted Cruz (R-TX)",
+      "wikipedia_ranking": "Maria Cantwell (D-WA)",
+      "chair_update_status": "Chair: Ted Cruz (ID: 517)",
+      "ranking_update_status": "Ranking: Maria Cantwell (ID: 530)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 157,
+      "committee_name": "Energy and Natural Resources",
+      "database_committee_name": "Committee on Energy and Natural Resources",
+      "chamber": "Senate",
+      "chair_member_id": 496,
+      "ranking_member_id": 509,
+      "wikipedia_chair": "Mike Lee (R-UT)",
+      "wikipedia_ranking": "Martin Heinrich (D-NM)",
+      "chair_update_status": "Chair: Mike Lee (ID: 496)",
+      "ranking_update_status": "Ranking: Martin Heinrich (ID: 509)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 162,
+      "committee_name": "Environment and Public Works",
+      "database_committee_name": "Committee on Environment and Public Works",
+      "chamber": "Senate",
+      "chair_member_id": 529,
+      "ranking_member_id": 459,
+      "wikipedia_chair": "Shelley Moore Capito (R-WV)",
+      "wikipedia_ranking": "Sheldon Whitehouse (D-RI)",
+      "chair_update_status": "Chair: Shelley Capito (ID: 529)",
+      "ranking_update_status": "Ranking: Sheldon Whitehouse (ID: 459)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 167,
+      "committee_name": "Finance",
+      "database_committee_name": "Committee on Finance",
+      "chamber": "Senate",
+      "chair_member_id": 521,
+      "ranking_member_id": 456,
+      "wikipedia_chair": "Mike Crapo (R-ID)",
+      "wikipedia_ranking": "Ron Wyden (D-OR)",
+      "chair_update_status": "Chair: Mike Crapo (ID: 521)",
+      "ranking_update_status": "Ranking: Ron Wyden (ID: 456)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 173,
+      "committee_name": "Foreign Relations",
+      "database_committee_name": "Committee on Foreign Relations",
+      "chamber": "Senate",
+      "chair_member_id": 479,
+      "ranking_member_id": 469,
+      "wikipedia_chair": "Jim Risch (R-ID)",
+      "wikipedia_ranking": "Jeanne Shaheen (D-NH)",
+      "chair_update_status": "Chair: James Risch (ID: 479)",
+      "ranking_update_status": "Ranking: Jeanne Shaheen (ID: 469)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 181,
+      "committee_name": "Health, Education, Labor and Pensions",
+      "database_committee_name": "Committee on Health, Education, Labor and Pensions",
+      "chamber": "Senate",
+      "chair_member_id": 527,
+      "ranking_member_id": 474,
+      "wikipedia_chair": "Bill Cassidy (R-LA)",
+      "wikipedia_ranking": "Bernie Sanders (I-VT)",
+      "chair_update_status": "Chair: Bill Cassidy (ID: 527)",
+      "ranking_update_status": "Ranking: Bernard Sanders (ID: 474)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 185,
+      "committee_name": "Homeland Security and Governmental Affairs",
+      "database_committee_name": "Committee on Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "chair_member_id": 483,
+      "ranking_member_id": 478,
+      "wikipedia_chair": "Rand Paul (R-KY)",
+      "wikipedia_ranking": "Gary Peters (D-MI)",
+      "chair_update_status": "Chair: Rand Paul (ID: 483)",
+      "ranking_update_status": "Ranking: Gary Peters (ID: 478)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 199,
+      "committee_name": "Indian Affairs (Permanent Select)",
+      "database_committee_name": "Committee on Veterans' Affairs",
+      "chamber": "Senate",
+      "chair_member_id": 488,
+      "ranking_member_id": 471,
+      "wikipedia_chair": "Lisa Murkowski (R-AK)",
+      "wikipedia_ranking": "Brian Schatz (D-HI)",
+      "chair_update_status": "Chair: Lisa Murkowski (ID: 488)",
+      "ranking_update_status": "Ranking: Brian Schatz (ID: 471)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 189,
+      "committee_name": "Judiciary",
+      "database_committee_name": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "chair_member_id": 510,
+      "ranking_member_id": null,
+      "wikipedia_chair": "Chuck Grassley (R-IA)",
+      "wikipedia_ranking": "Dick Durbin (D-IL)",
+      "chair_update_status": "Chair: Chuck Grassley (ID: 510)",
+      "ranking_update_status": "Ranking not found: Dick Durbin (D-IL)",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 197,
+      "committee_name": "Rules and Administration",
+      "database_committee_name": "Committee on Rules and Administration",
+      "chamber": "Senate",
+      "chair_member_id": 493,
+      "ranking_member_id": 481,
+      "wikipedia_chair": "Mitch McConnell (R-KY)",
+      "wikipedia_ranking": "Alex Padilla (D-CA)",
+      "chair_update_status": "Chair: Mitch McConnell (ID: 493)",
+      "ranking_update_status": "Ranking: Alex Padilla (ID: 481)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 198,
+      "committee_name": "Small Business and Entrepreneurship",
+      "database_committee_name": "Committee on Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "chair_member_id": 516,
+      "ranking_member_id": 492,
+      "wikipedia_chair": "Joni Ernst (R-IA)",
+      "wikipedia_ranking": "Ed Markey (D-MA)",
+      "chair_update_status": "Chair: Joni Ernst (ID: 516)",
+      "ranking_update_status": "Ranking: Edward Markey (ID: 492)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 1,
+      "committee_name": "Agriculture",
+      "database_committee_name": "Committee on Agriculture",
+      "chamber": "House",
+      "chair_member_id": 134,
+      "ranking_member_id": 229,
+      "wikipedia_chair": "Glenn Thompson (R-PA)",
+      "wikipedia_ranking": "Angie Craig (D-MN)",
+      "chair_update_status": "Chair: Glenn Thompson (ID: 134)",
+      "ranking_update_status": "Ranking: Angie Craig (ID: 229)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 7,
+      "committee_name": "Appropriations",
+      "database_committee_name": "Committee on Appropriations",
+      "chamber": "House",
+      "chair_member_id": 136,
+      "ranking_member_id": 385,
+      "wikipedia_chair": "Tom Cole (R-OK)",
+      "wikipedia_ranking": "Rosa DeLauro (D-CT)",
+      "chair_update_status": "Chair: Tom Cole (ID: 136)",
+      "ranking_update_status": "Ranking: Rosa DeLauro (ID: 385)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 20,
+      "committee_name": "Armed Services",
+      "database_committee_name": "Committee on Armed Services",
+      "chamber": "House",
+      "chair_member_id": 444,
+      "ranking_member_id": 37,
+      "wikipedia_chair": "Mike Rogers (R-AL)",
+      "wikipedia_ranking": "Adam Smith (D-WA)",
+      "chair_update_status": "Chair: Mike Rogers (ID: 444)",
+      "ranking_update_status": "Ranking: Adam Smith (ID: 37)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 28,
+      "committee_name": "Budget",
+      "database_committee_name": "Committee on the Budget",
+      "chamber": "House",
+      "chair_member_id": 95,
+      "ranking_member_id": 130,
+      "wikipedia_chair": "Jodey Arrington (R-TX)",
+      "wikipedia_ranking": "Brendan Boyle (D-PA)",
+      "chair_update_status": "Chair: Jodey Arrington (ID: 95)",
+      "ranking_update_status": "Ranking: Brendan Boyle (ID: 130)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 32,
+      "committee_name": "Education and Workforce",
+      "database_committee_name": "Higher Education and Workforce Development Subcommittee",
+      "chamber": "House",
+      "chair_member_id": 261,
+      "ranking_member_id": 68,
+      "wikipedia_chair": "Tim Walberg (R-MI)",
+      "wikipedia_ranking": "Bobby Scott (D-VA)",
+      "chair_update_status": "Chair: Tim Walberg (ID: 261)",
+      "ranking_update_status": "Ranking: Robert Scott (ID: 68)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 34,
+      "committee_name": "Energy and Commerce",
+      "database_committee_name": "Committee on Energy and Commerce",
+      "chamber": "House",
+      "chair_member_id": 294,
+      "ranking_member_id": 194,
+      "wikipedia_chair": "Brett Guthrie (R-KY)",
+      "wikipedia_ranking": "Frank Pallone (D-NJ)",
+      "chair_update_status": "Chair: Brett Guthrie (ID: 294)",
+      "ranking_update_status": "Ranking: Frank Pallone (ID: 194)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 41,
+      "committee_name": "Financial Services",
+      "database_committee_name": "Committee on Financial Services",
+      "chamber": "House",
+      "chair_member_id": null,
+      "ranking_member_id": 381,
+      "wikipedia_chair": "French Hill (R-AR)",
+      "wikipedia_ranking": "Maxine Waters (D-CA)",
+      "chair_update_status": "Chair not found: French Hill (R-AR)",
+      "ranking_update_status": "Ranking: Maxine Waters (ID: 381)",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 48,
+      "committee_name": "Foreign Affairs",
+      "database_committee_name": "Committee on Foreign Affairs",
+      "chamber": "House",
+      "chair_member_id": 345,
+      "ranking_member_id": 195,
+      "wikipedia_chair": "Brian Mast (R-FL)",
+      "wikipedia_ranking": "Gregory Meeks (D-NY)",
+      "chair_update_status": "Chair: Brian Mast (ID: 345)",
+      "ranking_update_status": "Ranking: Gregory Meeks (ID: 195)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 56,
+      "committee_name": "Homeland Security",
+      "database_committee_name": "Committee on Homeland Security",
+      "chamber": "House",
+      "chair_member_id": 89,
+      "ranking_member_id": 237,
+      "wikipedia_chair": "Mark Green (R-TN)",
+      "wikipedia_ranking": "Bennie Thompson (D-MS)",
+      "chair_update_status": "Chair: Mark Green (ID: 89)",
+      "ranking_update_status": "Ranking: Bennie Thompson (ID: 237)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 63,
+      "committee_name": "House Administration",
+      "database_committee_name": "Committee on House Administration",
+      "chamber": "House",
+      "chair_member_id": 29,
+      "ranking_member_id": 154,
+      "wikipedia_chair": "Bryan Steil (R-WI)",
+      "wikipedia_ranking": "Joe Morelle (R-NY)",
+      "chair_update_status": "Chair: Bryan Steil (ID: 29)",
+      "ranking_update_status": "Ranking: Joseph Morelle (ID: 154)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 64,
+      "committee_name": "Judiciary",
+      "database_committee_name": "Committee on the Judiciary",
+      "chamber": "House",
+      "chair_member_id": 163,
+      "ranking_member_id": 253,
+      "wikipedia_chair": "Jim Jordan (R-OH)",
+      "wikipedia_ranking": "Jamie Raskin (D-MD)",
+      "chair_update_status": "Chair: Jim Jordan (ID: 163)",
+      "ranking_update_status": "Ranking: Jamie Raskin (ID: 253)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 70,
+      "committee_name": "Natural Resources",
+      "database_committee_name": "Committee on Natural Resources",
+      "chamber": "House",
+      "chair_member_id": 423,
+      "ranking_member_id": 428,
+      "wikipedia_chair": "Bruce Westerman (R-AR)",
+      "wikipedia_ranking": "Jared Huffman (D-CA)",
+      "chair_update_status": "Chair: Bruce Westerman (ID: 423)",
+      "ranking_update_status": "Ranking: Jared Huffman (ID: 428)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 76,
+      "committee_name": "Oversight and Government Reform",
+      "database_committee_name": "Committee on Oversight and Accountability",
+      "chamber": "House",
+      "chair_member_id": 288,
+      "ranking_member_id": null,
+      "wikipedia_chair": "James Comer (R-KY)",
+      "wikipedia_ranking": "Gerry Connolly (D-VA) *Until April 28, 2025 Robert Garcia (D-CA) *Since June 24, 2025",
+      "chair_update_status": "Chair: James Comer (ID: 288)",
+      "ranking_update_status": "Ranking not found: Gerry Connolly (D-VA) *Until April 28, 2025 Robert Garcia (D-CA) *Since June 24, 2025",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 82,
+      "committee_name": "Rules",
+      "database_committee_name": "Committee on Rules",
+      "chamber": "House",
+      "chair_member_id": 211,
+      "ranking_member_id": 263,
+      "wikipedia_chair": "Virginia Foxx (R-NC)",
+      "wikipedia_ranking": "Jim McGovern (D-MA)",
+      "chair_update_status": "Chair: Virginia Foxx (ID: 211)",
+      "ranking_update_status": "Ranking: James McGovern (ID: 263)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 83,
+      "committee_name": "Science, Space and Technology",
+      "database_committee_name": "Committee on Science, Space, and Technology",
+      "chamber": "House",
+      "chair_member_id": 63,
+      "ranking_member_id": 411,
+      "wikipedia_chair": "Brian Babin (R-TX)",
+      "wikipedia_ranking": "Zoe Lofgren (D-CA)",
+      "chair_update_status": "Chair: Brian Babin (ID: 63)",
+      "ranking_update_status": "Ranking: Zoe Lofgren (ID: 411)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 89,
+      "committee_name": "Small Business",
+      "database_committee_name": "Committee on Small Business",
+      "chamber": "House",
+      "chair_member_id": 65,
+      "ranking_member_id": 196,
+      "wikipedia_chair": "Roger Williams (R-TX)",
+      "wikipedia_ranking": "Nydia Vel\u00e1zquez (D-NY)",
+      "chair_update_status": "Chair: Roger Williams (ID: 65)",
+      "ranking_update_status": "Ranking: Nydia Vel\u00e1zquez (ID: 196)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 95,
+      "committee_name": "Transportation and Infrastructure",
+      "database_committee_name": "Committee on Transportation and Infrastructure",
+      "chamber": "House",
+      "chair_member_id": 239,
+      "ranking_member_id": 39,
+      "wikipedia_chair": "Sam Graves (R-MO)",
+      "wikipedia_ranking": "Rick Larsen (D-WA)",
+      "chair_update_status": "Chair: Sam Graves (ID: 239)",
+      "ranking_update_status": "Ranking: Rick Larsen (ID: 39)",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 108,
+      "committee_name": "Ways and Means",
+      "database_committee_name": "Committee on Ways and Means",
+      "chamber": "House",
+      "chair_member_id": 236,
+      "ranking_member_id": 264,
+      "wikipedia_chair": "Jason Smith (R-MO)",
+      "wikipedia_ranking": "Richard Neal (D-MA)",
+      "chair_update_status": "Chair: Jason Smith (ID: 236)",
+      "ranking_update_status": "Ranking: Richard Neal (ID: 264)",
+      "confidence_score": 100
+    }
+  ],
+  "reconciliation_failures": [
+    {
+      "committee": "Aging (Special)",
+      "chamber": "Senate",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Ethics (Select)",
+      "chamber": "Senate",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Intelligence (Select)",
+      "chamber": "Senate",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "International Narcotics Control (Permanent Caucus)",
+      "chamber": "Senate",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Veterans' Affairs",
+      "chamber": "Senate",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Ethics",
+      "chamber": "House",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Intelligence (Permanent Select)",
+      "chamber": "House",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Strategic Competition between the United Statesand the Chinese Communist Party (Select)",
+      "chamber": "House",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Veterans' Affairs",
+      "chamber": "House",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Economic",
+      "chamber": "Joint",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Inaugural Ceremonies (Special)Until January 20, 2025",
+      "chamber": "Joint",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Library",
+      "chamber": "Joint",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Printing",
+      "chamber": "Joint",
+      "reason": "Committee not found in database"
+    },
+    {
+      "committee": "Taxation[s]",
+      "chamber": "Joint",
+      "reason": "Committee not found in database"
+    }
+  ],
+  "sql_statements": [
+    {
+      "committee_id": 115,
+      "committee_name": "Committee on Agriculture, Nutrition, and Forestry",
+      "sql": "UPDATE committees SET chair_member_id = 534, ranking_member_id = 495 WHERE id = 115;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 121,
+      "committee_name": "Committee on Appropriations",
+      "sql": "UPDATE committees SET chair_member_id = 528, ranking_member_id = 484 WHERE id = 121;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 134,
+      "committee_name": "Committee on Armed Services",
+      "sql": "UPDATE committees SET chair_member_id = 461, ranking_member_id = 480 WHERE id = 134;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 142,
+      "committee_name": "Committee on Banking, Housing, and Urban Affairs",
+      "sql": "UPDATE committees SET chair_member_id = 472, ranking_member_id = 458 WHERE id = 142;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 148,
+      "committee_name": "Committee on the Budget",
+      "sql": "UPDATE committees SET chair_member_id = 515, ranking_member_id = 491 WHERE id = 148;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 149,
+      "committee_name": "Committee on Commerce, Science, and Transportation",
+      "sql": "UPDATE committees SET chair_member_id = 517, ranking_member_id = 530 WHERE id = 149;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 157,
+      "committee_name": "Committee on Energy and Natural Resources",
+      "sql": "UPDATE committees SET chair_member_id = 496, ranking_member_id = 509 WHERE id = 157;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 162,
+      "committee_name": "Committee on Environment and Public Works",
+      "sql": "UPDATE committees SET chair_member_id = 529, ranking_member_id = 459 WHERE id = 162;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 167,
+      "committee_name": "Committee on Finance",
+      "sql": "UPDATE committees SET chair_member_id = 521, ranking_member_id = 456 WHERE id = 167;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 173,
+      "committee_name": "Committee on Foreign Relations",
+      "sql": "UPDATE committees SET chair_member_id = 479, ranking_member_id = 469 WHERE id = 173;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 181,
+      "committee_name": "Committee on Health, Education, Labor and Pensions",
+      "sql": "UPDATE committees SET chair_member_id = 527, ranking_member_id = 474 WHERE id = 181;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 185,
+      "committee_name": "Committee on Homeland Security and Governmental Affairs",
+      "sql": "UPDATE committees SET chair_member_id = 483, ranking_member_id = 478 WHERE id = 185;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 199,
+      "committee_name": "Committee on Veterans' Affairs",
+      "sql": "UPDATE committees SET chair_member_id = 488, ranking_member_id = 471 WHERE id = 199;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 189,
+      "committee_name": "Committee on the Judiciary",
+      "sql": "UPDATE committees SET chair_member_id = 510 WHERE id = 189;",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 197,
+      "committee_name": "Committee on Rules and Administration",
+      "sql": "UPDATE committees SET chair_member_id = 493, ranking_member_id = 481 WHERE id = 197;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 198,
+      "committee_name": "Committee on Small Business and Entrepreneurship",
+      "sql": "UPDATE committees SET chair_member_id = 516, ranking_member_id = 492 WHERE id = 198;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 1,
+      "committee_name": "Committee on Agriculture",
+      "sql": "UPDATE committees SET chair_member_id = 134, ranking_member_id = 229 WHERE id = 1;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 7,
+      "committee_name": "Committee on Appropriations",
+      "sql": "UPDATE committees SET chair_member_id = 136, ranking_member_id = 385 WHERE id = 7;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 20,
+      "committee_name": "Committee on Armed Services",
+      "sql": "UPDATE committees SET chair_member_id = 444, ranking_member_id = 37 WHERE id = 20;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 28,
+      "committee_name": "Committee on the Budget",
+      "sql": "UPDATE committees SET chair_member_id = 95, ranking_member_id = 130 WHERE id = 28;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 32,
+      "committee_name": "Higher Education and Workforce Development Subcommittee",
+      "sql": "UPDATE committees SET chair_member_id = 261, ranking_member_id = 68 WHERE id = 32;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 34,
+      "committee_name": "Committee on Energy and Commerce",
+      "sql": "UPDATE committees SET chair_member_id = 294, ranking_member_id = 194 WHERE id = 34;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 41,
+      "committee_name": "Committee on Financial Services",
+      "sql": "UPDATE committees SET ranking_member_id = 381 WHERE id = 41;",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 48,
+      "committee_name": "Committee on Foreign Affairs",
+      "sql": "UPDATE committees SET chair_member_id = 345, ranking_member_id = 195 WHERE id = 48;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 56,
+      "committee_name": "Committee on Homeland Security",
+      "sql": "UPDATE committees SET chair_member_id = 89, ranking_member_id = 237 WHERE id = 56;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 63,
+      "committee_name": "Committee on House Administration",
+      "sql": "UPDATE committees SET chair_member_id = 29, ranking_member_id = 154 WHERE id = 63;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 64,
+      "committee_name": "Committee on the Judiciary",
+      "sql": "UPDATE committees SET chair_member_id = 163, ranking_member_id = 253 WHERE id = 64;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 70,
+      "committee_name": "Committee on Natural Resources",
+      "sql": "UPDATE committees SET chair_member_id = 423, ranking_member_id = 428 WHERE id = 70;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 76,
+      "committee_name": "Committee on Oversight and Accountability",
+      "sql": "UPDATE committees SET chair_member_id = 288 WHERE id = 76;",
+      "confidence_score": 85
+    },
+    {
+      "committee_id": 82,
+      "committee_name": "Committee on Rules",
+      "sql": "UPDATE committees SET chair_member_id = 211, ranking_member_id = 263 WHERE id = 82;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 83,
+      "committee_name": "Committee on Science, Space, and Technology",
+      "sql": "UPDATE committees SET chair_member_id = 63, ranking_member_id = 411 WHERE id = 83;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 89,
+      "committee_name": "Committee on Small Business",
+      "sql": "UPDATE committees SET chair_member_id = 65, ranking_member_id = 196 WHERE id = 89;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 95,
+      "committee_name": "Committee on Transportation and Infrastructure",
+      "sql": "UPDATE committees SET chair_member_id = 239, ranking_member_id = 39 WHERE id = 95;",
+      "confidence_score": 100
+    },
+    {
+      "committee_id": 108,
+      "committee_name": "Committee on Ways and Means",
+      "sql": "UPDATE committees SET chair_member_id = 236, ranking_member_id = 264 WHERE id = 108;",
+      "confidence_score": 100
+    }
+  ]
+}
