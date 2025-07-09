@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-07-08T23:48:50.554842",
+  "members": {
+    "total_count": 50,
+    "by_chamber": {
+      "House": 39,
+      "Senate": 11
+    },
+    "by_party": {
+      "Democratic": 21,
+      "Republican": 29
+    },
+    "states_represented": 34,
+    "sample_states": [
+      "NC",
+      "AL",
+      "CA",
+      "MO",
+      "GA",
+      "MD",
+      "RI",
+      "NV",
+      "AZ",
+      "TX"
+    ]
+  },
+  "committees": {
+    "total_count": 50,
+    "by_chamber": {
+      "Senate": 24,
+      "House": 26
+    },
+    "by_type": {
+      "Unknown": 50
+    }
+  },
+  "data_quality": {
+    "completeness": {
+      "members_percentage": 9.35,
+      "members_gap": 485,
+      "committees_current": 50
+    }
+  },
+  "api_performance": {
+    "health_status": 200,
+    "health_response_time": 0.111146,
+    "members_response_time": 0.129179,
+    "committees_response_time": 0.123388
+  }
+}

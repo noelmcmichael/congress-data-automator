@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-08T23:42:29.806830",
+  "members": {},
+  "committees": {},
+  "data_quality": {},
+  "api_performance": {
+    "health_status": 200,
+    "health_response_time": 2.986289
+  },
+  "error": "'total_count'"
+}

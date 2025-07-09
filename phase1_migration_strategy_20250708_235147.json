@@ -1,0 +1,312 @@
+{
+  "timestamp": "2025-07-08T23:51:47.953409",
+  "current_state": {
+    "timestamp": "2025-07-08T23:48:50.554842",
+    "members": {
+      "total_count": 50,
+      "by_chamber": {
+        "House": 39,
+        "Senate": 11
+      },
+      "by_party": {
+        "Democratic": 21,
+        "Republican": 29
+      },
+      "states_represented": 34,
+      "sample_states": [
+        "NC",
+        "AL",
+        "CA",
+        "MO",
+        "GA",
+        "MD",
+        "RI",
+        "NV",
+        "AZ",
+        "TX"
+      ]
+    },
+    "committees": {
+      "total_count": 50,
+      "by_chamber": {
+        "Senate": 24,
+        "House": 26
+      },
+      "by_type": {
+        "Unknown": 50
+      }
+    },
+    "data_quality": {
+      "completeness": {
+        "members_percentage": 9.35,
+        "members_gap": 485,
+        "committees_current": 50
+      }
+    },
+    "api_performance": {
+      "health_status": 200,
+      "health_response_time": 0.111146,
+      "members_response_time": 0.129179,
+      "committees_response_time": 0.123388
+    }
+  },
+  "api_capacity": {
+    "capacity_test": {
+      "timestamp": "2025-07-08T23:50:18.331010",
+      "api_key_status": "loaded",
+      "endpoints": {
+        "house_members": {
+          "status_code": 404,
+          "response_time": 0.3406548500061035,
+          "headers": {
+            "Date": "Wed, 09 Jul 2025 06:50:18 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "0",
+            "Cf-Cache-Status": "DYNAMIC",
+            "Cf-Ray": "95c5e2e9dac29790-PDX",
+            "Content-Encoding": "gzip",
+            "Link": "<https://api.congress.gov/v3/member/house>; rel=\"canonical\"",
+            "Set-Cookie": "__cf_bm=a2gS1h28A5GYBoXmWiymfPPvwjoiuFxHFwYE39kfT98-1752043818-1.0.1.1-DkO.WgmHIpr90NY6KIBMnd47eCTVa6ciD_1DjxV3YwfhsWxuVWN5p1gDj3DOvD5xaMkPrVP8pTdN9kor1gr9QoH46RfOWTDiGKMW.YpRHHs; path=/; expires=Wed, 09-Jul-25 07:20:18 GMT; domain=.congress.gov; HttpOnly",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Accept-Encoding, Accept",
+            "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+            "X-Api-Umbrella-Request-Id": "cntnpgs8urovv9d0ot50",
+            "X-Cache": "MISS",
+            "X-Content-Type-Options": "nosniff",
+            "X-Ratelimit-Limit": "5000",
+            "X-Ratelimit-Remaining": "4999",
+            "X-Vcap-Request-Id": "f910bcd5-acf8-4af4-7eb1-ddf06cfa1d1e",
+            "X-Frame-Options": "DENY"
+          }
+        },
+        "senate_members": {
+          "status_code": 404,
+          "response_time": 0.27988195419311523,
+          "headers": {
+            "Date": "Wed, 09 Jul 2025 06:50:18 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "0",
+            "Cf-Cache-Status": "DYNAMIC",
+            "Cf-Ray": "95c5e2ebae44e8e9-PDX",
+            "Content-Encoding": "gzip",
+            "Link": "<https://api.congress.gov/v3/member/senate>; rel=\"canonical\"",
+            "Set-Cookie": "__cf_bm=J1SzextszWoOSsPtrHQMPpkLVjvqg3ktzEvmsiyRC2U-1752043818-1.0.1.1-6vzkqBEDZhwsVO_yOAkhZkfoC_5dbLIVkLT58RQo8ZhmJlud7ggYbq9RXzX_3z06JV5Tm_CHVGwJ9H7hlPSI4MiJRiPm5uuDehaSHFxDeuM; path=/; expires=Wed, 09-Jul-25 07:20:18 GMT; domain=.congress.gov; HttpOnly",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Accept-Encoding, Accept",
+            "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+            "X-Api-Umbrella-Request-Id": "cntnpguhjtmjtil4s1vg",
+            "X-Cache": "MISS",
+            "X-Content-Type-Options": "nosniff",
+            "X-Ratelimit-Limit": "5000",
+            "X-Ratelimit-Remaining": "4998",
+            "X-Vcap-Request-Id": "22620007-058d-4e5c-7015-35107ce7daf4",
+            "X-Frame-Options": "DENY"
+          }
+        },
+        "house_committees": {
+          "status_code": 200,
+          "response_time": 0.5225629806518555,
+          "headers": {
+            "Date": "Wed, 09 Jul 2025 06:50:19 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "0",
+            "Cache-Control": "max-age=900",
+            "Cf-Cache-Status": "DYNAMIC",
+            "Cf-Ray": "95c5e2ed6ce7ff0d-PDX",
+            "Content-Encoding": "gzip",
+            "Expires": "Wed, 09 Jul 2025 07:05:19 GMT",
+            "Link": "<https://api.congress.gov/v3/committee/house>; rel=\"canonical\"",
+            "Set-Cookie": "__cf_bm=eFb70MOXUdT8jOqha0.cKzseSVSY0jD22Iv8xStKjA8-1752043819-1.0.1.1-01w_W1maOvsHHvKtNzQyU84sIvIuhxzdXaRanHTagZCOAMP.2PtMA4YOFZXXAi1y8OeqPSDbv1Q06AqE43KdqHSPsutUr0jwRYApmWHoBXg; path=/; expires=Wed, 09-Jul-25 07:20:19 GMT; domain=.congress.gov; HttpOnly",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Accept-Encoding, Accept",
+            "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+            "X-Api-Umbrella-Request-Id": "cntnph0nsitlfl4b0so0",
+            "X-Cache": "MISS",
+            "X-Content-Type-Options": "nosniff",
+            "X-Ratelimit-Limit": "5000",
+            "X-Ratelimit-Remaining": "4997",
+            "X-Vcap-Request-Id": "750ed71c-8adc-45e5-673c-f7fce707b22e",
+            "X-Frame-Options": "DENY"
+          }
+        },
+        "senate_committees": {
+          "status_code": 200,
+          "response_time": 0.9046797752380371,
+          "headers": {
+            "Date": "Wed, 09 Jul 2025 06:50:20 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "1",
+            "Cache-Control": "max-age=900",
+            "Cf-Cache-Status": "DYNAMIC",
+            "Cf-Ray": "95c5e2f0aba3ef4f-PDX",
+            "Content-Encoding": "gzip",
+            "Expires": "Wed, 09 Jul 2025 07:05:20 GMT",
+            "Link": "<https://api.congress.gov/v3/committee/senate>; rel=\"canonical\"",
+            "Set-Cookie": "__cf_bm=LhL4xfMPILySpDsDivnYB37RVqol414ihAgZDeTduvo-1752043820-1.0.1.1-xHK8MaShB9MxpO5t1_iUcJQI5kOJdBQX73PwEv225p4swIPnRvd3JhKV_1WG7Txx38O0fCebuAT0Bis6qjzi_ywohsw7HDdBph8FK32tDP8; path=/; expires=Wed, 09-Jul-25 07:20:20 GMT; domain=.congress.gov; HttpOnly",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Accept-Encoding, Accept",
+            "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+            "X-Api-Umbrella-Request-Id": "cntnph4qnc5rvdd6pd80",
+            "X-Cache": "MISS",
+            "X-Content-Type-Options": "nosniff",
+            "X-Ratelimit-Limit": "5000",
+            "X-Ratelimit-Remaining": "4996",
+            "X-Vcap-Request-Id": "f2c4afb7-f6e7-4941-6ae2-4866c33bbe0a",
+            "X-Frame-Options": "DENY"
+          }
+        }
+      },
+      "performance": {
+        "average_response_time": 0.5119448900222778,
+        "max_response_time": 0.9046797752380371,
+        "min_response_time": 0.27988195419311523,
+        "total_test_time": 2.0477795600891113,
+        "concurrent_test": {
+          "total_requests": 12,
+          "successful_requests": 6,
+          "success_rate": 0.5,
+          "total_time": 1.1514182090759277,
+          "average_concurrent_response_time": 0.31023748715718585
+        }
+      },
+      "rate_limits": {
+        "headers": {
+          "X-Ratelimit-Limit": "5000",
+          "X-Ratelimit-Remaining": "4999"
+        }
+      },
+      "data_availability": {
+        "house_committees": 20,
+        "senate_committees": 20
+      }
+    },
+    "recommendations": {
+      "batch_size": 15,
+      "request_delay": 0.7,
+      "concurrent_limit": 3,
+      "estimated_time": {
+        "member_collection_minutes": 0.6665696895122528,
+        "committee_collection_minutes": 0.20199081500371296,
+        "total_collection_minutes": 0.8685605045159658
+      }
+    }
+  },
+  "migration_approach": {
+    "type": "incremental_expansion",
+    "reason": "Current dataset of 50 members is suitable for expansion",
+    "backup_required": true,
+    "rollback_plan": "Restore from backup if data quality degrades"
+  },
+  "phase_breakdown": {
+    "phase_2_member_collection": {
+      "target": "485 additional members",
+      "batches": 33,
+      "estimated_time_minutes": 0.66,
+      "estimated_time_hours": 0.011000000000000001,
+      "approach": "Progressive collection from Congress.gov API"
+    },
+    "phase_3_committee_expansion": {
+      "target": "150 additional committees",
+      "batches": 10,
+      "estimated_time_minutes": 0.2,
+      "estimated_time_hours": 0.0033333333333333335,
+      "approach": "Complete committee structure mapping"
+    },
+    "phase_4_data_integration": {
+      "target": "Relationship mapping and validation",
+      "estimated_time_hours": 2.0,
+      "approach": "Cross-reference and validate relationships"
+    },
+    "phase_5_deployment": {
+      "target": "Production deployment",
+      "estimated_time_hours": 1.0,
+      "approach": "Rolling deployment with backup"
+    }
+  },
+  "risk_mitigation": {
+    "api_rate_limiting": {
+      "risk": "Congress.gov API rate limiting during bulk collection",
+      "mitigation": "Use batch size 15 with 0.7s delays",
+      "fallback": "Reduce batch size and increase delays if needed"
+    },
+    "data_quality_degradation": {
+      "risk": "New data quality issues during expansion",
+      "mitigation": "Incremental validation at each phase",
+      "fallback": "Rollback to previous stable state"
+    },
+    "performance_impact": {
+      "risk": "System performance degradation with larger dataset",
+      "mitigation": "Database indexing and query optimization",
+      "fallback": "Scale infrastructure resources"
+    },
+    "deployment_failure": {
+      "risk": "Production deployment issues",
+      "mitigation": "Blue-green deployment with health checks",
+      "fallback": "Immediate rollback to previous version"
+    }
+  },
+  "success_criteria": {
+    "quantitative": {
+      "member_count": 535,
+      "committee_count": 200,
+      "data_accuracy": ">99%",
+      "api_response_time": "<500ms",
+      "system_uptime": ">99.9%"
+    },
+    "qualitative": {
+      "complete_congressional_coverage": "All 119th Congress members",
+      "enhanced_search_capabilities": "Improved filtering and search",
+      "wikipedia_validation": "Leadership accuracy maintained",
+      "user_experience": "No degradation in frontend performance"
+    }
+  },
+  "next_steps": [
+    {
+      "phase": "Phase 2: Complete Member Collection",
+      "priority": "HIGH",
+      "estimated_time": "3 hours",
+      "dependencies": [
+        "Congress.gov API access",
+        "Database backup"
+      ]
+    },
+    {
+      "phase": "Phase 3: Complete Committee Structure",
+      "priority": "HIGH",
+      "estimated_time": "3 hours",
+      "dependencies": [
+        "Phase 2 completion",
+        "Committee mapping"
+      ]
+    },
+    {
+      "phase": "Phase 4: Enhanced Data Integration",
+      "priority": "MEDIUM",
+      "estimated_time": "2 hours",
+      "dependencies": [
+        "Phases 2-3 completion"
+      ]
+    },
+    {
+      "phase": "Phase 5: Production Deployment",
+      "priority": "MEDIUM",
+      "estimated_time": "1 hour",
+      "dependencies": [
+        "All previous phases",
+        "Deployment approval"
+      ]
+    }
+  ]
+}

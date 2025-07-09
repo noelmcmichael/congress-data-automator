@@ -1,0 +1,17 @@
+{
+  "start_time": "2025-07-09T00:04:25.389153",
+  "phase": "Phase 2: Complete Member Collection",
+  "status": "initializing",
+  "backup_table": "members_backup_20250709_000425",
+  "baseline_count": 32,
+  "collected_count": 538,
+  "inserted_count": 0,
+  "updated_count": 0,
+  "final_count": 32,
+  "api_health": true,
+  "api_member_count": 50,
+  "execution_time_seconds": 19.212347,
+  "execution_time_formatted": "0.3 minutes",
+  "target_met": false,
+  "target_count": 535
+}
