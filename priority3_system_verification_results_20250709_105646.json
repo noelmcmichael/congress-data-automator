@@ -1,0 +1,629 @@
+{
+  "verification_start": "2025-07-09T10:56:43.577104",
+  "api_base": "https://politicalequity.io/api/v1",
+  "phases": {
+    "v1": {
+      "total_tests": 13,
+      "successful_tests": 11,
+      "tests": {
+        "status": {
+          "url": "https://politicalequity.io/api/v1/status",
+          "params": {},
+          "status_code": 200,
+          "response_time_ms": 129.34,
+          "success": true,
+          "data_count": null,
+          "data_type": "dict",
+          "data_sample": null,
+          "error": null
+        },
+        "committees_default": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {},
+          "status_code": 200,
+          "response_time_ms": 137.89,
+          "success": true,
+          "data_count": 50,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 174,
+              "name": "Africa and Global Health Policy Subcommittee",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 173,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 49,
+              "name": "Africa Subcommittee",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 48,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "committees_full": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "limit": 200
+          },
+          "status_code": 200,
+          "response_time_ms": 231.36,
+          "success": true,
+          "data_count": 199,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 174,
+              "name": "Africa and Global Health Policy Subcommittee",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 173,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 49,
+              "name": "Africa Subcommittee",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 48,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "committees_house": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "chamber": "House",
+            "limit": 200
+          },
+          "status_code": 200,
+          "response_time_ms": 234.37,
+          "success": true,
+          "data_count": 114,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 49,
+              "name": "Africa Subcommittee",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 48,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 8,
+              "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": null,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "committees_senate": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "chamber": "Senate",
+            "limit": 200
+          },
+          "status_code": 200,
+          "response_time_ms": 145.88,
+          "success": true,
+          "data_count": 85,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 174,
+              "name": "Africa and Global Health Policy Subcommittee",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 173,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 122,
+              "name": "Agriculture, Rural Development, Food and Drug Administration Subcommittee",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": null,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "committees_page2": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "page": 2,
+            "limit": 200
+          },
+          "status_code": 200,
+          "response_time_ms": 122.31,
+          "success": true,
+          "data_count": 0,
+          "data_type": null,
+          "data_sample": null,
+          "error": null
+        },
+        "committees_search": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "search": "appropriations"
+          },
+          "status_code": 200,
+          "response_time_ms": 143.03,
+          "success": true,
+          "data_count": 2,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 7,
+              "name": "Committee on Appropriations",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": false,
+              "parent_committee_id": null,
+              "website": null,
+              "hearings_url": "https://www.appropriations.senate.gov/hearings",
+              "members_url": "https://www.appropriations.senate.gov/about/members",
+              "official_website_url": "https://appropriations.house.gov",
+              "last_url_update": "2025-07-07T12:21:19.984939",
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 121,
+              "name": "Committee on Appropriations",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": false,
+              "parent_committee_id": null,
+              "website": null,
+              "hearings_url": "https://www.appropriations.senate.gov/hearings",
+              "members_url": "https://www.appropriations.senate.gov/about/members",
+              "official_website_url": "https://appropriations.house.gov",
+              "last_url_update": "2025-07-07T12:21:19.984939",
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "committees_active": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "active_only": true
+          },
+          "status_code": 200,
+          "response_time_ms": 165.02,
+          "success": true,
+          "data_count": 50,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 174,
+              "name": "Africa and Global Health Policy Subcommittee",
+              "chamber": "Senate",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 173,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            },
+            {
+              "id": 49,
+              "name": "Africa Subcommittee",
+              "chamber": "House",
+              "committee_code": null,
+              "congress_gov_id": null,
+              "is_active": true,
+              "is_subcommittee": true,
+              "parent_committee_id": 48,
+              "website": null,
+              "hearings_url": null,
+              "members_url": null,
+              "official_website_url": null,
+              "last_url_update": null,
+              "created_at": "2025-07-07T01:26:44.792718Z",
+              "updated_at": null
+            }
+          ],
+          "error": null
+        },
+        "members_default": {
+          "url": "https://politicalequity.io/api/v1/members",
+          "params": {},
+          "status_code": 200,
+          "response_time_ms": 156.0,
+          "success": true,
+          "data_count": 50,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 208,
+              "bioguide_id": "A000370",
+              "congress_gov_id": "A000370?format=json",
+              "first_name": "Alma",
+              "last_name": "Adams",
+              "middle_name": "S.",
+              "suffix": null,
+              "nickname": null,
+              "party": "Democratic",
+              "chamber": "House",
+              "state": "NC",
+              "district": "12",
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/a000370_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:43.571556Z"
+            },
+            {
+              "id": 440,
+              "bioguide_id": "A000055",
+              "congress_gov_id": "A000055?format=json",
+              "first_name": "Robert",
+              "last_name": "Aderholt",
+              "middle_name": "B.",
+              "suffix": null,
+              "nickname": null,
+              "party": "Republican",
+              "chamber": "House",
+              "state": "AL",
+              "district": "4",
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/a000055_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:44.177105Z"
+            }
+          ],
+          "error": null
+        },
+        "members_full": {
+          "url": "https://politicalequity.io/api/v1/members",
+          "params": {
+            "limit": 200
+          },
+          "status_code": 200,
+          "response_time_ms": 212.89,
+          "success": true,
+          "data_count": 200,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 208,
+              "bioguide_id": "A000370",
+              "congress_gov_id": "A000370?format=json",
+              "first_name": "Alma",
+              "last_name": "Adams",
+              "middle_name": "S.",
+              "suffix": null,
+              "nickname": null,
+              "party": "Democratic",
+              "chamber": "House",
+              "state": "NC",
+              "district": "12",
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/a000370_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:43.571556Z"
+            },
+            {
+              "id": 440,
+              "bioguide_id": "A000055",
+              "congress_gov_id": "A000055?format=json",
+              "first_name": "Robert",
+              "last_name": "Aderholt",
+              "middle_name": "B.",
+              "suffix": null,
+              "nickname": null,
+              "party": "Republican",
+              "chamber": "House",
+              "state": "AL",
+              "district": "4",
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/a000055_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:44.177105Z"
+            }
+          ],
+          "error": null
+        },
+        "members_search": {
+          "url": "https://politicalequity.io/api/v1/members",
+          "params": {
+            "search": "smith"
+          },
+          "status_code": 200,
+          "response_time_ms": 128.47,
+          "success": true,
+          "data_count": 6,
+          "data_type": "list",
+          "data_sample": [
+            {
+              "id": 502,
+              "bioguide_id": "H001079",
+              "congress_gov_id": "H001079?format=json",
+              "first_name": "Cindy",
+              "last_name": "Hyde-Smith",
+              "middle_name": null,
+              "suffix": null,
+              "nickname": null,
+              "party": "Republican",
+              "chamber": "Senate",
+              "state": "MS",
+              "district": null,
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/h001079_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:44.339726Z"
+            },
+            {
+              "id": 236,
+              "bioguide_id": "S001195",
+              "congress_gov_id": "S001195?format=json",
+              "first_name": "Jason",
+              "last_name": "Smith",
+              "middle_name": null,
+              "suffix": null,
+              "nickname": null,
+              "party": "Republican",
+              "chamber": "House",
+              "state": "MO",
+              "district": "8",
+              "term_start": "2025-01-03",
+              "term_end": "2027-01-03",
+              "is_current": true,
+              "phone": null,
+              "email": null,
+              "website": null,
+              "birth_date": null,
+              "birth_state": null,
+              "birth_city": null,
+              "official_photo_url": "https://www.congress.gov/img/member/s001195_200.jpg",
+              "created_at": "2025-07-06T14:41:17.968217Z",
+              "updated_at": null,
+              "last_scraped_at": "2025-07-06T14:41:43.644080Z"
+            }
+          ],
+          "error": null
+        },
+        "error_invalid_limit": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "limit": 1000
+          },
+          "status_code": 422,
+          "response_time_ms": 119.45,
+          "success": false,
+          "data_count": null,
+          "data_type": null,
+          "data_sample": null,
+          "error": "{\"detail\":[{\"type\":\"less_than_equal\",\"loc\":[\"query\",\"limit\"],\"msg\":\"Input should be less than or equal to 200\",\"input\":\"1000\",\"ctx\":{\"le\":200},\"url\":\"https://errors.pydantic.dev/2.4/v/less_than_equal\""
+        },
+        "error_invalid_page": {
+          "url": "https://politicalequity.io/api/v1/committees",
+          "params": {
+            "page": -1
+          },
+          "status_code": 422,
+          "response_time_ms": 121.02,
+          "success": false,
+          "data_count": null,
+          "data_type": null,
+          "data_sample": null,
+          "error": "{\"detail\":[{\"type\":\"greater_than_equal\",\"loc\":[\"query\",\"page\"],\"msg\":\"Input should be greater than or equal to 1\",\"input\":\"-1\",\"ctx\":{\"ge\":1},\"url\":\"https://errors.pydantic.dev/2.4/v/greater_than_equa"
+        }
+      },
+      "performance": {
+        "avg_response_time_ms": 157.46,
+        "max_response_time_ms": 234.37,
+        "min_response_time_ms": 119.45,
+        "under_300ms": true
+      },
+      "success_rate": 84.6
+    },
+    "v2": {
+      "committees": {
+        "total_count": 199,
+        "chamber_distribution": {
+          "Senate": 85,
+          "House": 114
+        },
+        "committee_types": {
+          "Unknown": 199
+        },
+        "subcommittees": 164,
+        "main_committees": 35,
+        "has_joint_committees": false,
+        "missing_fields": 0
+      },
+      "members": {
+        "total_count": 200,
+        "party_distribution": {
+          "Democratic": 95,
+          "Republican": 105
+        },
+        "chamber_distribution": {
+          "House": 166,
+          "Senate": 34
+        },
+        "states_represented": 48,
+        "missing_fields": 200
+      },
+      "relationships": {},
+      "data_quality_score": 67.5
+    },
+    "v3": {
+      "api_data_format": "compatible",
+      "pagination_support": true,
+      "filtering_support": true,
+      "search_functionality": true,
+      "error_handling": "graceful",
+      "data_completeness": "partial",
+      "required_fields_present": true,
+      "relationship_endpoints": true
+    },
+    "v4": {
+      "concurrent_requests": 5,
+      "successful_requests": 5,
+      "total_time_seconds": 0.24,
+      "requests_per_second": 20.91,
+      "average_response_time_ms": 198.13,
+      "max_response_time_ms": 231.44,
+      "performance_grade": "A"
+    },
+    "v5": {
+      "verification_completed": "2025-07-09T10:56:46.881689",
+      "system_health": "operational",
+      "api_availability": "100%",
+      "critical_issues": [
+        "API success rate below 90%",
+        "Data quality score below acceptable threshold"
+      ],
+      "recommendations": [
+        "Complete committee expansion to reach target of 815 committees",
+        "Add Joint committees to complete congressional structure",
+        "Expand member dataset to include all congressional members"
+      ],
+      "next_steps": [
+        "Address critical issues before production deployment",
+        "Implement monitoring and alerting",
+        "Set up automated data updates"
+      ]
+    }
+  }
+}

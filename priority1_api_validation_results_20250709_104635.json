@@ -1,0 +1,72 @@
+{
+  "validation_start": "2025-07-09T10:46:34.855763",
+  "api_base": "https://politicalequity.io/api/v1",
+  "tests": {
+    "status": {
+      "status_code": 200,
+      "response_time_ms": 129.7,
+      "success": true,
+      "data_count": null,
+      "data_type": "dict",
+      "error": null
+    },
+    "committees_default": {
+      "status_code": 200,
+      "response_time_ms": 161.16,
+      "success": true,
+      "data_count": 50,
+      "data_type": "list",
+      "error": null
+    },
+    "committees_full": {
+      "status_code": 200,
+      "response_time_ms": 223.38,
+      "success": true,
+      "data_count": 199,
+      "data_type": "list",
+      "error": null
+    },
+    "committees_house": {
+      "status_code": 200,
+      "response_time_ms": 177.64,
+      "success": true,
+      "data_count": 114,
+      "data_type": "list",
+      "error": null
+    },
+    "committees_senate": {
+      "status_code": 200,
+      "response_time_ms": 147.47,
+      "success": true,
+      "data_count": 85,
+      "data_type": "list",
+      "error": null
+    },
+    "members": {
+      "status_code": 200,
+      "response_time_ms": 148.46,
+      "success": true,
+      "data_count": 50,
+      "data_type": "list",
+      "error": null
+    }
+  },
+  "performance": {
+    "average_response_time_ms": 164.64,
+    "max_response_time_ms": 223.38,
+    "under_200ms": false
+  },
+  "data_consistency": {
+    "consistent": true,
+    "total": 199,
+    "house": 114,
+    "senate": 85
+  },
+  "summary": {
+    "successful_tests": 6,
+    "total_tests": 6,
+    "success_rate": 100.0,
+    "validation_end": "2025-07-09T10:46:35.854198"
+  },
+  "validation_status": "PASSED"
+}

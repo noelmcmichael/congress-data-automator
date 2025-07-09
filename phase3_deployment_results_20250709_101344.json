@@ -1,0 +1,261 @@
+{
+  "deployment_start": "2025-07-09T10:09:56.779422",
+  "target_committees": 815,
+  "deployment_file": "phase3_full_deployment_20250709_091846.sql",
+  "phases": {
+    "3d1": {
+      "gcloud_auth": "ropak9@gmail.com",
+      "database_state": "RUNNABLE",
+      "current_committee_count": 199,
+      "deployment_file_size": 600102,
+      "api_status": 500,
+      "phase3d1_status": "success"
+    },
+    "3d2": {
+      "deployment_time": 77.24279499053955,
+      "phase3d2_status": "success"
+    },
+    "3d3": {
+      "total_committees": 199,
+      "chamber_distribution": {
+        "House": 114,
+        "Senate": 85
+      },
+      "target_met": false,
+      "invalid_names": 0,
+      "phase3d3_status": "success"
+    },
+    "3d4": {
+      "api_status": "error",
+      "api_error": "HTTP 500",
+      "chamber_tests": {
+        "House": {
+          "status": "error",
+          "code": 500
+        },
+        "Senate": {
+          "status": "error",
+          "code": 500
+        },
+        "Joint": {
+          "status": "error",
+          "code": 500
+        }
+      },
+      "phase3d4_status": "success"
+    }
+  },
+  "deployment_end": "2025-07-09T10:13:44.576231",
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-09T10:09:56.779430",
+      "phase": "DEPLOYMENT",
+      "message": "\ud83d\ude80 Starting Phase 3 Committee Deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:56.779439",
+      "phase": "DEPLOYMENT",
+      "message": "Target: Deploy 815 committees to production database",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:56.779442",
+      "phase": "PHASE3D1",
+      "message": "Starting pre-deployment preparation",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:56.779444",
+      "phase": "PHASE3D1",
+      "message": "Checking gcloud authentication",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:57.085968",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Authenticated as: ropak9@gmail.com",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:57.086015",
+      "phase": "PHASE3D1",
+      "message": "Checking database instance",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:57.859508",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Database instance state: RUNNABLE",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:09:57.859578",
+      "phase": "PHASE3D1",
+      "message": "Testing database connection",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:34.714412",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Current committee count: 199",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:34.714534",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Deployment file verified: 600102 bytes",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:34.714544",
+      "phase": "PHASE3D1",
+      "message": "Testing API connectivity",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:37.979589",
+      "phase": "PHASE3D1",
+      "message": "\u26a0\ufe0f API returned status 500",
+      "status": "warning"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:37.979670",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Pre-deployment preparation completed successfully",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:37.981667",
+      "phase": "PHASE3D2",
+      "message": "Starting committee deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:37.982557",
+      "phase": "PHASE3D2",
+      "message": "Read 600102 characters from deployment file",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:10:37.982586",
+      "phase": "PHASE3D2",
+      "message": "Executing deployment SQL via gcloud",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:11:55.225409",
+      "phase": "PHASE3D2",
+      "message": "\u2705 Deployment completed successfully in 77.24s",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:11:55.225475",
+      "phase": "PHASE3D3",
+      "message": "Starting post-deployment validation",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:11:55.225479",
+      "phase": "PHASE3D3",
+      "message": "Validating committee count",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:12:30.942422",
+      "phase": "PHASE3D3",
+      "message": "\u2705 Total committees after deployment: 199",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:12:30.942508",
+      "phase": "PHASE3D3",
+      "message": "Checking chamber distribution",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:07.868049",
+      "phase": "PHASE3D3",
+      "message": "\u2705 Chamber distribution query successful",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:07.868166",
+      "phase": "PHASE3D3",
+      "message": "  House: 114 committees",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:07.868171",
+      "phase": "PHASE3D3",
+      "message": "  Senate: 85 committees",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:07.868187",
+      "phase": "PHASE3D3",
+      "message": "\u26a0\ufe0f Target not met: 199 < 815",
+      "status": "warning"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:07.868193",
+      "phase": "PHASE3D3",
+      "message": "Checking data integrity",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:43.872582",
+      "phase": "PHASE3D3",
+      "message": "\u2705 Data integrity check passed",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:43.872664",
+      "phase": "PHASE3D3",
+      "message": "\u2705 Post-deployment validation completed",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:43.872702",
+      "phase": "PHASE3D4",
+      "message": "Starting system verification",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:43.872705",
+      "phase": "PHASE3D4",
+      "message": "Testing API endpoints",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:44.078365",
+      "phase": "PHASE3D4",
+      "message": "\u274c API returned status 500",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:44.238506",
+      "phase": "PHASE3D4",
+      "message": "\u274c House test failed: 500",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:44.402059",
+      "phase": "PHASE3D4",
+      "message": "\u274c Senate test failed: 500",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:44.575434",
+      "phase": "PHASE3D4",
+      "message": "\u274c Joint test failed: 500",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T10:13:44.575479",
+      "phase": "PHASE3D4",
+      "message": "\u2705 System verification completed",
+      "status": "success"
+    }
+  ]
+}

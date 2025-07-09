@@ -1,0 +1,50 @@
+{
+  "deployment_start": "2025-07-09T10:04:52.755482",
+  "target_committees": 815,
+  "deployment_file": "phase3_full_deployment_20250709_091846.sql",
+  "phases": {
+    "3d1": {
+      "phase3d1_status": "error",
+      "phase3d1_error": "connection to server at \"localhost\" (::1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\nconnection to server at \"localhost\" (127.0.0.1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n"
+    }
+  },
+  "deployment_end": "2025-07-09T10:04:52.759765",
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-09T10:04:52.755487",
+      "phase": "DEPLOYMENT",
+      "message": "\ud83d\ude80 Starting Phase 3 Committee Deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:04:52.755500",
+      "phase": "DEPLOYMENT",
+      "message": "Target: Deploy 815 committees to production database",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:04:52.755505",
+      "phase": "PHASE3D1",
+      "message": "Starting pre-deployment preparation",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:04:52.755508",
+      "phase": "PHASE3D1",
+      "message": "Testing database connection",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:04:52.759751",
+      "phase": "CONNECTION",
+      "message": "Database connection failed: connection to server at \"localhost\" (::1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\nconnection to server at \"localhost\" (127.0.0.1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T10:04:52.759762",
+      "phase": "PHASE3D1",
+      "message": "Pre-deployment preparation failed: connection to server at \"localhost\" (::1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\nconnection to server at \"localhost\" (127.0.0.1), port 5433 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n",
+      "status": "error"
+    }
+  ]
+}

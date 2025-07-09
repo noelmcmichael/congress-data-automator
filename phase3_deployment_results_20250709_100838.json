@@ -1,0 +1,69 @@
+{
+  "deployment_start": "2025-07-09T10:08:01.560683",
+  "target_committees": 815,
+  "deployment_file": "phase3_full_deployment_20250709_091846.sql",
+  "phases": {
+    "3d1": {
+      "gcloud_auth": "ropak9@gmail.com",
+      "database_state": "RUNNABLE",
+      "database_connection_error": "Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n"
+    }
+  },
+  "deployment_end": "2025-07-09T10:08:38.362614",
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-09T10:08:01.560692",
+      "phase": "DEPLOYMENT",
+      "message": "\ud83d\ude80 Starting Phase 3 Committee Deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:01.560699",
+      "phase": "DEPLOYMENT",
+      "message": "Target: Deploy 815 committees to production database",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:01.560703",
+      "phase": "PHASE3D1",
+      "message": "Starting pre-deployment preparation",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:01.560706",
+      "phase": "PHASE3D1",
+      "message": "Checking gcloud authentication",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:01.952609",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Authenticated as: ropak9@gmail.com",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:01.952642",
+      "phase": "PHASE3D1",
+      "message": "Checking database instance",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:02.739942",
+      "phase": "PHASE3D1",
+      "message": "\u2705 Database instance state: RUNNABLE",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:02.740039",
+      "phase": "PHASE3D1",
+      "message": "Testing database connection",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T10:08:38.362559",
+      "phase": "PHASE3D1",
+      "message": "\u274c Database connection test failed: Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n",
+      "status": "error"
+    }
+  ]
+}

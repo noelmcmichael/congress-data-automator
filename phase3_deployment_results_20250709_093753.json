@@ -1,0 +1,95 @@
+{
+  "deployment_start": "2025-07-09T09:36:04.283983",
+  "phases": {
+    "3d1": {
+      "deployment_file_size": 600102,
+      "backup_file": "backup_pre_phase3_20250709_093716.sql",
+      "phase3d1_status": "success"
+    },
+    "3d2": {
+      "phase3d2_status": "error",
+      "phase3d2_error": "Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n"
+    }
+  },
+  "deployment_end": "2025-07-09T09:37:53.031852",
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-09T09:36:04.284009",
+      "phase": "DEPLOYMENT",
+      "message": "Starting Phase 3 Committee Deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:36:04.284035",
+      "phase": "PHASE3D1",
+      "message": "Starting pre-deployment preparation",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:36:04.284038",
+      "phase": "PHASE3D1",
+      "message": "Checking current committee count",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:36:39.612330",
+      "phase": "PHASE3D1",
+      "message": "Failed to get committee count: Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T09:36:39.612368",
+      "phase": "PHASE3D1",
+      "message": "Checking chamber distribution",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.403944",
+      "phase": "PHASE3D1",
+      "message": "Chamber distribution query failed: Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n",
+      "status": "error"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404011",
+      "phase": "PHASE3D1",
+      "message": "Deployment file verified: 600102 bytes",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404016",
+      "phase": "PHASE3D1",
+      "message": "Creating database backup",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404062",
+      "phase": "PHASE3D1",
+      "message": "Backup planned: backup_pre_phase3_20250709_093716.sql",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404066",
+      "phase": "PHASE3D1",
+      "message": "Pre-deployment preparation completed",
+      "status": "success"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404071",
+      "phase": "PHASE3D2",
+      "message": "Starting committee deployment",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:16.404324",
+      "phase": "PHASE3D2",
+      "message": "Executing phase3_full_deployment_20250709_091846.sql",
+      "status": "info"
+    },
+    {
+      "timestamp": "2025-07-09T09:37:53.031794",
+      "phase": "PHASE3D2",
+      "message": "Deployment failed: Allowlisting your IP for incoming connection for 5 minutes...\n.....done.\nConnecting to database with SQL user [postgres].Password: \npsql: error: connection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\nconnection to server at \"34.10.205.193\", port 5432 failed: FATAL:  password authentication failed for user \"postgres\"\n",
+      "status": "error"
+    }
+  ]
+}
