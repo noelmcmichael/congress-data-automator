@@ -1,4 +1,303 @@
 {
     "members": [],
-    "committees": []
+    "committees": [
+        {
+            "name": "Aging (Special)",
+            "chamber": "Senate",
+            "chair": "Rick Scott (R-FL)",
+            "ranking_member": "Kirsten Gillibrand (D-NY)"
+        },
+        {
+            "name": "Agriculture, Nutrition and Forestry",
+            "chamber": "Senate",
+            "chair": "John Boozman (R-AR)",
+            "ranking_member": "Amy Klobuchar (D-MN)"
+        },
+        {
+            "name": "Appropriations",
+            "chamber": "Senate",
+            "chair": "Susan Collins (R-ME)",
+            "ranking_member": "Patty Murray (D-WA)"
+        },
+        {
+            "name": "Armed Services",
+            "chamber": "Senate",
+            "chair": "Roger Wicker (R-MS)",
+            "ranking_member": "Jack Reed (D-RI)"
+        },
+        {
+            "name": "Banking, Housing and Urban Affairs",
+            "chamber": "Senate",
+            "chair": "Tim Scott (R-SC)",
+            "ranking_member": "Elizabeth Warren (D-MA)"
+        },
+        {
+            "name": "Budget",
+            "chamber": "Senate",
+            "chair": "Lindsey Graham (R-SC)",
+            "ranking_member": "Jeff Merkley (D-OR)"
+        },
+        {
+            "name": "Commerce, Science and Transportation",
+            "chamber": "Senate",
+            "chair": "Ted Cruz (R-TX)",
+            "ranking_member": "Maria Cantwell (D-WA)"
+        },
+        {
+            "name": "Energy and Natural Resources",
+            "chamber": "Senate",
+            "chair": "Mike Lee (R-UT)",
+            "ranking_member": "Martin Heinrich (D-NM)"
+        },
+        {
+            "name": "Environment and Public Works",
+            "chamber": "Senate",
+            "chair": "Shelley Moore Capito (R-WV)",
+            "ranking_member": "Sheldon Whitehouse (D-RI)"
+        },
+        {
+            "name": "Ethics (Select)",
+            "chamber": "Senate",
+            "chair": "James Lankford (R-OK)",
+            "ranking_member": "Chris Coons (D-DE)"
+        },
+        {
+            "name": "Finance",
+            "chamber": "Senate",
+            "chair": "Mike Crapo (R-ID)",
+            "ranking_member": "Ron Wyden (D-OR)"
+        },
+        {
+            "name": "Foreign Relations",
+            "chamber": "Senate",
+            "chair": "Jim Risch (R-ID)",
+            "ranking_member": "Jeanne Shaheen (D-NH)"
+        },
+        {
+            "name": "Health, Education, Labor and Pensions",
+            "chamber": "Senate",
+            "chair": "Bill Cassidy (R-LA)",
+            "ranking_member": "Bernie Sanders (I-VT)"
+        },
+        {
+            "name": "Homeland Security and Governmental Affairs",
+            "chamber": "Senate",
+            "chair": "Rand Paul (R-KY)",
+            "ranking_member": "Gary Peters (D-MI)"
+        },
+        {
+            "name": "Indian Affairs (Permanent Select)",
+            "chamber": "Senate",
+            "chair": "Lisa Murkowski (R-AK)",
+            "ranking_member": "Brian Schatz (D-HI)"
+        },
+        {
+            "name": "Intelligence (Select)",
+            "chamber": "Senate",
+            "chair": "Tom Cotton (R-AR)",
+            "ranking_member": "Mark Warner (D-VA)"
+        },
+        {
+            "name": "International Narcotics Control (Permanent Caucus)",
+            "chamber": "Senate",
+            "chair": "John Cornyn (R-TX)",
+            "ranking_member": "Sheldon Whitehouse (D-RI)"
+        },
+        {
+            "name": "Judiciary",
+            "chamber": "Senate",
+            "chair": "Chuck Grassley (R-IA)",
+            "ranking_member": "Dick Durbin (D-IL)"
+        },
+        {
+            "name": "Rules and Administration",
+            "chamber": "Senate",
+            "chair": "Mitch McConnell (R-KY)",
+            "ranking_member": "Alex Padilla (D-CA)"
+        },
+        {
+            "name": "Small Business and Entrepreneurship",
+            "chamber": "Senate",
+            "chair": "Joni Ernst (R-IA)",
+            "ranking_member": "Ed Markey (D-MA)"
+        },
+        {
+            "name": "Veterans' Affairs",
+            "chamber": "Senate",
+            "chair": "Jerry Moran (R-KS)",
+            "ranking_member": "Richard Blumenthal (D-CT)"
+        },
+        {
+            "name": "Agriculture",
+            "chamber": "House",
+            "chair": "Glenn Thompson (R-PA)",
+            "ranking_member": "Angie Craig (D-MN)"
+        },
+        {
+            "name": "Appropriations",
+            "chamber": "House",
+            "chair": "Tom Cole (R-OK)",
+            "ranking_member": "Rosa DeLauro (D-CT)"
+        },
+        {
+            "name": "Armed Services",
+            "chamber": "House",
+            "chair": "Mike Rogers (R-AL)",
+            "ranking_member": "Adam Smith (D-WA)"
+        },
+        {
+            "name": "Budget",
+            "chamber": "House",
+            "chair": "Jodey Arrington (R-TX)",
+            "ranking_member": "Brendan Boyle (D-PA)"
+        },
+        {
+            "name": "Education and Workforce",
+            "chamber": "House",
+            "chair": "Tim Walberg (R-MI)",
+            "ranking_member": "Bobby Scott (D-VA)"
+        },
+        {
+            "name": "Energy and Commerce",
+            "chamber": "House",
+            "chair": "Brett Guthrie (R-KY)",
+            "ranking_member": "Frank Pallone (D-NJ)"
+        },
+        {
+            "name": "Ethics",
+            "chamber": "House",
+            "chair": "Michael Guest (R-MS)",
+            "ranking_member": "Mark DeSaulnier (D-CA)"
+        },
+        {
+            "name": "Financial Services",
+            "chamber": "House",
+            "chair": "French Hill (R-AR)",
+            "ranking_member": "Maxine Waters (D-CA)"
+        },
+        {
+            "name": "Foreign Affairs",
+            "chamber": "House",
+            "chair": "Brian Mast (R-FL)",
+            "ranking_member": "Gregory Meeks (D-NY)"
+        },
+        {
+            "name": "Homeland Security",
+            "chamber": "House",
+            "chair": "Mark Green (R-TN)",
+            "ranking_member": "Bennie Thompson (D-MS)"
+        },
+        {
+            "name": "House Administration",
+            "chamber": "House",
+            "chair": "Bryan Steil (R-WI)",
+            "ranking_member": "Joe Morelle (R-NY)"
+        },
+        {
+            "name": "Intelligence (Permanent Select)",
+            "chamber": "House",
+            "chair": "Rick Crawford (R-AR)",
+            "ranking_member": "Jim Himes (D-CT)"
+        },
+        {
+            "name": "Judiciary",
+            "chamber": "House",
+            "chair": "Jim Jordan (R-OH)",
+            "ranking_member": "Jamie Raskin (D-MD)"
+        },
+        {
+            "name": "Natural Resources",
+            "chamber": "House",
+            "chair": "Bruce Westerman (R-AR)",
+            "ranking_member": "Jared Huffman (D-CA)"
+        },
+        {
+            "name": "Oversight and Government Reform",
+            "chamber": "House",
+            "chair": "James Comer (R-KY)",
+            "ranking_member": "Gerry Connolly (D-VA) *Until April 28, 2025 Robert Garcia (D-CA) *Since June 24, 2025"
+        },
+        {
+            "name": "Rules",
+            "chamber": "House",
+            "chair": "Virginia Foxx (R-NC)",
+            "ranking_member": "Jim McGovern (D-MA)"
+        },
+        {
+            "name": "Science, Space and Technology",
+            "chamber": "House",
+            "chair": "Brian Babin (R-TX)",
+            "ranking_member": "Zoe Lofgren (D-CA)"
+        },
+        {
+            "name": "Small Business",
+            "chamber": "House",
+            "chair": "Roger Williams (R-TX)",
+            "ranking_member": "Nydia Vel\u00e1zquez (D-NY)"
+        },
+        {
+            "name": "Strategic Competition between the United Statesand the Chinese Communist Party (Select)",
+            "chamber": "House",
+            "chair": "John Moolenaar (R-MI)",
+            "ranking_member": "Raja Krishnamoorthi (D-IL)"
+        },
+        {
+            "name": "Transportation and Infrastructure",
+            "chamber": "House",
+            "chair": "Sam Graves (R-MO)",
+            "ranking_member": "Rick Larsen (D-WA)"
+        },
+        {
+            "name": "Veterans' Affairs",
+            "chamber": "House",
+            "chair": "Mike Bost (R-IL)",
+            "ranking_member": "Mark Takano (D-CA)"
+        },
+        {
+            "name": "Ways and Means",
+            "chamber": "House",
+            "chair": "Jason Smith (R-MO)",
+            "ranking_member": "Richard Neal (D-MA)"
+        },
+        {
+            "name": "Economic",
+            "chamber": "Joint",
+            "chair": "Rep. David Schweikert (R-AZ)",
+            "ranking_member": "Sen. Eric Schmitt (R-MO)",
+            "vice_chair": "Sen. Eric Schmitt (R-MO)",
+            "vice_ranking_member": "Rep. Don Beyer (D-VA)"
+        },
+        {
+            "name": "Inaugural Ceremonies (Special)Until January 20, 2025",
+            "chamber": "Joint",
+            "chair": "Sen. Amy Klobuchar (D-MN)",
+            "ranking_member": "Rep. Mike Johnson (R-LA)",
+            "vice_chair": "Rep. Mike Johnson (R-LA)",
+            "vice_ranking_member": "Sen. Deb Fischer (R-NE)"
+        },
+        {
+            "name": "Library",
+            "chamber": "Joint",
+            "chair": "Rep. Bryan Steil (R-WI)",
+            "ranking_member": "Sen. Mitch McConnell (R-KY)",
+            "vice_chair": "Sen. Mitch McConnell (R-KY)",
+            "vice_ranking_member": "Rep. Joe Morelle (D-NY)"
+        },
+        {
+            "name": "Printing",
+            "chamber": "Joint",
+            "chair": "Sen. Mitch McConnell (R-KY)",
+            "ranking_member": "Rep. Bryan Steil (R-WI)",
+            "vice_chair": "Rep. Bryan Steil (R-WI)",
+            "vice_ranking_member": "Sen. Alex Padilla (D-CA)"
+        },
+        {
+            "name": "Taxation[s]",
+            "chamber": "Joint",
+            "chair": "Rep. Jason Smith (R-MO)",
+            "ranking_member": "Sen. Mike Crapo (R-ID)",
+            "vice_chair": "Sen. Mike Crapo (R-ID)",
+            "vice_ranking_member": "Rep. Richard Neal (D-MA)"
+        }
+    ]
 }

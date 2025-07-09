@@ -1,0 +1,370 @@
+{
+  "committees": [
+    {
+      "name": "Aging (Special)",
+      "chamber": "Senate",
+      "chair": "Rick Scott (R-FL)",
+      "ranking_member": "Kirsten Gillibrand (D-NY)"
+    },
+    {
+      "name": "Agriculture, Nutrition and Forestry",
+      "chamber": "Senate",
+      "chair": "John Boozman (R-AR)",
+      "ranking_member": "Amy Klobuchar (D-MN)"
+    },
+    {
+      "name": "Appropriations",
+      "chamber": "Senate",
+      "chair": "Susan Collins (R-ME)",
+      "ranking_member": "Patty Murray (D-WA)"
+    },
+    {
+      "name": "Armed Services",
+      "chamber": "Senate",
+      "chair": "Roger Wicker (R-MS)",
+      "ranking_member": "Jack Reed (D-RI)"
+    },
+    {
+      "name": "Banking, Housing and Urban Affairs",
+      "chamber": "Senate",
+      "chair": "Tim Scott (R-SC)",
+      "ranking_member": "Elizabeth Warren (D-MA)"
+    },
+    {
+      "name": "Budget",
+      "chamber": "Senate",
+      "chair": "Lindsey Graham (R-SC)",
+      "ranking_member": "Jeff Merkley (D-OR)"
+    },
+    {
+      "name": "Commerce, Science and Transportation",
+      "chamber": "Senate",
+      "chair": "Ted Cruz (R-TX)",
+      "ranking_member": "Maria Cantwell (D-WA)"
+    },
+    {
+      "name": "Energy and Natural Resources",
+      "chamber": "Senate",
+      "chair": "Mike Lee (R-UT)",
+      "ranking_member": "Martin Heinrich (D-NM)"
+    },
+    {
+      "name": "Environment and Public Works",
+      "chamber": "Senate",
+      "chair": "Shelley Moore Capito (R-WV)",
+      "ranking_member": "Sheldon Whitehouse (D-RI)"
+    },
+    {
+      "name": "Ethics (Select)",
+      "chamber": "Senate",
+      "chair": "James Lankford (R-OK)",
+      "ranking_member": "Chris Coons (D-DE)"
+    },
+    {
+      "name": "Finance",
+      "chamber": "Senate",
+      "chair": "Mike Crapo (R-ID)",
+      "ranking_member": "Ron Wyden (D-OR)"
+    },
+    {
+      "name": "Foreign Relations",
+      "chamber": "Senate",
+      "chair": "Jim Risch (R-ID)",
+      "ranking_member": "Jeanne Shaheen (D-NH)"
+    },
+    {
+      "name": "Health, Education, Labor and Pensions",
+      "chamber": "Senate",
+      "chair": "Bill Cassidy (R-LA)",
+      "ranking_member": "Bernie Sanders (I-VT)"
+    },
+    {
+      "name": "Homeland Security and Governmental Affairs",
+      "chamber": "Senate",
+      "chair": "Rand Paul (R-KY)",
+      "ranking_member": "Gary Peters (D-MI)"
+    },
+    {
+      "name": "Indian Affairs (Permanent Select)",
+      "chamber": "Senate",
+      "chair": "Lisa Murkowski (R-AK)",
+      "ranking_member": "Brian Schatz (D-HI)"
+    },
+    {
+      "name": "Intelligence (Select)",
+      "chamber": "Senate",
+      "chair": "Tom Cotton (R-AR)",
+      "ranking_member": "Mark Warner (D-VA)"
+    },
+    {
+      "name": "International Narcotics Control (Permanent Caucus)",
+      "chamber": "Senate",
+      "chair": "John Cornyn (R-TX)",
+      "ranking_member": "Sheldon Whitehouse (D-RI)"
+    },
+    {
+      "name": "Judiciary",
+      "chamber": "Senate",
+      "chair": "Chuck Grassley (R-IA)",
+      "ranking_member": "Dick Durbin (D-IL)"
+    },
+    {
+      "name": "Rules and Administration",
+      "chamber": "Senate",
+      "chair": "Mitch McConnell (R-KY)",
+      "ranking_member": "Alex Padilla (D-CA)"
+    },
+    {
+      "name": "Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "chair": "Joni Ernst (R-IA)",
+      "ranking_member": "Ed Markey (D-MA)"
+    },
+    {
+      "name": "Veterans' Affairs",
+      "chamber": "Senate",
+      "chair": "Jerry Moran (R-KS)",
+      "ranking_member": "Richard Blumenthal (D-CT)"
+    },
+    {
+      "name": "Agriculture",
+      "chamber": "House",
+      "chair": "Glenn Thompson (R-PA)",
+      "ranking_member": "Angie Craig (D-MN)"
+    },
+    {
+      "name": "Appropriations",
+      "chamber": "House",
+      "chair": "Tom Cole (R-OK)",
+      "ranking_member": "Rosa DeLauro (D-CT)"
+    },
+    {
+      "name": "Armed Services",
+      "chamber": "House",
+      "chair": "Mike Rogers (R-AL)",
+      "ranking_member": "Adam Smith (D-WA)"
+    },
+    {
+      "name": "Budget",
+      "chamber": "House",
+      "chair": "Jodey Arrington (R-TX)",
+      "ranking_member": "Brendan Boyle (D-PA)"
+    },
+    {
+      "name": "Education and Workforce",
+      "chamber": "House",
+      "chair": "Tim Walberg (R-MI)",
+      "ranking_member": "Bobby Scott (D-VA)"
+    },
+    {
+      "name": "Energy and Commerce",
+      "chamber": "House",
+      "chair": "Brett Guthrie (R-KY)",
+      "ranking_member": "Frank Pallone (D-NJ)"
+    },
+    {
+      "name": "Ethics",
+      "chamber": "House",
+      "chair": "Michael Guest (R-MS)",
+      "ranking_member": "Mark DeSaulnier (D-CA)"
+    },
+    {
+      "name": "Financial Services",
+      "chamber": "House",
+      "chair": "French Hill (R-AR)",
+      "ranking_member": "Maxine Waters (D-CA)"
+    },
+    {
+      "name": "Foreign Affairs",
+      "chamber": "House",
+      "chair": "Brian Mast (R-FL)",
+      "ranking_member": "Gregory Meeks (D-NY)"
+    },
+    {
+      "name": "Homeland Security",
+      "chamber": "House",
+      "chair": "Mark Green (R-TN)",
+      "ranking_member": "Bennie Thompson (D-MS)"
+    },
+    {
+      "name": "House Administration",
+      "chamber": "House",
+      "chair": "Bryan Steil (R-WI)",
+      "ranking_member": "Joe Morelle (R-NY)"
+    },
+    {
+      "name": "Intelligence (Permanent Select)",
+      "chamber": "House",
+      "chair": "Rick Crawford (R-AR)",
+      "ranking_member": "Jim Himes (D-CT)"
+    },
+    {
+      "name": "Judiciary",
+      "chamber": "House",
+      "chair": "Jim Jordan (R-OH)",
+      "ranking_member": "Jamie Raskin (D-MD)"
+    },
+    {
+      "name": "Natural Resources",
+      "chamber": "House",
+      "chair": "Bruce Westerman (R-AR)",
+      "ranking_member": "Jared Huffman (D-CA)"
+    },
+    {
+      "name": "Oversight and Government Reform",
+      "chamber": "House",
+      "chair": "James Comer (R-KY)",
+      "ranking_member": "Gerry Connolly (D-VA) *Until April 28, 2025 Robert Garcia (D-CA) *Since June 24, 2025"
+    },
+    {
+      "name": "Rules",
+      "chamber": "House",
+      "chair": "Virginia Foxx (R-NC)",
+      "ranking_member": "Jim McGovern (D-MA)"
+    },
+    {
+      "name": "Science, Space and Technology",
+      "chamber": "House",
+      "chair": "Brian Babin (R-TX)",
+      "ranking_member": "Zoe Lofgren (D-CA)"
+    },
+    {
+      "name": "Small Business",
+      "chamber": "House",
+      "chair": "Roger Williams (R-TX)",
+      "ranking_member": "Nydia Vel\u00e1zquez (D-NY)"
+    },
+    {
+      "name": "Strategic Competition between the United Statesand the Chinese Communist Party (Select)",
+      "chamber": "House",
+      "chair": "John Moolenaar (R-MI)",
+      "ranking_member": "Raja Krishnamoorthi (D-IL)"
+    },
+    {
+      "name": "Transportation and Infrastructure",
+      "chamber": "House",
+      "chair": "Sam Graves (R-MO)",
+      "ranking_member": "Rick Larsen (D-WA)"
+    },
+    {
+      "name": "Veterans' Affairs",
+      "chamber": "House",
+      "chair": "Mike Bost (R-IL)",
+      "ranking_member": "Mark Takano (D-CA)"
+    },
+    {
+      "name": "Ways and Means",
+      "chamber": "House",
+      "chair": "Jason Smith (R-MO)",
+      "ranking_member": "Richard Neal (D-MA)"
+    },
+    {
+      "name": "Economic",
+      "chamber": "Joint",
+      "chair": "Rep. David Schweikert (R-AZ)",
+      "ranking_member": "Sen. Eric Schmitt (R-MO)"
+    },
+    {
+      "name": "Inaugural Ceremonies (Special)Until January 20, 2025",
+      "chamber": "Joint",
+      "chair": "Sen. Amy Klobuchar (D-MN)",
+      "ranking_member": "Rep. Mike Johnson (R-LA)"
+    },
+    {
+      "name": "Library",
+      "chamber": "Joint",
+      "chair": "Rep. Bryan Steil (R-WI)",
+      "ranking_member": "Sen. Mitch McConnell (R-KY)"
+    },
+    {
+      "name": "Printing",
+      "chamber": "Joint",
+      "chair": "Sen. Mitch McConnell (R-KY)",
+      "ranking_member": "Rep. Bryan Steil (R-WI)"
+    },
+    {
+      "name": "Taxation[s]",
+      "chamber": "Joint",
+      "chair": "Rep. Jason Smith (R-MO)",
+      "ranking_member": "Sen. Mike Crapo (R-ID)"
+    },
+    {
+      "name": "Members and leadersMembershipMembers By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025) LeadersSenate President list President pro tempore list Leaders Democratic Caucus Chair Secretary Policy Committee Chair Republican Conference Chair Vice-Chair Policy Committee Chair House Speaker list Leaders Bipartisan Legal Advisory Group Democratic Caucus Republican Conference Districts List Apportionment Gerrymandering GroupsCongressional caucus Caucuses of the United States Congress Ethnic and racial African-American members Senate House Black Caucus Arab and Middle Eastern members Asian Pacific American members Asian Pacific American Caucus Hispanic and Latino members list Hispanic Caucus Hispanic Conference Jewish members Jewish Caucus Native American members Gender and sexual identity LGBT members Equality Caucus Women Senate House Issues Caucus current House Occupation Physicians Religion Buddhist members Hindu members Jewish members Mormon (LDS) members Muslim members Quaker members Sikh members Related By length of service historically Current members by wealth From multiple states Died in office 1790\u20131899 1900\u20131949 1950\u20131999 2000\u2013present Killed or wounded in office Party switchers Slave owners",
+      "chamber": "Unknown",
+      "chair": "MembershipMembers By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025) LeadersSenate President list President pro tempore list Leaders Democratic Caucus Chair Secretary Policy Committee Chair Republican Conference Chair Vice-Chair Policy Committee Chair House Speaker list Leaders Bipartisan Legal Advisory Group Democratic Caucus Republican Conference Districts List Apportionment Gerrymandering GroupsCongressional caucus Caucuses of the United States Congress Ethnic and racial African-American members Senate House Black Caucus Arab and Middle Eastern members Asian Pacific American members Asian Pacific American Caucus Hispanic and Latino members list Hispanic Caucus Hispanic Conference Jewish members Jewish Caucus Native American members Gender and sexual identity LGBT members Equality Caucus Women Senate House Issues Caucus current House Occupation Physicians Religion Buddhist members Hindu members Jewish members Mormon (LDS) members Muslim members Quaker members Sikh members Related By length of service historically Current members by wealth From multiple states Died in office 1790\u20131899 1900\u20131949 1950\u20131999 2000\u2013present Killed or wounded in office Party switchers Slave owners",
+      "ranking_member": "Members By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025)"
+    },
+    {
+      "name": "MembershipMembers By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025) LeadersSenate President list President pro tempore list Leaders Democratic Caucus Chair Secretary Policy Committee Chair Republican Conference Chair Vice-Chair Policy Committee Chair House Speaker list Leaders Bipartisan Legal Advisory Group Democratic Caucus Republican Conference Districts List Apportionment Gerrymandering GroupsCongressional caucus Caucuses of the United States Congress Ethnic and racial African-American members Senate House Black Caucus Arab and Middle Eastern members Asian Pacific American members Asian Pacific American Caucus Hispanic and Latino members list Hispanic Caucus Hispanic Conference Jewish members Jewish Caucus Native American members Gender and sexual identity LGBT members Equality Caucus Women Senate House Issues Caucus current House Occupation Physicians Religion Buddhist members Hindu members Jewish members Mormon (LDS) members Muslim members Quaker members Sikh members Related By length of service historically Current members by wealth From multiple states Died in office 1790\u20131899 1900\u20131949 1950\u20131999 2000\u2013present Killed or wounded in office Party switchers Slave owners",
+      "chamber": "Unknown",
+      "chair": "Members By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025)",
+      "ranking_member": "By length of service By shortness of service Youngest members Non-voting members Unseated members"
+    },
+    {
+      "name": "Members By length of service By shortness of service Youngest members Non-voting members Unseated members Senate Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties House Members seniority Dean Former Expelled, censured, and reprimanded Served a single term Lost re-election in a primary Switched parties Elected but did not serve New members 90th (1967) 91st (1969) 92nd (1971) 93rd (1973) 94th (1975) 95th (1977) 96th (1979) 97th (1981) 98th (1983) 99th (1985) 100th (1987) 101st (1989) 102nd (1991) 103rd (1993) 104th (1995) 105th (1997) 106th (1999) 107th (2001) 108th (2003) 109th (2005) 110th (2007) 111th (2009) 112th (2011) 113th (2013) 114th (2015) 115th (2017) 116th (2019) 117th (2021) 118th (2023) 119th (2025)",
+      "chamber": "Unknown",
+      "chair": "By length of service By shortness of service Youngest members Non-voting members Unseated members",
+      "ranking_member": "Members seniority Dean Former Expelled or censured Classes Born outside the U.S. Resigned Appointed Switched parties"
+    },
+    {
+      "name": "Senate President list President pro tempore list Leaders Democratic Caucus Chair Secretary Policy Committee Chair Republican Conference Chair Vice-Chair Policy Committee Chair House Speaker list Leaders Bipartisan Legal Advisory Group Democratic Caucus Republican Conference",
+      "chamber": "Unknown",
+      "chair": "President list President pro tempore list Leaders Democratic Caucus Chair Secretary Policy Committee Chair Republican Conference Chair Vice-Chair Policy Committee Chair",
+      "ranking_member": "Speaker list Leaders Bipartisan Legal Advisory Group Democratic Caucus Republican Conference"
+    },
+    {
+      "name": "Congressional caucus Caucuses of the United States Congress Ethnic and racial African-American members Senate House Black Caucus Arab and Middle Eastern members Asian Pacific American members Asian Pacific American Caucus Hispanic and Latino members list Hispanic Caucus Hispanic Conference Jewish members Jewish Caucus Native American members Gender and sexual identity LGBT members Equality Caucus Women Senate House Issues Caucus current House Occupation Physicians Religion Buddhist members Hindu members Jewish members Mormon (LDS) members Muslim members Quaker members Sikh members",
+      "chamber": "Unknown",
+      "chair": "Caucuses of the United States Congress",
+      "ranking_member": "African-American members Senate House Black Caucus Arab and Middle Eastern members Asian Pacific American members Asian Pacific American Caucus Hispanic and Latino members list Hispanic Caucus Hispanic Conference Jewish members Jewish Caucus Native American members"
+    },
+    {
+      "name": "Powers, privileges, procedure, committees, history, mediaPowers Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending Privileges Salaries Franking Immunity Procedure Act of Congress list Appropriation bill Bill Budget process Censure Closed sessions House Senate Cloture Concurrent resolution Continuing resolution Dear Colleague letter Discharge petition Enrolled bill Expulsion Joint resolution Joint session list Lame-duck session Magic minute Majority of the majority (Hastert Rule) Multiple referral House procedures Quorum call Reconciliation Rider Saxbe fix Sponsorship Suspension of the rules Unanimous consent Veto Line-item veto Pocket veto Senate-specific Advice and consent Blue slip (U.S. Senate) Classes Executive communication Executive session Filibuster Jefferson's Manual Senate Journal Morning business Nuclear option Presiding Officer Recess appointment Reconciliation Riddick's Senate Procedure Senate hold Senatorial courtesy Seniority Standing Rules Tie-breaking votes Traditions Treaty Clause Committees Chairman and ranking member Of the Whole Conference Discharge petition Hearings Markup Oversight List (Joint) List (House) List (Senate) Select and special Standing Subcommittees Items Gavels Mace of the House Seal of the Senate History House history memoirs speaker elections Senate history election disputes memoirs Continental Congress Federal Hall (1789\u20131790) Congress Hall (1790\u20131800) Old Brick Capitol (1815\u20131819) Biographical Directory Divided government Party divisions Media C-SPAN Congressional Quarterly The Hill Politico Roll Call",
+      "chamber": "Unknown",
+      "chair": "Powers Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending Privileges Salaries Franking Immunity Procedure Act of Congress list Appropriation bill Bill Budget process Censure Closed sessions House Senate Cloture Concurrent resolution Continuing resolution Dear Colleague letter Discharge petition Enrolled bill Expulsion Joint resolution Joint session list Lame-duck session Magic minute Majority of the majority (Hastert Rule) Multiple referral House procedures Quorum call Reconciliation Rider Saxbe fix Sponsorship Suspension of the rules Unanimous consent Veto Line-item veto Pocket veto Senate-specific Advice and consent Blue slip (U.S. Senate) Classes Executive communication Executive session Filibuster Jefferson's Manual Senate Journal Morning business Nuclear option Presiding Officer Recess appointment Reconciliation Riddick's Senate Procedure Senate hold Senatorial courtesy Seniority Standing Rules Tie-breaking votes Traditions Treaty Clause Committees Chairman and ranking member Of the Whole Conference Discharge petition Hearings Markup Oversight List (Joint) List (House) List (Senate) Select and special Standing Subcommittees Items Gavels Mace of the House Seal of the Senate History House history memoirs speaker elections Senate history election disputes memoirs Continental Congress Federal Hall (1789\u20131790) Congress Hall (1790\u20131800) Old Brick Capitol (1815\u20131819) Biographical Directory Divided government Party divisions Media C-SPAN Congressional Quarterly The Hill Politico Roll Call",
+      "ranking_member": "Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending"
+    },
+    {
+      "name": "Powers Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending Privileges Salaries Franking Immunity Procedure Act of Congress list Appropriation bill Bill Budget process Censure Closed sessions House Senate Cloture Concurrent resolution Continuing resolution Dear Colleague letter Discharge petition Enrolled bill Expulsion Joint resolution Joint session list Lame-duck session Magic minute Majority of the majority (Hastert Rule) Multiple referral House procedures Quorum call Reconciliation Rider Saxbe fix Sponsorship Suspension of the rules Unanimous consent Veto Line-item veto Pocket veto Senate-specific Advice and consent Blue slip (U.S. Senate) Classes Executive communication Executive session Filibuster Jefferson's Manual Senate Journal Morning business Nuclear option Presiding Officer Recess appointment Reconciliation Riddick's Senate Procedure Senate hold Senatorial courtesy Seniority Standing Rules Tie-breaking votes Traditions Treaty Clause Committees Chairman and ranking member Of the Whole Conference Discharge petition Hearings Markup Oversight List (Joint) List (House) List (Senate) Select and special Standing Subcommittees Items Gavels Mace of the House Seal of the Senate History House history memoirs speaker elections Senate history election disputes memoirs Continental Congress Federal Hall (1789\u20131790) Congress Hall (1790\u20131800) Old Brick Capitol (1815\u20131819) Biographical Directory Divided government Party divisions Media C-SPAN Congressional Quarterly The Hill Politico Roll Call",
+      "chamber": "Unknown",
+      "chair": "Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending",
+      "ranking_member": "Salaries Franking Immunity"
+    },
+    {
+      "name": "Capitol Complex (Capitol Hill)Legislativeoffices Congressional staff Gov. Accountability Office (GAO) Comptroller General Architect of the Capitol Cap. Police Board Cap. Guide Service Congr. Budget Office (CBO) Congr. Workplace Rights (OCWR) Library of Congress Gov. Publishing Office (GPO) Technology Assessment OfficesSenate Curator Historical Library House Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library EmployeesSenate Secretary Chaplain Curator Historian Librarian Pages Parliamentarian Sergeant at Arms and Doorkeeper House Chaplain Chief Administrative Officer Clerk Doorkeeper Floor Operations Floor Services Chief Historian Pages Board Parliamentarian Postmaster Reading Clerk Sergeant at Arms Library ofCongress Congressional Research Service reports Copyright Office Register of Copyrights Law Library Poet Laureate THOMAS Adams Building Jefferson Building Madison Building Gov.Publishing Office Public Printer Congressional Pictorial Directory Congressional Record Official Congressional Directory U.S. Gov. Manual Serial Set Statutes at Large United States Code Capitol Building List of artwork at the United States Capitol complex List of portraits in the United States House of Representatives collection (A-J) Brumidi Corridors Congressional Prayer Room Crypt Dome Statue of Freedom Rotunda Hall of Columns Statuary Hall Visitor Center The Apotheosis of Washington Statue of Freedom Declaration of Independence painting Scene at the Signing of the Constitution of the United States Apotheosis of Democracy Progress of Civilization Pediment First Reading of the Emancipation Proclamation of President Lincoln Surrender of General Burgoyne Surrender of Lord Cornwallis George Washington and the Revolutionary War Door Revolutionary War Door Columbus Doors Washington at Princeton Westward the Course of Empire Takes Its Way VP's Room VP Bust Collection OfficebuildingsSenate Dirksen Hart Mountains and Clouds Russell House Building Commission office lottery Cannon Ford Longworth O'Neill Rayburn Otherfacilities Botanic Garden Health and Fitness Facility House Recording Studio Senate chamber Old Senate Chamber Old Supreme Court Chamber Power Plant Webster Page Residence Subway Related Capitol Hill United States Capitol cornerstone laying",
+      "chamber": "Unknown",
+      "chair": "Legislativeoffices Congressional staff Gov. Accountability Office (GAO) Comptroller General Architect of the Capitol Cap. Police Board Cap. Guide Service Congr. Budget Office (CBO) Congr. Workplace Rights (OCWR) Library of Congress Gov. Publishing Office (GPO) Technology Assessment OfficesSenate Curator Historical Library House Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library EmployeesSenate Secretary Chaplain Curator Historian Librarian Pages Parliamentarian Sergeant at Arms and Doorkeeper House Chaplain Chief Administrative Officer Clerk Doorkeeper Floor Operations Floor Services Chief Historian Pages Board Parliamentarian Postmaster Reading Clerk Sergeant at Arms Library ofCongress Congressional Research Service reports Copyright Office Register of Copyrights Law Library Poet Laureate THOMAS Adams Building Jefferson Building Madison Building Gov.Publishing Office Public Printer Congressional Pictorial Directory Congressional Record Official Congressional Directory U.S. Gov. Manual Serial Set Statutes at Large United States Code Capitol Building List of artwork at the United States Capitol complex List of portraits in the United States House of Representatives collection (A-J) Brumidi Corridors Congressional Prayer Room Crypt Dome Statue of Freedom Rotunda Hall of Columns Statuary Hall Visitor Center The Apotheosis of Washington Statue of Freedom Declaration of Independence painting Scene at the Signing of the Constitution of the United States Apotheosis of Democracy Progress of Civilization Pediment First Reading of the Emancipation Proclamation of President Lincoln Surrender of General Burgoyne Surrender of Lord Cornwallis George Washington and the Revolutionary War Door Revolutionary War Door Columbus Doors Washington at Princeton Westward the Course of Empire Takes Its Way VP's Room VP Bust Collection OfficebuildingsSenate Dirksen Hart Mountains and Clouds Russell House Building Commission office lottery Cannon Ford Longworth O'Neill Rayburn Otherfacilities Botanic Garden Health and Fitness Facility House Recording Studio Senate chamber Old Senate Chamber Old Supreme Court Chamber Power Plant Webster Page Residence Subway Related Capitol Hill United States Capitol cornerstone laying",
+      "ranking_member": "Congressional staff Gov. Accountability Office (GAO) Comptroller General Architect of the Capitol Cap. Police Board Cap. Guide Service Congr. Budget Office (CBO) Congr. Workplace Rights (OCWR) Library of Congress Gov. Publishing Office (GPO) Technology Assessment"
+    },
+    {
+      "name": "Legislativeoffices Congressional staff Gov. Accountability Office (GAO) Comptroller General Architect of the Capitol Cap. Police Board Cap. Guide Service Congr. Budget Office (CBO) Congr. Workplace Rights (OCWR) Library of Congress Gov. Publishing Office (GPO) Technology Assessment OfficesSenate Curator Historical Library House Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library EmployeesSenate Secretary Chaplain Curator Historian Librarian Pages Parliamentarian Sergeant at Arms and Doorkeeper House Chaplain Chief Administrative Officer Clerk Doorkeeper Floor Operations Floor Services Chief Historian Pages Board Parliamentarian Postmaster Reading Clerk Sergeant at Arms Library ofCongress Congressional Research Service reports Copyright Office Register of Copyrights Law Library Poet Laureate THOMAS Adams Building Jefferson Building Madison Building Gov.Publishing Office Public Printer Congressional Pictorial Directory Congressional Record Official Congressional Directory U.S. Gov. Manual Serial Set Statutes at Large United States Code Capitol Building List of artwork at the United States Capitol complex List of portraits in the United States House of Representatives collection (A-J) Brumidi Corridors Congressional Prayer Room Crypt Dome Statue of Freedom Rotunda Hall of Columns Statuary Hall Visitor Center The Apotheosis of Washington Statue of Freedom Declaration of Independence painting Scene at the Signing of the Constitution of the United States Apotheosis of Democracy Progress of Civilization Pediment First Reading of the Emancipation Proclamation of President Lincoln Surrender of General Burgoyne Surrender of Lord Cornwallis George Washington and the Revolutionary War Door Revolutionary War Door Columbus Doors Washington at Princeton Westward the Course of Empire Takes Its Way VP's Room VP Bust Collection OfficebuildingsSenate Dirksen Hart Mountains and Clouds Russell House Building Commission office lottery Cannon Ford Longworth O'Neill Rayburn Otherfacilities Botanic Garden Health and Fitness Facility House Recording Studio Senate chamber Old Senate Chamber Old Supreme Court Chamber Power Plant Webster Page Residence Subway Related Capitol Hill United States Capitol cornerstone laying",
+      "chamber": "Unknown",
+      "chair": "Congressional staff Gov. Accountability Office (GAO) Comptroller General Architect of the Capitol Cap. Police Board Cap. Guide Service Congr. Budget Office (CBO) Congr. Workplace Rights (OCWR) Library of Congress Gov. Publishing Office (GPO) Technology Assessment",
+      "ranking_member": "Senate Curator Historical Library House Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library"
+    },
+    {
+      "name": "Senate Curator Historical Library House Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library",
+      "chamber": "Unknown",
+      "chair": "Curator Historical Library",
+      "ranking_member": "Congr. Ethics Emergency Planning, Preparedness, and Operations Interparliamentary Affairs Law Revision Counsel Legislative Counsel Library"
+    },
+    {
+      "name": "Senate Secretary Chaplain Curator Historian Librarian Pages Parliamentarian Sergeant at Arms and Doorkeeper House Chaplain Chief Administrative Officer Clerk Doorkeeper Floor Operations Floor Services Chief Historian Pages Board Parliamentarian Postmaster Reading Clerk Sergeant at Arms",
+      "chamber": "Unknown",
+      "chair": "Secretary Chaplain Curator Historian Librarian Pages Parliamentarian Sergeant at Arms and Doorkeeper",
+      "ranking_member": "Chaplain Chief Administrative Officer Clerk Doorkeeper Floor Operations Floor Services Chief Historian Pages Board Parliamentarian Postmaster Reading Clerk Sergeant at Arms"
+    },
+    {
+      "name": "Senate Dirksen Hart Mountains and Clouds Russell House Building Commission office lottery Cannon Ford Longworth O'Neill Rayburn",
+      "chamber": "Unknown",
+      "chair": "Dirksen Hart Mountains and Clouds Russell",
+      "ranking_member": "Building Commission office lottery Cannon Ford Longworth O'Neill Rayburn"
+    },
+    {
+      "name": "Powers Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending Privileges Salaries Franking Immunity Procedure Act of Congress list Appropriation bill Bill Budget process Censure Closed sessions House Senate Cloture Concurrent resolution Continuing resolution Dear Colleague letter Discharge petition Enrolled bill Expulsion Joint resolution Joint session list Lame-duck session Magic minute Majority of the majority (Hastert Rule) Multiple referral House procedures Quorum call Reconciliation Rider Saxbe fix Sponsorship Suspension of the rules Unanimous consent Veto Line-item veto Pocket veto Senate-specific Advice and consent Blue slip (U.S. Senate) Classes Executive communication Executive session Filibuster Jefferson's Manual Senate Journal Morning business Nuclear option Presiding Officer Recess appointment Reconciliation Riddick's Senate Procedure Senate hold Senatorial courtesy Seniority Standing Rules Tie-breaking votes Traditions Treaty Clause Committees Chairman and ranking member Of the Whole Conference Discharge petition Hearings Markup Oversight List (Joint) List (House) List (Senate) Select and special Standing Subcommittees Items Gavels Mace of the House Seal of the Senate History House history memoirs speaker elections Senate history election disputes memoirs Continental Congress Federal Hall (1789\u20131790) Congress Hall (1790\u20131800) Old Brick Capitol (1815\u20131819) Biographical Directory Divided government Party divisions Media C-SPAN Congressional Quarterly The Hill Politico Roll Call",
+      "chamber": "Unknown",
+      "chair": "Article I Copyright Commerce (Dormant) Contempt of Congress Declaration of war Impeachment Inquiries Trial Naturalization \"Necessary and Proper\" Power of enforcement Taxing/spending",
+      "ranking_member": "Salaries Franking Immunity"
+    }
+  ]
+}
