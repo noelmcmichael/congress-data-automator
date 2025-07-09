@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "collection_start": "2025-07-09T11:55:23.284469",
+    "target_count": 815,
+    "sources": [],
+    "collection_method": "comprehensive_scraping",
+    "collection_end": "2025-07-09T11:55:23.522692",
+    "total_collected": 4,
+    "chamber_breakdown": {
+      "House": 0,
+      "Senate": 0,
+      "Joint": 4
+    },
+    "type_breakdown": {
+      "Standing": 0,
+      "Subcommittee": 0,
+      "Joint": 4,
+      "Select": 0,
+      "Special": 0
+    }
+  },
+  "committees": [
+    {
+      "name": "Joint Economic Committee",
+      "chamber": "Joint",
+      "committee_code": "jhje00",
+      "congress_gov_id": "jhje00",
+      "committee_type": "Joint",
+      "is_active": true,
+      "is_subcommittee": false,
+      "website": "https://www.congress.gov/committees/joint/jhje00",
+      "source_url": "knowledge_base"
+    },
+    {
+      "name": "Joint Committee on Taxation",
+      "chamber": "Joint",
+      "committee_code": "jhtx00",
+      "congress_gov_id": "jhtx00",
+      "committee_type": "Joint",
+      "is_active": true,
+      "is_subcommittee": false,
+      "website": "https://www.congress.gov/committees/joint/jhtx00",
+      "source_url": "knowledge_base"
+    },
+    {
+      "name": "Joint Committee on the Library",
+      "chamber": "Joint",
+      "committee_code": "jhla00",
+      "congress_gov_id": "jhla00",
+      "committee_type": "Joint",
+      "is_active": true,
+      "is_subcommittee": false,
+      "website": "https://www.congress.gov/committees/joint/jhla00",
+      "source_url": "knowledge_base"
+    },
+    {
+      "name": "Joint Committee on Printing",
+      "chamber": "Joint",
+      "committee_code": "jhpr00",
+      "congress_gov_id": "jhpr00",
+      "committee_type": "Joint",
+      "is_active": true,
+      "is_subcommittee": false,
+      "website": "https://www.congress.gov/committees/joint/jhpr00",
+      "source_url": "knowledge_base"
+    }
+  ]
+}

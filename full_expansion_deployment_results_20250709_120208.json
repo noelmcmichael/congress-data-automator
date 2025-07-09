@@ -1,0 +1,150 @@
+{
+  "deployment_successful": true,
+  "deployment_start": "2025-07-09T12:01:50.730212",
+  "deployment_end": "2025-07-09T12:02:08.652840",
+  "deployment_duration_seconds": 17.922628,
+  "baseline_committee_count": 240,
+  "new_committees_added": 135,
+  "final_committee_count": 375,
+  "database_validation": {
+    "total_committees": 375,
+    "chamber_breakdown": {
+      "House": 202,
+      "Joint": 4,
+      "Senate": 169
+    },
+    "type_breakdown": {
+      "Standing": 77,
+      "Subcommittee": 298
+    },
+    "missing_congress_gov_ids": 199,
+    "validation_timestamp": "2025-07-09T12:02:07.281289"
+  },
+  "api_validation": {
+    "api_total_committees": 375,
+    "api_response_success": true,
+    "chamber_filtering_works": {
+      "house": true,
+      "senate": true,
+      "joint": true
+    },
+    "api_validation_timestamp": "2025-07-09T12:02:08.651920"
+  },
+  "deployment_log": [
+    {
+      "timestamp": "2025-07-09T12:01:50.730197",
+      "status": "info",
+      "message": "\ud83d\ude80 Starting full committee expansion deployment"
+    },
+    {
+      "timestamp": "2025-07-09T12:01:50.730213",
+      "status": "info",
+      "message": "Phase 1: Pre-deployment checks"
+    },
+    {
+      "timestamp": "2025-07-09T12:01:50.730219",
+      "status": "info",
+      "message": "Phase 2: Starting Cloud SQL Proxy"
+    },
+    {
+      "timestamp": "2025-07-09T12:01:50.730222",
+      "status": "info",
+      "message": "Starting Cloud SQL proxy"
+    },
+    {
+      "timestamp": "2025-07-09T12:01:50.749168",
+      "status": "info",
+      "message": "Starting proxy: ./cloud-sql-proxy chefgavin:us-central1:congressional-db --port=5433"
+    },
+    {
+      "timestamp": "2025-07-09T12:01:50.750934",
+      "status": "info",
+      "message": "Waiting for proxy initialization (12 seconds)"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:02.751274",
+      "status": "success",
+      "message": "Cloud SQL proxy started successfully"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:02.751471",
+      "status": "info",
+      "message": "Phase 3: Getting baseline committee count"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.183473",
+      "status": "success",
+      "message": "Current committee count: 240"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.183545",
+      "status": "info",
+      "message": "Phase 4: Executing SQL deployment"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.184109",
+      "status": "info",
+      "message": "Loaded SQL deployment: 67643 characters"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.507942",
+      "status": "info",
+      "message": "Executing SQL deployment via proxy connection"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.696066",
+      "status": "success",
+      "message": "SQL deployment completed in 0.19s"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:03.696141",
+      "status": "info",
+      "message": "Phase 5: Validating deployment"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:06.699335",
+      "status": "info",
+      "message": "Validating deployment via database"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:07.281323",
+      "status": "success",
+      "message": "Database validation complete: 375 total committees"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:07.281374",
+      "status": "info",
+      "message": "Validating deployment via API"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.651936",
+      "status": "success",
+      "message": "API validation complete: 375 committees accessible"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.652856",
+      "status": "success",
+      "message": "\u2705 Deployment successful! Added 135 committees"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.652872",
+      "status": "info",
+      "message": "   Final count: 375 committees"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.652882",
+      "status": "info",
+      "message": "   Duration: 17.9 seconds"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.652890",
+      "status": "info",
+      "message": "Stopping Cloud SQL proxy"
+    },
+    {
+      "timestamp": "2025-07-09T12:02:08.656419",
+      "status": "success",
+      "message": "Proxy stopped successfully"
+    }
+  ]
+}
