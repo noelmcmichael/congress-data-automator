@@ -135,7 +135,7 @@ const Hearings: React.FC = () => {
       )}
 
       <SearchFilter
-        searchPlaceholder="Search hearings by title..."
+        searchPlaceholder="Search 119th Congress hearings by title..."
         searchValue={searchTerm}
         onSearchChange={setSearchTerm}
         filters={{

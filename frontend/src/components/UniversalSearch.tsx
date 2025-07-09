@@ -21,7 +21,7 @@ const UniversalSearch: React.FC = () => {
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Search for Members or Committees..."
+        placeholder="Search 119th Congress members, committees, and hearings..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         InputProps={{

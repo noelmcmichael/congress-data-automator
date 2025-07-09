@@ -159,8 +159,11 @@ const Dashboard: React.FC = () => {
         <Typography variant="h4" gutterBottom>
           Congressional Data Platform
         </Typography>
+        <Typography variant="h6" color="primary" sx={{ mb: 2, fontWeight: 600 }}>
+          119th Congress (2025-2027) • Republican Unified Control
+        </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          Monitor data quality, system health, and automation status for congressional data collection.
+          Monitor data quality, system health, and automation status for current Congressional session data collection.
         </Typography>
         <UniversalSearch />
       </Box>
@@ -382,7 +385,7 @@ const Dashboard: React.FC = () => {
                       {systemHealth?.dataQuality?.memberCount || stats?.members?.total || 0}
                     </Typography>
                     <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
-                      Members (Expected: 541)
+                      Members (119th Congress: 541)
                     </Typography>
                     <Typography variant="body2" sx={{ 
                       fontWeight: 600,
@@ -426,7 +429,7 @@ const Dashboard: React.FC = () => {
                       {systemHealth?.dataQuality?.committeeCount || stats?.committees?.total || 0}
                     </Typography>
                     <Typography variant="body1" sx={{ fontWeight: 600, mb: 1 }}>
-                      Committees (Expected: 199)
+                      Committees (119th Congress: 199)
                     </Typography>
                     <Typography variant="body2" sx={{ 
                       fontWeight: 600,
@@ -505,7 +508,7 @@ const Dashboard: React.FC = () => {
               
               <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Typography variant="body2" color="text.secondary">
-                  Database Health: {systemHealth?.dataQuality ? 
+                  119th Congress Database Health: {systemHealth?.dataQuality ? 
                     `${Math.round(((systemHealth.dataQuality.memberCount + systemHealth.dataQuality.committeeCount) / (541 + 199)) * 100)}% Complete` :
                     'Calculating...'
                   }
@@ -623,7 +626,7 @@ const Dashboard: React.FC = () => {
       {/* Footer */}
       <Box sx={{ mt: 4, pt: 2, borderTop: '1px solid #e0e0e0' }}>
         <Typography variant="body2" color="text.secondary">
-          Last updated: {format(lastUpdated, 'PPpp')} | Platform Status: {status?.api_status || 'Unknown'}
+          Last updated: {format(lastUpdated, 'PPpp')} | Platform Status: {status?.api_status || 'Unknown'} | 119th Congress Data (2025-2027)
         </Typography>
       </Box>
     </Box>

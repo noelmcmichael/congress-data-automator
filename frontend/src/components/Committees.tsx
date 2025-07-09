@@ -128,7 +128,7 @@ const Committees: React.FC = () => {
       )}
 
       <SearchFilter
-        searchPlaceholder="Search committees by name..."
+        searchPlaceholder="Search 119th Congress committees by name..."
         searchValue={searchTerm}
         onSearchChange={setSearchTerm}
         filters={{

@@ -14,6 +14,7 @@ import {
   useTheme,
   useMediaQuery,
   AppBar,
+  Tooltip,
 } from '@mui/material';
 import { getSessionDisplayString } from '../services/congressionalSession';
 import {
@@ -33,15 +34,13 @@ import {
 const drawerWidth = 240;
 
 const navigationItems = [
-  { path: '/', label: 'Dashboard', icon: <DashboardIcon /> },
-  { path: '/members', label: 'Members', icon: <PeopleIcon /> },
-
-  { path: '/committee-hierarchy', label: 'Committee Hierarchy', icon: <HierarchyIcon /> },
-  { path: '/jurisdiction-mapping', label: 'Jurisdiction Mapping', icon: <JurisdictionIcon /> },
-  { path: '/hearings', label: 'Hearings', icon: <EventIcon /> },
-
-  { path: '/search', label: 'Advanced Search', icon: <SearchIcon /> },
-  { path: '/settings', label: 'Settings', icon: <SettingsIcon /> },
+  { path: '/', label: 'Dashboard', icon: <DashboardIcon />, tooltip: 'System health and data quality overview' },
+  { path: '/members', label: 'Members', icon: <PeopleIcon />, tooltip: 'Browse all 119th Congress members' },
+  { path: '/committee-hierarchy', label: 'Committee Hierarchy', icon: <HierarchyIcon />, tooltip: 'Explore committee structure and membership' },
+  { path: '/jurisdiction-mapping', label: 'Jurisdiction Mapping', icon: <JurisdictionIcon />, tooltip: 'Committee oversight responsibilities' },
+  { path: '/hearings', label: 'Hearings', icon: <EventIcon />, tooltip: 'Congressional hearings and schedules' },
+  { path: '/search', label: 'Advanced Search', icon: <SearchIcon />, tooltip: 'Search across all Congressional data' },
+  { path: '/settings', label: 'Settings', icon: <SettingsIcon />, tooltip: 'API configuration and testing' },
 ];
 
 interface NavigationProps {
@@ -99,39 +98,41 @@ const Navigation: React.FC<NavigationProps> = ({ onMobileToggle }) => {
         <List sx={{ px: 1 }}>
           {navigationItems.map((item) => (
             <ListItem key={item.path} disablePadding sx={{ mb: 0.5 }}>
-              <ListItemButton
-                selected={location.pathname === item.path}
-                onClick={() => handleNavigation(item.path)}
-                sx={{
-                  borderRadius: 2,
-                  color: 'rgba(255, 255, 255, 0.8)',
-                  '&:hover': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    color: 'white',
-                    transform: 'translateX(4px)',
-                    transition: 'all 0.3s ease-in-out',
-                  },
-                  '&.Mui-selected': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                    color: 'white',
+              <Tooltip title={item.tooltip} placement="right">
+                <ListItemButton
+                  selected={location.pathname === item.path}
+                  onClick={() => handleNavigation(item.path)}
+                  sx={{
+                    borderRadius: 2,
+                    color: 'rgba(255, 255, 255, 0.8)',
                     '&:hover': {
-                      backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      color: 'white',
+                      transform: 'translateX(4px)',
+                      transition: 'all 0.3s ease-in-out',
                     },
-                  },
-                  transition: 'all 0.3s ease-in-out',
-                }}
-              >
-                <ListItemIcon sx={{ color: 'inherit', minWidth: 40 }}>
-                  {item.icon}
-                </ListItemIcon>
-                <ListItemText 
-                  primary={item.label} 
-                  primaryTypographyProps={{ 
-                    fontSize: 14,
-                    fontWeight: location.pathname === item.path ? 600 : 500
-                  }} 
-                />
-              </ListItemButton>
+                    '&.Mui-selected': {
+                      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                      color: 'white',
+                      '&:hover': {
+                        backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                      },
+                    },
+                    transition: 'all 0.3s ease-in-out',
+                  }}
+                >
+                  <ListItemIcon sx={{ color: 'inherit', minWidth: 40 }}>
+                    {item.icon}
+                  </ListItemIcon>
+                  <ListItemText 
+                    primary={item.label} 
+                    primaryTypographyProps={{ 
+                      fontSize: 14,
+                      fontWeight: location.pathname === item.path ? 600 : 500
+                    }} 
+                  />
+                </ListItemButton>
+              </Tooltip>
             </ListItem>
           ))}
         </List>

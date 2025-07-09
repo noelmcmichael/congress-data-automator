@@ -536,8 +536,11 @@ const AdvancedSearch: React.FC = () => {
         <Typography variant="h4" gutterBottom>
           Advanced Search
         </Typography>
+        <Typography variant="h6" color="primary" sx={{ mb: 1, fontWeight: 600 }}>
+          119th Congress (2025-2027)
+        </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          Search across all congressional data with powerful filters and options.
+          Search across all 119th Congress data with powerful filters and options.
         </Typography>
         
         <Paper sx={{ p: 2, mb: 2 }}>
@@ -545,7 +548,7 @@ const AdvancedSearch: React.FC = () => {
             <TextField
               fullWidth
               variant="outlined"
-              placeholder="Search members, committees, hearings..."
+              placeholder="Search 119th Congress members, committees, hearings..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && performSearch()}
