@@ -10,6 +10,12 @@ from .core.database import engine, Base
 from .core.database_optimization import setup_database_optimization
 from .services.congress_api import CongressApiClient
 from .middleware.cache_middleware import CacheMiddleware, warm_cache
+from .middleware.security_middleware import (
+    RateLimitMiddleware, 
+    SecurityHeadersMiddleware, 
+    RequestValidationMiddleware,
+    security_monitor
+)
 
 # Configure structured logging
 structlog.configure(
@@ -50,7 +56,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Add caching middleware
+# Add security middleware (order matters - security first)
+app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(RequestValidationMiddleware, max_request_size=1024*1024)  # 1MB limit
+app.add_middleware(RateLimitMiddleware, calls=100, period=60)  # 100 req/min
+
+# Add caching middleware (after security)
 app.add_middleware(CacheMiddleware, cache_enabled=True)
 
 # Import models to ensure they're registered with Base
@@ -176,6 +187,32 @@ async def invalidate_cache(data_type: str):
             "error": str(e),
             "status": "failed"
         }
+
+
+@app.get("/api/v1/security/status")
+async def security_status():
+    """Security status and monitoring endpoint."""
+    from .core.security import get_security_status
+    
+    try:
+        status = get_security_status()
+        return status
+    except Exception as e:
+        return {"error": str(e), "security_status": "unavailable"}
+
+
+@app.get("/api/v1/security/events")
+async def security_events():
+    """Get recent security events summary."""
+    try:
+        events_summary = security_monitor.get_security_summary()
+        return {
+            "security_events": events_summary,
+            "monitoring_status": "active",
+            "timestamp": "2025-01-08T23:00:00Z"
+        }
+    except Exception as e:
+        return {"error": str(e), "events": "unavailable"}
 
 
 @app.exception_handler(Exception)
