@@ -1,0 +1,16 @@
+{
+  "timestamp": "20250710_105015",
+  "deployment_method": "DIRECT_DATABASE_UPLOAD",
+  "proxy_status": {
+    "status": "STARTED",
+    "pid": 32280
+  },
+  "upload_results": {
+    "status": "FAILED",
+    "output": "\ud83d\ude80 DIRECT DATABASE UPLOAD OF CONGRESSIONAL DATASET\n============================================================\n\ud83d\udcc4 Using dataset: collected_members_full_20250710_105015.json\n\ud83d\udcca Total members to upload: 535\n\ud83d\udd0c Starting Cloud SQL Proxy...\n\u274c Database connection failed: dlopen(/Users/noelmcmichael/Workspace/congress_data_automator/.venv/lib/python3.9/site-packages/psycopg2/_psycopg.cpython-39-darwin.so, 0x0002): Symbol not found: _EVP_MD_CTX_get_size_ex\n  Referenced from: <25CAD8F6-BE88-3B51-AE08-69AAE9363BE3> /private/var/folders/5h/z6k7d0ps08n_0ltgprdqc93h0000gn/T/_MEIiY7upr/libssl.3.dylib\n  Expected in:     <5992DFB8-DE27-39D8-AE26-2C28B755A942> /private/var/folders/5h/z6k7d0ps08n_0ltgprdqc93h0000gn/T/_MEIiY7upr/pygit2/.dylibs/libcrypto.3.dylib\n\n\u274c Upload failed\n",
+    "error": "",
+    "converted_file": "/Users/noelmcmichael/Workspace/congress_data_automator/collected_members_full_20250710_105015.json"
+  },
+  "verification": {},
+  "final_status": "UPLOAD_FAILED"
+}

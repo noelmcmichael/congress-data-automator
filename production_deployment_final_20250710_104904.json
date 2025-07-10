@@ -1,0 +1,44 @@
+{
+  "timestamp": "20250710_104904",
+  "deployment_method": "EXISTING_INFRASTRUCTURE",
+  "steps": [
+    {
+      "step": "check_scripts",
+      "result": {
+        "available_scripts": [
+          "upload_real_congressional_data.py",
+          "direct_database_upload.py",
+          "execute_production_deployment.py",
+          "phase3_deployment_executor.py",
+          "database_reconstruction.py"
+        ],
+        "recommended_script": "upload_real_congressional_data.py"
+      }
+    },
+    {
+      "step": "create_data_file",
+      "result": {
+        "sql_file": "/Users/noelmcmichael/Workspace/congress_data_automator/member_deployment_production_20250710_104904.sql",
+        "member_count": 535,
+        "file_size": 158749
+      }
+    },
+    {
+      "step": "execute_sql",
+      "result": {
+        "status": "ERROR",
+        "error": "[Errno 2] No such file or directory: 'psql'"
+      }
+    },
+    {
+      "step": "verify_deployment",
+      "result": {
+        "api_member_count": 50,
+        "expected_count": 535,
+        "success_rate": 0.09345794392523364,
+        "deployment_successful": false
+      }
+    }
+  ],
+  "final_status": "FAILED"
+}

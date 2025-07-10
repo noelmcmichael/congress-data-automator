@@ -1,0 +1,18 @@
+{
+  "timestamp": "20250710_105240",
+  "deployment_phase": "FINAL_PRODUCTION_DEPLOYMENT",
+  "pre_deployment": {
+    "timestamp": "2025-07-10T10:52:41.108627",
+    "current_member_count": 50,
+    "current_committee_count": 43,
+    "target_member_count": 535,
+    "members_to_deploy": 485,
+    "api_status": "healthy"
+  },
+  "sql_execution": {
+    "status": "ERROR",
+    "error": "[Errno 2] No such file or directory: 'psql'"
+  },
+  "post_deployment": {},
+  "final_status": "SQL_FAILED"
+}

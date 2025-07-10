@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-07-10T10:53:51.071831",
+  "deployment_status": "FAILED",
+  "sql_execution_success": false,
+  "pre_deployment_count": 50,
+  "post_deployment_count": 50,
+  "expected_count": 535,
+  "success_rate": 0.09345794392523364,
+  "house_count": 39,
+  "senate_count": 11,
+  "deployment_successful": false
+}
