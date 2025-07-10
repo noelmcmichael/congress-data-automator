@@ -312,12 +312,13 @@ async def get_members_new_version(
     
     return members_response
 
-@router.get("/committees", response_model=List[CommitteeResponse])
-async def get_committees(
+
+@router.get("/committees", response_model=List[dict])
+async def get_committees_fixed(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=200, description="Items per page"),
     search: Optional[str] = Query(None, description="Search by committee name"),
-    chamber: Optional[str] = Query(None, description="Filter by chamber (house/senate)"),
+    chamber: Optional[str] = Query(None, description="Filter by chamber (House/Senate/Joint)"),
     active_only: bool = Query(True, description="Only return active committees"),
     sort_by: Optional[str] = Query("name", description="Sort by field (name, chamber)"),
     sort_order: Optional[str] = Query("asc", description="Sort order (asc/desc)"),
@@ -325,33 +326,93 @@ async def get_committees(
 ):
     """
     Retrieve congressional committees with search, filtering, and sorting
+    FIXED VERSION: Uses raw SQL to avoid ORM issues
     """
-    query = db.query(Committee)
+    from sqlalchemy import text
     
-    # Apply search
+    # Build WHERE clause
+    where_conditions = []
+    params = {}
+    
     if search:
         search_term = f"%{search}%"
-        query = query.filter(Committee.name.ilike(search_term))
+        where_conditions.append("name ILIKE :search")
+        params["search"] = search_term
     
-    # Apply filters (exact match for better accuracy)
     if chamber:
-        query = query.filter(Committee.chamber == chamber)
+        # Use exact case-sensitive matching
+        where_conditions.append("chamber = :chamber")
+        params["chamber"] = chamber
+    
     if active_only:
-        query = query.filter(Committee.is_active == True)
+        where_conditions.append("is_active = :active_only")
+        params["active_only"] = True
     
-    # Apply sorting
-    sort_column = getattr(Committee, sort_by, Committee.name)
+    # Build ORDER BY clause
+    order_by = "name"
+    if sort_by in ["name", "chamber", "committee_type", "created_at"]:
+        order_by = sort_by
+    
     if sort_order.lower() == "desc":
-        query = query.order_by(desc(sort_column))
+        order_by += " DESC"
     else:
-        query = query.order_by(sort_column)
+        order_by += " ASC"
     
-    # Apply pagination
+    # Build complete SQL
+    where_clause = " AND ".join(where_conditions) if where_conditions else "1=1"
     offset = (page - 1) * limit
-    committees = query.offset(offset).limit(limit).all()
     
-    return [CommitteeResponse.from_orm(committee) for committee in committees]
-
+    sql = text(f"""
+        SELECT id, congress_gov_id, committee_code, name, chamber, committee_type,
+               parent_committee_id, is_subcommittee, description, jurisdiction,
+               chair_member_id, ranking_member_id, phone, email, website, 
+               office_location, is_active, congress_session, created_at, 
+               updated_at, last_scraped_at, hearings_url, members_url, 
+               official_website_url, last_url_update
+        FROM committees 
+        WHERE {where_clause}
+        ORDER BY {order_by}
+        LIMIT :limit OFFSET :offset
+    """)
+    
+    params.update({"limit": limit, "offset": offset})
+    
+    # Execute the query
+    result = db.execute(sql, params).fetchall()
+    
+    # Convert to response format
+    committees_response = []
+    for row in result:
+        committee_data = {
+            "id": row[0],
+            "congress_gov_id": row[1],
+            "committee_code": row[2],
+            "name": row[3],
+            "chamber": row[4],
+            "committee_type": row[5],
+            "parent_committee_id": row[6],
+            "is_subcommittee": row[7],
+            "description": row[8],
+            "jurisdiction": row[9],
+            "chair_member_id": row[10],
+            "ranking_member_id": row[11],
+            "phone": row[12],
+            "email": row[13],
+            "website": row[14],
+            "office_location": row[15],
+            "is_active": row[16],
+            "congress_session": row[17],
+            "created_at": row[18],
+            "updated_at": row[19],
+            "last_scraped_at": row[20],
+            "hearings_url": row[21],
+            "members_url": row[22],
+            "official_website_url": row[23],
+            "last_url_update": row[24]
+        }
+        committees_response.append(committee_data)
+    
+    return committees_response
 @router.get("/hearings", response_model=List[HearingResponse])
 async def get_hearings(
     page: int = Query(1, ge=1, description="Page number"),

@@ -1,0 +1,720 @@
+{
+  "timestamp": "2025-07-09T16:02:04.375250",
+  "congress": "119th",
+  "summary": {},
+  "committee_analysis": {
+    "house": {
+      "authoritative_count": 4,
+      "database_count": 16,
+      "correct_count": 0,
+      "missing_count": 4,
+      "extra_count": 16,
+      "accuracy": 0.0
+    },
+    "senate": {
+      "authoritative_count": 16,
+      "database_count": 13,
+      "correct_count": 11,
+      "missing_count": 5,
+      "extra_count": 2,
+      "accuracy": 0.6875
+    },
+    "joint": {
+      "authoritative_count": 4,
+      "database_count": 4,
+      "correct_count": 4,
+      "missing_count": 0,
+      "extra_count": 0,
+      "accuracy": 1.0
+    },
+    "overall": {
+      "total_authoritative": 24,
+      "total_correct": 15,
+      "overall_accuracy": 0.625
+    }
+  },
+  "leadership_analysis": {
+    "total_positions": 53,
+    "correct_positions": 25,
+    "error_count": 28,
+    "accuracy": 0.4716981132075472,
+    "errors": [
+      {
+        "committee": "Joint Committee on Printing",
+        "chamber": "Joint",
+        "member": "James Justice",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Joint Committee on Printing",
+        "chamber": "Joint",
+        "member": "Andy Kim",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Joint Committee on Taxation",
+        "chamber": "Joint",
+        "member": "Jim Banks",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Joint Committee on Taxation",
+        "chamber": "Joint",
+        "member": "Tina Smith",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Joint Committee on the Library",
+        "chamber": "Joint",
+        "member": "Roger Marshall",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Joint Committee on the Library",
+        "chamber": "Joint",
+        "member": "Charles Schumer",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Joint Economic Committee",
+        "chamber": "Joint",
+        "member": "John Thune",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Joint Economic Committee",
+        "chamber": "Joint",
+        "member": "John Fetterman",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Africa and Global Health Policy Subcommittee",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Agriculture, Nutrition, and Forestry",
+        "chamber": "Senate",
+        "member": "John Thune",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Agriculture, Nutrition, and Forestry",
+        "chamber": "Senate",
+        "member": "Richard Blumenthal",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Appropriations",
+        "chamber": "Senate",
+        "member": "Katie Britt",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Appropriations",
+        "chamber": "Senate",
+        "member": "Tammy Duckworth",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Armed Services",
+        "chamber": "Senate",
+        "member": "Mike Crapo",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Armed Services",
+        "chamber": "Senate",
+        "member": "Michael Bennet",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Banking, Housing, and Urban Affairs",
+        "chamber": "Senate",
+        "member": "Tom Cotton",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Banking, Housing, and Urban Affairs",
+        "chamber": "Senate",
+        "member": "Gary Peters",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Commerce, Science, and Transportation",
+        "chamber": "Senate",
+        "member": "Tom Cotton",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Commerce, Science, and Transportation",
+        "chamber": "Senate",
+        "member": "Catherine Cortez Masto",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Energy and Natural Resources",
+        "chamber": "Senate",
+        "member": "Marsha Blackburn",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Energy and Natural Resources",
+        "chamber": "Senate",
+        "member": "Elissa Slotkin",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Environment and Public Works",
+        "chamber": "Senate",
+        "member": "Cynthia Lummis",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Environment and Public Works",
+        "chamber": "Senate",
+        "member": "Tammy Baldwin",
+        "position": "Ranking Member",
+        "current_party": "Democratic",
+        "expected_party": "Republican",
+        "severity": "high",
+        "error": "Ranking Member should be Republican, found Democratic"
+      },
+      {
+        "committee": "Committee on Finance",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Foreign Relations",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Health, Education, Labor and Pensions",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      },
+      {
+        "committee": "Committee on Homeland Security and Governmental Affairs",
+        "chamber": "Senate",
+        "member": "Josh Hawley",
+        "position": "Chair",
+        "current_party": "Republican",
+        "expected_party": "Democratic",
+        "severity": "high",
+        "error": "Chair should be Democratic, found Republican"
+      }
+    ]
+  },
+  "member_analysis": {},
+  "discrepancies": [
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Joint Committee on the Library",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "View Committees No Longer Standing from previous Congresses",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Joint Committee on Printing",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Education and the Workforce",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Ways and Means",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Biotechnology, Horticulture, and Research Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Energy and Commerce",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Homeland Security",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Appropriations",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Science, Space, and Technology",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Transportation and Infrastructure",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Veterans' Affairs",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Agriculture",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Financial Services",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on the Judiciary",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Armed Services",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Oversight and Accountability",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Natural Resources",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Committee on Foreign Affairs",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Small Business and Entrepreneurship",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Budget",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Veterans' Affairs",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Rules and Administration",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on the Judiciary",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "Senate",
+      "committee": "Africa and Global Health Policy Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "Senate",
+      "committee": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Printing",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Printing",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Taxation",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Taxation",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on the Library",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Committee on the Library",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Economic Committee",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Joint",
+      "committee": "Joint Economic Committee",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Africa and Global Health Policy Subcommittee",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Agriculture, Nutrition, and Forestry",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Agriculture, Nutrition, and Forestry",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Appropriations",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Appropriations",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Armed Services",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Armed Services",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Banking, Housing, and Urban Affairs",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Banking, Housing, and Urban Affairs",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Commerce, Science, and Transportation",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Commerce, Science, and Transportation",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Energy and Natural Resources",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Energy and Natural Resources",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Environment and Public Works",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Environment and Public Works",
+      "severity": "high",
+      "description": "Ranking Member should be Republican, found Democratic"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Finance",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Foreign Relations",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Health, Education, Labor and Pensions",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    },
+    {
+      "type": "leadership_error",
+      "chamber": "Senate",
+      "committee": "Committee on Homeland Security and Governmental Affairs",
+      "severity": "high",
+      "description": "Chair should be Democratic, found Republican"
+    }
+  ],
+  "accuracy_scores": {
+    "committee_accuracy": 0.625,
+    "leadership_accuracy": 0.4716981132075472,
+    "overall_accuracy": 0.5790094339622641,
+    "total_discrepancies": 55,
+    "high_severity_discrepancies": 37,
+    "data_quality_grade": "F"
+  }
+}

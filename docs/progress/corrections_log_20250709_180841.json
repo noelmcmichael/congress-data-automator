@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-09T18:08:41.263190",
+  "backup_file": "/Users/noelmcmichael/Workspace/congress_data_automator/backups/backup_placeholder_20250709_180841.txt",
+  "corrections": {
+    "committee_names_fixed": 0,
+    "committees_added": 0,
+    "leadership_positions_fixed": 0,
+    "invalid_committees_removed": 0
+  },
+  "detailed_corrections": []
+}

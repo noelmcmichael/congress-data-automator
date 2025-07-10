@@ -1,0 +1,75 @@
+
+COMPREHENSIVE CONGRESSIONAL DATA VERIFICATION REPORT
+===================================================
+Generated: 2025-07-09T15:59:45.814734
+Congress: 119th
+
+OVERALL ACCURACY ASSESSMENT
+===========================
+Data Quality Grade: F
+Overall Accuracy: 0.00%
+Committee Accuracy: 0.00%
+Leadership Accuracy: 0.00%
+
+Total Discrepancies: 24
+High Severity Issues: 24
+
+COMMITTEE STRUCTURE ANALYSIS
+============================
+House Committees:
+  - Official: 4 | Database: 0
+  - Correct: 0 | Missing: 4 | Extra: 0
+  - Accuracy: 0.00%
+
+Senate Committees:
+  - Official: 16 | Database: 0
+  - Correct: 0 | Missing: 16 | Extra: 0
+  - Accuracy: 0.00%
+
+Joint Committees:
+  - Official: 4 | Database: 0
+  - Correct: 0 | Missing: 4 | Extra: 0
+  - Accuracy: 0.00%
+
+LEADERSHIP ANALYSIS
+==================
+Total Leadership Positions: 0
+Correct Positions: 0
+Leadership Errors: 0
+Leadership Accuracy: 0.00%
+
+DETAILED DISCREPANCIES
+=====================
+
+MISSING COMMITTEE (24 issues):
+  [HIGH] House - Joint Committee on the Library: Official committee missing from database
+  [HIGH] House - Joint Committee on Printing: Official committee missing from database
+  [HIGH] House - View Committees No Longer Standing from previous Congresses: Official committee missing from database
+  [HIGH] House - Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party: Official committee missing from database
+  [HIGH] Senate - Committee on Commerce, Science, and Transportation: Official committee missing from database
+  [HIGH] Senate - Committee on Foreign Relations: Official committee missing from database
+  [HIGH] Senate - Committee on Veterans' Affairs: Official committee missing from database
+  [HIGH] Senate - Committee on Energy and Natural Resources: Official committee missing from database
+  [HIGH] Senate - Committee on Health, Education, Labor and Pensions: Official committee missing from database
+  [HIGH] Senate - Committee on Agriculture, Nutrition, and Forestry: Official committee missing from database
+  [HIGH] Senate - Committee on the Judiciary: Official committee missing from database
+  [HIGH] Senate - Committee on Armed Services: Official committee missing from database
+  [HIGH] Senate - Committee on Appropriations: Official committee missing from database
+  [HIGH] Senate - Committee on Small Business and Entrepreneurship: Official committee missing from database
+  [HIGH] Senate - Committee on Finance: Official committee missing from database
+  [HIGH] Senate - Committee on Environment and Public Works: Official committee missing from database
+  [HIGH] Senate - Committee on Homeland Security and Governmental Affairs: Official committee missing from database
+  [HIGH] Senate - Committee on Rules and Administration: Official committee missing from database
+  [HIGH] Senate - Committee on Banking, Housing, and Urban Affairs: Official committee missing from database
+  [HIGH] Senate - Committee on Budget: Official committee missing from database
+  [HIGH] Joint - Joint Committee on the Library: Official committee missing from database
+  [HIGH] Joint - Joint Committee on Printing: Official committee missing from database
+  [HIGH] Joint - Joint Economic Committee: Official committee missing from database
+  [HIGH] Joint - Joint Committee on Taxation: Official committee missing from database
+
+RECOMMENDATIONS
+===============
+- Immediate data quality remediation required
+- Address 24 high-severity issues first
+- Add 4 missing House committees
+- Add 16 missing Senate committees

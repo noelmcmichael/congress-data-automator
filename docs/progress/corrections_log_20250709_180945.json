@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-07-09T18:09:42.669868",
+  "backup_file": "/Users/noelmcmichael/Workspace/congress_data_automator/backups/backup_20250709_180941.sql",
+  "corrections": {
+    "committee_names_fixed": 0,
+    "committees_added": 10,
+    "leadership_positions_fixed": 0,
+    "invalid_committees_removed": 0
+  },
+  "detailed_corrections": [
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Budget",
+      "chamber": "House",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Ethics",
+      "chamber": "House",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on House Administration",
+      "chamber": "House",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Rules",
+      "chamber": "House",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Small Business",
+      "chamber": "House",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Budget",
+      "chamber": "Senate",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on the Judiciary",
+      "chamber": "Senate",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Rules and Administration",
+      "chamber": "Senate",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Small Business and Entrepreneurship",
+      "chamber": "Senate",
+      "committee_type": "Standing"
+    },
+    {
+      "type": "committee_added",
+      "committee_name": "Committee on Veterans' Affairs",
+      "chamber": "Senate",
+      "committee_type": "Standing"
+    }
+  ]
+}

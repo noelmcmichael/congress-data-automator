@@ -1,0 +1,29 @@
+
+CONGRESSIONAL DATA VERIFICATION REPORT
+Generated: 2025-07-09T15:49:56.146713
+
+SUMMARY
+=======
+Total Issues Found: 1
+- House Committee Issues: 1
+- Senate Committee Issues: 0
+- Leadership Errors: 0
+
+DETAILED FINDINGS
+================
+
+House Committees:
+- Authoritative Sources: 1
+- Database: 0
+- Discrepancies: 1
+
+Senate Committees:
+- Authoritative Sources: 0
+- Database: 0
+- Discrepancies: 0
+
+Leadership Issues:
+
+COMMITTEE DISCREPANCIES
+======================
+- missing_committee: View Committees No Longer Standing from previous Congresses - Committee exists in authoritative source but not in database

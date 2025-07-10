@@ -1,0 +1,111 @@
+
+COMPREHENSIVE CONGRESSIONAL DATA VERIFICATION REPORT
+===================================================
+Generated: 2025-07-09T16:02:04.375250
+Congress: 119th
+
+OVERALL ACCURACY ASSESSMENT
+===========================
+Data Quality Grade: F
+Overall Accuracy: 57.90%
+Committee Accuracy: 62.50%
+Leadership Accuracy: 47.17%
+
+Total Discrepancies: 55
+High Severity Issues: 37
+
+COMMITTEE STRUCTURE ANALYSIS
+============================
+House Committees:
+  - Official: 4 | Database: 16
+  - Correct: 0 | Missing: 4 | Extra: 16
+  - Accuracy: 0.00%
+
+Senate Committees:
+  - Official: 16 | Database: 13
+  - Correct: 11 | Missing: 5 | Extra: 2
+  - Accuracy: 68.75%
+
+Joint Committees:
+  - Official: 4 | Database: 4
+  - Correct: 4 | Missing: 0 | Extra: 0
+  - Accuracy: 100.00%
+
+LEADERSHIP ANALYSIS
+==================
+Total Leadership Positions: 53
+Correct Positions: 25
+Leadership Errors: 28
+Leadership Accuracy: 47.17%
+
+DETAILED DISCREPANCIES
+=====================
+
+MISSING COMMITTEE (9 issues):
+  [HIGH] House - Joint Committee on the Library: Official committee missing from database
+  [HIGH] House - Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party: Official committee missing from database
+  [HIGH] House - View Committees No Longer Standing from previous Congresses: Official committee missing from database
+  [HIGH] House - Joint Committee on Printing: Official committee missing from database
+  [HIGH] Senate - Committee on Small Business and Entrepreneurship: Official committee missing from database
+  [HIGH] Senate - Committee on Budget: Official committee missing from database
+  [HIGH] Senate - Committee on Veterans' Affairs: Official committee missing from database
+  [HIGH] Senate - Committee on Rules and Administration: Official committee missing from database
+  [HIGH] Senate - Committee on the Judiciary: Official committee missing from database
+
+EXTRA COMMITTEE (18 issues):
+  [MEDIUM] House - Committee on Education and the Workforce: Database committee not found in official sources
+  [MEDIUM] House - Committee on Ways and Means: Database committee not found in official sources
+  [MEDIUM] House - Biotechnology, Horticulture, and Research Subcommittee: Database committee not found in official sources
+  [MEDIUM] House - Committee on Energy and Commerce: Database committee not found in official sources
+  [MEDIUM] House - Committee on Homeland Security: Database committee not found in official sources
+  [MEDIUM] House - Committee on Appropriations: Database committee not found in official sources
+  [MEDIUM] House - Committee on Science, Space, and Technology: Database committee not found in official sources
+  [MEDIUM] House - Committee on Transportation and Infrastructure: Database committee not found in official sources
+  [MEDIUM] House - Committee on Veterans' Affairs: Database committee not found in official sources
+  [MEDIUM] House - Committee on Agriculture: Database committee not found in official sources
+  [MEDIUM] House - Committee on Financial Services: Database committee not found in official sources
+  [MEDIUM] House - Committee on the Judiciary: Database committee not found in official sources
+  [MEDIUM] House - Committee on Armed Services: Database committee not found in official sources
+  [MEDIUM] House - Committee on Oversight and Accountability: Database committee not found in official sources
+  [MEDIUM] House - Committee on Natural Resources: Database committee not found in official sources
+  [MEDIUM] House - Committee on Foreign Affairs: Database committee not found in official sources
+  [MEDIUM] Senate - Africa and Global Health Policy Subcommittee: Database committee not found in official sources
+  [MEDIUM] Senate - Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee: Database committee not found in official sources
+
+LEADERSHIP ERROR (28 issues):
+  [HIGH] Joint - Joint Committee on Printing: Chair should be Democratic, found Republican
+  [HIGH] Joint - Joint Committee on Printing: Ranking Member should be Republican, found Democratic
+  [HIGH] Joint - Joint Committee on Taxation: Chair should be Democratic, found Republican
+  [HIGH] Joint - Joint Committee on Taxation: Ranking Member should be Republican, found Democratic
+  [HIGH] Joint - Joint Committee on the Library: Chair should be Democratic, found Republican
+  [HIGH] Joint - Joint Committee on the Library: Ranking Member should be Republican, found Democratic
+  [HIGH] Joint - Joint Economic Committee: Chair should be Democratic, found Republican
+  [HIGH] Joint - Joint Economic Committee: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Africa and Global Health Policy Subcommittee: Chair should be Democratic, found Republican
+  [HIGH] Senate - Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Agriculture, Nutrition, and Forestry: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Agriculture, Nutrition, and Forestry: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Appropriations: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Appropriations: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Armed Services: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Armed Services: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Banking, Housing, and Urban Affairs: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Banking, Housing, and Urban Affairs: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Commerce, Science, and Transportation: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Commerce, Science, and Transportation: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Energy and Natural Resources: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Energy and Natural Resources: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Environment and Public Works: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Environment and Public Works: Ranking Member should be Republican, found Democratic
+  [HIGH] Senate - Committee on Finance: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Foreign Relations: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Health, Education, Labor and Pensions: Chair should be Democratic, found Republican
+  [HIGH] Senate - Committee on Homeland Security and Governmental Affairs: Chair should be Democratic, found Republican
+
+RECOMMENDATIONS
+===============
+- Immediate data quality remediation required
+- Address 37 high-severity issues first
+- Add 4 missing House committees
+- Add 5 missing Senate committees
+- Fix 28 leadership position errors

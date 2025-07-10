@@ -1,0 +1,25 @@
+-- Database backup created: 20250709_180941
+-- Congress data backup
+-- Tables backed up: 21
+-- Table: committee_memberships_backup_20250709_133459 (2264 rows)
+-- Table: committees_backup_20250709_133916 (725 rows)
+-- Table: committees_backup_20250709_133459 (815 rows)
+-- Table: committee_memberships_backup_20250709_133916 (2223 rows)
+-- Table: members (541 rows)
+-- Table: committees (43 rows)
+-- Table: committee_memberships (1150 rows)
+-- Table: hearings (232 rows)
+-- Table: witnesses (0 rows)
+-- Table: hearing_documents (0 rows)
+-- Table: committees_backup_20250709_133658 (815 rows)
+-- Table: committee_memberships_backup_20250709_133658 (2223 rows)
+-- Table: committees_backup_20250709_134001 (725 rows)
+-- Table: committee_memberships_backup_20250709_134001 (2223 rows)
+-- Table: committees_backup_20250709_133808 (815 rows)
+-- Table: committee_memberships_backup_20250709_133808 (2223 rows)
+-- Table: committees_final_backup_20250709_142954 (43 rows)
+-- Table: committee_memberships_final_backup_20250709_142954 (884 rows)
+-- Table: committee_memberships_backup_20250708_122928 (881 rows)
+-- Table: committee_memberships_emergency_backup_20250708_123159 (881 rows)
+-- Table: congressional_sessions (1 rows)
+-- Backup completed at: 2025-07-09T18:09:42.616220

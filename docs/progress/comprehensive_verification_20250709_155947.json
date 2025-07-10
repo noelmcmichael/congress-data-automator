@@ -1,0 +1,222 @@
+{
+  "timestamp": "2025-07-09T15:59:45.814734",
+  "congress": "119th",
+  "summary": {},
+  "committee_analysis": {
+    "house": {
+      "authoritative_count": 4,
+      "database_count": 0,
+      "correct_count": 0,
+      "missing_count": 4,
+      "extra_count": 0,
+      "accuracy": 0.0
+    },
+    "senate": {
+      "authoritative_count": 16,
+      "database_count": 0,
+      "correct_count": 0,
+      "missing_count": 16,
+      "extra_count": 0,
+      "accuracy": 0.0
+    },
+    "joint": {
+      "authoritative_count": 4,
+      "database_count": 0,
+      "correct_count": 0,
+      "missing_count": 4,
+      "extra_count": 0,
+      "accuracy": 0.0
+    },
+    "overall": {
+      "total_authoritative": 24,
+      "total_correct": 0,
+      "overall_accuracy": 0.0
+    }
+  },
+  "leadership_analysis": {
+    "total_positions": 0,
+    "correct_positions": 0,
+    "error_count": 0,
+    "accuracy": 0,
+    "errors": []
+  },
+  "member_analysis": {},
+  "discrepancies": [
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Joint Committee on the Library",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Joint Committee on Printing",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "View Committees No Longer Standing from previous Congresses",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "House",
+      "committee": "Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Commerce, Science, and Transportation",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Foreign Relations",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Veterans' Affairs",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Energy and Natural Resources",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Health, Education, Labor and Pensions",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Agriculture, Nutrition, and Forestry",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on the Judiciary",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Armed Services",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Appropriations",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Small Business and Entrepreneurship",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Finance",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Environment and Public Works",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Homeland Security and Governmental Affairs",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Rules and Administration",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Banking, Housing, and Urban Affairs",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Senate",
+      "committee": "Committee on Budget",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Joint",
+      "committee": "Joint Committee on the Library",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Printing",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Joint",
+      "committee": "Joint Economic Committee",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    },
+    {
+      "type": "missing_committee",
+      "chamber": "Joint",
+      "committee": "Joint Committee on Taxation",
+      "severity": "high",
+      "description": "Official committee missing from database"
+    }
+  ],
+  "accuracy_scores": {
+    "committee_accuracy": 0.0,
+    "leadership_accuracy": 0,
+    "overall_accuracy": 0.0,
+    "total_discrepancies": 24,
+    "high_severity_discrepancies": 24,
+    "data_quality_grade": "F"
+  }
+}

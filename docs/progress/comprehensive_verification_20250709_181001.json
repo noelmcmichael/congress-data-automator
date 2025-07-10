@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-07-09T18:10:00.839313",
+  "congress": "119th",
+  "summary": {},
+  "committee_analysis": {
+    "house": {
+      "authoritative_count": 20,
+      "database_count": 21,
+      "correct_count": 20,
+      "missing_count": 0,
+      "extra_count": 1,
+      "accuracy": 1.0
+    },
+    "senate": {
+      "authoritative_count": 16,
+      "database_count": 18,
+      "correct_count": 16,
+      "missing_count": 0,
+      "extra_count": 2,
+      "accuracy": 1.0
+    },
+    "joint": {
+      "authoritative_count": 4,
+      "database_count": 4,
+      "correct_count": 4,
+      "missing_count": 0,
+      "extra_count": 0,
+      "accuracy": 1.0
+    },
+    "overall": {
+      "total_authoritative": 40,
+      "total_correct": 40,
+      "overall_accuracy": 1.0
+    }
+  },
+  "leadership_analysis": {
+    "total_positions": 53,
+    "correct_positions": 53,
+    "error_count": 0,
+    "accuracy": 1.0,
+    "errors": []
+  },
+  "member_analysis": {},
+  "discrepancies": [
+    {
+      "type": "extra_committee",
+      "chamber": "House",
+      "committee": "Biotechnology, Horticulture, and Research Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "Senate",
+      "committee": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    },
+    {
+      "type": "extra_committee",
+      "chamber": "Senate",
+      "committee": "Africa and Global Health Policy Subcommittee",
+      "severity": "medium",
+      "description": "Database committee not found in official sources"
+    }
+  ],
+  "accuracy_scores": {
+    "committee_accuracy": 1.0,
+    "leadership_accuracy": 1.0,
+    "overall_accuracy": 1.0,
+    "total_discrepancies": 3,
+    "high_severity_discrepancies": 0,
+    "data_quality_grade": "A"
+  }
+}
