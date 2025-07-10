@@ -1,0 +1,445 @@
+{
+  "timestamp": "20250710_094341",
+  "phase": "Phase 1 - Data Audit & Gap Analysis",
+  "current_data": {
+    "total_committees": 43,
+    "total_members": 50,
+    "committees_by_type": {
+      "Senate": {
+        "Subcommittee": [
+          {
+            "name": "Africa and Global Health Policy Subcommittee",
+            "id": 174,
+            "committee_type": "Subcommittee",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+            "id": 163,
+            "committee_type": "Subcommittee",
+            "chamber": "Senate"
+          }
+        ],
+        "Standing": [
+          {
+            "name": "Committee on Agriculture, Nutrition, and Forestry",
+            "id": 247,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Appropriations",
+            "id": 222,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Armed Services",
+            "id": 223,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Banking, Housing, and Urban Affairs",
+            "id": 224,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Budget",
+            "id": 832,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Commerce, Science, and Transportation",
+            "id": 225,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Energy and Natural Resources",
+            "id": 226,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Environment and Public Works",
+            "id": 227,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Finance",
+            "id": 228,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Foreign Relations",
+            "id": 229,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Health, Education, Labor and Pensions",
+            "id": 230,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Homeland Security and Governmental Affairs",
+            "id": 231,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Rules and Administration",
+            "id": 834,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Small Business and Entrepreneurship",
+            "id": 835,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on the Judiciary",
+            "id": 833,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          },
+          {
+            "name": "Committee on Veterans' Affairs",
+            "id": 836,
+            "committee_type": "Standing",
+            "chamber": "Senate"
+          }
+        ]
+      },
+      "House": {
+        "Subcommittee": [
+          {
+            "name": "Biotechnology, Horticulture, and Research Subcommittee",
+            "id": 2,
+            "committee_type": "Subcommittee",
+            "chamber": "House"
+          }
+        ],
+        "Standing": [
+          {
+            "name": "Committee on Agriculture",
+            "id": 1,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Appropriations",
+            "id": 207,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Armed Services",
+            "id": 208,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Budget",
+            "id": 827,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Education and the Workforce",
+            "id": 209,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Energy and Commerce",
+            "id": 210,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Ethics",
+            "id": 828,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Financial Services",
+            "id": 211,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Foreign Affairs",
+            "id": 212,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Homeland Security",
+            "id": 213,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on House Administration",
+            "id": 829,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Natural Resources",
+            "id": 215,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Oversight and Accountability",
+            "id": 216,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Rules",
+            "id": 830,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Science, Space, and Technology",
+            "id": 217,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Small Business",
+            "id": 831,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on the Judiciary",
+            "id": 214,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Transportation and Infrastructure",
+            "id": 219,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Veterans' Affairs",
+            "id": 220,
+            "committee_type": "Standing",
+            "chamber": "House"
+          },
+          {
+            "name": "Committee on Ways and Means",
+            "id": 221,
+            "committee_type": "Standing",
+            "chamber": "House"
+          }
+        ]
+      },
+      "Joint": {
+        "Standing": [
+          {
+            "name": "Joint Committee on Printing",
+            "id": 206,
+            "committee_type": "Standing",
+            "chamber": "Joint"
+          },
+          {
+            "name": "Joint Committee on Taxation",
+            "id": 204,
+            "committee_type": "Standing",
+            "chamber": "Joint"
+          },
+          {
+            "name": "Joint Committee on the Library",
+            "id": 205,
+            "committee_type": "Standing",
+            "chamber": "Joint"
+          },
+          {
+            "name": "Joint Economic Committee",
+            "id": 200,
+            "committee_type": "Standing",
+            "chamber": "Joint"
+          }
+        ]
+      }
+    },
+    "committee_names": [
+      "Africa and Global Health Policy Subcommittee",
+      "Biotechnology, Horticulture, and Research Subcommittee",
+      "Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight Subcommittee",
+      "Committee on Agriculture",
+      "Committee on Agriculture, Nutrition, and Forestry",
+      "Committee on Appropriations",
+      "Committee on Appropriations",
+      "Committee on Armed Services",
+      "Committee on Armed Services",
+      "Committee on Banking, Housing, and Urban Affairs",
+      "Committee on Budget",
+      "Committee on Budget",
+      "Committee on Commerce, Science, and Transportation",
+      "Committee on Education and the Workforce",
+      "Committee on Energy and Commerce",
+      "Committee on Energy and Natural Resources",
+      "Committee on Environment and Public Works",
+      "Committee on Ethics",
+      "Committee on Finance",
+      "Committee on Financial Services",
+      "Committee on Foreign Affairs",
+      "Committee on Foreign Relations",
+      "Committee on Health, Education, Labor and Pensions",
+      "Committee on Homeland Security",
+      "Committee on Homeland Security and Governmental Affairs",
+      "Committee on House Administration",
+      "Committee on Natural Resources",
+      "Committee on Oversight and Accountability",
+      "Committee on Rules",
+      "Committee on Rules and Administration",
+      "Committee on Science, Space, and Technology",
+      "Committee on Small Business",
+      "Committee on Small Business and Entrepreneurship",
+      "Committee on the Judiciary",
+      "Committee on the Judiciary",
+      "Committee on Transportation and Infrastructure",
+      "Committee on Veterans' Affairs",
+      "Committee on Veterans' Affairs",
+      "Committee on Ways and Means",
+      "Joint Committee on Printing",
+      "Joint Committee on Taxation",
+      "Joint Committee on the Library",
+      "Joint Economic Committee"
+    ],
+    "member_count_by_chamber": {
+      "House": 39,
+      "Senate": 11
+    }
+  },
+  "expected_data": {
+    "house_standing_committees": [
+      "Committee on Agriculture",
+      "Committee on Appropriations",
+      "Committee on Armed Services",
+      "Committee on the Budget",
+      "Committee on Education and the Workforce",
+      "Committee on Energy and Commerce",
+      "Committee on Ethics",
+      "Committee on Financial Services",
+      "Committee on Foreign Affairs",
+      "Committee on Homeland Security",
+      "Committee on House Administration",
+      "Committee on the Judiciary",
+      "Committee on Natural Resources",
+      "Committee on Oversight and Accountability",
+      "Committee on Rules",
+      "Committee on Science, Space, and Technology",
+      "Committee on Small Business",
+      "Committee on Transportation and Infrastructure",
+      "Committee on Veterans' Affairs",
+      "Committee on Ways and Means"
+    ],
+    "senate_standing_committees": [
+      "Committee on Agriculture, Nutrition, and Forestry",
+      "Committee on Appropriations",
+      "Committee on Armed Services",
+      "Committee on Banking, Housing, and Urban Affairs",
+      "Committee on the Budget",
+      "Committee on Commerce, Science, and Transportation",
+      "Committee on Energy and Natural Resources",
+      "Committee on Environment and Public Works",
+      "Committee on Finance",
+      "Committee on Foreign Relations",
+      "Committee on Health, Education, Labor, and Pensions",
+      "Committee on Homeland Security and Governmental Affairs",
+      "Committee on the Judiciary",
+      "Committee on Rules and Administration",
+      "Committee on Small Business and Entrepreneurship",
+      "Committee on Veterans' Affairs"
+    ],
+    "joint_committees": [
+      "Joint Committee on Printing",
+      "Joint Committee on Taxation",
+      "Joint Committee on the Library",
+      "Joint Economic Committee"
+    ],
+    "special_committees": [
+      "Select Committee on Intelligence",
+      "Select Committee on Ethics",
+      "Special Committee on Aging"
+    ],
+    "total_expected_standing": 36,
+    "expected_member_counts": {
+      "House": 435,
+      "Senate": 100
+    }
+  },
+  "gaps": {
+    "missing_committees": {
+      "house_standing": [
+        "Committee on the Budget"
+      ],
+      "senate_standing": [
+        "Committee on the Budget",
+        "Committee on Health, Education, Labor, and Pensions"
+      ],
+      "joint": []
+    },
+    "incorrect_committee_names": [],
+    "member_count_discrepancies": {
+      "House": {
+        "current": 39,
+        "expected": 435,
+        "difference": -396
+      },
+      "Senate": {
+        "current": 11,
+        "expected": 100,
+        "difference": -89
+      }
+    },
+    "committee_type_issues": [],
+    "chamber_assignment_issues": []
+  },
+  "issues": [
+    "Missing 3 official committees",
+    "House member count: 39 vs expected 435",
+    "Senate member count: 11 vs expected 100",
+    "Committee count suspiciously low - likely missing subcommittees",
+    "Committee-member relationships not verified against official sources"
+  ],
+  "recommendations": [
+    "Implement authoritative data collection from official sources",
+    "Add 396 missing House members",
+    "Add 89 missing Senate members",
+    "Implement comprehensive committee structure including subcommittees",
+    "Rebuild committee-member relationships from authoritative data"
+  ],
+  "quality_metrics": {
+    "committee_completeness": 92.5,
+    "member_completeness": 10.0,
+    "overall_data_quality": 51.2,
+    "critical_issues": 2,
+    "total_issues": 5
+  },
+  "summary": {
+    "status": "CRITICAL",
+    "primary_concern": "Committee-member relationships not verified",
+    "immediate_action_required": true,
+    "next_phase": "Phase 2 - Authoritative Data Collection"
+  }
+}
