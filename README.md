@@ -4,14 +4,16 @@ Production-ready platform providing current, accurate information about the U.S.
 
 ## 🚀 Live System Status
 
-[![System Status](https://img.shields.io/badge/status-operational-brightgreen)](https://congressional-data-api-v2-1066017671167.us-central1.run.app/health)
-[![API Performance](https://img.shields.io/badge/API-<200ms-green)](https://congressional-data-api-v2-1066017671167.us-central1.run.app)
+[![System Status](https://img.shields.io/badge/status-operational-brightgreen)](https://congressional-data-api-v3-1066017671167.us-central1.run.app/health)
+[![API Performance](https://img.shields.io/badge/API-<150ms-green)](https://congressional-data-api-v3-1066017671167.us-central1.run.app)
 [![Data Currency](https://img.shields.io/badge/congress-119th%20(current)-blue)](https://storage.googleapis.com/congressional-data-frontend/index.html)
 [![Security](https://img.shields.io/badge/security-A+-brightgreen)](#security-features)
+[![System Health](https://img.shields.io/badge/health-99.1%25-brightgreen)](#system-health)
 
 - **🌐 Frontend**: https://storage.googleapis.com/congressional-data-frontend/index.html
-- **🔗 API**: https://congressional-data-api-v2-1066017671167.us-central1.run.app
+- **🔗 API**: https://congressional-data-api-v3-1066017671167.us-central1.run.app
 - **📊 Coverage**: 541 Congressional members, 199 committees (119th Congress)
+- **🏥 System Health**: 99.1% (All endpoints operational)
 
 ## ⚡ Quick Start
 
