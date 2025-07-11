@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit {{ committee[1] }}</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; background-color: #f8f9fa; color: #212529; }
+        .container { max-width: 1200px; margin: 2em auto; padding: 2em; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5em; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .editor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; }
+        .panel { padding: 1.5em; background-color: #fff; border: 1px solid #dee2e6; border-radius: 8px; }
+        .btn { display: inline-block; font-weight: 400; color: #fff; text-align: center; vertical-align: middle; cursor: pointer; background-color: #007bff; border: 1px solid #007bff; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: all 0.15s ease-in-out; }
+        .btn-primary { background-color: #007bff; border-color: #007bff; }
+        .btn-danger { background-color: #dc3545; border-color: #dc3545; }
+        .member-table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        .member-table th, .member-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .member-table th { background-color: #e9ecef; }
+        .checkbox-list { list-style: none; padding: 0; max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; border-radius: 4px; }
+        .checkbox-list li { padding: 5px 0; }
+        select, button { padding: 8px; font-size: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('index') }}">&larr; Back to Committee List</a>
+        <h1>Editing: {{ committee[1] }}</h1>
+
+        <div class="editor-grid">
+            <div class="panel">
+                <h2>Current Members</h2>
+                <form action="{{ url_for('update_assignments', committee_id=committee[0]) }}" method="post">
+                    <table class="member-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>State</th>
+                                <th>Role</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for member in assigned_members %}
+                            <tr>
+                                <td>{{ member[1] }} {{ member[2] }}</td>
+                                <td>{{ member[3] }}</td>
+                                <td>
+                                    <select name="role_{{ member[0] }}">
+                                        <option value="member" {% if member[4] == 'member' %}selected{% endif %}>Member</option>
+                                        <option value="chair" {% if member[4] == 'chair' %}selected{% endif %}>Chair</option>
+                                        <option value="ranking_member" {% if member[4] == 'ranking_member' %}selected{% endif %}>Ranking Member</option>
+                                    </select>
+                                </td>
+                                <td style="text-align: center;">
+                                    <input type="checkbox" name="remove_ids" value="{{ member[0] }}">
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Update Assignments</button>
+                </form>
+            </div>
+
+            <div class="panel">
+                <h2>Add Members</h2>
+                <form action="{{ url_for('add_bulk', committee_id=committee[0]) }}" method="post">
+                    <p>Select senators to add to this committee:</p>
+                    <ul class="checkbox-list">
+                        {% for member in unassigned_members %}
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="member_ids" value="{{ member[0] }}">
+                                    {{ member[2] }}, {{ member[1] }} ({{ member[3] }})
+                                </label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Add Selected Members</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

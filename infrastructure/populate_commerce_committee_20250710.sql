@@ -1,0 +1,32 @@
+-- Populating: Commerce, Science, and Transportation
+-- Generated on: 2025-07-10 20:27:54 from user-provided list.
+BEGIN;
+DELETE FROM member_assignments WHERE committee_id = 2;
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (30, 2, 'chair', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (499, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (24, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (545, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (519, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (498, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (570, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (487, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (482, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (479, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (477, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (38, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (34, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (561, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (522, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (16, 2, 'ranking_member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (2, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (503, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (524, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (10, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (569, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (551, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (509, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (35, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (538, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (543, 2, 'member', 'editorial', 'published', NOW());
+INSERT INTO member_assignments (member_id, committee_id, assignment_type, authority_source, status, verified_at) VALUES (484, 2, 'member', 'editorial', 'published', NOW());
+COMMIT;

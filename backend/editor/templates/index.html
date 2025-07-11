@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee Editor</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #f4f4f9; color: #333; }
+        h1 { color: #0056b3; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .committee-list { list-style: none; padding: 0; }
+        .committee-item { background: #e9ecef; margin-bottom: 1em; padding: 1em; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+        .committee-item a { text-decoration: none; color: #007bff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Committee Editor</h1>
+        <p>Select a committee to manage its member assignments.</p>
+        <ul class="committee-list">
+            {% for committee in committees %}
+                <li class="committee-item">
+                    <span>{{ committee[1] }} ({{ committee[2] }})</span>
+                    <a href="{{ url_for('edit_committee', committee_id=committee[0]) }}">Edit</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
